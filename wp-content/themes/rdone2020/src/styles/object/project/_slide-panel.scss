@@ -1,0 +1,28 @@
+.p-slide-panel {
+	margin: 245px 0 0 0;
+	padding: 0;
+	@include breakpoint( tablet ) {
+		margin-top: 0;
+	}
+	@include breakpoint( pc ) {
+	}
+	.infiniteslide_wrap {
+		margin: 0;
+		padding: 0;
+	}
+	&__slide {
+		margin: 0;
+		padding: 0;
+		li {
+			@include hovanime( mono, 1.2 );
+			a {
+				margin: 0;
+				padding: 0;
+				img {
+					height: 140px;
+					// object-fit: cover;
+				}
+			}
+		}
+	}
+}

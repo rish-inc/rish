@@ -1,0 +1,13 @@
+.error404 {
+	display: flex;
+	flex-flow: column;
+	align-content: space-between;
+}
+.p-404 {
+	height: unset;
+	margin-bottom: auto;
+	text-align: center;
+	&__contents {
+		padding: 50px 12px;
+	}
+}

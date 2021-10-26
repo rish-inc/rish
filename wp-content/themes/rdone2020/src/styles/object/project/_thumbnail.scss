@@ -1,0 +1,57 @@
+.p-thumbnail {
+	width: 100%;
+	padding: 35px;
+	@include breakpoint( tablet ) {
+		padding: 50px;
+	}
+	@include breakpoint( pc ) {
+		padding: 100px;
+	}
+	&__imgbox {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		z-index: 1;
+		@include breakpoint( tablet ) {
+		}
+		@include breakpoint( pc ) {
+		}
+	}
+	&--portfolio-detail {
+		@extend .p-thumbnail;
+		background: #ededed;
+		position: relative;
+		@include breakpoint( tablet ) {
+		}
+		@include breakpoint( pc ) {
+		}
+		&::before {
+			content: "";
+			width: 200px;
+			height: 100%;
+			background: #e3e3e3;
+			clip-path: polygon( 0 0, 100% 0, 0 100% );
+			position: absolute;
+			display: block;
+			left: 0;
+			top: 0;
+			z-index: 1;
+			@include breakpoint( tablet ) {
+				width: 400px;
+			}
+			@include breakpoint( pc ) {
+				width: 400px;
+			}
+		}
+		.p-thumbnail__imgbox {
+			.print {
+				width: 200px;
+				@include breakpoint( tablet ) {
+					width: 300px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,76 @@
+$btnWidth: 120px;
+$btnHeight: 1px;
+
+.js-imgover {
+	position: relative;
+	&__item {
+		width: 80%;
+		transform-style: preserve-3d;
+		perspective: 2000px;
+		// transform-origin: 50% 0px 0px;
+		// transform: matrix3d( 0.86054, 0.49683, -0.1123, 5e-05, -0.28478, 0.65207, 0.70263, -0.00035, 0.42232, -0.57266, 0.70263, -0.00035, 0, 0, 0, 1 );
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate( -50%, -50% );
+		z-index: 99;
+		display: none;
+		&.is-open {
+			display: block;
+		}
+	}
+	&__close {
+		width   : 60px;
+		height  : 60px;
+		position: fixed;
+		top     : 50px;
+		right   : 50px;
+		display: none;
+		z-index: 100;
+		cursor: pointer;
+		&::before,
+		&::after {
+			content   : "";
+			width     : $btnWidth;
+			height    : $btnHeight;
+			background: #fff;
+			position  : absolute;
+			left      : calc( 50% - ( #{$btnWidth} / 2 ) );
+			display   : block;
+			transition: transform 0.2s;
+		}
+		&::before {
+			transform: rotate( 45deg );
+			top      : 28px;
+		}
+		&::after {
+			transform: rotate( -45deg );
+			top      : 28px;
+		}
+		&.is-open {
+			display: block;
+		}
+	}
+	&__bg {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		background: #000;
+		opacity: .8;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 98;
+		display: none;
+		&.is-open {
+			display: block;
+		}
+	}
+}
+
+body {
+	&.is-open {
+		position: fixed;
+	}
+}

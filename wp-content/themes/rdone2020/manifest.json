@@ -1,0 +1,12 @@
+{
+  "lang": "ja",
+  "name": "webapp name",
+  "short_name": "webapp name",
+  "icons": [{
+        "src": "/app-icon.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      }],
+  "start_url": "//example.com/",
+  "display": "standalone"
+}

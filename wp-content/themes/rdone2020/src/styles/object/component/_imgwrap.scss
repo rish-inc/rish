@@ -1,0 +1,12 @@
+.c-imgwrap {
+    margin-bottom: 10px;
+    @include hovanime;
+    @include breakpoint( tablet ) {
+        margin-bottom: 20px;
+    }
+    @include breakpoint( pc ) {
+    }
+    > a {
+        display: block;
+    }
+}

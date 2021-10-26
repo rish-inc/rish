@@ -1,0 +1,12 @@
+.c-inner {
+	width: 100%;
+	margin: auto;
+	display: block;
+	@include breakpoint( tablet ) {
+	}
+	@include breakpoint( pc ) {
+		width: 950px;
+	}
+	@include breakpoint( wide ) {
+	}
+}

@@ -1,0 +1,59 @@
+.p-top--corpinfo {
+	padding: 70px 20px 0;
+	@include breakpoint( tablet ) {
+		padding: 70px 90px 0;
+	}
+	@include breakpoint( pc ) {
+		// width: 930px;
+		padding: 70px auto 100px;
+	}
+	h2 {
+		margin: 0 auto 20px -10px;
+		font-size: 8.0rem;
+		font-family: 'Meie Script', cursive;
+		font-weight: 400;
+		// position: absolute;
+		// left: 0;
+		@include breakpoint( tablet ) {
+			font-size: 10vw;
+		}
+		@include breakpoint( pc ) {
+		}
+		@include breakpoint( wide ) {
+		}
+	}
+	dl {
+		font-family: 'Vollkorn', serif;
+		dt {
+			font-size: 2.4rem;
+			margin-bottom: 10px;
+			@include breakpoint( tablet ) {
+				font-size: 3vw;
+				font-weight: bold;
+			}
+			@include breakpoint( pc ) {
+			}
+		}
+		dd {
+			font-size: 1.6rem;
+			margin-bottom: 40px;
+			@include breakpoint( tablet ) {
+				font-size: 1.6vw;
+			}
+			@include breakpoint( pc ) {
+				font-size: 1.6rem;
+			}
+			small {
+				margin-top: 5px;
+				font-size: 1.4rem;
+				color: #636363;
+				@include breakpoint( tablet ) {
+					font-size: 1.4vw;
+				}
+				@include breakpoint( pc ) {
+					font-size: 1.4rem;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,158 @@
+.p-top-section {
+	padding: 70px 20px 50px;
+	@include breakpoint( tablet ) {
+		padding: 50px 20px 50px;
+	}
+	@include breakpoint( pc ) {
+		// width: 930px;
+		padding: 100px 0;
+	}
+	@include breakpoint( wide ) {
+	}
+	.headline {
+		margin-left: -16px;
+		font-size: 6.0rem;
+		font-family: 'Meie Script', cursive;
+		font-weight: 400;
+		position: absolute;
+		left: 0;
+		@include breakpoint( tablet ) {
+			font-size: 10vw;
+		}
+		@include breakpoint( pc ) {
+		}
+		@include breakpoint( wide ) {
+		}
+		span {
+			margin-left: -10px;
+			@include breakpoint( pc ) {
+				margin-left: -20px;
+			}
+			@include breakpoint( wide ) {
+			}
+		}
+	}
+	&__header {
+		height: 280px;
+		margin-bottom: 20px;
+		position: relative;
+		@include breakpoint( tablet ) {
+			height: 300px;
+			margin-bottom: 0;
+		}
+		@include breakpoint( pc ) {
+			height: 400px;
+		}
+		@include breakpoint( wide ) {
+		}
+		.description {
+			top: 100px;
+			right: 0;
+			left: 0;
+			position: absolute;
+			font-family: 'Vollkorn', serif;
+			@include breakpoint( tablet ) {
+				width: 57%;
+				top: 100px;
+				left: inherit;
+			}
+			@include breakpoint( pc ) {
+				width: inherit;
+				top: 150px;
+				right: inherit;
+				left: 55%;
+			}
+			@include breakpoint( wide ) {
+			}
+			> .title {
+				margin-bottom: 20px;
+				font-size: 3.0rem;
+				font-weight: bold;
+				line-height: 1;
+				@include breakpoint( tablet ) {
+				}
+				@include breakpoint( pc ) {
+					font-size: 3vw;
+					white-space: nowrap;
+				}
+				@include breakpoint( wide ) {
+				}
+			}
+			> .text {
+				font-size: 1.4rem;
+				margin-left: 0;
+				@include breakpoint( tablet ) {
+				}
+				@include breakpoint( pc ) {
+					font-size: 1vw;
+					white-space: nowrap;
+				}
+				@include breakpoint( wide ) {
+				}
+			}
+		}
+	}//&__header
+	&--print {
+		@extend .p-top-section;
+		padding: 10px 50px 50px;
+		@include breakpoint( tablet ) {
+		}
+		@include breakpoint( pc ) {
+			padding: 10px 50px 100px;
+		}
+		.headline {
+			font-size: 5.0rem;
+			margin-left: 0;
+			@include breakpoint( tablet ) {
+				margin-left: 25px;
+				font-size: 10vw;
+			}
+			@include breakpoint( pc ) {
+			}
+			span {
+				margin-left: -30px;
+				@include breakpoint( tablet ) {
+				}
+			}
+		}
+		.p-top-section__header {
+			height: 190px;
+			margin-bottom: 50px;
+			@include breakpoint( tablet ) {
+				margin-bottom: 80px;
+				// height: 60vh;
+			}
+			@include breakpoint( pc ) {
+				height: 250px;
+			}
+			@include breakpoint( full ) {
+				margin-bottom: 120px;
+			}
+			.description {
+				@include breakpoint( tablet ) {
+					top: 150px;
+				}
+				@include breakpoint( pc ) {
+					top: 200px;
+					left: 55%;
+				}
+				@include breakpoint( full ) {
+					top: 250px;
+				}
+				> .title {
+					@include breakpoint( pc ) {
+						font-size: 2.5vw;
+					}
+				}
+			}
+		}
+		.c-img-description__title {
+			@include breakpoint( tablet ) {
+				font-size: 1.2rem;
+			}
+		}
+		.c-img-description__link {
+			font-size: 1rem;
+		}
+	}
+}

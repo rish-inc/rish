@@ -1,0 +1,64 @@
+.p-portfolio-detail {
+	width: 100%;
+	margin: auto;
+	@include breakpoint( tablet ) {
+		max-width: 800px;
+	}
+	@include breakpoint( pc ) {
+		max-width: 1200px;
+	}
+	&__contents {
+		padding: 35px;
+		font-size: 1.4rem;
+		line-height: 1.8;
+		@include breakpoint( tablet ) {
+			padding: 50px;
+		}
+		@include breakpoint( pc ) {
+			padding: 50px 100px;
+		}
+		@include breakpoint( contents ) {
+			padding: 50px 0;
+		}
+		p {
+			margin-bottom: 20px;
+		}
+	}
+	&__imgs {
+		padding: 35px;
+		background: #ededed;
+		@include breakpoint( tablet ) {
+			padding: 70px 50px;
+		}
+		@include breakpoint( pc ) {
+			padding: 100px;
+			margin-bottom: 100px;
+		}
+		ul {
+			width: 100%;
+			margin: auto;
+			display: block;
+			@include breakpoint( tablet ) {
+				max-width: 600px;
+			}
+			@include breakpoint( pc ) {
+				max-width: 1000px;
+			}
+			li {
+				width: 100%;
+				margin-bottom: 35px;
+				@include breakpoint( tablet ) {
+				}
+				@include breakpoint( pc ) {
+					margin-bottom: 100px;
+				}
+				&:last-child {
+					margin-bottom: 0;
+				}
+				img {
+					margin: auto;
+				}
+			}
+		}
+	}
+}

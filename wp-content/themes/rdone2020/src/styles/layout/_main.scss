@@ -1,0 +1,10 @@
+.l-main {
+	margin-bottom: 50px;
+	@include breakpoint( tablet ) {
+		margin-bottom: 100px;
+	}
+	@include breakpoint( pc ) {
+	}
+	@include breakpoint( wide ) {
+	}
+}

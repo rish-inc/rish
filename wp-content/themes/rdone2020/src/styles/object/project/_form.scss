@@ -1,0 +1,127 @@
+.p-form {
+	width: 100%;
+	@include breakpoint( tablet ) {
+		width: 50%;
+	}
+	@include breakpoint( pc ) {
+		width: 50%;
+	}
+	// .form-block {
+	// 	margin-bottom: 25px;
+	// 	@include breakpoint( tablet ) {
+	// 		margin-bottom: 50px;
+	// 	}
+	// }
+	dl,
+	dt,
+	dd,
+	li {
+		margin: 0;
+		padding: 0;
+	}
+	form {
+		width: 100%;
+		margin: auto;
+		padding: 0 20px;
+		display: block;
+		@include breakpoint( tablet ) {
+		}
+	}
+	input,
+	textarea,
+	select {
+		border: 0;
+		background-color: #ededed;
+		&:focus {
+			outline: 1px $color--red solid;
+		}
+	}
+	dl {
+		margin-bottom: 30px;
+		padding-bottom: 10px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-wrap: wrap;
+		border-bottom: 1px solid #000;
+		dt {
+			width: 35%;
+			font-family: 'Vollkorn';
+			font-size: 1.4rem;
+		}
+		dd {
+			width: 65%;
+			font-size: 1.4rem;
+		}
+		input,
+		textarea,
+		select {
+			width: 100%;
+			@include breakpoint( tablet ) {
+				padding: 5px;
+			}
+		}
+		textarea {
+			width: 99%;
+			min-height: 80px;
+			height: 80px;
+			padding-right: 10px;
+		}
+	}
+	.captcha {
+		width: 100%;
+		margin-top: 30px;
+		text-align: center;
+		img {
+			margin: auto;
+		}
+	}
+	input[name="mw-wp-form-captcha"] {
+		margin-top: 5px;
+		padding: 5px;
+		border: 1px solid #000;
+	}
+	.set-bt {
+		margin-top: 60px;
+		// display: flex;
+		// justify-content: space-between;
+	}
+	button,
+	.back,
+	.submit-bt,
+	.check-bt {
+		width: 50%;
+		margin: 30px auto;
+		padding: 10px 15px;
+		text-align: center;
+		background: #fff;
+		font-family: Vollkorn;
+		font-size: 2.0rem;
+		color: #000;
+		display: block;
+		border: 1px solid #000;
+		outline: none;
+		&:focus {
+			outline: 1px $color--red solid;
+		}
+	}
+	.reset-bt {
+		margin-right: 15px;
+	}
+	.submit-bt {
+		margin-left: 15px;
+	}
+	.content3 {
+		padding: 0 50px;
+		text-align: center;
+		.sec-copy {
+			font-size: 1.2rem;
+			@include breakpoint( tablet ) {
+				font-size: 1.4rem;
+			}
+			@include breakpoint( tablet ) {
+				font-size: 1.4rem;
+			}
+		}
+	}
+}

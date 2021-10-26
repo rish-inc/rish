@@ -1,0 +1,12 @@
+.p-scroll {
+	position: fixed;
+	bottom: 50px;
+	left: -10px;
+	color: #000;
+	transform: rotate( -90deg );
+	z-index: 1;
+	@include breakpoint( tablet ) {
+		left: 20px;
+		bottom: 80px;
+	}
+}
