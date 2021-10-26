@@ -2,5 +2,5 @@
 
 URL: https://rish.style
 
-## Use Github Actions
+## Deploy Github Actions
 
