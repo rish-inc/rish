@@ -10,3 +10,11 @@
 .wpcf7 form .wpcf7-response-output {
 	margin-top: 0;
 }
+
+.wpcf7 form .checkbox {
+	.wpcf7-list-item {
+		label {
+			display: flex;
+		}
+	}
+}
