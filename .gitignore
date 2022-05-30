@@ -7,6 +7,11 @@
 !/wp-content/themes/rdone2020/*
 !/wp-content/themes/rdone2020/styleguide/
 !/wp-content/themes/rdone2020/styleguide/*
+!/wp-content/themes/rishalice/
+!/wp-content/themes/rishalice/*
+/wp-content/themes/rishalice/styleguide/
+/wp-content/themes/rishalice/css/
+/wp-content/themes/rishalice/js/
 !main.css
 !/.github
 *.map
@@ -18,6 +23,7 @@
 .htaccess
 node_modules/
 !/wp-content/themes/rdone2020/style.css
+!/wp-content/themes/rishalice/style.css
 !editor-style.css
 editor-style.css.map
 !bundle.js
