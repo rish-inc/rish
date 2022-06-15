@@ -10,6 +10,7 @@ URL: https://rish.style
 - mw-wp-form
 - mw-wp-form-captcha
 - regenerate-thumbnails
+- Flamingo
 - rest-api
 - rish-custom-post - Rish original plugin
 - smart-custom-fields
