@@ -15,3 +15,16 @@ URL: https://rish.style
 - smart-custom-fields
 - theme-check
 - wp-multibyte-patch
+
+## Command
+
+gulp 起動
+```
+gulp --path="proxy URL"
+```
+proxy URL = Local By FlyWheel で指定している URL
+
+Styleguide 起動
+```
+npm run styleguide
+```
