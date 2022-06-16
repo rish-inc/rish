@@ -4,6 +4,7 @@
   "description": "WordPress theme develop tool",
   "main": "gulpfile.js",
   "scripts": {
+    "styleguide": "npx gulp styleguide",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
