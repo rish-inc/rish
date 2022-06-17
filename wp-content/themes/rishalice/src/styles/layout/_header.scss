@@ -1,12 +1,12 @@
-@use "../foundation/global";
+@use "../foundation/global" as g;
 
 .l-header {
-	@include mixin.mq( tb ) {
+	@include g.mq( tb ) {
 	}
-	@include mixin.mq( pc ) {
+	@include g.mq( pc ) {
 	}
-	@include mixin.mq( wide ) {
+	@include g.mq( wide ) {
 	}
-	@include mixin.mq( full ) {
+	@include g.mq( full ) {
 	}
 }
