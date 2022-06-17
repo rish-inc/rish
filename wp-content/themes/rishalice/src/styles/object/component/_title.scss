@@ -3,11 +3,11 @@
 .rabbit-body__title{
     display: block;
     &::before{
-        content: url(../images/rabbit__icon--body_sp.png);
+        content: url( ../images/rabbit__icon--body_sp.png );
         vertical-align: middle;
         margin-right: 10px;
         @include g.mq( pc ) {
-            content: url(../images/rabbit__icon--body_pc.png); 
+            content: url( ../images/rabbit__icon--body_pc.png ); 
         }
     }
     
