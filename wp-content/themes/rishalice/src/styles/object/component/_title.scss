@@ -4,5 +4,11 @@
     
 }
 .test{
-    color: pink;
+    
+    &::before{
+        content: url(../images/rabbit__icon--body.png);
+        vertical-align: middle;
+        
+        
+    }
 }
