@@ -1,4 +1,5 @@
 @use "../foundation/mixin";
+@use "../foundation/global";
 
 .l-header {
 	@include mixin.mq( tb ) {
