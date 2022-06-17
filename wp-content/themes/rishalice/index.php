@@ -1,5 +1,5 @@
 <?php get_header(); ?>
 
-<p class="test">テストやで</p>
+<p class="rabbit-body__title">テストやで</p>
 
 <?php get_footer(); ?>
