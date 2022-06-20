@@ -1,14 +1,25 @@
 @use "../../foundation/global" as g;
 
-.c-rabbit-body__title{
+.c-title-decoration {
     display: block;
-    &::before{
-        content: url( ../images/rabbit__icon--body_sp.png );
+    &::before {
         vertical-align: middle;
-        margin-right: 10px;
-        @include g.mq( pc ) {
-            content: url( ../images/rabbit__icon--body_pc.png ); 
+    }
+    &-rabbit-body {
+        @extend .c-title-decoration;  
+        &::before {
+            content: url( ../images/rabbit__icon--body_sp.png );
+            margin-right: 10px;
+            @include g.mq( pc ) {
+                content: url( ../images/rabbit__icon--body_pc.png );
+            }
         }
     }
-    
+    &-rabbit-face {
+        @extend .c-title-decoration;
+        &::before {
+            content: url( ../images/rabbit__icon--face.png );
+            margin-right: 20px;
+        }
+    }
 }
