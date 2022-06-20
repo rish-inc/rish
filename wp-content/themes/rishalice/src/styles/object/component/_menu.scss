@@ -1,0 +1,29 @@
+@use "sass:math"; //math.divを使う上で必要
+@use "../../foundation/global" as g;
+
+.c-menu__list{
+    @include g.mq( pc ) {
+    position: relative;
+        &::after{
+            content: "";
+            transition: .3s;
+            position: absolute;
+            visibility: hidden;
+            opacity: 0;
+            top: calc(1em + 13px);
+            left: 0;
+        }
+        &:hover::after{
+            background: url( ../images/meun__hover-line.png ); /* 表示する画像 */
+            background-size: contain; 
+            background-repeat: no-repeat;
+            background-position: center top;
+            width: 94px;
+            height: 8px;
+            display: inline-block;
+            visibility: visible;
+            opacity: 1;
+
+        }
+    }
+}
