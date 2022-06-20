@@ -1,6 +1,6 @@
 @use "../../foundation/global" as g;
 
-.rabbit-body__title{
+.c-rabbit-body__title{
     display: block;
     &::before{
         content: url( ../images/rabbit__icon--body_sp.png );
