@@ -23,3 +23,23 @@
         }
     }
 }
+.c-title-line{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &::after{
+        content: "";
+        background: url( ../images/gold-wing-line.png );
+        background-size: contain; 
+        background-repeat: no-repeat;
+        background-position: center top;
+        width: 94px;
+        height: 8px;
+        position: relative;
+        display: inline-block;
+        bottom:-16px;
+        // left: -94px;
+    }
+}
