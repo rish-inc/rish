@@ -9,7 +9,7 @@
     }
     &--brackets{
         position: relative;
-        &::before,&::after{
+        &::before, &::after{
             content: "";
             background: url( ../images/brackets__top.png )no-repeat;
             display: block;
