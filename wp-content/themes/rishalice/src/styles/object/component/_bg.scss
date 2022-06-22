@@ -1,4 +1,5 @@
 @use "../../foundation/global" as g;
+@use "../../foundation/variables";
 
 .c-bg{
     &--stripe{
@@ -6,5 +7,11 @@
         @include g.mq( pc ) {
             background: url( ../images/bg--stripe__pc.png );
         }
+    }
+}
+
+.c-bg{
+    &--turquoise-green{
+        background: variables.$bgcolor--turquoise-green;
     }
 }
