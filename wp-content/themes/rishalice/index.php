@@ -5,5 +5,5 @@
 <a href="" class="c-hover--gmenu">テストリンク</a>
 <h2 class="c-decoration--wing-line--under">テストですよあああああああ</h2>
 <div class="c-frame--dent">テストボックス</div>
-
+<p>テスト</p>
 <?php get_footer(); ?>
