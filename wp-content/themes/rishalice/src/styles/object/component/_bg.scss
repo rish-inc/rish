@@ -1,0 +1,10 @@
+@use "../../foundation/global" as g;
+
+.c-bg{
+    &--stripe{
+        background: url( ../images/bg--stripe__sp.png );
+        @include g.mq( pc ) {
+            background: url( ../images/bg--stripe__pc.png );
+        }
+    }
+}
