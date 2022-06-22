@@ -1,5 +1,6 @@
 @use "sass:math"; //math.divを使う上で必要
 @use "../../foundation/global" as g;
+@use "decoration"; //wing-line使うため//
 
 .c-hover {
     &--gmenu {
@@ -17,12 +18,7 @@
         }
         &:hover {
             &::after {
-                background: url( ../images/gold-wing-line.png ); /* 表示する画像 */
-                background-size: contain; 
-                background-repeat: no-repeat;
-                background-position: center top;
-                width: 94px;
-                height: 8px;
+                @extend %wing-line;
                 display: inline-block;
                 visibility: visible;
                 opacity: 1;
