@@ -34,17 +34,19 @@
         }
     } 
 
-    &--wing-under-line{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        &::after{
-        content: "";
-        @extend %wing-line;
-        position: relative;
-        display: inline-block;
-        bottom:-16px;
+    &--wing-line{
+        &--under{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            &::after{
+                content: "";
+                @extend %wing-line;
+                position: relative;
+                display: inline-block;
+                bottom:-16px;
+            }
         }
     }
 }
