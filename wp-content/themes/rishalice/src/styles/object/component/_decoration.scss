@@ -1,0 +1,51 @@
+@use "../../foundation/global" as g;
+
+%wing-line{
+    background: url( ../images/gold-wing-line.png );
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 94px;
+    height: 8px;
+}
+
+.c-decoration{
+    &--rabbit{
+        display: block;
+        &::before {
+            vertical-align: middle;
+        }
+        &--body {
+            @extend .c-decoration--rabbit;  
+            &::before {
+                content: url( ../images/rabbit__icon--body_sp.png );
+                margin-right: 10px;
+                @include g.mq( pc ) {
+                    content: url( ../images/rabbit__icon--body_pc.png );
+                }
+            }
+        }
+        &--face {
+            @extend .c-decoration--rabbit;
+            &::before {
+                content: url( ../images/rabbit__icon--face.png );
+                margin-right: 20px;
+            }
+        }
+    } 
+
+    &--wing-under-line{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &::after{
+        content: "";
+        @extend %wing-line;
+        position: relative;
+        display: inline-block;
+        bottom:-16px;
+        }
+    }
+}
+
