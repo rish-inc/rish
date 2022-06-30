@@ -1,0 +1,7 @@
+.c-button{
+    &--noise-line{
+        background: url( ../images/button_cover.png );
+        outline : 2px solid #FDFAE6;
+        outline-offset : -8px;
+    }
+}

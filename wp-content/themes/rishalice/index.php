@@ -8,5 +8,6 @@
 <div class="c-bg--stripe" style="width:400px; height:400px;">背景テスト</div>
 <p class="c-bg--turquoise-green">背景グリーンにするテスト</p>
 <div class="c-frame--brackets">背景カギカッコにするコンポーネント</div>
+<button class="c-button--noise-line">これはボタンです。</button>
 
 <?php get_footer(); ?>
