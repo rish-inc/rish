@@ -1,6 +1,6 @@
 @use "../../foundation/global" as g;
 
-.drop-shadow-bg { 
+.c-drop-shadow-bg { 
         position: relative;
         &::before,
         &::after {
@@ -24,7 +24,7 @@
         }
 
     &--right {
-        @extend .drop-shadow-bg;
+        @extend .c-drop-shadow-bg;
         &::before {
             right: -42px;
             bottom: -40px;
@@ -35,7 +35,7 @@
         }
     }
     &--left{
-        @extend .drop-shadow-bg;
+        @extend .c-drop-shadow-bg;
         &::before{
             left: -42px;
             bottom: -40px;
