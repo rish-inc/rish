@@ -1,0 +1,48 @@
+@use "../../foundation/global" as g;
+
+.drop-shadow-bg { 
+        position: relative;
+        &::before,
+        &::after {
+            content: "";
+            width: 175px;
+            height: 170px;
+            position: absolute;
+            background:#6BB7AC;
+            @include g.mq( pc ) {
+            width: 410px;
+            height: 396px;
+            }
+        }
+        &::before {
+            z-index: -1;
+        }
+        &::after {
+            opacity: 0.3;
+            z-index: -2;
+            filter: blur( 23px );
+        }
+
+    &--right {
+        @extend .drop-shadow-bg;
+        &::before {
+            right: -42px;
+            bottom: -40px;
+        }
+        &::after {
+            right: -82px;
+            bottom: -80px;
+        }
+    }
+    &--left{
+        @extend .drop-shadow-bg;
+        &::before{
+            left: -42px;
+            bottom: -40px;
+        }
+        &::after{
+            left: -42px;
+            bottom: -40px;
+        }
+    }
+}
