@@ -1,0 +1,18 @@
+@use "../../foundation/global" as g;
+
+.bg--arrow {
+    &--body {
+        background-image: url(../images/site-production/flow-arrow-body__sp.png);
+        background-repeat: repeat-y;
+        @include g.mq( pc ) {
+            background-image: url(../images/site-production/flow-arrow-body__pc.png);
+        }   
+    }
+    &--tip {
+        background-repeat: no-repeat;
+        background-image: url(../images/site-production/flow-arrow-tip__sp.png);
+        @include g.mq( pc ) {
+            background-image: url(../images/site-production/flow-arrow-tip__pc.png);
+        }
+    }
+}

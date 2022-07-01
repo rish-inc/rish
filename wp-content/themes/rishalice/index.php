@@ -10,5 +10,11 @@
 <div class="c-frame--brackets">背景カギカッコにするコンポーネント</div>
 <button class="c-button--noise-line">これはボタンです。</button>
 <figure class="drop-shadow-bg--right" style="width:568px;"><img src="<?php echo get_theme_file_uri( '/images/top/solvable--alice-rabbit.jpg' ); ?>" alt=""></figure>
+<div class="bg--arrow--body">文章のテストです。1</div>  
+<div class="bg--arrow--body">文章のテストです。2</div>
+<div class="bg--arrow--body">文章のテストです。3</div>
+<div class="bg--arrow--tip"></div>  
+
+</div>
 
 <?php get_footer(); ?>
