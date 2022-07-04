@@ -1,0 +1,9 @@
+@use "../../foundation/global" as g;
+
+.c-line{
+    &--dot{
+        &--bottom{
+            border-bottom: 2px dotted #b9a72f;
+        }
+    }
+}
