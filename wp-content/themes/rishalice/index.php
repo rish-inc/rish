@@ -15,5 +15,6 @@
 <div class="c-bg-arrow--body">文章のテストです。3</div>
 <div class="c-bg-arrow--tip"></div> 
 <div class="p-frame-circle">丸飾りフレーム用</div>
+<div class="c-bg--diamond" style="width:400px; height:400px;">背景テストテストダイヤモンド</div>
 
 <?php get_footer(); ?>
