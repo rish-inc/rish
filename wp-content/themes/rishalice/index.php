@@ -17,5 +17,10 @@
 <div class="p-frame-circle">丸飾りフレーム用</div>
 <div class="c-bg--diamond" style="width:400px; height:400px;">背景テストテストダイヤモンド</div>
 <p class="c-line--dot--bottom">ドットアンダーバー</p>
+<ul class="c-list-mark--round">
+    <li>テスト</li>
+    <li>のリスト</li>
+    <li>です</li>
+</ul>
 
 <?php get_footer(); ?>
