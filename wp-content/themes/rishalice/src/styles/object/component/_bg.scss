@@ -11,4 +11,11 @@
     &--turquoise-green{
         background: variables.$bgcolor--turquoise-green;
     }
+
+    &--diamond{
+        background: url( ../images/bg--diamond__sp.png );
+        @include g.mq( pc ) {
+            background: url( ../images/bg--diamond__pc.png );
+        }
+    }
 }
