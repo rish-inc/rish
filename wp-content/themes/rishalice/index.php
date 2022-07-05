@@ -22,7 +22,7 @@
     <li>のリスト</li>
     <li>です</li>
 </ul>
-<p class="c-font--price">25<span>万円</span>~</p>
+<p class="c-font--price">25<span class="c-font--price__complement">万円</span>~</p>
 <div class="c-frame--dent">
     <div class="c-frame--dent__content">
         吾輩は猫である。吾輩は猫である。吾輩は猫である。吾輩は猫である。吾輩は猫である。
