@@ -3,7 +3,7 @@
 .c-font{
     &--price{
         @include g.font-rem( 50 );
-        span{
+        &__complement{
             @include g.font-rem( 25 );
         }
     }
