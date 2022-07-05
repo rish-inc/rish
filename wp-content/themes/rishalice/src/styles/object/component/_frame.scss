@@ -34,4 +34,59 @@
         }
     }
     
+    &--dent{
+        background-image:   url(../images/frame-dent--left-top_sp.png),
+                            url(../images/frame-dent--right-top_sp.png),
+                            url(../images/frame-dent--left-bottom_sp.png),
+                            url(../images/frame-dent--right-bottom_sp.png);
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+            background-position: left top, right top, left bottom, right bottom;
+            position: relative;
+            &::before{
+                content: "";
+                height: 100%;
+                width: calc(100% - 54px);
+                position: absolute;
+                top: 0;
+                left: 27px;
+                background-image: url(../images/frame-dent--top_sp.png),url(../images/frame-dent--bottom_sp.png);
+                background-repeat:repeat-x;
+                background-position:top,bottom;
+            }
+            &::after{
+                content: "";
+                width: 100%;
+                height: calc(100% - 54px);
+                position: absolute;
+                top: 27px;
+                right: 0;
+                background-image: url(../images/frame-dent--left_sp.png),url(../images/frame-dent--right_sp.png);
+                background-repeat:repeat-y;
+                background-position:left,right;
+            } 
+        @include g.mq( pc ) {
+            background-image:   url(../images/frame-dent--left-top_pc.png),
+                                url(../images/frame-dent--right-top_pc.png),
+                                url(../images/frame-dent--left-bottom_pc.png),
+                                url(../images/frame-dent--right-bottom_pc.png); 
+            &::before{
+                content: "";
+                height: 100%;
+                width: calc(100% - 80px);
+                position: absolute;
+                top: 0;
+                left: 40px;
+                background-image: url(../images/frame-dent--top_pc.png),url(../images/frame-dent--bottom_pc.png);
+            }
+            &::after{
+                content: "";
+                width: 100%;
+                height: calc(100% - 80px);
+                position: absolute;
+                top: 40px;
+                right: 0;
+                background-image: url(../images/frame-dent--left_pc.png),url(../images/frame-dent--right_pc.png);
+            }
+        }
+    }
 }
