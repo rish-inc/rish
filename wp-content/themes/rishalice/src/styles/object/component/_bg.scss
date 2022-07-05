@@ -3,9 +3,9 @@
 
 .c-bg{
     &--stripe{
-        background: url( ../images/bg--stripe__sp.png );
+        background: url( ../images/bg--stripe_sp.png );
         @include g.mq( pc ) {
-            background: url( ../images/bg--stripe__pc.png );
+            background: url( ../images/bg--stripe_pc.png );
         }
     }
     &--turquoise-green{
@@ -13,9 +13,9 @@
     }
 
     &--diamond{
-        background: url( ../images/bg--diamond__sp.png );
+        background: url( ../images/bg--diamond_sp.png );
         @include g.mq( pc ) {
-            background: url( ../images/bg--diamond__pc.png );
+            background: url( ../images/bg--diamond_pc.png );
         }
     }
 }

@@ -2,17 +2,17 @@
 
 .c-bg-arrow {
     &--body {
-        background-image: url(../images/site-production/flow-arrow-body__sp.png);
+        background-image: url(../images/site-production/flow-arrow-body_sp.png);
         background-repeat: repeat-y;
         @include g.mq( pc ) {
-            background-image: url(../images/site-production/flow-arrow-body__pc.png);
+            background-image: url(../images/site-production/flow-arrow-body_pc.png);
         }   
     }
     &--tip {
         background-repeat: no-repeat;
-        background-image: url(../images/site-production/flow-arrow-tip__sp.png);
+        background-image: url(../images/site-production/flow-arrow-tip_sp.png);
         @include g.mq( pc ) {
-            background-image: url(../images/site-production/flow-arrow-tip__pc.png);
+            background-image: url(../images/site-production/flow-arrow-tip_pc.png);
         }
     }
 }

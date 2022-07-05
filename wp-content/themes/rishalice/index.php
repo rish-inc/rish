@@ -22,5 +22,5 @@
     <li>のリスト</li>
     <li>です</li>
 </ul>
-
+<div class="c-frame--dent"><div>吾輩は猫である。</div></div>
 <?php get_footer(); ?>
