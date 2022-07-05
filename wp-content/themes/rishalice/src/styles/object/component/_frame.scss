@@ -42,6 +42,7 @@
             background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
             background-position: left top, right top, left bottom, right bottom;
             position: relative;
+            padding: 27px;
             &::before{
                 content: "";
                 height: 100%;
@@ -69,6 +70,7 @@
                                 url(../images/frame-dent--right-top_pc.png),
                                 url(../images/frame-dent--left-bottom_pc.png),
                                 url(../images/frame-dent--right-bottom_pc.png); 
+            padding: 41px;                    
             &::before{
                 content: "";
                 height: 100%;
@@ -87,6 +89,9 @@
                 right: 0;
                 background-image: url(../images/frame-dent--left_pc.png),url(../images/frame-dent--right_pc.png);
             }
+        }
+        &__content{
+            background: #fff;
         }
     }
 }
