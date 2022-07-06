@@ -57,4 +57,5 @@
 <textarea  class="c-form--gold-round-corner"name="" id="" cols="30" rows="10">テストですよあああああああ</textarea>
 <div class="c-tilt--354" style="width:400px; height:400px; background: pink;">傾きテスト</div>
 <div class="c-tilt--350" style="width:400px; height:400px; background: blue;">傾きテスト</div>
+<p class="c-font--drop-shadow--black">ドロップシャドウ</p>
 <?php get_footer(); ?>
