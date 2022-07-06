@@ -1,7 +1,10 @@
+@use "../../foundation/global" as g;
+@use "../../foundation/variables";
+
 .c-require{
     background: #E34C4C;
     display: inline-block;
-    color: #fff;
+    color: variables.$fontcolor--white;
     border-radius: 3px;
     padding: 0 3px;
 }
