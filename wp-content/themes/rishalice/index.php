@@ -53,4 +53,5 @@
 </div>
 <br><br>
 <p class="c-require">必須</p>
+<div class="c-bg--spade" style="width:400px; height:400px;">背景テスト</div>
 <?php get_footer(); ?>

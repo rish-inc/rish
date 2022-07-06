@@ -21,4 +21,9 @@
     &--white{
         background: variables.$bgcolor--white;
     }
+    &--spade{
+        background: url( ../images/bg--spade.png );
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
 }
