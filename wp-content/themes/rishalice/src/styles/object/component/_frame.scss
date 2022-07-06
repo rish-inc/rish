@@ -94,4 +94,36 @@
             background: #fff;
         }
     }
+    &--ornament{
+        background-image:   url(../images/frame-ornament--left-top.png),
+                            url(../images/frame-ornament--right-top.png),
+                            url(../images/frame-ornament--left-bottom.png),
+                            url(../images/frame-ornament--right-bottom.png);
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+            background-position: left top, right top, left bottom, right bottom;
+            position: relative;
+            padding: 20px 50px;
+            &::before{
+                content: "";
+                height: 100%;
+                width: calc(100% - 200px);
+                position: absolute;
+                top: 0;
+                left: 100px;
+                background-image: url(../images/frame-ornament--top.png),url(../images/frame-ornament--bottom.png);
+                background-repeat:repeat-x;
+                background-position:top,bottom;
+            }
+            &::after{
+                content: "";
+                width: 100%;
+                height: calc(100% - 200px);
+                position: absolute;
+                top: 100px;
+                right: 0;
+                background-image: url(../images/frame-ornament--left.png),url(../images/frame-ornament--right.png);
+                background-repeat:repeat-y;
+                background-position:left,right;
+            } 
+        }
 }
