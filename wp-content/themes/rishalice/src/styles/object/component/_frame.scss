@@ -95,10 +95,11 @@
         }
     }
     &--ornament{
-        background-image:   url(../images/frame-ornament--left-top.png),
-                            url(../images/frame-ornament--right-top.png),
-                            url(../images/frame-ornament--left-bottom.png),
-                            url(../images/frame-ornament--right-bottom.png);
+        &--type-a{
+            background-image:   url(../images/frame-ornament--left-top.png),
+                                url(../images/frame-ornament--right-top.png),
+                                url(../images/frame-ornament--left-bottom.png),
+                                url(../images/frame-ornament--right-bottom.png);
             background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
             background-position: left top, right top, left bottom, right bottom;
             position: relative;
@@ -126,4 +127,5 @@
                 background-position:left,right;
             } 
         }
+    }
 }

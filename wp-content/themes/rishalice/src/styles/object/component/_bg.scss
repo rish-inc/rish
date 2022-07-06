@@ -18,4 +18,7 @@
             background: url( ../images/bg--diamond_pc.png );
         }
     }
+    &--white{
+        background: variables.$bgcolor--white;
+    }
 }
