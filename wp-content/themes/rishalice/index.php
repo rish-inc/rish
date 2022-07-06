@@ -55,7 +55,18 @@
 <p class="c-require">必須</p>
 <div class="c-bg--spade" style="width:400px; height:400px;">背景テスト</div>
 <textarea  class="c-form--gold-round-corner"name="" id="" cols="30" rows="10">テストですよあああああああ</textarea>
-<div class="c-tilt--354" style="width:400px; height:400px; background: pink;">傾きテスト</div>
-<div class="c-tilt--350" style="width:400px; height:400px; background: blue;">傾きテスト</div>
+<div class="c-tilt--6" style="width:400px; height:400px; background: pink;">傾きテスト</div>
+<div class="c-tilt--10" style="width:400px; height:400px; background: blue;">傾きテスト</div>
+<div class="c-tilt--350" style="width:400px; height:400px; background: pink;">傾きテスト</div>
+<div class="c-tilt--354" style="width:400px; height:400px; background: blue;">傾きテスト</div>
 <p class="c-font--drop-shadow--black">ドロップシャドウ</p>
+
+<ul class="c-grid--3card">
+    <li>テスト</li>
+    <li>テスト</li>
+    <li>テストリンク</li>
+    <li>テストやでト</li>
+    <li>テストですよあああああああ</li>
+    <li>てれててのしと</li>
+</ul>
 <?php get_footer(); ?>
