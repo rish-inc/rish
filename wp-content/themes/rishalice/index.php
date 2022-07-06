@@ -69,4 +69,6 @@
     <li>テストですよあああああああ</li>
     <li>てれててのしと</li>
 </ul>
+
+<div class="c-line--ornament">飾り線を出す</div>
 <?php get_footer(); ?>
