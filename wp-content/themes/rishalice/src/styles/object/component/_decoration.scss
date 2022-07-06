@@ -1,4 +1,5 @@
 @use "../../foundation/global" as g;
+@use "../../foundation/variables";
 
 %wing-line{
     background: url( ../images/gold-wing-line.png );
@@ -46,6 +47,14 @@
                 display: inline-block;
                 bottom:-16px;
             }
+        }
+    }
+    &--english{
+        display: block;
+        color: #C1AF1E;
+        @include g.font-rem( 14 );
+        @include g.mq( pc ) {
+            @include g.font-rem( 16 );
         }
     }
 }
