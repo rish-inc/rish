@@ -55,4 +55,6 @@
 <p class="c-require">必須</p>
 <div class="c-bg--spade" style="width:400px; height:400px;">背景テスト</div>
 <textarea  class="c-form--gold-round-corner"name="" id="" cols="30" rows="10">テストですよあああああああ</textarea>
+<div class="c-tilt--354" style="width:400px; height:400px; background: pink;">傾きテスト</div>
+<div class="c-tilt--350" style="width:400px; height:400px; background: blue;">傾きテスト</div>
 <?php get_footer(); ?>
