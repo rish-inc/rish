@@ -96,10 +96,10 @@
     }
     &--ornament{
         &--type-a{
-            background-image:   url(../images/frame-ornament--left-top.png),
-                                url(../images/frame-ornament--right-top.png),
-                                url(../images/frame-ornament--left-bottom.png),
-                                url(../images/frame-ornament--right-bottom.png);
+            background-image:   url(../images/frame-ornament--typea--left-top.png),
+                                url(../images/frame-ornament--typea--right-top.png),
+                                url(../images/frame-ornament--typea--left-bottom.png),
+                                url(../images/frame-ornament--typea--right-bottom.png);
             background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
             background-position: left top, right top, left bottom, right bottom;
             position: relative;
@@ -111,7 +111,7 @@
                 position: absolute;
                 top: 0;
                 left: 100px;
-                background-image: url(../images/frame-ornament--top.png),url(../images/frame-ornament--bottom.png);
+                background-image: url(../images/frame-ornament--typea--top.png),url(../images/frame-ornament--typea--bottom.png);
                 background-repeat:repeat-x;
                 background-position:top,bottom;
             }
@@ -122,10 +122,42 @@
                 position: absolute;
                 top: 100px;
                 right: 0;
-                background-image: url(../images/frame-ornament--left.png),url(../images/frame-ornament--right.png);
+                background-image: url(../images/frame-ornament--typea--left.png),url(../images/frame-ornament--typea--right.png);
                 background-repeat:repeat-y;
                 background-position:left,right;
             } 
         }
+        &--type-b{
+                background-image:   url(../images/frame-ornament--typeb--left-top.png),
+                                    url(../images/frame-ornament--typeb--right-top.png),
+                                    url(../images/frame-ornament--typeb--left-bottom.png),
+                                    url(../images/frame-ornament--typeb--right-bottom.png);
+                background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+                background-position: left top, right top, left bottom, right bottom;
+                position: relative;
+                padding: 20px 50px;
+                &::before{
+                    content: "";
+                    height: 100%;
+                    width: calc(100% - 130px);
+                    position: absolute;
+                    top: 0;
+                    left: 65px;
+                    background-image: url(../images/frame-ornament--typeb--top.png),url(../images/frame-ornament--typeb--bottom.png);
+                    background-repeat:repeat-x;
+                    background-position:top,bottom;
+                }
+                &::after{
+                    content: "";
+                    width: 100%;
+                    height: calc(100% - 130px);
+                    position: absolute;
+                    top: 65px;
+                    right: 0;
+                    background-image: url(../images/frame-ornament--typeb--left.png),url(../images/frame-ornament--typeb--right.png);
+                    background-repeat:repeat-y;
+                    background-position:left,right;
+                } 
+            }
+        }
     }
-}
