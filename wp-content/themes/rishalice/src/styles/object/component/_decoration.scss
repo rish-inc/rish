@@ -1,7 +1,7 @@
 @use "../../foundation/global" as g;
 @use "../../foundation/variables";
 
-%wing-line{
+%wing-line {
     background: url( ../images/gold-wing-line.png );
     background-size: contain; 
     background-repeat: no-repeat;
@@ -34,8 +34,8 @@
             }
         }
     } 
-    &--wing-line{
-        &--under{
+    &--wing-line {
+        &--under {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -49,12 +49,22 @@
             }
         }
     }
-    &--english{
+    &--english {
         display: block;
         color: #C1AF1E;
         @include g.font-rem( 14 );
         @include g.mq( pc ) {
             @include g.font-rem( 16 );
+        }
+    }
+    &--biscuit {
+        width: 74px;
+        height: 74px;
+        background: url(../images/biscuit_sp.png)no-repeat;
+        @include g.mq( pc ) {
+            background: url(../images/biscuit_pc.png)no-repeat;
+            width: 128px;
+            height: 128px;
         }
     }
 }
