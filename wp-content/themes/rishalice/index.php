@@ -74,4 +74,6 @@
 <div class="c-line--ornament">飾り線を出す</div>
 <br><br>
 <div class="c-frame--ornament--top-bottom">テストテスト</div>
+<br><br>
+<p class="c-decoration--biscuit">1</p>
 <?php get_footer(); ?>
