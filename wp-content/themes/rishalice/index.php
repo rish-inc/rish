@@ -72,4 +72,6 @@
 <p>制作フロー<span class="c-decoration--english">Production flow</span></p>
 
 <div class="c-line--ornament">飾り線を出す</div>
+<br><br>
+<div class="c-frame--ornament--top-bottom">テストテスト</div>
 <?php get_footer(); ?>

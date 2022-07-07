@@ -159,5 +159,15 @@
                     background-position:left,right;
                 } 
             }
+            &--top-bottom{
+                background-image: url( ../images/frame-ornament--top-bottom-top_sp.png ),url( ../images/frame-ornament--top-bottom-bottom_sp.png );
+                padding: 54px 0;
+                background-repeat: no-repeat, no-repeat;
+                background-position:top,bottom;
+                @include g.mq( pc ) {
+                    background-image: url( ../images/frame-ornament--top-bottom-top_pc.png ),url( ../images/frame-ornament--top-bottom-bottom_pc.png );
+                    padding: 35px 0;
+                }
+            }
         }
     }
