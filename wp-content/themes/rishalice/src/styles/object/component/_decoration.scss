@@ -1,5 +1,6 @@
 @use "../../foundation/global" as g;
 @use "../../foundation/variables";
+@use "sass:math"; //math.divを使う上で必要
 
 %wing-line {
     background: url( ../images/gold-wing-line.png );
@@ -65,6 +66,31 @@
             background: url(../images/biscuit_pc.png)no-repeat;
             width: 128px;
             height: 128px;
+        }
+    }
+    &--diamond{
+        width: 95px;
+        height: 95px;
+        text-align: center;
+        position: relative;
+        &::after{
+            content: "";
+            display: inline-block;
+            width: 67px;
+            height: 67px;
+            background: #5EA79C;
+            transform: rotate(45deg);
+            position: relative;
+            top: 14px;
+        }
+        &__number{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 50%;
+            transform: translateY(50%);
+            margin: auto;
+            z-index: 1;
         }
     }
 }
