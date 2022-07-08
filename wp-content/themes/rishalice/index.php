@@ -76,4 +76,6 @@
 <div class="c-frame--ornament--top-bottom">テストテスト</div>
 <br><br>
 <p class="c-decoration--biscuit">1</p>
+<br><br>
+<div class="c-decoration--diamond"><p class="c-decoration--diamond__number">1</p></div>
 <?php get_footer(); ?>
