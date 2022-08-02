@@ -1,0 +1,97 @@
+@use "../../foundation/global" as g;
+@use "../../foundation/variables";
+@use "sass:math"; //math.divを使う上で必要
+
+%wing-line {
+    background: url( ../images/gold-wing-line.png );
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 94px;
+    height: 8px;
+}
+
+.c-decoration{
+    &--rabbit{
+        display: block;
+        &::before {
+            vertical-align: middle;
+        }
+        &--body {
+            @extend .c-decoration--rabbit;  
+            &::before {
+                content: url( ../images/rabbit__icon--body_sp.png );
+                margin-right: 10px;
+                @include g.mq( pc ) {
+                    content: url( ../images/rabbit__icon--body_pc.png );
+                }
+            }
+        }
+        &--face {
+            @extend .c-decoration--rabbit;
+            &::before {
+                content: url( ../images/rabbit__icon--face.png );
+                margin-right: 20px;
+            }
+        }
+    } 
+    &--wing-line {
+        &--under {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            &::after{
+                content: "";
+                @extend %wing-line;
+                position: relative;
+                display: inline-block;
+                bottom:-16px;
+            }
+        }
+    }
+    &--english {
+        display: block;
+        color: #C1AF1E;
+        @include g.font-rem( 14 );
+        @include g.mq( pc ) {
+            @include g.font-rem( 16 );
+        }
+    }
+    &--biscuit {
+        width: 74px;
+        height: 74px;
+        background: url(../images/biscuit_sp.png)no-repeat;
+        @include g.mq( pc ) {
+            background: url(../images/biscuit_pc.png)no-repeat;
+            width: 128px;
+            height: 128px;
+        }
+    }
+    &--diamond{
+        width: 95px;
+        height: 95px;
+        text-align: center;
+        position: relative;
+        &::after{
+            content: "";
+            display: inline-block;
+            width: 67px;
+            height: 67px;
+            background: #5EA79C;
+            transform: rotate(45deg);
+            position: relative;
+            top: 14px;
+        }
+        &__number{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 50%;
+            transform: translateY(50%);
+            margin: auto;
+            z-index: 1;
+        }
+    }
+}
+
