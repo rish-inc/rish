@@ -27,5 +27,13 @@ proxy URL = Local By FlyWheel で指定している URL
 
 Styleguide 起動
 ```
-npm run styleguide
+gulp styleguide or npm run styleguide
 ```
+
+## Styleguide make files
+
+1. command gulp styleguide
+2. src/styluguide/components/ or src/styluguide/projects/ make directoryname.hbs( for html file ) and readme.md ( for Notes block )
+3. directoryname.hbs add HTML code
+4. readme.md add component discription
+5. command gulp styleguide
