@@ -34,7 +34,7 @@ const postcss          = require( 'gulp-postcss' ),
 		srcDir    : { php: './**/*.php', css: './src/styles/**/*.scss', js: './src/scripts/**/*.js', img: './src/images/**/*.{jpg,jpeg,png,svg,gif}' },
 		dstDir    : { css: './css', js: './js', img: './images' },
 		serverDir : 'localhost',
-		styleguide: { base: './src/styleguide', css: './src/styles/**/*.scss', js: './src/scripts/**/*.js', img: './src/images/**/*.{jpg,jpeg,png,svg,gif}', watch: './src/**/*' },
+		styleguide: { base: './src/styleguide', destCss: './styleguide/css/', destImg: './styleguide/images/', css: './src/styles/**/*.scss', js: './src/scripts/**/*.js', img: './src/images/**/*.{jpg,jpeg,png,svg,gif}', watch: './src/**/*' },
 	};
 
 	const options = minimist( process.argv.slice( 2 ), {
@@ -81,7 +81,8 @@ const css = () => {
 	.pipe( rename( {
 		sass: true
 	} ) )
-	.pipe( dest( paths.dstDir.css, { sourcemaps: paths.rootDir } ) );
+	.pipe( dest( paths.dstDir.css, { sourcemaps: paths.rootDir } ) )
+	.pipe( dest( paths.styleguide.destCss, { sourcemaps: paths.rootDir } ) );
 };
 
 /*
@@ -112,6 +113,20 @@ const devcopyComponent = ( done ) => {
 	} )
 	.pipe( rename ( function ( path ) {
 		path.dirname = '/components/' + path.basename.replace( '_', '' );
+		path.basename = 'style';
+	} ) )
+	.pipe( dest( paths.styleguide.base ) );
+	done();
+};
+
+const devcopyProject = ( done ) => {
+	return src([
+		'./src/styles/object/project/*.scss',
+	], {
+		dot: true
+	} )
+	.pipe( rename ( function ( path ) {
+		path.dirname = '/projects/' + path.basename.replace( '_', '' );
 		path.basename = 'style';
 	} ) )
 	.pipe( dest( paths.styleguide.base ) );
@@ -164,7 +179,8 @@ const imageminOption = [
 const imagemcopy = ( done ) => {
 	return src( paths.srcDir.img )
 	.pipe( imagemin( imageminOption ) )
-	.pipe( dest( paths.dstDir.img ) );
+	.pipe( dest( paths.dstDir.img ) )
+	.pipe( dest( paths.styleguide.destImg ) );
 }
 
 const server = ( done ) => {
@@ -237,11 +253,11 @@ exports.js = js;
 exports.imagemcopy = imagemcopy;
 
 exports.clean = clean;
-exports.devcopy = series( clean, devcopy, devcopyComponent );
+exports.devcopy = series( clean, devcopy, devcopyComponent, devcopyProject );
 exports.build = series( devcopy, styleguideTask );
 
 exports.default = parallel( css, js, watchFile, server );
 exports.styleguide = series(
-	parallel( css, js, devcopyComponent, styleguideTask ),
-	parallel( watchStyleguide, styleguideServer )
+	parallel( js, devcopyComponent, devcopyProject, styleguideTask ),
+	parallel( watchStyleguide, styleguideServer, css, imagemcopy )
 )
