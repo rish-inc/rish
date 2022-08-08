@@ -1,7 +1,10 @@
 @use "../../foundation/global" as g;
 
 .p-form {
-	padding: 0 20px;
+	padding: 0 20px 320px 20px;
+	@include g.mq( pc ) {
+		padding: 0 0 230px 0;
+	}
 	&__head {
 		margin-bottom: 80px;
 		@include g.mq( pc ) {
@@ -93,6 +96,18 @@
 					@include g.font-rem( 24 );
 					color: g.$fontcolor--white;
 				}
+			}
+		}
+		.wpcf7-form.invalid,
+		.wpcf7-form.sent {
+			.wpcf7-response-output {
+				margin: 2.5em 0.5em 1em;
+				background: g.$bgcolor--white;
+			}
+		}
+		.wpcf7-form.sent {
+			.wpcf7-response-output {
+				border-color: #00AEBC;
 			}
 		}
 	}
