@@ -1,0 +1,20 @@
+@use "../../foundation/global" as g;
+
+.p-form {
+	&__head {
+		@include g.font-rem( g.$font-size--Lv1--sp );
+		@include g.mq( pc ) {
+			@include g.font-rem( g.$font-size--Lv1--tablet );
+		}
+	}
+	&__text {
+		margin-bottom: 45px;
+		@include g.mq( pc ) {
+			margin-bottom: 50px;
+		}
+	}
+}
+
+.mw_wp_form_input {
+
+}

@@ -4,7 +4,7 @@
 
 %wing-line {
     background: url( ../images/gold-wing-line.png );
-    background-size: contain; 
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center top;
     width: 94px;
@@ -18,7 +18,7 @@
             vertical-align: middle;
         }
         &--body {
-            @extend .c-decoration--rabbit;  
+            @extend .c-decoration--rabbit;
             &::before {
                 content: url( ../images/rabbit__icon--body_sp.png );
                 margin-right: 10px;
@@ -34,7 +34,7 @@
                 margin-right: 20px;
             }
         }
-    } 
+    }
     &--wing-line {
         &--under {
             display: flex;
@@ -53,9 +53,9 @@
     &--english {
         display: block;
         color: #C1AF1E;
-        @include g.font-rem( 14 );
+        @include g.font-rem( 16 );
         @include g.mq( pc ) {
-            @include g.font-rem( 16 );
+            @include g.font-rem( 24 );
         }
     }
     &--biscuit {
