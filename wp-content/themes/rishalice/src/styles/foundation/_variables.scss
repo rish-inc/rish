@@ -1,9 +1,26 @@
+@use "mixin" as m;
+
 //配色//
 
 //文字色//
+$fontcolor--base: #1D1D1D;
 $fontcolor--white:#FFF;
 
 //背景色//
 $bgcolor--white:#FFF;
 $bgcolor--light-gold:#E1D260;
 $bgcolor--turquoise-green:#43897F;
+
+/*
+ * 文字サイズ
+ */
+//ベースフォント用
+$font-size--small: 12;
+$font-size--base: 16;
+
+//見出しフォント用 Lv6 まで作成
+$font-size--Lv1--sp: 30;
+$font-size--Lv1--tablet: 50;
+$font-size--Lv2--sp: 40;
+$font-size--Lv2--tablet: 60;
+

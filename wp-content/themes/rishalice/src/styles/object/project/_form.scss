@@ -1,0 +1,117 @@
+@use "../../foundation/global" as g;
+
+.p-form {
+	padding: 0 20px 320px 20px;
+	@include g.mq( pc ) {
+		padding: 0 0 230px 0;
+	}
+	&__head {
+		margin-bottom: 80px;
+		@include g.mq( pc ) {
+			margin-bottom: 90px;
+		}
+		&__big {
+			@include g.font-rem( g.$font-size--Lv1--sp );
+			@include g.mq( pc ) {
+				@include g.font-rem( g.$font-size--Lv1--tablet );
+			}
+		}
+	}
+	&__sentence {
+		padding-bottom: 55px;
+		@include g.mq( pc ) {
+			padding-bottom: 50px;
+			max-width: 690px;
+			margin: 0 auto;
+		}
+		&__text {
+			margin-bottom: 45px;
+			line-height: 2;
+			@include g.mq( pc ) {
+				margin-bottom: 50px;
+			}
+		}
+	}
+	&__inner {
+		@include g.mq( pc ) {
+			max-width: 750px;
+			margin: 0 auto;
+		}
+		.wpcf7-form {
+			dl {
+				margin-bottom: 24px;
+				dt {
+					margin-bottom: 10px;
+					label {
+						span {
+							margin-left: 8px;
+							@include g.font-rem( 12 );
+						}
+					}
+				}
+				dd {
+					span {
+						input {
+							// font: inherit;
+							&::-webkit-input-placeholder {
+								font-family: inherit;
+
+							}
+						}
+					}
+				}
+			}
+			.wpcf7-form-control-wrap {
+				.wpcf7-text,
+				.wpcf7-textarea {
+					// font-family: inherit;
+					border: 1px solid #E0C546;
+					border-radius: 3px;
+					width: 100%;
+					height: 42px;
+					@include g.mq( pc ) {
+						max-width: 750px;
+					}
+				}
+				.wpcf7-text {
+					padding: 0 14px;
+				}
+				.wpcf7-textarea {
+					// color: #9F9F9F;
+					padding: 14px;
+					height: 335px;
+					font: inherit;
+					resize: none;
+				}
+			}
+			.set-bt {
+				text-align: center;
+				@include g.mq( pc ) {
+					padding-top: 36px;
+				}
+				input {
+					width: 198px;
+					height: 64px;
+					border: none;
+					@include g.font-rem( 24 );
+					color: g.$fontcolor--white;
+				}
+			}
+		}
+		.wpcf7-form.invalid,
+		.wpcf7-form.sent {
+			.wpcf7-response-output {
+				margin: 2.5em 0.5em 1em;
+				background: g.$bgcolor--white;
+			}
+		}
+		.wpcf7-form.sent {
+			.wpcf7-response-output {
+				border-color: #00AEBC;
+			}
+		}
+	}
+}
+
+
+

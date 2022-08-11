@@ -1,0 +1,7 @@
+@use 'global' as g;
+
+body {
+	font-family: '丸明オールドStdN';
+	font-size: g.$font-size--base;
+	color: g.$fontcolor--base;
+}
