@@ -79,5 +79,51 @@
 <br><br>
 <div class="c-decoration--diamond"><p class="c-decoration--diamond__number">1</p></div>
 
+<article class="p-top-article--blog">
+	<div class="p-top-article--blog__head c-decoration--wing-line--under">
+		<span class="c-decoration--english">Blog</span>
+		<h2 class="c-font--big">ブログ</h2>
+	</div>
+	<ul class="p-top-article--blog__list c-flex--parallel">
+	<?php
+		$query = new WP_Query(
+			array(
+				'posts_per_page' => 3, /* １ページあたりの投稿表示数 */
+			)
+		);
+	?>
+		<?php
+			if( $query -> have_posts() ):
+		?> <!--投稿があれば-->
+		<?php
+			while( $query -> have_posts() ):
+				$query -> the_post();
+		?> <!--投稿がある分だけ繰り返す-->
+		<li class="p-top-article--blog__list__item p-card">
+			<a class="p-card__link" href="<?php the_permalink(); ?>">
+				<figure class="p-card__link__caption">
+					<?php if(has_post_thumbnail()): ?>
+						<div class="p-card__link__caption__wrap">
+							<img class="p-card__link__caption__wrap__img" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+						</div>
+					<?php else: ?>
+						<div class="p-card__link__caption__wrap">
+							<img class="p-card__link__caption__wrap__img" src="<?php echo get_template_directory_uri(); ?>/images/blog/none-eye-catching.png" alt="">
+						</div>
+					<?php endif; ?>
+					<figcaption class="p-card__link__caption__text">
+						<span class="p-card__link__caption__text__day c-font--small"><?php echo esc_html( get_the_date( 'Y.m.d' ) ); ?></span>
+						<h3 class="p-card__link__caption__text__title c-font--medium"><?php the_title(); ?></h3>
+					</figcaption>
+				</figure>
+			</a>
+		</li>
+		<?php endwhile; ?>
+		<?php wp_reset_postdata(); ?> <!-- 投稿データをリセットする -->
+		<?php endif; ?>
+	</ul>
+</article>
+
+
 <?php get_template_part( 'components/template/contact' ); ?>
 <?php get_footer(); ?>

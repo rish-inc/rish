@@ -1,7 +1,7 @@
 <article class="p-form">
 	<div class="p-form__head c-decoration--wing-line--under">
 		<span class="c-decoration--english">Contact</span>
-		<h2 class="p-form__head__big">お問い合わせ</h2>
+		<h2 class="c-font--big">お問い合わせ</h2>
 	</div>
 	<div class="p-form__sentence">
 		<p class="p-form__sentence__text c-position">

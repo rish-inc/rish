@@ -1,0 +1,31 @@
+@use "../../foundation/global" as g;
+@use "../../foundation/variables";
+
+.p-top-article {
+	&--blog {
+		padding: 60px 20px 195px 20px;
+		@include g.mq( pc ) {
+			max-width: 1080px;
+			margin: 0 auto;
+		}
+		&__head {
+			margin-bottom: 75px;
+			@include g.mq( pc ) {
+				margin-bottom: 90px;
+			}
+		}
+		&__list {
+			@include g.mq( pc ) {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				gap: 30px;
+			}
+			&__item {
+				margin-bottom: 30px;
+				@include g.mq( pc ) {
+					max-width: 341px;
+				}
+			}
+		}
+	}
+}
