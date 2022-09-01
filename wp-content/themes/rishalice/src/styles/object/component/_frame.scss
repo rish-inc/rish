@@ -33,7 +33,7 @@
             }
         }
     }
-    
+
     &--dent{
         background-image:   url(../images/frame-dent--left-top_sp.png),
                             url(../images/frame-dent--right-top_sp.png),
@@ -42,7 +42,8 @@
             background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
             background-position: left top, right top, left bottom, right bottom;
             position: relative;
-            padding: 27px;
+            // padding: 27px;
+			padding: 40px 30px;
             &::before{
                 content: "";
                 height: 100%;
@@ -64,13 +65,14 @@
                 background-image: url(../images/frame-dent--left_sp.png),url(../images/frame-dent--right_sp.png);
                 background-repeat:repeat-y;
                 background-position:left,right;
-            } 
+            }
         @include g.mq( pc ) {
             background-image:   url(../images/frame-dent--left-top_pc.png),
                                 url(../images/frame-dent--right-top_pc.png),
                                 url(../images/frame-dent--left-bottom_pc.png),
-                                url(../images/frame-dent--right-bottom_pc.png); 
-            padding: 41px;                    
+                                url(../images/frame-dent--right-bottom_pc.png);
+            // padding: 41px;
+			padding: 60px 50px;
             &::before{
                 content: "";
                 height: 100%;
@@ -88,11 +90,15 @@
                 top: 40px;
                 right: 0;
                 background-image: url(../images/frame-dent--left_pc.png),url(../images/frame-dent--right_pc.png);
+				@include g.mq( pc ) {
+					height: calc(100% - 82px);
+					top: 41px;
+				}
             }
         }
-        &__content{
-            background: #fff;
-        }
+        // &__content{
+        //     background: #fff;
+        // }
     }
     &--ornament{
         &--type-a{
@@ -125,7 +131,7 @@
                 background-image: url(../images/frame-ornament--typea--left.png),url(../images/frame-ornament--typea--right.png);
                 background-repeat:repeat-y;
                 background-position:left,right;
-            } 
+            }
         }
         &--type-b{
                 background-image:   url(../images/frame-ornament--typeb--left-top.png),
@@ -157,7 +163,7 @@
                     background-image: url(../images/frame-ornament--typeb--left.png),url(../images/frame-ornament--typeb--right.png);
                     background-repeat:repeat-y;
                     background-position:left,right;
-                } 
+                }
             }
             &--top-bottom{
                 background-image: url( ../images/frame-ornament--top-bottom-top_sp.png ),url( ../images/frame-ornament--top-bottom-bottom_sp.png );

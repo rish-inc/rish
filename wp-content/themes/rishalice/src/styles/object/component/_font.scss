@@ -2,10 +2,16 @@
 
 .c-font{
 	&--small {
-		@include g.font-rem( 12 );
+		@include g.font-rem( g.$font-size--Lv1 );
 	}
 	&--medium {
-		@include g.font-rem( 14 );
+		@include g.font-rem( g.$font-size--Lv2 );
+	}
+	&--normal {
+		@include g.font-rem( g.$font-size--Lv3 );
+		@include g.mq( pc ) {
+			@include g.font-rem( g.$font-size--Lv4 );
+		}
 	}
 	&--big {
 		@include g.font-rem( g.$font-size--Lv1--sp );
@@ -13,10 +19,16 @@
 			@include g.font-rem( g.$font-size--Lv1--tablet );
 		}
 	}
-	&--price{
-		@include g.font-rem( 50 );
-		&__complement{
-			@include g.font-rem( 25 );
+	&--price {
+		@include g.font-rem( g.$font-size--Lv10 );
+		@include g.mq( pc ) {
+			@include g.font-rem( 50 );
+		}
+	}
+	&--price-complement {
+		@include g.font-rem( g.$font-size--Lv5 );
+		@include g.mq( pc ) {
+			@include g.font-rem( g.$font-size--Lv10 );
 		}
 	}
 	&--drop-shadow{
