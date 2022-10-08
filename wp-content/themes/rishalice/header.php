@@ -9,4 +9,15 @@
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
-	<?php wp_body_open(); ?>
+		<div class="p-bg c-bg--stripe">
+			<header>
+				<nav>
+					<?php
+						wp_nav_menu( array (
+							'theme_location' => 'header-menu',
+							'container'		 => false
+						) );
+					?>
+				</nav>
+			</header>
+			<?php wp_body_open(); ?>

@@ -7,10 +7,22 @@
 	&--medium {
 		@include g.font-rem( g.$font-size--Lv2 );
 	}
+	&--middle {
+		@include g.font-rem( g.$font-size--Lv2 );
+		@include g.mq( pc ) {
+			@include g.font-rem( g.$font-size--Lv3 );
+		}
+	}
 	&--normal {
 		@include g.font-rem( g.$font-size--Lv3 );
 		@include g.mq( pc ) {
 			@include g.font-rem( g.$font-size--Lv4 );
+		}
+	}
+	&--regular {
+		@include g.font-rem( g.$font-size--Lv3 );
+		@include g.mq( pc ) {
+			@include g.font-rem( g.$font-size--Lv7 );
 		}
 	}
 	&--big {
@@ -22,7 +34,7 @@
 	&--price {
 		@include g.font-rem( g.$font-size--Lv10 );
 		@include g.mq( pc ) {
-			@include g.font-rem( 50 );
+			@include g.font-rem( g.$font-size--Lv20 );
 		}
 	}
 	&--price-complement {

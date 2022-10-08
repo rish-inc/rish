@@ -1,9 +1,9 @@
 @use "../../foundation/global" as g;
 .c-flex{
-    &--parallel{
-        @include g.mq( pc ) {
-        display: flex;
-        justify-content: space-between;
-        }
-    }
+	&--parallel{
+		@include g.mq( pc ) {
+		display: flex;
+		justify-content: space-between;
+		}
+	}
 }

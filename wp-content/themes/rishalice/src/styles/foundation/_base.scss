@@ -4,10 +4,6 @@ body {
 	font-family: '丸明オールドStdN';
 	font-size: g.$font-size--Lv3;
 	color: g.$fontcolor--base;
-	background: url( ../images/bg--stripe_sp.png );
-	@include g.mq( pc ) {
-		background: url( ../images/bg--stripe_pc.png );
-	}
 }
 
 a {
