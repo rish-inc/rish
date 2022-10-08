@@ -2,28 +2,28 @@
 @use "../../foundation/variables";
 
 .c-bg{
-    &--stripe{
-        background: url( ../images/bg--stripe_sp.png );
-        @include g.mq( pc ) {
-            background: url( ../images/bg--stripe_pc.png );
-        }
-    }
-    &--turquoise-green{
-        background: variables.$bgcolor--turquoise-green;
-    }
+	&--stripe{
+		background: url( ../images/background/bg--stripe_sp.png );
+		@include g.mq( pc ) {
+			background: url( ../images/background/bg--stripe_pc.png );
+		}
+	}
+	&--turquoise-green{
+		background: variables.$bgcolor--turquoise-green;
+	}
 
-    &--diamond{
-        background: url( ../images/bg--diamond_sp.png );
-        @include g.mq( pc ) {
-            background: url( ../images/bg--diamond_pc.png );
-        }
-    }
-    &--white{
-        background: variables.$bgcolor--white;
-    }
-    &--spade{
-        background: url( ../images/bg--spade.png );
-        background-repeat: no-repeat;
-        background-position: center center;
-    }
+	&--diamond{
+		background: url( ../images/background/bg--diamond_sp.png );
+		@include g.mq( pc ) {
+			background: url( ../images/background/bg--diamond_pc.png );
+		}
+	}
+	&--white{
+		background: variables.$bgcolor--white;
+	}
+	&--spade{
+		background: url( ../images/background/bg--spade.png );
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
 }

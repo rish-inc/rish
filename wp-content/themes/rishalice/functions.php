@@ -1,5 +1,13 @@
 <?php
 
+function register_my_menus() {
+	register_nav_menus( array (
+		'header-menu' => 'header-menu',
+		'footer-menu' => 'footer-menu'
+	) );
+}
+add_action( 'after_setup_theme', 'register_my_menus' );
+
 function custom_theme_support() {
 	add_theme_support( "post-thumbnails" );
 }

@@ -3,27 +3,27 @@
 @use "decoration"; //wing-line使うため//
 
 .c-hover {
-    &--gmenu {
-        @include g.mq( pc ) {
-            position: relative;
-            &::after{
-                content: "";
-                transition: .3s;
-                position: absolute;
-                visibility: hidden;
-                opacity: 0;
-                top: calc(1em + 13px);
-                left: 0;
-            }
-        }
-        &:hover {
-            &::after {
-                @extend %wing-line;
-                display: inline-block;
-                visibility: visible;
-                opacity: 1;
-                }
-            }
-        }
-    
+	&--gmenu {
+		@include g.mq( pc ) {
+			position: relative;
+			&::after{
+				content: "";
+				transition: .3s;
+				position: absolute;
+				visibility: hidden;
+				opacity: 0;
+				top: calc(1em + 13px);
+				left: 0;
+			}
+		}
+		&:hover {
+			&::after {
+				@extend %wing-line;
+				display: inline-block;
+				visibility: visible;
+				opacity: 1;
+				}
+			}
+		}
+
 }

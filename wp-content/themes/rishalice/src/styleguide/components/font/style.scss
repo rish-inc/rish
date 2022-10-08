@@ -2,7 +2,16 @@
 
 .c-font{
 	&--small {
-
+		@include g.font-rem( 12 );
+	}
+	&--medium {
+		@include g.font-rem( 14 );
+	}
+	&--big {
+		@include g.font-rem( g.$font-size--Lv1--sp );
+		@include g.mq( pc ) {
+			@include g.font-rem( g.$font-size--Lv1--tablet );
+		}
 	}
 	&--price{
 		@include g.font-rem( 50 );

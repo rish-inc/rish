@@ -1,0 +1,10 @@
+@use "../../foundation/global" as g;
+@use "../../foundation/variables";
+
+.u-br {
+	&--sp {
+		@include g.mq( pc ) {
+			display: none;
+		}
+	}
+}

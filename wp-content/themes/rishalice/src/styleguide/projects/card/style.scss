@@ -1,0 +1,46 @@
+@use "../../foundation/global" as g;
+@use "../../foundation/variables";
+
+.p-card {
+	&__link {
+		&__caption {
+			display: flex;
+			justify-content: space-between;
+			@include g.mq( pc ) {
+				display: block;
+			}
+			&__wrap {
+				background: g.$bgcolor--black;
+				border: solid 2px g.$border-color--yellow;
+				width: 50%;
+				@include g.mq( pc ) {
+					width: 100%;
+				}
+				&__img {
+					opacity: .7;
+				}
+			}
+			&__text {
+				color: g.$fontcolor--base;
+				width: 45%;
+				@include g.mq( pc ) {
+					width: 100%;
+					margin-top: 18px;
+				}
+				&__day {
+					display: block;
+					margin-bottom: 20px;
+					@include g.mq( pc ) {
+						margin-bottom: 10px;
+					}
+				}
+				&__title {
+					line-height: 2;
+				}
+			}
+		}
+		p {
+			color: g.$fontcolor--base;
+		}
+	}
+}

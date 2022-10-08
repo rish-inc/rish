@@ -2,6 +2,88 @@
 @use "../../foundation/variables";
 
 .p-top-article {
+	&--about {
+		padding: 0 20px;
+		@include g.mq( pc ) {
+			max-width: 1040px;
+			margin: 0 auto;
+			// padding: 0;
+		}
+		&__head {
+			// box-decoration-break: clone;
+			// display: inline;
+			// line-height: 2;
+			// padding: .3rem;
+			color: g.$fontcolor--white;
+			text-align: center;
+			@include g.mq( pc ) {
+			}
+			&__text {
+				background: linear-gradient(transparent 0%, g.$bgcolor--turquoise-green 0%);
+				display: inline;
+				font-weight: normal;
+				padding: 5px;
+				line-height: 2;
+			}
+		}
+		&__explanation {
+			line-height: 2;
+			padding: 120px 0;
+			@include g.mq( pc ) {
+				text-align: center;
+				width: 95%;
+				margin: 0 auto;
+			}
+			&::before {
+				top: 50px;
+				@include g.mq( pc ) {
+					top: 10px;
+					bottom: 0;
+					left: -5%;
+				}
+			}
+			&::after {
+				bottom: 50px;
+				@include g.mq( pc ) {
+					bottom: -7px;
+					top: 0;
+					right: -5%;
+				}
+			}
+		}
+	}
+
+	&--price {
+		padding: 0 20px;
+		@include g.mq( pc ) {
+			max-width: 1080px;
+			margin: 0 auto;
+		}
+		&__head {
+			margin-bottom: 50px;
+			@include g.mq( pc ) {
+				margin-bottom: 70px;
+			}
+		}
+		&__list {
+			margin-bottom: 60px;
+			@include g.mq( pc ) {
+				margin-bottom: 150px;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 1fr 1fr;
+				gap: 30px 60px;
+				height: 100%;
+			}
+			&__item {
+				@include g.mq( pc ) {
+					display: flex;
+					align-items: stretch;
+				}
+			}
+		}
+	}
+
 	&--blog {
 		padding: 60px 20px 195px 20px;
 		@include g.mq( pc ) {
