@@ -77,26 +77,37 @@
 					width: 73%;
 					padding-top: 70%;
 				}
+				&::before {
+					right: -20px;
+					bottom: -20px;
+				}
+				&::after {
+					right: -40px;
+					bottom: -45px;
+				}
 			}
 			// &__img {
 			// }
 			&__text {
+
 				@include g.mq( pc ) {
 					order: 1;
 				}
 				&__head {
-
+					@include g.font-rem( g.$font-size--Lv7 );
 				}
 				&__list {
 					&__item {
 						line-height: 2;
 						position: relative;
 						padding-left: 16px;
+						margin-bottom: 40px;
 						&::before {
 							top: 16px;
-							left: 6px;
-							// bottom: 0;
-							// margin: 0 auto;
+							left: 4px;
+						}
+						&:last-of-type {
+							margin-bottom: 0;
 						}
 					}
 				}
