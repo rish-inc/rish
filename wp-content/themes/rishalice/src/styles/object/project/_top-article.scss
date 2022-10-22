@@ -3,29 +3,37 @@
 
 .p-top-article {
 	&--about {
-		padding: 0 20px;
 		@include g.mq( pc ) {
-			max-width: 1040px;
-			margin: 0 auto;
-			// padding: 0;
 		}
 		&__head {
-			// box-decoration-break: clone;
-			// display: inline;
-			// line-height: 2;
-			// padding: .3rem;
 			color: g.$fontcolor--white;
 			text-align: center;
 			@include g.mq( pc ) {
 			}
 			&__text {
-				background: linear-gradient(transparent 0%, g.$bgcolor--turquoise-green 0%);
-				display: inline;
+				display: inline-block;
+				background: linear-gradient( transparent 10%, g.$bgcolor--turquoise-green 0% );
 				font-weight: normal;
-				padding: 5px;
+				width: 100%;
 				line-height: 2;
+				@include g.mq( pc ) {
+					background: linear-gradient( transparent 0%, g.$bgcolor--turquoise-green 0% );
+					display: inline;
+					padding: 5px 20px;
+				}
+				&:nth-of-type( 2 ) {
+					@include g.mq( pc ) {
+						padding-right: 2px;
+					}
+				}
+				&:nth-of-type( 3 ) {
+					@include g.mq( pc ) {
+						padding-left: 0;
+					}
+				}
 			}
 		}
+
 		&__explanation {
 			line-height: 2;
 			padding: 120px 0;
@@ -35,7 +43,7 @@
 				margin: 0 auto;
 			}
 			&::before {
-				top: 50px;
+				top: 60px;
 				@include g.mq( pc ) {
 					top: 10px;
 					bottom: 0;
@@ -43,7 +51,7 @@
 				}
 			}
 			&::after {
-				bottom: 50px;
+				bottom: 60px;
 				@include g.mq( pc ) {
 					bottom: -7px;
 					top: 0;
@@ -53,11 +61,54 @@
 		}
 	}
 
+	&--advantage {
+		&__parallel {
+			@include g.mq( pc ) {
+				display: flex;
+			}
+			.c-drop-shadow-bg--right {
+				width: 64vw;
+				margin-left: 9.06666667vw;
+				@include g.mq( pc ) {
+					order: 2;
+				}
+				&::before,
+				&::after {
+					width: 73%;
+					padding-top: 70%;
+				}
+			}
+			// &__img {
+			// }
+			&__text {
+				@include g.mq( pc ) {
+					order: 1;
+				}
+				&__head {
+
+				}
+				&__list {
+					&__item {
+						line-height: 2;
+						position: relative;
+						padding-left: 16px;
+						&::before {
+							top: 16px;
+							left: 6px;
+							// bottom: 0;
+							// margin: 0 auto;
+						}
+					}
+				}
+			}
+		}
+	}
+
 	&--price {
-		padding: 0 20px;
+		// padding: 0 20px;
 		@include g.mq( pc ) {
-			max-width: 1080px;
-			margin: 0 auto;
+			// max-width: 1080px;
+			// margin: 0 auto;
 		}
 		&__head {
 			margin-bottom: 50px;
@@ -85,7 +136,7 @@
 	}
 
 	&--blog {
-		padding: 60px 20px 195px 20px;
+		padding: 60px 0 195px 0;
 		@include g.mq( pc ) {
 			max-width: 1080px;
 			margin: 0 auto;
