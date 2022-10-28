@@ -70,7 +70,6 @@
     <li>てれててのしと</li>
 </ul>
 <p>制作フロー<span class="c-decoration--english">Production flow</span></p>
-<p>テスト</p>
 
 <div class="c-line--ornament">飾り線を出す</div>
 <br><br>
