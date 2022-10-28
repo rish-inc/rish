@@ -76,8 +76,6 @@
 <p class="c-decoration--biscuit">1</p>
 <br><br>
 <div class="c-decoration--diamond"><p class="c-decoration--diamond__number">1</p></div>
-
-
 <main class="l-main">
 	<article class="p-top-article--about">
 		<h2 class="p-top-article--about__head">
