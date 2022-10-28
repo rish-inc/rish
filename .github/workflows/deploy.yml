@@ -1,3 +1,4 @@
+name: Deploy
 on:
   push:
     branches:
@@ -5,9 +6,8 @@ on:
   pull_request:
     branches:
       - main
-name: Deploy
 jobs:
-  production:
+  build:
     name: Upload Production
     runs-on: ubuntu-latest
     steps:
