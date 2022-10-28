@@ -10,10 +10,10 @@
 <div class="c-frame--brackets">背景カギカッコにするコンポーネント</div>
 <button class="c-button--noise-line">これはボタンです。</button>
 <figure class="c-drop-shadow-bg--right" style="width:568px;"><img src="<?php echo get_theme_file_uri( '/images/top/solvable--alice-rabbit.jpg' ); ?>" alt=""></figure>
-<div class="c-bg-arrow--body">文章のテストです。1</div>  
+<div class="c-bg-arrow--body">文章のテストです。1</div>
 <div class="c-bg-arrow--body">文章のテストです。2</div>
 <div class="c-bg-arrow--body">文章のテストです。3</div>
-<div class="c-bg-arrow--tip"></div> 
+<div class="c-bg-arrow--tip"></div>
 <div class="p-frame-circle">丸飾りフレーム用</div>
 <div class="c-bg--diamond" style="width:400px; height:400px;">背景テストテストダイヤモンド</div>
 <p class="c-line--dot--bottom">ドットアンダーバー</p>
@@ -70,6 +70,7 @@
     <li>てれててのしと</li>
 </ul>
 <p>制作フロー<span class="c-decoration--english">Production flow</span></p>
+<p>テスト</p>
 
 <div class="c-line--ornament">飾り線を出す</div>
 <br><br>
