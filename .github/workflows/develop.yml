@@ -1,3 +1,4 @@
+name: Develop
 on:
   push:
     branches:
@@ -5,8 +6,8 @@ on:
   pull_request:
     branches:
       - develop
-name: Develop
-Develop:
+jobs:
+  build:
     name: Upload Develop
     runs-on: ubuntu-latest
     steps:
