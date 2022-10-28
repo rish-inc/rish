@@ -1,5 +1,9 @@
 @use "../../foundation/global" as g;
+@use "../../foundation/variables";
 
-.u-margin {
 
+.u-mb {
+	&--30 {
+		margin-bottom: 30px;
+	}
 }

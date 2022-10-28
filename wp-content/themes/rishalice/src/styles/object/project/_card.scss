@@ -1,0 +1,100 @@
+@use "../../foundation/global" as g;
+@use "../../foundation/variables";
+
+.p-card {
+	&__link {
+		&__caption {
+			display: flex;
+			justify-content: space-between;
+			@include g.mq( pc ) {
+				display: block;
+			}
+			&__wrap {
+				background: g.$bgcolor--black;
+				border: solid 2px g.$border-color--yellow;
+				width: 50%;
+				@include g.mq( pc ) {
+					width: 100%;
+				}
+				&__img {
+					opacity: .7;
+				}
+			}
+			&__text {
+				color: g.$fontcolor--base;
+				width: 45%;
+				@include g.mq( pc ) {
+					width: 100%;
+					margin-top: 18px;
+				}
+				&__day {
+					display: block;
+					margin-bottom: 20px;
+					@include g.mq( pc ) {
+						margin-bottom: 10px;
+					}
+				}
+				&__title {
+					line-height: 2;
+				}
+			}
+		}
+		p {
+			color: g.$fontcolor--base;
+		}
+	}
+	&--price {
+		@include g.mq( pc ) {
+			// padding: 60px 50px;
+		}
+		&__inner {
+			&__plan,
+			&__plan-other {
+				display: flex;
+				flex-flow: column;
+				text-align: center;
+				&__big {
+					@include g.font-rem( g.$font-size--Lv3 );
+					@include g.mq( pc ) {
+						@include g.font-rem( g.$font-size--Lv7 );
+					}
+				}
+				&__small {
+					margin-top: 10px;
+					@include g.font-rem( g.$font-size--Lv1 );
+					@include g.mq( pc ) {
+						margin-top: 20px;
+						@include g.font-rem( g.$font-size--Lv2 );
+					}
+				}
+			}
+			&__plan {
+				padding: 20px;
+			}
+			&__plan-other {
+				padding: 40px 20px;
+				@include g.mq( pc ) {
+					padding: 30px 20px;
+				}
+				@include g.mq( wide-1 ) {
+					padding: 20px;
+				}
+				@include g.mq( wide-2 ) {
+					padding: 40px 20px;
+				}
+			}
+			&__number {
+				display: flex;
+				justify-content: center;
+				align-items: baseline;
+				margin: 30px 0 20px;
+				@include g.mq( pc ) {
+					margin: 60px 0 40px;
+				}
+			}
+			&__text {
+				line-height: 2.5;
+			}
+		}
+	}
+}

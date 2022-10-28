@@ -5,34 +5,34 @@
 const { doesNotMatch } = require('assert');
 const { src, dest, watch, series, parallel } = require( 'gulp' );
 
-const postcss          = require( 'gulp-postcss' ),
-	autoprefixer     = require( 'autoprefixer' ),
-	stylelint        = require( 'stylelint' ),
-	sass             = require( 'gulp-dart-sass' ),
-	sassGlob         = require( 'gulp-sass-glob-use-forward' ),
-	browserSync      = require( 'browser-sync' ).create(),//ブラウザシンク
-	plumber          = require( 'gulp-plumber' ),//エラー通知
-	notify           = require( 'gulp-notify' ),//エラー通知
-	vinylSource      = require( 'vinyl-source-stream' ),
-	browserify       = require( 'browserify' ),
-	babel            = require( 'gulp-babel' ),
-	babelify         = require( 'babelify' ),
-	watchify         = require( 'watchify' ),
-	uglify           = require( 'gulp-uglify' ),//js圧縮
-	rename           = require( 'gulp-rename' ),
-	del              = require( 'del' ),//ディレクトリ削除
-	debug            = require( 'gulp-debug' ),
-	path             = require( 'path' ), //path
-	minimist         = require( 'minimist' ),
-	cached           = require( 'gulp-cached'),
-	fractal          = require( '@frctl/fractal' ).create(),
-	imagemin         = require( 'gulp-imagemin' ),
-	pngquant         = require( 'imagemin-pngquant' );
+const postcss		  = require( 'gulp-postcss' ),
+	autoprefixer	 = require( 'autoprefixer' ),
+	stylelint		= require( 'stylelint' ),
+	sass			 = require( 'gulp-dart-sass' ),
+	sassGlob		 = require( 'gulp-sass-glob-use-forward' ),
+	browserSync	  = require( 'browser-sync' ).create(),//ブラウザシンク
+	plumber		  = require( 'gulp-plumber' ),//エラー通知
+	notify		   = require( 'gulp-notify' ),//エラー通知
+	vinylSource	  = require( 'vinyl-source-stream' ),
+	browserify	   = require( 'browserify' ),
+	babel			= require( 'gulp-babel' ),
+	babelify		 = require( 'babelify' ),
+	watchify		 = require( 'watchify' ),
+	uglify		   = require( 'gulp-uglify' ),//js圧縮
+	rename		   = require( 'gulp-rename' ),
+	del			  = require( 'del' ),//ディレクトリ削除
+	debug			= require( 'gulp-debug' ),
+	path			 = require( 'path' ), //path
+	minimist		 = require( 'minimist' ),
+	cached		   = require( 'gulp-cached'),
+	fractal		  = require( '@frctl/fractal' ).create(),
+	imagemin		 = require( 'gulp-imagemin' ),
+	pngquant		 = require( 'imagemin-pngquant' );
 
 	const paths = {
 		rootDir   : './',
-		srcDir    : { php: './**/*.php', css: './src/styles/**/*.scss', js: './src/scripts/**/*.js', img: './src/images/**/*.{jpg,jpeg,png,svg,gif}' },
-		dstDir    : { css: './css', js: './js', img: './images' },
+		srcDir	: { php: './**/*.php', css: './src/styles/**/*.scss', js: './src/scripts/**/*.js', img: './src/images/**/*.{jpg,jpeg,png,svg,gif}' },
+		dstDir	: { css: './css', js: './js', img: './images' },
 		serverDir : 'localhost',
 		styleguide: { base: './src/styleguide', destCss: './styleguide/css/', destImg: './styleguide/images/', css: './src/styles/**/*.scss', js: './src/scripts/**/*.js', img: './src/images/**/*.{jpg,jpeg,png,svg,gif}', watch: './src/**/*' },
 	};

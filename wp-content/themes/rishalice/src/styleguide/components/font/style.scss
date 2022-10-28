@@ -1,15 +1,27 @@
 @use "../../foundation/global" as g;
 
 .c-font{
-    &--price{
-        @include g.font-rem( 50 );
-        &__complement{
-            @include g.font-rem( 25 );
-        }
-    }
-    &--drop-shadow{
-        &--black{
-            text-shadow: 0px 1px 3px #000,0px 1px 3px #000,0px 1px 3px #000;
-        }
-    }
+	&--small {
+		@include g.font-rem( 12 );
+	}
+	&--medium {
+		@include g.font-rem( 14 );
+	}
+	&--big {
+		@include g.font-rem( g.$font-size--Lv1--sp );
+		@include g.mq( pc ) {
+			@include g.font-rem( g.$font-size--Lv1--tablet );
+		}
+	}
+	&--price{
+		@include g.font-rem( 50 );
+		&__complement{
+			@include g.font-rem( 25 );
+		}
+	}
+	&--drop-shadow{
+		&--black{
+			text-shadow: 0px 1px 3px #000,0px 1px 3px #000,0px 1px 3px #000;
+		}
+	}
 }

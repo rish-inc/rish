@@ -1,10 +1,10 @@
 @use "../../foundation/global" as g;
 
 .c-grid{
-    &--3card {
-        @include g.mq( pc ) {
-        display: grid;
-        grid-template-columns:1fr 1fr 1fr;
-        }
-    }
+	&--3card {
+		@include g.mq( pc ) {
+		display: grid;
+		grid-template-columns:1fr 1fr 1fr;
+		}
+	}
 }
