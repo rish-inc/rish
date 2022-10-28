@@ -1,6 +1,9 @@
 @use "../../foundation/global" as g;
 @use "../../foundation/variables";
 
-.p-img {
-
+.c-content {
+	margin: auto;
+	@include g.mq( pc ) {
+		max-width: 1080px;
+	}
 }
