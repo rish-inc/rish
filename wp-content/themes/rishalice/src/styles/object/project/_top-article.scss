@@ -13,7 +13,6 @@
 			&__text {
 				display: inline-block;
 				background: linear-gradient( transparent 10%, g.$bgcolor--turquoise-green 0% );
-				font-weight: normal;
 				width: 100%;
 				line-height: 2;
 				@include g.mq( pc ) {
@@ -63,6 +62,7 @@
 
 	&--advantage {
 		&__parallel {
+			margin-bottom: 100px;
 			@include g.mq( pc ) {
 				display: flex;
 			}
@@ -86,10 +86,8 @@
 					bottom: -45px;
 				}
 			}
-			// &__img {
-			// }
 			&__text {
-
+				margin-top: 60px;
 				@include g.mq( pc ) {
 					order: 1;
 				}
@@ -97,7 +95,7 @@
 					@include g.font-rem( g.$font-size--Lv7 );
 				}
 				&__list {
-					&__item {
+					.c-font--middle {
 						line-height: 2;
 						position: relative;
 						padding-left: 16px;
@@ -111,6 +109,20 @@
 						}
 					}
 				}
+			}
+		}
+
+		&__forte {
+			margin-bottom: 100px;
+			@include g.mq( pc ) {
+				margin-bottom: 150px;
+			}
+			&__head {
+				@include g.font-rem( g.$font-size--Lv7 );
+				margin-bottom: 40px;
+			}
+			.c-font--general {
+				line-height: 2;
 			}
 		}
 	}

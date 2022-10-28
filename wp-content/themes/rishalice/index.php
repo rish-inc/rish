@@ -24,29 +24,29 @@
 						<div class="p-top-article--advantage__parallel__text">
 							<h3 class="p-top-article--advantage__parallel__text__head c-decoration--rabbit--body">私達が解決できる課題</h3>
 							<ul class="p-top-article--advantage__parallel__text__list c-bg--spade">
-								<li class="p-top-article--advantage__parallel__text__list__item c-dot--small c-font--middle">作って終わらない Web サイト・ホームページを作成して欲しい</li>
-								<li class="p-top-article--advantage__parallel__text__list__item c-dot--small c-font--middle">ブランディングに必要なロゴ・グラフィック・写真・イラスト作成などお願いしたい</li>
-								<li class="p-top-article--advantage__parallel__text__list__item c-dot--small c-font--middle">マーケティングのサポートをして欲しい</li>
-								<li class="p-top-article--advantage__parallel__text__list__item c-dot--small c-font--middle">ブログ・メディアのアクセスアップサポートや記事執筆代行をお願いしたい</li>
-								<li class="p-top-article--advantage__parallel__text__list__item c-dot--small c-font--middle">自分のプロフィール写真や従業員の写真、会社の写真撮影をお願いしたい</li>
-								<li class="p-top-article--advantage__parallel__text__list__item c-dot--small c-font--middle">EC サイトの商品解説ページ作成や写真撮影を依頼したい</li>
-								<li class="p-top-article--advantage__parallel__text__list__item c-dot--small c-font--middle">WordPress を使ったサイト運用を手伝って欲しい・機能追加して欲しい</li>
-								<li class="p-top-article--advantage__parallel__text__list__item c-dot--small c-font--middle">WordPress のメンテナンスをお願いしたい</li>
-								<li class="p-top-article--advantage__parallel__text__list__item c-dot--small c-font--middle">SEO に対する知識を身に着けたい</li>
-								<li class="p-top-article--advantage__parallel__text__list__item c-dot--small c-font--middle">特定のキーワードを検索上位に表示したい</li>
+								<li class="c-dot--small c-font--middle">作って終わらない Web サイト・ホームページを作成して欲しい</li>
+								<li class="c-dot--small c-font--middle">ブランディングに必要なロゴ・グラフィック・写真・イラスト作成などお願いしたい</li>
+								<li class="c-dot--small c-font--middle">マーケティングのサポートをして欲しい</li>
+								<li class="c-dot--small c-font--middle">ブログ・メディアのアクセスアップサポートや記事執筆代行をお願いしたい</li>
+								<li class="c-dot--small c-font--middle">自分のプロフィール写真や従業員の写真、会社の写真撮影をお願いしたい</li>
+								<li class="c-dot--small c-font--middle">EC サイトの商品解説ページ作成や写真撮影を依頼したい</li>
+								<li class="c-dot--small c-font--middle">WordPress を使ったサイト運用を手伝って欲しい・機能追加して欲しい</li>
+								<li class="c-dot--small c-font--middle">WordPress のメンテナンスをお願いしたい</li>
+								<li class="c-dot--small c-font--middle">SEO に対する知識を身に着けたい</li>
+								<li class="c-dot--small c-font--middle">特定のキーワードを検索上位に表示したい</li>
 							</ul>
 						</div>
 					</section>
-					<section class="">
-						<h3> Rish の強み</h3>
-						<p>弊社は代表がこれまで営業を行わずに個人事業主として Web サイト制作を生業にしてきました。</p>
-						<p>これが成り立っていたのは個人で運営していた[ブログ](https://wp.yat-net.com/)や<br>[ツイッター](https://twitter.com/yat8823jp)などの SNS を活用した Web マーケティングにあります。</p>
-						<p>現在は法人に切り替え、サイト運用やクリエイティブが行える社員や様々な分野のパートナーと共同しながら大手の Web サイト構築から個人の Web サイト制作まで幅広く対応が可能となりました。</p>
-						<p>弊社の強みとしては納品してから始まる事業者様の運用サポートにあります。</p>
-						<p>Web サイトを代行で作成してもそこからの運用は事業者様ご自身が集客していかなければなりません。</p>
-						<p>しかし Web のことはまだまだ専門的な知識が必要なことが多く、日常の業務があるなかで Web サイト運用も行うのは非常に難しく納品した後もしばらく放置してしまうことも少なくありません。</p>
-						<p>Web 担当者を雇用するには人件費をまだかけられない方もいらっしゃいます。</p>
-						<p>弊社ではその運用をアウトソーシングという形でお受けし、事業者様がなるべく事業に専念してもらえるのが強みです。</p>
+					<section class="p-top-article--advantage__forte">
+						<h3 class="p-top-article--advantage__forte__head"> Rish の強み</h3>
+						<p class="c-font--general">弊社は代表がこれまで営業を行わずに個人事業主として Web サイト制作を生業にしてきました。</p>
+						<p class="c-font--general">これが成り立っていたのは個人で運営していた[ブログ](https://wp.yat-net.com/)や<br>[ツイッター](https://twitter.com/yat8823jp)などの SNS を活用した Web マーケティングにあります。</p>
+						<p class="c-font--general">現在は法人に切り替え、サイト運用やクリエイティブが行える社員や様々な分野のパートナーと共同しながら大手の Web サイト構築から個人の Web サイト制作まで幅広く対応が可能となりました。</p>
+						<p class="c-font--general">弊社の強みとしては納品してから始まる事業者様の運用サポートにあります。</p>
+						<p class="c-font--general">Web サイトを代行で作成してもそこからの運用は事業者様ご自身が集客していかなければなりません。</p>
+						<p class="c-font--general">しかし Web のことはまだまだ専門的な知識が必要なことが多く、日常の業務があるなかで Web サイト運用も行うのは非常に難しく納品した後もしばらく放置してしまうことも少なくありません。</p>
+						<p class="c-font--general">Web 担当者を雇用するには人件費をまだかけられない方もいらっしゃいます。</p>
+						<p class="c-font--general">弊社ではその運用をアウトソーシングという形でお受けし、事業者様がなるべく事業に専念してもらえるのが強みです。</p>
 					</section>
 					<a class="p-btn c-button--noise-line">お問い合わせはこちらから</a>
 				</article>
