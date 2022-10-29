@@ -3,6 +3,9 @@
 <head>
 	<?php echo get_template_part( "/components/traking/google_analytics" ); ?>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<?php if ( is_singular( 'webdesign' ) ) : ?>
+		<meta name="robots" content="noindex">
+	<?php endif; ?>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
 	<meta name="description" content="<?php bloginfo( 'description' ); ?>">
 	<?php if (is_home() || is_front_page()) :?>
