@@ -98,15 +98,11 @@
 					@include g.font-rem( g.$font-size--Lv7 );
 				}
 				&__list {
-					li {
-						display: inline;
-					}
 					.c-font--middle {
-						// display: inline;
 						line-height: 2;
 						position: relative;
-						margin: 0 0 0 18px;
-						padding: 0 0 40px 0;
+						margin-bottom: 40px;
+						padding-left: 18px;
 						&::before {
 							top: 16px;
 							left: 4px;

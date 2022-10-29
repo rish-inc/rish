@@ -1145,15 +1145,11 @@ h5 {
   margin: 0 12px 20px 0;
 }
 
-.p-top-article--advantage__parallel__text__list li {
-  display: inline;
-}
-
 .p-top-article--advantage__parallel__text__list .c-font--middle {
   line-height: 2;
   position: relative;
-  margin: 0 0 0 18px;
-  padding: 0 0 40px 0;
+  margin-bottom: 40px;
+  padding-left: 18px;
 }
 
 .p-top-article--advantage__parallel__text__list .c-font--middle::before {
