@@ -4,6 +4,16 @@ URL: https://rish.style
 
 ## Deploy Github Actions
 
+## Git Work Flow
+
+```
+Number branch
+↓
+develop branch ← staging server deploy
+↓
+main branch ← release server deploy
+```
+
 # Use Plugin
 - contact-form-7
 - ewww-image-optimizer
