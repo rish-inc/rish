@@ -14,19 +14,6 @@
 .c-decoration {
 	&--rabbit {
 		display: block;
-		&::before {
-			vertical-align: middle;
-		}
-		&--body {
-			@extend .c-decoration--rabbit;
-			&::before {
-				content: url( ../images/components/icon/rabbit/rabbit__icon--body_sp.png );
-				margin-right: 10px;
-				@include g.mq( pc ) {
-					content: url( ../images/components/icon/rabbit/rabbit__icon--body_pc.png );
-				}
-			}
-		}
 		&--face {
 			@extend .c-decoration--rabbit;
 			&::before {
@@ -41,7 +28,7 @@
 			align-items: center;
 			justify-content: center;
 			flex-direction: column;
-			&::after{
+			&::after {
 				content: "";
 				@extend %wing-line;
 				position: relative;

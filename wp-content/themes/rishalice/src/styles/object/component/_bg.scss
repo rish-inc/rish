@@ -8,7 +8,7 @@
 		}
 	}
 	&--turquoise-green{
-		background: variables.$bgcolor--turquoise-green;
+		background: g.$bgcolor--turquoise-green;
 	}
 
 	&--diamond{
@@ -18,7 +18,7 @@
 		}
 	}
 	&--white{
-		background: variables.$bgcolor--white;
+		background: g.$bgcolor--white;
 	}
 	&--spade{
 		background: url( ../images/background/bg--spade.png );

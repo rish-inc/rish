@@ -22,18 +22,21 @@
 							<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/solvable--alice-rabbit.jpg' ) ); ?>" alt="">
 						</figure>
 						<div class="p-top-article--advantage__parallel__text">
-							<h3 class="p-top-article--advantage__parallel__text__head c-decoration--rabbit--body">私達が解決できる課題</h3>
+							<h3 class="p-top-article--advantage__parallel__text__head c-flex--center">
+								<i class="c-mark--rabbit-trumpet"></i>
+								私達が解決できる課題
+							</h3>
 							<ul class="p-top-article--advantage__parallel__text__list c-bg--spade">
-								<li class="c-dot--small c-font--middle">作って終わらない Web サイト・ホームページを作成して欲しい</li>
-								<li class="c-dot--small c-font--middle">ブランディングに必要なロゴ・グラフィック・写真・イラスト作成などお願いしたい</li>
-								<li class="c-dot--small c-font--middle">マーケティングのサポートをして欲しい</li>
-								<li class="c-dot--small c-font--middle">ブログ・メディアのアクセスアップサポートや記事執筆代行をお願いしたい</li>
-								<li class="c-dot--small c-font--middle">自分のプロフィール写真や従業員の写真、会社の写真撮影をお願いしたい</li>
-								<li class="c-dot--small c-font--middle">EC サイトの商品解説ページ作成や写真撮影を依頼したい</li>
-								<li class="c-dot--small c-font--middle">WordPress を使ったサイト運用を手伝って欲しい・機能追加して欲しい</li>
-								<li class="c-dot--small c-font--middle">WordPress のメンテナンスをお願いしたい</li>
-								<li class="c-dot--small c-font--middle">SEO に対する知識を身に着けたい</li>
-								<li class="c-dot--small c-font--middle">特定のキーワードを検索上位に表示したい</li>
+								<li class="c-dot--small c-font--middle">作って終わらない Web サイト・ホームページを作成して欲しい</li><br>
+								<li class="c-dot--small c-font--middle">ブランディングに必要なロゴ・グラフィック・写真・イラスト作成などお願いしたい</li><br>
+								<li class="c-dot--small c-font--middle">マーケティングのサポートをして欲しい</li><br>
+								<li class="c-dot--small c-font--middle">ブログ・メディアのアクセスアップサポートや記事執筆代行をお願いしたい</li><br>
+								<li class="c-dot--small c-font--middle">自分のプロフィール写真や従業員の写真、会社の写真撮影をお願いしたい</li><br>
+								<li class="c-dot--small c-font--middle">EC サイトの商品解説ページ作成や写真撮影を依頼したい</li><br>
+								<li class="c-dot--small c-font--middle">WordPress を使ったサイト運用を手伝って欲しい・機能追加して欲しい</li><br>
+								<li class="c-dot--small c-font--middle">WordPress のメンテナンスをお願いしたい</li><br>
+								<li class="c-dot--small c-font--middle">SEO に対する知識を身に着けたい</li><br>
+								<li class="c-dot--small c-font--middle">特定のキーワードを検索上位に表示したい</li><br>
 							</ul>
 						</div>
 					</section>
