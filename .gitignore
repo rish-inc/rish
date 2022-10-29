@@ -10,8 +10,6 @@
 !/wp-content/themes/rishalice/
 !/wp-content/themes/rishalice/*
 /wp-content/themes/rishalice/styleguide/
-/wp-content/themes/rishalice/css/
-/wp-content/themes/rishalice/js/
 !main.css
 !/.github
 *.map
