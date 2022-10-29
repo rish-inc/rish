@@ -187,24 +187,10 @@ h5 {
   height: 8px;
 }
 
-.c-decoration--rabbit, .c-decoration--rabbit--face, .c-decoration--rabbit--body {
+.c-decoration--rabbit, .c-decoration--rabbit--face {
   display: block;
 }
 
-.c-decoration--rabbit::before, .c-decoration--rabbit--face::before, .c-decoration--rabbit--body::before {
-  vertical-align: middle;
-}
-
-.c-decoration--rabbit--body::before {
-  content: url(../images/components/icon/rabbit/rabbit__icon--body_sp.png);
-  margin-right: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  .c-decoration--rabbit--body::before {
-    content: url(../images/components/icon/rabbit/rabbit__icon--body_pc.png);
-  }
-}
 .c-decoration--rabbit--face::before {
   content: url(../images/rabbit__icon--face.png);
   margin-right: 20px;
@@ -341,6 +327,12 @@ h5 {
     justify-content: space-between;
   }
 }
+.c-flex--center {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
 .c-font--small {
   font-size: 0.75rem;
 }
@@ -670,6 +662,16 @@ h5 {
 
 .c-list-mark--round {
   list-style-type: disc;
+}
+
+.c-mark--rabbit-trumpet {
+  display: block;
+  background-image: url("../images/components/icon/rabbit/rabbit__icon--body.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  width: 54.74px;
+  height: 74.26px;
 }
 
 .c-position {
@@ -1139,11 +1141,15 @@ h5 {
   font-size: 1.5rem;
 }
 
+.p-top-article--advantage__parallel__text__head .c-mark--rabbit-trumpet {
+  margin: 0 12px 20px 0;
+}
+
 .p-top-article--advantage__parallel__text__list .c-font--middle {
   line-height: 2;
   position: relative;
-  padding-left: 16px;
   margin-bottom: 40px;
+  padding-left: 18px;
 }
 
 .p-top-article--advantage__parallel__text__list .c-font--middle::before {

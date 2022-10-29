@@ -92,14 +92,17 @@
 					order: 1;
 				}
 				&__head {
+					.c-mark--rabbit-trumpet {
+						margin: 0 12px 20px 0;
+					}
 					@include g.font-rem( g.$font-size--Lv7 );
 				}
 				&__list {
 					.c-font--middle {
 						line-height: 2;
 						position: relative;
-						padding-left: 16px;
 						margin-bottom: 40px;
+						padding-left: 18px;
 						&::before {
 							top: 16px;
 							left: 4px;
