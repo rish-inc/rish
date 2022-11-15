@@ -109,21 +109,29 @@ h5 {
 .c-bg-arrow--body {
   background-image: url(../images/site-production/flow-arrow-body_sp.png);
   background-repeat: repeat-y;
+  width: 99px;
+  height: 1px;
 }
 
 @media screen and (min-width: 768px) {
   .c-bg-arrow--body {
     background-image: url(../images/site-production/flow-arrow-body_pc.png);
+    width: 208px;
+    height: 1px;
   }
 }
 .c-bg-arrow--tip {
   background-repeat: no-repeat;
   background-image: url(../images/site-production/flow-arrow-tip_sp.png);
+  width: 99px;
+  height: 69px;
 }
 
 @media screen and (min-width: 768px) {
   .c-bg-arrow--tip {
     background-image: url(../images/site-production/flow-arrow-tip_pc.png);
+    width: 208px;
+    height: 148px;
   }
 }
 .c-bg--stripe {
@@ -156,6 +164,7 @@ h5 {
   background: url(../images/background/bg--spade.png);
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: contain;
 }
 
 .c-button--noise-line {
@@ -666,7 +675,7 @@ h5 {
 
 .c-mark--rabbit-trumpet {
   display: block;
-  background-image: url("../images/components/icon/rabbit/rabbit__icon--body.png");
+  background-image: url(../images/components/icon/rabbit/rabbit__icon--body.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center center;
@@ -1068,8 +1077,8 @@ h5 {
 @media screen and (min-width: 768px) {
   .p-top-article--about__explanation {
     text-align: center;
-    width: 95%;
     margin: 0 auto;
+    padding: 60px 60px 160px;
   }
 }
 .p-top-article--about__explanation::before {
@@ -1078,9 +1087,8 @@ h5 {
 
 @media screen and (min-width: 768px) {
   .p-top-article--about__explanation::before {
-    top: 10px;
-    bottom: 0;
-    left: -5%;
+    top: 20%;
+    left: 20px;
   }
 }
 .p-top-article--about__explanation::after {
@@ -1091,7 +1099,7 @@ h5 {
   .p-top-article--about__explanation::after {
     bottom: -7px;
     top: 0;
-    right: -5%;
+    right: 20px;
   }
 }
 .p-top-article--advantage__parallel {
@@ -1159,6 +1167,10 @@ h5 {
 
 .p-top-article--advantage__parallel__text__list .c-font--middle:last-of-type {
   margin-bottom: 0;
+}
+
+.p-top-article--advantage__parallel__text .c-bg--spade {
+  background-position: center 35%;
 }
 
 .p-top-article--advantage__forte {
