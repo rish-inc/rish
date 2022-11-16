@@ -35,10 +35,10 @@
 	}
 
 	&--dent {
-		background-image:   url(../images/frame-dent--left-top_sp.png),
-							url(../images/frame-dent--right-top_sp.png),
-							url(../images/frame-dent--left-bottom_sp.png),
-							url(../images/frame-dent--right-bottom_sp.png);
+		background-image:   url(../images/frame/dent/left-top_sp.png),
+							url(../images/frame/dent/right-top_sp.png),
+							url(../images/frame/dent/left-bottom_sp.png),
+							url(../images/frame/dent/right-bottom_sp.png);
 			background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 			background-position: left top, right top, left bottom, right bottom;
 			position: relative;
@@ -51,7 +51,7 @@
 				position: absolute;
 				top: 0;
 				left: 27px;
-				background-image: url(../images/frame-dent--top_sp.png),url(../images/frame-dent--bottom_sp.png);
+				background-image: url(../images/frame/dent/top_sp.png),url(../images/frame/dent/bottom_sp.png);
 				background-repeat:repeat-x;
 				background-position:top,bottom;
 			}
@@ -62,15 +62,15 @@
 				position: absolute;
 				top: 27px;
 				right: 0;
-				background-image: url(../images/frame-dent--left_sp.png),url(../images/frame-dent--right_sp.png);
+				background-image: url(../images/frame/dent/left_sp.png),url(../images/frame/dent/right_sp.png);
 				background-repeat:repeat-y;
 				background-position:left,right;
 			}
 		@include g.mq( pc ) {
-			background-image:   url(../images/frame-dent--left-top_pc.png),
-								url(../images/frame-dent--right-top_pc.png),
-								url(../images/frame-dent--left-bottom_pc.png),
-								url(../images/frame-dent--right-bottom_pc.png);
+			background-image:   url(../images/frame/dent/left-top_pc.png),
+								url(../images/frame/dent/right-top_pc.png),
+								url(../images/frame/dent/left-bottom_pc.png),
+								url(../images/frame/dent/right-bottom_pc.png);
 			// padding: 41px;
 			padding: 60px 50px;
 			&::before {
@@ -80,7 +80,7 @@
 				position: absolute;
 				top: 0;
 				left: 40px;
-				background-image: url(../images/frame-dent--top_pc.png),url(../images/frame-dent--bottom_pc.png);
+				background-image: url(../images/frame/dent/top_pc.png),url(../images/frame/dent/bottom_pc.png);
 			}
 			&::after {
 				content: "";
@@ -89,7 +89,7 @@
 				position: absolute;
 				top: 40px;
 				right: 0;
-				background-image: url(../images/frame-dent--left_pc.png),url(../images/frame-dent--right_pc.png);
+				background-image: url(../images/frame/dent/left_pc.png),url(../images/frame/dent/right_pc.png);
 				@include g.mq( pc ) {
 					height: calc(100% - 82px);
 					top: 41px;
@@ -102,10 +102,10 @@
 	}
 	&--ornament {
 		&--type-a {
-			background-image:   url(../images/frame-ornament--typea--left-top.png),
-								url(../images/frame-ornament--typea--right-top.png),
-								url(../images/frame-ornament--typea--left-bottom.png),
-								url(../images/frame-ornament--typea--right-bottom.png);
+			background-image:   url(../images/frame/ornament/typea/left-top.png),
+								url(../images/frame/ornament/typea/right-top.png),
+								url(../images/frame/ornament/typea/left-bottom.png),
+								url(../images/frame/ornament/typea/right-bottom.png);
 			background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 			background-position: left top, right top, left bottom, right bottom;
 			position: relative;
@@ -117,7 +117,7 @@
 				position: absolute;
 				top: 0;
 				left: 100px;
-				background-image: url(../images/frame-ornament--typea--top.png),url(../images/frame-ornament--typea--bottom.png);
+				background-image: url(../images/frame/ornament/typea/top.png),url(../images/frame/ornament/typea/bottom.png);
 				background-repeat:repeat-x;
 				background-position:top,bottom;
 			}
@@ -128,16 +128,16 @@
 				position: absolute;
 				top: 100px;
 				right: 0;
-				background-image: url(../images/frame-ornament--typea--left.png),url(../images/frame-ornament--typea--right.png);
+				background-image: url(../images/frame/ornament/typea/left.png),url(../images/frame/ornament/typea/right.png);
 				background-repeat:repeat-y;
 				background-position:left,right;
 			}
 		}
 		&--type-b {
-				background-image:   url(../images/frame-ornament--typeb--left-top.png),
-									url(../images/frame-ornament--typeb--right-top.png),
-									url(../images/frame-ornament--typeb--left-bottom.png),
-									url(../images/frame-ornament--typeb--right-bottom.png);
+				background-image:   url(../images/frame/ornament/typeb/left-top.png),
+									url(../images/frame/ornament/typeb/right-top.png),
+									url(../images/frame/ornament/typeb/left-bottom.png),
+									url(../images/frame/ornament/typeb/right-bottom.png);
 				background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 				background-position: left top, right top, left bottom, right bottom;
 				position: relative;
@@ -149,7 +149,7 @@
 					position: absolute;
 					top: 0;
 					left: 65px;
-					background-image: url(../images/frame-ornament--typeb--top.png),url(../images/frame-ornament--typeb--bottom.png);
+					background-image: url(../images/frame/ornament/typeb/top.png),url(../images/frame/ornament/typeb/bottom.png);
 					background-repeat:repeat-x;
 					background-position:top,bottom;
 				}
@@ -160,18 +160,18 @@
 					position: absolute;
 					top: 65px;
 					right: 0;
-					background-image: url(../images/frame-ornament--typeb--left.png),url(../images/frame-ornament--typeb--right.png);
+					background-image: url(../images/frame/ornament/typeb/left.png),url(../images/frame/ornament/typeb/right.png);
 					background-repeat:repeat-y;
 					background-position:left,right;
 				}
 			}
 		&--top-bottom {
-			background-image: url( ../images/frame-ornament--top-bottom-top_sp.png ),url( ../images/frame-ornament--top-bottom-bottom_sp.png );
+			background-image: url( ../images/frame/ornament/top-bottom/top_sp.png ),url( ../images/frame/ornament/top-bottom/bottom_sp.png );
 			padding: 54px 0;
 			background-repeat: no-repeat, no-repeat;
 			background-position:top,bottom;
 			@include g.mq( pc ) {
-				background-image: url( ../images/frame-ornament--top-bottom-top_pc.png ),url( ../images/frame-ornament--top-bottom-bottom_pc.png );
+				background-image: url( ../images/frame/ornament/top-bottom/top_pc.png ),url( ../images/frame/ornament/top-bottom/bottom_pc.png );
 				padding: 35px 0;
 			}
 		}
