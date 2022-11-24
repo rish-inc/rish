@@ -168,7 +168,7 @@ h5 {
 }
 
 .c-button--noise-line {
-  background: url(../images/button_cover.png);
+  background: url(../images/button/cover.png);
   outline: 2px solid #FDFAE6;
   outline-offset: -8px;
   box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.16);
@@ -201,7 +201,7 @@ h5 {
 }
 
 .c-decoration--rabbit--face::before {
-  content: url(../images/rabbit__icon--face.png);
+  content: url(../images/rabbit-icon/face.png);
   margin-right: 20px;
 }
 
@@ -233,12 +233,12 @@ h5 {
 .c-decoration--biscuit {
   width: 74px;
   height: 74px;
-  background: url(../images/biscuit_sp.png) no-repeat;
+  background: url(../images/biscuit/sp.png) no-repeat;
 }
 
 @media screen and (min-width: 768px) {
   .c-decoration--biscuit {
-    background: url(../images/biscuit_pc.png) no-repeat;
+    background: url(../images/biscuit/pc.png) no-repeat;
     width: 128px;
     height: 128px;
   }
@@ -428,7 +428,7 @@ h5 {
 
 .c-frame--brackets::before, .c-frame--brackets::after {
   content: "";
-  background: url(../images/brackets__top.png) no-repeat;
+  background: url(../images/brackets/top.png) no-repeat;
   display: block;
   position: absolute;
   width: 190px;
@@ -440,7 +440,7 @@ h5 {
 
 @media screen and (min-width: 768px) {
   .c-frame--brackets::before, .c-frame--brackets::after {
-    background: url(../images/brackets__left.png) no-repeat;
+    background: url(../images/brackets/left.png) no-repeat;
     width: 16px;
     height: 190px;
     left: 0px;
@@ -448,13 +448,13 @@ h5 {
   }
 }
 .c-frame--brackets::after {
-  background: url(../images/brackets__bottom.png) no-repeat;
+  background: url(../images/brackets/bottom.png) no-repeat;
   top: auto;
 }
 
 @media screen and (min-width: 768px) {
   .c-frame--brackets::after {
-    background: url(../images/brackets__right.png) no-repeat;
+    background: url(../images/brackets/right.png) no-repeat;
     left: auto;
     right: 0;
   }
@@ -648,7 +648,7 @@ h5 {
 
 .c-line--ornament::before {
   content: "";
-  background-image: url(../images/line-ornament--left.png), url(../images/line-ornament--right.png);
+  background-image: url(../images/line-ornament/left.png), url(../images/line-ornament/right.png);
   background-position: left bottom, right bottom;
   background-repeat: no-repeat, no-repeat;
   position: absolute;
@@ -675,7 +675,7 @@ h5 {
 
 .c-mark--rabbit-trumpet {
   display: block;
-  background-image: url(../images/components/icon/rabbit/rabbit__icon--body.png);
+  background-image: url(../images/rabbit-icon/body.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center center;

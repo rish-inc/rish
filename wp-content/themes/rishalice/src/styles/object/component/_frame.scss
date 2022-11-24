@@ -7,7 +7,7 @@
 		position: relative;
 		&::before, &::after {
 			content: "";
-			background: url( ../images/brackets__top.png )no-repeat;
+			background: url( ../images/brackets/top.png )no-repeat;
 			display: block;
 			position: absolute;
 			width: 190px;
@@ -16,7 +16,7 @@
 			right: 0;
 			margin: auto;
 			@include g.mq( pc ) {
-				background: url( ../images/brackets__left.png )no-repeat;
+				background: url( ../images/brackets/left.png )no-repeat;
 				width: 16px;
 				height: 190px;
 				left: 0px;
@@ -24,10 +24,10 @@
 			}
 		}
 		&::after {
-			background: url( ../images/brackets__bottom.png )no-repeat;
+			background: url( ../images/brackets/bottom.png )no-repeat;
 			top: auto;
 			@include g.mq( pc ) {
-				background: url( ../images/brackets__right.png )no-repeat;
+				background: url( ../images/brackets/right.png )no-repeat;
 				left: auto;
 				right: 0;
 			}
