@@ -22,7 +22,10 @@
 							<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/solvable--alice-rabbit.jpg' ) ); ?>" alt="">
 						</figure>
 						<div class="p-top-article--advantage__parallel__text">
-							<h3 class="p-top-article--advantage__parallel__text__head c-decoration--rabbit--body">私達が解決できる課題</h3>
+							<h3 class="p-top-article--advantage__parallel__text__head c-flex--center">
+								<i class="c-mark--rabbit-trumpet"></i>
+								私達が解決できる課題
+							</h3>
 							<ul class="p-top-article--advantage__parallel__text__list c-bg--spade">
 								<li class="c-dot--small c-font--middle">作って終わらない Web サイト・ホームページを作成して欲しい</li>
 								<li class="c-dot--small c-font--middle">ブランディングに必要なロゴ・グラフィック・写真・イラスト作成などお願いしたい</li>

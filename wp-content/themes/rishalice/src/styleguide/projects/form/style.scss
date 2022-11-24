@@ -1,9 +1,9 @@
 @use "../../foundation/global" as g;
 
 .p-form {
-	padding: 0 20px 320px 20px;
+	padding-bottom: 320px;
 	@include g.mq( pc ) {
-		padding: 0 0 230px 0;
+		padding-bottom: 230px;
 	}
 	&__head {
 		margin-bottom: 80px;
@@ -23,6 +23,7 @@
 			line-height: 2;
 			@include g.mq( pc ) {
 				margin-bottom: 50px;
+				text-align: center;
 			}
 		}
 	}
@@ -104,6 +105,9 @@
 			.wpcf7-response-output {
 				border-color: #00AEBC;
 			}
+		}
+		.wpcf7-spinner {
+			display: none;
 		}
 	}
 }

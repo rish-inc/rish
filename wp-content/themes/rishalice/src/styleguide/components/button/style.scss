@@ -1,6 +1,9 @@
+@use "../../foundation/global" as g;
+@use "../../foundation/variables";
+
 .c-button{
 	&--noise-line{
-		background: url( ../images/button_cover.png );
+		background: url( ../images/button/cover.png );
 		outline : 2px solid #FDFAE6;
 		outline-offset : -8px;
 		box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.16);
