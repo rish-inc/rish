@@ -109,30 +109,38 @@ h5 {
 .c-bg-arrow--body {
   background-image: url(../images/site-production/flow-arrow-body_sp.png);
   background-repeat: repeat-y;
+  width: 99px;
+  height: 1px;
 }
 
 @media screen and (min-width: 768px) {
   .c-bg-arrow--body {
     background-image: url(../images/site-production/flow-arrow-body_pc.png);
+    width: 208px;
+    height: 1px;
   }
 }
 .c-bg-arrow--tip {
   background-repeat: no-repeat;
   background-image: url(../images/site-production/flow-arrow-tip_sp.png);
+  width: 99px;
+  height: 69px;
 }
 
 @media screen and (min-width: 768px) {
   .c-bg-arrow--tip {
     background-image: url(../images/site-production/flow-arrow-tip_pc.png);
+    width: 208px;
+    height: 148px;
   }
 }
 .c-bg--stripe {
-  background: url(../images/background/bg--stripe_sp.png);
+  background: url(../images/background/stripe_sp.png);
 }
 
 @media screen and (min-width: 768px) {
   .c-bg--stripe {
-    background: url(../images/background/bg--stripe_pc.png);
+    background: url(../images/background/stripe_pc.png);
   }
 }
 .c-bg--turquoise-green {
@@ -140,12 +148,12 @@ h5 {
 }
 
 .c-bg--diamond {
-  background: url(../images/background/bg--diamond_sp.png);
+  background: url(../images/background/diamond_sp.png);
 }
 
 @media screen and (min-width: 768px) {
   .c-bg--diamond {
-    background: url(../images/background/bg--diamond_pc.png);
+    background: url(../images/background/diamond_pc.png);
   }
 }
 .c-bg--white {
@@ -153,13 +161,14 @@ h5 {
 }
 
 .c-bg--spade {
-  background: url(../images/background/bg--spade.png);
+  background: url(../images/background/spade.png);
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: contain;
 }
 
 .c-button--noise-line {
-  background: url(../images/button_cover.png);
+  background: url(../images/button/cover.png);
   outline: 2px solid #FDFAE6;
   outline-offset: -8px;
   box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.16);
@@ -192,7 +201,7 @@ h5 {
 }
 
 .c-decoration--rabbit--face::before {
-  content: url(../images/rabbit__icon--face.png);
+  content: url(../images/rabbit-icon/face.png);
   margin-right: 20px;
 }
 
@@ -224,12 +233,12 @@ h5 {
 .c-decoration--biscuit {
   width: 74px;
   height: 74px;
-  background: url(../images/biscuit_sp.png) no-repeat;
+  background: url(../images/biscuit/sp.png) no-repeat;
 }
 
 @media screen and (min-width: 768px) {
   .c-decoration--biscuit {
-    background: url(../images/biscuit_pc.png) no-repeat;
+    background: url(../images/biscuit/pc.png) no-repeat;
     width: 128px;
     height: 128px;
   }
@@ -419,7 +428,7 @@ h5 {
 
 .c-frame--brackets::before, .c-frame--brackets::after {
   content: "";
-  background: url(../images/brackets__top.png) no-repeat;
+  background: url(../images/brackets/top.png) no-repeat;
   display: block;
   position: absolute;
   width: 190px;
@@ -431,7 +440,7 @@ h5 {
 
 @media screen and (min-width: 768px) {
   .c-frame--brackets::before, .c-frame--brackets::after {
-    background: url(../images/brackets__left.png) no-repeat;
+    background: url(../images/brackets/left.png) no-repeat;
     width: 16px;
     height: 190px;
     left: 0px;
@@ -439,19 +448,19 @@ h5 {
   }
 }
 .c-frame--brackets::after {
-  background: url(../images/brackets__bottom.png) no-repeat;
+  background: url(../images/brackets/bottom.png) no-repeat;
   top: auto;
 }
 
 @media screen and (min-width: 768px) {
   .c-frame--brackets::after {
-    background: url(../images/brackets__right.png) no-repeat;
+    background: url(../images/brackets/right.png) no-repeat;
     left: auto;
     right: 0;
   }
 }
 .c-frame--dent {
-  background-image: url(../images/frame-dent--left-top_sp.png), url(../images/frame-dent--right-top_sp.png), url(../images/frame-dent--left-bottom_sp.png), url(../images/frame-dent--right-bottom_sp.png);
+  background-image: url(../images/frame/dent/left-top_sp.png), url(../images/frame/dent/right-top_sp.png), url(../images/frame/dent/left-bottom_sp.png), url(../images/frame/dent/right-bottom_sp.png);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: left top, right top, left bottom, right bottom;
   position: relative;
@@ -465,7 +474,7 @@ h5 {
   position: absolute;
   top: 0;
   left: 27px;
-  background-image: url(../images/frame-dent--top_sp.png), url(../images/frame-dent--bottom_sp.png);
+  background-image: url(../images/frame/dent/top_sp.png), url(../images/frame/dent/bottom_sp.png);
   background-repeat: repeat-x;
   background-position: top, bottom;
 }
@@ -477,14 +486,14 @@ h5 {
   position: absolute;
   top: 27px;
   right: 0;
-  background-image: url(../images/frame-dent--left_sp.png), url(../images/frame-dent--right_sp.png);
+  background-image: url(../images/frame/dent/left_sp.png), url(../images/frame/dent/right_sp.png);
   background-repeat: repeat-y;
   background-position: left, right;
 }
 
 @media screen and (min-width: 768px) {
   .c-frame--dent {
-    background-image: url(../images/frame-dent--left-top_pc.png), url(../images/frame-dent--right-top_pc.png), url(../images/frame-dent--left-bottom_pc.png), url(../images/frame-dent--right-bottom_pc.png);
+    background-image: url(../images/frame/dent/left-top_pc.png), url(../images/frame/dent/right-top_pc.png), url(../images/frame/dent/left-bottom_pc.png), url(../images/frame/dent/right-bottom_pc.png);
     padding: 60px 50px;
   }
   .c-frame--dent::before {
@@ -494,7 +503,7 @@ h5 {
     position: absolute;
     top: 0;
     left: 40px;
-    background-image: url(../images/frame-dent--top_pc.png), url(../images/frame-dent--bottom_pc.png);
+    background-image: url(../images/frame/dent/top_pc.png), url(../images/frame/dent/bottom_pc.png);
   }
   .c-frame--dent::after {
     content: "";
@@ -503,7 +512,7 @@ h5 {
     position: absolute;
     top: 40px;
     right: 0;
-    background-image: url(../images/frame-dent--left_pc.png), url(../images/frame-dent--right_pc.png);
+    background-image: url(../images/frame/dent/left_pc.png), url(../images/frame/dent/right_pc.png);
   }
 }
 @media screen and (min-width: 768px) and (min-width: 768px) {
@@ -513,7 +522,7 @@ h5 {
   }
 }
 .c-frame--ornament--type-a {
-  background-image: url(../images/frame-ornament--typea--left-top.png), url(../images/frame-ornament--typea--right-top.png), url(../images/frame-ornament--typea--left-bottom.png), url(../images/frame-ornament--typea--right-bottom.png);
+  background-image: url(../images/frame/ornament/typea/left-top.png), url(../images/frame/ornament/typea/right-top.png), url(../images/frame/ornament/typea/left-bottom.png), url(../images/frame/ornament/typea/right-bottom.png);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: left top, right top, left bottom, right bottom;
   position: relative;
@@ -527,7 +536,7 @@ h5 {
   position: absolute;
   top: 0;
   left: 100px;
-  background-image: url(../images/frame-ornament--typea--top.png), url(../images/frame-ornament--typea--bottom.png);
+  background-image: url(../images/frame/ornament/typea/top.png), url(../images/frame/ornament/typea/bottom.png);
   background-repeat: repeat-x;
   background-position: top, bottom;
 }
@@ -539,13 +548,13 @@ h5 {
   position: absolute;
   top: 100px;
   right: 0;
-  background-image: url(../images/frame-ornament--typea--left.png), url(../images/frame-ornament--typea--right.png);
+  background-image: url(../images/frame/ornament/typea/left.png), url(../images/frame/ornament/typea/right.png);
   background-repeat: repeat-y;
   background-position: left, right;
 }
 
 .c-frame--ornament--type-b {
-  background-image: url(../images/frame-ornament--typeb--left-top.png), url(../images/frame-ornament--typeb--right-top.png), url(../images/frame-ornament--typeb--left-bottom.png), url(../images/frame-ornament--typeb--right-bottom.png);
+  background-image: url(../images/frame/ornament/typeb/left-top.png), url(../images/frame/ornament/typeb/right-top.png), url(../images/frame/ornament/typeb/left-bottom.png), url(../images/frame/ornament/typeb/right-bottom.png);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: left top, right top, left bottom, right bottom;
   position: relative;
@@ -559,7 +568,7 @@ h5 {
   position: absolute;
   top: 0;
   left: 65px;
-  background-image: url(../images/frame-ornament--typeb--top.png), url(../images/frame-ornament--typeb--bottom.png);
+  background-image: url(../images/frame/ornament/typeb/top.png), url(../images/frame/ornament/typeb/bottom.png);
   background-repeat: repeat-x;
   background-position: top, bottom;
 }
@@ -571,13 +580,13 @@ h5 {
   position: absolute;
   top: 65px;
   right: 0;
-  background-image: url(../images/frame-ornament--typeb--left.png), url(../images/frame-ornament--typeb--right.png);
+  background-image: url(../images/frame/ornament/typeb/left.png), url(../images/frame/ornament/typeb/right.png);
   background-repeat: repeat-y;
   background-position: left, right;
 }
 
 .c-frame--ornament--top-bottom {
-  background-image: url(../images/frame-ornament--top-bottom-top_sp.png), url(../images/frame-ornament--top-bottom-bottom_sp.png);
+  background-image: url(../images/frame/ornament/top-bottom/top_sp.png), url(../images/frame/ornament/top-bottom/bottom_sp.png);
   padding: 54px 0;
   background-repeat: no-repeat, no-repeat;
   background-position: top, bottom;
@@ -585,7 +594,7 @@ h5 {
 
 @media screen and (min-width: 768px) {
   .c-frame--ornament--top-bottom {
-    background-image: url(../images/frame-ornament--top-bottom-top_pc.png), url(../images/frame-ornament--top-bottom-bottom_pc.png);
+    background-image: url(../images/frame/ornament/top-bottom/top_pc.png), url(../images/frame/ornament/top-bottom/bottom_pc.png);
     padding: 35px 0;
   }
 }
@@ -639,7 +648,7 @@ h5 {
 
 .c-line--ornament::before {
   content: "";
-  background-image: url(../images/line-ornament--left.png), url(../images/line-ornament--right.png);
+  background-image: url(../images/line-ornament/left.png), url(../images/line-ornament/right.png);
   background-position: left bottom, right bottom;
   background-repeat: no-repeat, no-repeat;
   position: absolute;
@@ -666,7 +675,7 @@ h5 {
 
 .c-mark--rabbit-trumpet {
   display: block;
-  background-image: url("../images/components/icon/rabbit/rabbit__icon--body.png");
+  background-image: url(../images/rabbit-icon/body.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center center;
@@ -1068,8 +1077,8 @@ h5 {
 @media screen and (min-width: 768px) {
   .p-top-article--about__explanation {
     text-align: center;
-    width: 95%;
     margin: 0 auto;
+    padding: 60px 60px 160px;
   }
 }
 .p-top-article--about__explanation::before {
@@ -1078,9 +1087,8 @@ h5 {
 
 @media screen and (min-width: 768px) {
   .p-top-article--about__explanation::before {
-    top: 10px;
-    bottom: 0;
-    left: -5%;
+    top: 20%;
+    left: 20px;
   }
 }
 .p-top-article--about__explanation::after {
@@ -1091,7 +1099,7 @@ h5 {
   .p-top-article--about__explanation::after {
     bottom: -7px;
     top: 0;
-    right: -5%;
+    right: 20px;
   }
 }
 .p-top-article--advantage__parallel {
@@ -1159,6 +1167,10 @@ h5 {
 
 .p-top-article--advantage__parallel__text__list .c-font--middle:last-of-type {
   margin-bottom: 0;
+}
+
+.p-top-article--advantage__parallel__text .c-bg--spade {
+  background-position: center 35%;
 }
 
 .p-top-article--advantage__forte {

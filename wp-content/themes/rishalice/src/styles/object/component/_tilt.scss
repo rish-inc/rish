@@ -1,24 +1,24 @@
 @use "../../foundation/global" as g;
 
 .c-tilt{
-	&--6{
+	&--6 {
 		@include g.mq( pc ) {
-		transform: rotate(6deg);
+		transform: rotate( 6deg );
 		}
 	}
-	&--10{
+	&--10 {
 		@include g.mq( pc ) {
-		transform: rotate(10deg);
+		transform: rotate( 10deg );
 		}
 	}
-	&--350{
+	&--350 {
 		@include g.mq( pc ) {
-		transform: rotate(350deg);
+		transform: rotate( 350deg );
 		}
 	}
-	&--354{
+	&--354 {
 		@include g.mq( pc ) {
-		transform: rotate(354deg);
+		transform: rotate( 354deg );
 		}
 	}
 }

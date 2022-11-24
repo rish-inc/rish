@@ -6,7 +6,7 @@
 	&--gmenu {
 		@include g.mq( pc ) {
 			position: relative;
-			&::after{
+			&::after {
 				content: "";
 				transition: .3s;
 				position: absolute;
@@ -22,8 +22,7 @@
 				display: inline-block;
 				visibility: visible;
 				opacity: 1;
-				}
 			}
 		}
-
+	}
 }
