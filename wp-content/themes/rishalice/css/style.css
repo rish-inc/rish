@@ -70,11 +70,9 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
-    -webkit-animation-duration: 0.01ms !important;
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
@@ -951,7 +949,7 @@ h5 {
 
 @media screen and (min-width: 768px) {
   .p-form__inner .wpcf7-form .wpcf7-form-control-wrap .wpcf7-text,
-.p-form__inner .wpcf7-form .wpcf7-form-control-wrap .wpcf7-textarea {
+  .p-form__inner .wpcf7-form .wpcf7-form-control-wrap .wpcf7-textarea {
     max-width: 750px;
   }
 }
