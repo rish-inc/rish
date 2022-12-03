@@ -1095,8 +1095,8 @@ h5 {
 
 @media screen and (min-width: 768px) {
   .p-top-article--about__explanation::after {
-    bottom: -7px;
-    top: 0;
+    bottom: 0;
+    top: 20%;
     right: 20px;
   }
 }
