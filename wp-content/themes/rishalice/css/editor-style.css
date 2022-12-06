@@ -79,7 +79,7 @@ select {
   }
 }
 body {
-  font-family: "丸明オールドStdN";
+  font-family: "丸明オールドStdN", "砧 丸明オールド StdN";
   font-size: 16;
   color: #1D1D1D;
 }

@@ -79,7 +79,7 @@ select {
   }
 }
 body {
-  font-family: "丸明オールドStdN";
+  font-family: "丸明オールドStdN", "砧 丸明オールド StdN";
   font-size: 16;
   color: #1D1D1D;
 }
@@ -1038,6 +1038,25 @@ h5 {
     height: 150px;
   }
 }
+.p-marketing--intro, .p-marketing--problem, .p-marketing--solution {
+  line-height: 2;
+}
+
+.p-marketing--problem__parallel__text__list .c-font--middle {
+  position: relative;
+  padding-left: 18px;
+}
+
+.p-marketing--problem__parallel__text__list .c-font--middle::before {
+  top: 12px;
+  left: 4px;
+}
+
+.p-marketing--problem__parallel__text__list .c-font--middle:last-of-type {
+  padding-left: 0;
+  margin-bottom: 69px;
+}
+
 .p-top-article--about__head {
   color: #FFF;
   text-align: center;

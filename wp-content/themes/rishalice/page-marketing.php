@@ -1,32 +1,33 @@
 <?php get_header(); ?>
-	<main class="">
-		<article>
-			<section>
-				<figure class="">
+	<main class="l-main">
+		<article class="c-inner c-content">
+			<section class="p-marketing--intro">
+				<figure class="p-marketing--intro__figure">
 					<img src="<?php echo esc_url( get_theme_file_uri( '/images/marketing/01.png' ) );?>" alt="">
-					<figcaption>
-						<h2>コンテンツマーケティング</h2>
-						<p>Web サイトを公開し、広告や SEO で集客しても読まれなければ意味がありません。 コンテンツマーケティングは訪問したユーザーに情報が伝わらなければ失敗であり、コンバージョンにつながることも難しいでしょう。</p>
-						<p>コンバージョンとはサイト運営者にとって一番必要なのもので、物が売れる・お問い合わせが来る・資料請求が来る・サービスのユーザーが増えるといったビジネスの一番の肝です。</p>
+					<figcaption class="p-marketing--intro__caption">
+						<h2 class="p-marketing--intro__head">コンテンツマーケティング</h2>
+						<p class="p-marketing--intro__explanation">Web サイトを公開し、広告や SEO で集客しても読まれなければ意味がありません。 コンテンツマーケティングは訪問したユーザーに情報が伝わらなければ失敗であり、コンバージョンにつながることも難しいでしょう。</p>
+						<p class="p-marketing--intro__explanation">コンバージョンとはサイト運営者にとって一番必要なのもので、物が売れる・お問い合わせが来る・資料請求が来る・サービスのユーザーが増えるといったビジネスの一番の肝です。</p>
 					</figcaption>
 				</figure>
 			</section>
-			<section>
-				<figure>
+			<section class="p-marketing--problem">
+				<figure class="p-marketing--problem__figure">
 					<img src="<?php echo esc_url( get_theme_file_uri( '/images/marketing/02.png' ) );?>" alt="">
-					<figcaption>
-						<h3>こんな悩みありませんか？</h3>
-						<ul>
-							<li>サイトの集客がうまくいかない</li>
-							<li>自社メディアやブログを立ち上げたけど、何を書いていいかわからない</li>
-							<li>問い合わせページがあるのに問い合わせが来ない</li>
-							<li>などなど……</li>
+					<figcaption class="p-marketing--problem__caption">
+						<h3 class="p-marketing--problem__parallel__text__head">こんな悩みありませんか？</h3>
+						<ul class="p-marketing--problem__parallel__text__list">
+							<li class="c-dot--small c-font--middle">サイトの集客がうまくいかない</li>
+							<li class="c-dot--small c-font--middle">自社メディアやブログを立ち上げたけど、何を書いていいかわからない</li>
+							<li class="c-dot--small c-font--middle">問い合わせページがあるのに問い合わせが来ない</li>
+							<li class="c-font--middle">などなど……</li>
 						</ul>
 					</figcaption>
 				</figure>
 				<p>弊社には長きに渡りサイト運用を仕事で培ってきたノウハウがたくさんあります。<br>その強みを活かし、御社の Web サイトにある課題を見つけ出しそれを解決したり<br>新たに設置するサイトに対して初期段階から設計を行うことで、上記の悩み解決をお手伝いいたします。</p>
 			</section>
-			<section>
+			<section class="p-marketing--solution">
+				<i class="c-mark--rabbit-trumpet"></i>
 				<h3 class="c-decoration--rabbit--body">コンテンツマーケティングとは一体何なのか</h3>
 				<p>ユーザー目線で言えば欲しい商品を買う・知りたいことを問い合わせる・商品の詳しい資料を申し込む・サービスに会員登録することですね。</p>
 				<p>当たり前の事を書いていますが、Web サイトで情報を伝えようとするととたんにどう書けばいいか分からなくなる方がかなり多いです。</p>

@@ -1,0 +1,31 @@
+@use "../../foundation/global" as g;
+@use "../../foundation/variables";
+
+.p-marketing {
+    &--intro,
+    &--problem,
+    &--solution {
+        line-height: 2;
+    }
+
+    &--problem {
+        &__parallel {
+            &__text {
+                &__list {
+                    .c-font--middle {
+                        position: relative;
+                        padding-left: 18px;
+						&::before {
+							top: 12px;
+							left: 4px;
+						}
+                        &:last-of-type {
+							padding-left: 0;
+                            margin-bottom: 69px;
+						}
+                    }
+                }
+            }
+        }
+    }
+}
