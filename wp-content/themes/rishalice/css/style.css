@@ -80,7 +80,7 @@ select {
 }
 body {
   font-family: "丸明オールドStdN", "砧 丸明オールド StdN";
-  font-size: 16;
+  font-size: 1rem;
   color: #1D1D1D;
 }
 
@@ -681,6 +681,16 @@ h5 {
   height: 74.26px;
 }
 
+.c-mark--megaphone {
+  display: block;
+  background-image: url(../images/marketing/megaphone.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  width: 57.47px;
+  height: 44px;
+}
+
 .c-position {
   text-align: center;
 }
@@ -1042,19 +1052,72 @@ h5 {
   line-height: 2;
 }
 
-.p-marketing--problem__parallel__text__list .c-font--middle {
+.p-marketing--intro__figure img {
+  width: 280px;
+  height: auto;
+  margin: auto;
+}
+
+.p-marketing--intro__caption .c-mark--megaphone {
+  margin: 52px auto 22px;
+}
+
+.p-marketing--intro__caption__head {
+  font-size: 1.875rem;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.p-marketing--intro__caption__explanation {
+  margin-bottom: 42px;
+}
+
+.p-marketing--problem__figure img {
+  margin-bottom: 17px;
+}
+
+.p-marketing--problem__caption__head {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.p-marketing--problem__caption__list {
+  margin-bottom: 60px;
+}
+
+.p-marketing--problem__caption__list .c-dot--small {
   position: relative;
   padding-left: 18px;
 }
 
-.p-marketing--problem__parallel__text__list .c-font--middle::before {
+.p-marketing--problem__caption__list .c-dot--small::before {
   top: 12px;
   left: 4px;
 }
 
-.p-marketing--problem__parallel__text__list .c-font--middle:last-of-type {
+.p-marketing--problem__caption__list .c-dot--small:last-of-type {
   padding-left: 0;
-  margin-bottom: 69px;
+}
+
+.p-marketing--problem__text {
+  margin-bottom: 70px;
+}
+
+.p-marketing--solution .c-mark--rabbit-trumpet {
+  width: 44.32px;
+  height: 60.13px;
+  margin-top: 7px;
+  margin-right: 10px;
+}
+
+.p-marketing--solution__head {
+  display: flex;
+  font-size: 1.875rem;
+  line-height: 1.5;
+  margin-bottom: 40px;
 }
 
 .p-top-article--about__head {
