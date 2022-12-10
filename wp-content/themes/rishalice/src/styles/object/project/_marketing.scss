@@ -78,5 +78,11 @@
             line-height: 1.5;
             margin-bottom: 40px;
         }
+        &__text {
+            margin-bottom: 42px;
+            &__list {
+                padding-left: 0;
+            }
+        }
     }
 }

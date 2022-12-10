@@ -1120,6 +1120,14 @@ h5 {
   margin-bottom: 40px;
 }
 
+.p-marketing--solution__text {
+  margin-bottom: 42px;
+}
+
+.p-marketing--solution__text__list {
+  padding-left: 0;
+}
+
 .p-top-article--about__head {
   color: #FFF;
   text-align: center;
@@ -1342,5 +1350,29 @@ h5 {
 }
 .u-mb--30 {
   margin-bottom: 30px;
+}
+
+.u-mb--32 {
+  margin-bottom: 32px;
+}
+
+.u-mb--36 {
+  margin-bottom: 36px;
+}
+
+.u-mb--40 {
+  margin-bottom: 40px;
+}
+
+.u-mb--62 {
+  margin-bottom: 62px;
+}
+
+.u-mb--66 {
+  margin-bottom: 66px;
+}
+
+.u-mb--94 {
+  margin-bottom: 94px;
 }
 /*# sourceMappingURL=style.css.map */
