@@ -5,8 +5,9 @@
 				<figure class="p-marketing--intro__figure">
 					<img src="<?php echo esc_url( get_theme_file_uri( '/images/marketing/01.png' ) );?>" alt="タイトル画像">
 					<figcaption class="p-marketing--intro__caption">
-						<i class="c-mark--megaphone"></i>
-						<h2 class="p-marketing--intro__caption__head">コンテンツ<br class="u-br--sp">マーケティング</h2>
+						<h2 class="p-marketing--intro__caption__head">
+							<i class="c-mark--megaphone"></i>コンテンツ<br class="u-br--sp">マーケティング
+						</h2>
 						<p class="p-marketing--intro__caption__explanation">Web サイトを公開し、広告や SEO で集客しても読まれなければ意味がありません。 コンテンツマーケティングは訪問したユーザーに情報が伝わらなければ失敗であり、コンバージョンにつながることも難しいでしょう。</p>
 						<p class="p-marketing--intro__caption__explanation">コンバージョンとはサイト運営者にとって一番必要なのもので、物が売れる・お問い合わせが来る・資料請求が来る・サービスのユーザーが増えるといったビジネスの一番の肝です。</p>
 					</figcaption>

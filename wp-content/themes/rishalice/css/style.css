@@ -1058,10 +1058,28 @@ h5 {
   margin: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .p-marketing--intro__figure img {
+    order: 2;
+    width: 44.4%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-marketing--intro__figure {
+    display: flex;
+  }
+}
 .p-marketing--intro__caption .c-mark--megaphone {
   margin: 52px auto 22px;
 }
 
+@media screen and (min-width: 768px) {
+  .p-marketing--intro__caption .c-mark--megaphone {
+    width: 73px;
+    height: 55.89px;
+    margin: 0 10px 0 0;
+  }
+}
 .p-marketing--intro__caption__head {
   font-size: 1.875rem;
   line-height: 1.5;
@@ -1069,10 +1087,26 @@ h5 {
   margin-bottom: 50px;
 }
 
+@media screen and (min-width: 768px) {
+  .p-marketing--intro__caption__head {
+    display: flex;
+    align-items: center;
+  }
+}
 .p-marketing--intro__caption__explanation {
   margin-bottom: 42px;
 }
 
+@media screen and (min-width: 768px) {
+  .p-marketing--intro__caption__explanation {
+    width: 84.16%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-marketing--intro__caption {
+    order: 1;
+  }
+}
 .p-marketing--problem__figure img {
   margin-bottom: 17px;
 }
@@ -1115,6 +1149,7 @@ h5 {
 
 .p-marketing--solution__head {
   display: flex;
+  justify-content: center;
   font-size: 1.875rem;
   line-height: 1.5;
   margin-bottom: 40px;
