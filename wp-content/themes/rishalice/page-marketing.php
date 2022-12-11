@@ -22,7 +22,7 @@
 							<li class="c-dot--small c-font--normal">サイトの集客がうまくいかない</li>
 							<li class="c-dot--small c-font--normal">自社メディアやブログを立ち上げたけど、何を書いていいかわからない</li>
 							<li class="c-dot--small c-font--normal">問い合わせページがあるのに問い合わせが来ない</li>
-							<li class="c-font--normal">などなど……</li>
+							<!-- <li class="c-font--normal">などなど……</li> -->
 						</ul>
 					</figcaption>
 				</figure>
@@ -32,9 +32,9 @@
 				<h3 class="c-decoration--rabbit--body p-marketing--solution__head">
 					<i class="c-mark--rabbit-trumpet"></i>コンテンツ<br class="u-br--sp">マーケティングとは<br class="u-br--sp">一体何なのか
 				</h3>
-				<p class=" p-marketing--solution__text">ユーザー目線で言えば欲しい商品を買う・知りたいことを問い合わせる・商品の詳しい資料を申し込む・サービスに会員登録することですね。</p>
-				<p class=" p-marketing--solution__text">当たり前の事を書いていますが、Web サイトで情報を伝えようとするととたんにどう書けばいいか分からなくなる方がかなり多いです。</p>
-				<p class=" p-marketing--solution__text">言葉で伝えるのが難しければ動画で解説しても構いませんし、イラストが得意な方は絵で伝えることもできます。</p>
+				<p class=" p-marketing--solution__text">ユーザー目線で言えばユーザーのニーズである「欲しい商品を買う」・「知りたいことを聞く」・「商品の詳しい資料を申し込む・サービスに会員登録」に対してコンテンツを用意してそれらを伝達することです。</p>
+				<p class=" p-marketing--solution__text">当たり前の事を書いていますが、Web サイトで情報を伝えようとすると途端にどう書けばいいか分からなくなる方がかなり多いです。</p>
+				<p class=" p-marketing--solution__text u-mb--pc--62">言葉で伝えるのが難しければ動画で解説しても構いませんし、イラストが得意な方は絵で伝えることもできます。</p>
 				<img src="<?php echo esc_url( get_theme_file_uri( '/images/marketing/03.png' ) );?>" alt="イラストを描いたウサギ" class="u-mb--30">
 				<p class=" p-marketing--solution__text">しかしコンテンツを作るとなるととたんに何をどうすればいいのか分からなくなる方がかなり多いです。</p>
 				<p class=" p-marketing--solution__text">そもそも良いコンテンツとは一体何なのでしょうか。</p>

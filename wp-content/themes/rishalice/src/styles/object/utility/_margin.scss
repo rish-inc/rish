@@ -24,4 +24,9 @@
 	&--94 {
 		margin-bottom: 94px;
 	}
+	&--pc--62 {
+		@include g.mq( pc ) {
+			margin-bottom: 62px;
+		}
+	}
 }

@@ -1062,6 +1062,7 @@ h5 {
   .p-marketing--intro__figure img {
     order: 2;
     width: 44.4%;
+    margin-bottom: 149px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1111,6 +1112,22 @@ h5 {
   margin-bottom: 17px;
 }
 
+@media screen and (min-width: 768px) {
+  .p-marketing--problem__figure img {
+    width: 43%;
+    height: auto;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: left top;
+    object-position: left top;
+    margin: 0 27px 40px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-marketing--problem__figure {
+    display: flex;
+  }
+}
 .p-marketing--problem__caption__head {
   font-size: 1.5rem;
   line-height: 1.5;
@@ -1118,6 +1135,13 @@ h5 {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .p-marketing--problem__caption__head {
+    font-size: 1.875rem;
+    text-align: start;
+    margin-bottom: 28px;
+  }
+}
 .p-marketing--problem__caption__list {
   margin-bottom: 60px;
 }
@@ -1132,10 +1156,19 @@ h5 {
   left: 4px;
 }
 
-.p-marketing--problem__caption__list .c-dot--small:last-of-type {
-  padding-left: 0;
+@media screen and (min-width: 768px) {
+  .p-marketing--problem__caption__list .c-dot--small {
+    padding-left: 12px;
+  }
+  .p-marketing--problem__caption__list .c-dot--small::before {
+    top: 16px;
+  }
 }
-
+@media screen and (min-width: 768px) {
+  .p-marketing--problem__caption__list {
+    margin-bottom: 0;
+  }
+}
 .p-marketing--problem__text {
   margin-bottom: 70px;
 }
@@ -1147,6 +1180,11 @@ h5 {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .p-marketing--solution .c-mark--rabbit-trumpet {
+    margin-top: -14px;
+  }
+}
 .p-marketing--solution__head {
   display: flex;
   justify-content: center;
@@ -1155,6 +1193,11 @@ h5 {
   margin-bottom: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .p-marketing--solution__head {
+    justify-content: flex-start;
+  }
+}
 .p-marketing--solution__text {
   margin-bottom: 42px;
 }
@@ -1409,5 +1452,11 @@ h5 {
 
 .u-mb--94 {
   margin-bottom: 94px;
+}
+
+@media screen and (min-width: 768px) {
+  .u-mb--pc--62 {
+    margin-bottom: 62px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
