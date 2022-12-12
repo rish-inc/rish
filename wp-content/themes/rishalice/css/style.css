@@ -1455,8 +1455,28 @@ h5 {
 }
 
 @media screen and (min-width: 768px) {
+  .u-mb--pc--32 {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .u-mb--pc--36 {
+    margin-bottom: 36px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .u-mb--pc--57 {
+    margin-bottom: 57px;
+  }
+}
+@media screen and (min-width: 768px) {
   .u-mb--pc--62 {
     margin-bottom: 62px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .u-mb--pc--308 {
+    margin-bottom: 308px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -24,9 +24,31 @@
 	&--94 {
 		margin-bottom: 94px;
 	}
+
+	// PC用
+	&--pc--32 {
+		@include g.mq( pc ) {
+			margin-bottom: 32px;
+		}
+	}
+	&--pc--36 {
+		@include g.mq( pc ) {
+			margin-bottom: 36px;
+		}
+	}
+	&--pc--57 {
+		@include g.mq( pc ) {
+			margin-bottom: 57px;
+		}
+	}
 	&--pc--62 {
 		@include g.mq( pc ) {
 			margin-bottom: 62px;
+		}
+	}
+	&--pc--308 {
+		@include g.mq( pc ) {
+			margin-bottom: 308px;
 		}
 	}
 }

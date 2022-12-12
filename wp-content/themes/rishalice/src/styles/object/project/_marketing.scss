@@ -72,9 +72,6 @@
 			}
         }
         &__caption {
-            @include g.mq( pc ) {
-                // width: 49%;
-            }
             &__head {
                 @include g.font-rem( g.$font-size--Lv7 );
                 line-height: 1.5;
@@ -95,9 +92,6 @@
                         top: 12px;
                         left: 4px;
                     }
-                    // &:last-of-type {
-                    //     padding-left: 0;
-                    // }
                     @include g.mq( pc ) {
                         padding-left: 12px;
                         &::before {
