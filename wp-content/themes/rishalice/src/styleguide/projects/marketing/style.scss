@@ -7,4 +7,136 @@
     &--solution {
         line-height: 2;
     }
+
+    &--intro {
+        &__figure {
+            img {
+                width: 280px;
+                height: auto;
+                margin: auto;
+                @include g.mq( pc ) {
+					order: 2;
+                    width: 44.4%;
+                    margin-bottom: 149px;
+				}
+            }
+            @include g.mq( pc ) {
+				display: flex;
+			}
+        }
+        &__caption {
+            .c-mark--megaphone {
+                margin: 52px auto 22px;
+                @include g.mq( pc ) {
+                    width: 73px;
+                    height: 55.89px;
+                    margin: 0 10px 0 0;
+                }
+            }
+            &__head {
+                @include g.font-rem( g.$font-size--Lv10 );
+                line-height: 1.5;
+                text-align: center;
+                margin-bottom: 50px;
+                @include g.mq( pc ) {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            &__explanation {
+                margin-bottom: 42px;
+                @include g.mq( pc ) {
+                    width: 84.16%;
+                }
+            }
+            @include g.mq( pc ) {
+                order: 1;
+            }
+        }
+    }
+
+    &--problem {
+        &__figure {
+            img {
+                margin-bottom: 17px;
+                @include g.mq( tb ) {
+                    margin: 0 auto 17px;
+                }
+                @include g.mq( pc ) {
+                    width: 43%;
+                    height: auto;
+                    object-fit: contain;
+                    object-position: left top;
+                    margin: 0 27px 40px 0;
+				}
+            }
+            @include g.mq( pc ) {
+				display: flex;
+			}
+        }
+        &__caption {
+            &__head {
+                @include g.font-rem( g.$font-size--Lv7 );
+                line-height: 1.5;
+                text-align: center;
+                margin-bottom: 30px;
+                @include g.mq( pc ) {
+                    @include g.font-rem( g.$font-size--Lv10 );
+                    text-align: start;
+                    margin-bottom: 28px;
+                }
+            }
+            &__list {
+                margin-bottom: 60px;
+                .c-dot--small {
+                    position: relative;
+                    padding-left: 18px;
+                    &::before {
+                        top: 12px;
+                        left: 4px;
+                    }
+                    @include g.mq( pc ) {
+                        padding-left: 12px;
+                        &::before {
+                            top: 16px;
+                        }
+                    }
+                }
+                @include g.mq( pc ) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &__text {
+            margin-bottom: 70px;
+        }
+    }
+
+    &--solution {
+        .c-mark--rabbit-trumpet {
+            width: 44.32px;
+            height: 60.13px;
+            margin-top: 7px;
+            margin-right: 10px;
+            @include g.mq( pc ) {
+                margin-top: -14px;
+            }
+        }
+        &__head {
+            display: flex;
+            justify-content: center;
+            @include g.font-rem( g.$font-size--Lv10 );
+            line-height: 1.5;
+            margin-bottom: 40px;
+            @include g.mq( pc ) {
+                justify-content: flex-start;
+            }
+        }
+        &__text {
+            margin-bottom: 42px;
+            &__list {
+                padding-left: 0;
+            }
+        }
+    }
 }
