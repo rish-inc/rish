@@ -1112,6 +1112,11 @@ h5 {
   margin-bottom: 17px;
 }
 
+@media screen and (min-width: 400px) {
+  .p-marketing--problem__figure img {
+    margin: 0 auto 17px;
+  }
+}
 @media screen and (min-width: 768px) {
   .p-marketing--problem__figure img {
     width: 43%;

@@ -59,6 +59,9 @@
         &__figure {
             img {
                 margin-bottom: 17px;
+                @include g.mq( tb ) {
+                    margin: 0 auto 17px;
+                }
                 @include g.mq( pc ) {
                     width: 43%;
                     height: auto;
