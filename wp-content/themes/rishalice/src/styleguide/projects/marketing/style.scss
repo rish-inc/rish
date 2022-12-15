@@ -1,0 +1,10 @@
+@use "../../foundation/global" as g;
+@use "../../foundation/variables";
+
+.p-marketing {
+    &--intro,
+    &--problem,
+    &--solution {
+        line-height: 2;
+    }
+}

@@ -1,8 +1,8 @@
 @use 'global' as g;
 
 body {
-	font-family: '丸明オールドStdN';
-	font-size: g.$font-size--Lv3;
+	font-family: '丸明オールドStdN','砧 丸明オールド StdN';
+	@include g.font-rem( g.$font-size--Lv3 );
 	color: g.$fontcolor--base;
 }
 

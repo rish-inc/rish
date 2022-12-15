@@ -70,19 +70,17 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
-    -webkit-animation-duration: 0.01ms !important;
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
 body {
-  font-family: "丸明オールドStdN";
-  font-size: 16;
+  font-family: "丸明オールドStdN", "砧 丸明オールド StdN";
+  font-size: 1rem;
   color: #1D1D1D;
 }
 

@@ -70,19 +70,17 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
-    -webkit-animation-duration: 0.01ms !important;
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
 body {
-  font-family: "丸明オールドStdN";
-  font-size: 16;
+  font-family: "丸明オールドStdN", "砧 丸明オールド StdN";
+  font-size: 1rem;
   color: #1D1D1D;
 }
 
@@ -683,6 +681,16 @@ h5 {
   height: 74.26px;
 }
 
+.c-mark--megaphone {
+  display: block;
+  background-image: url(../images/marketing/megaphone.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  width: 57.47px;
+  height: 44px;
+}
+
 .c-position {
   text-align: center;
 }
@@ -951,7 +959,7 @@ h5 {
 
 @media screen and (min-width: 768px) {
   .p-form__inner .wpcf7-form .wpcf7-form-control-wrap .wpcf7-text,
-.p-form__inner .wpcf7-form .wpcf7-form-control-wrap .wpcf7-textarea {
+  .p-form__inner .wpcf7-form .wpcf7-form-control-wrap .wpcf7-textarea {
     max-width: 750px;
   }
 }
@@ -1040,6 +1048,169 @@ h5 {
     height: 150px;
   }
 }
+.p-marketing--intro, .p-marketing--problem, .p-marketing--solution {
+  line-height: 2;
+}
+
+.p-marketing--intro__figure img {
+  width: 280px;
+  height: auto;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .p-marketing--intro__figure img {
+    order: 2;
+    width: 44.4%;
+    margin-bottom: 149px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-marketing--intro__figure {
+    display: flex;
+  }
+}
+.p-marketing--intro__caption .c-mark--megaphone {
+  margin: 52px auto 22px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-marketing--intro__caption .c-mark--megaphone {
+    width: 73px;
+    height: 55.89px;
+    margin: 0 10px 0 0;
+  }
+}
+.p-marketing--intro__caption__head {
+  font-size: 1.875rem;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-marketing--intro__caption__head {
+    display: flex;
+    align-items: center;
+  }
+}
+.p-marketing--intro__caption__explanation {
+  margin-bottom: 42px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-marketing--intro__caption__explanation {
+    width: 84.16%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-marketing--intro__caption {
+    order: 1;
+  }
+}
+.p-marketing--problem__figure img {
+  margin-bottom: 17px;
+}
+
+@media screen and (min-width: 400px) {
+  .p-marketing--problem__figure img {
+    margin: 0 auto 17px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-marketing--problem__figure img {
+    width: 43%;
+    height: auto;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: left top;
+    object-position: left top;
+    margin: 0 27px 40px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-marketing--problem__figure {
+    display: flex;
+  }
+}
+.p-marketing--problem__caption__head {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-marketing--problem__caption__head {
+    font-size: 1.875rem;
+    text-align: start;
+    margin-bottom: 28px;
+  }
+}
+.p-marketing--problem__caption__list {
+  margin-bottom: 60px;
+}
+
+.p-marketing--problem__caption__list .c-dot--small {
+  position: relative;
+  padding-left: 18px;
+}
+
+.p-marketing--problem__caption__list .c-dot--small::before {
+  top: 12px;
+  left: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-marketing--problem__caption__list .c-dot--small {
+    padding-left: 12px;
+  }
+  .p-marketing--problem__caption__list .c-dot--small::before {
+    top: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-marketing--problem__caption__list {
+    margin-bottom: 0;
+  }
+}
+.p-marketing--problem__text {
+  margin-bottom: 70px;
+}
+
+.p-marketing--solution .c-mark--rabbit-trumpet {
+  width: 44.32px;
+  height: 60.13px;
+  margin-top: 7px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-marketing--solution .c-mark--rabbit-trumpet {
+    margin-top: -14px;
+  }
+}
+.p-marketing--solution__head {
+  display: flex;
+  justify-content: center;
+  font-size: 1.875rem;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-marketing--solution__head {
+    justify-content: flex-start;
+  }
+}
+.p-marketing--solution__text {
+  margin-bottom: 42px;
+}
+
+.p-marketing--solution__text__list {
+  padding-left: 0;
+}
+
 .p-top-article--about__head {
   color: #FFF;
   text-align: center;
@@ -1262,5 +1433,55 @@ h5 {
 }
 .u-mb--30 {
   margin-bottom: 30px;
+}
+
+.u-mb--32 {
+  margin-bottom: 32px;
+}
+
+.u-mb--36 {
+  margin-bottom: 36px;
+}
+
+.u-mb--40 {
+  margin-bottom: 40px;
+}
+
+.u-mb--62 {
+  margin-bottom: 62px;
+}
+
+.u-mb--66 {
+  margin-bottom: 66px;
+}
+
+.u-mb--94 {
+  margin-bottom: 94px;
+}
+
+@media screen and (min-width: 768px) {
+  .u-mb--pc--32 {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .u-mb--pc--36 {
+    margin-bottom: 36px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .u-mb--pc--57 {
+    margin-bottom: 57px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .u-mb--pc--62 {
+    margin-bottom: 62px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .u-mb--pc--308 {
+    margin-bottom: 308px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
