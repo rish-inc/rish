@@ -11,26 +11,13 @@
 	height: 8px;
 }
 
-.c-decoration{
-	&--rabbit{
+.c-decoration {
+	&--rabbit {
 		display: block;
-		&::before {
-			vertical-align: middle;
-		}
-		&--body {
-			@extend .c-decoration--rabbit;
-			&::before {
-				content: url( ../images/components/icon/rabbit/rabbit__icon--body_sp.png );
-				margin-right: 10px;
-				@include g.mq( pc ) {
-					content: url( ../images/components/icon/rabbit/rabbit__icon--body_pc.png );
-				}
-			}
-		}
 		&--face {
 			@extend .c-decoration--rabbit;
 			&::before {
-				content: url( ../images/rabbit__icon--face.png );
+				content: url( ../images/rabbit-icon/face.png );
 				margin-right: 20px;
 			}
 		}
@@ -41,7 +28,7 @@
 			align-items: center;
 			justify-content: center;
 			flex-direction: column;
-			&::after{
+			&::after {
 				content: "";
 				@extend %wing-line;
 				position: relative;
@@ -61,19 +48,19 @@
 	&--biscuit {
 		width: 74px;
 		height: 74px;
-		background: url(../images/biscuit_sp.png)no-repeat;
+		background: url(../images/biscuit/sp.png)no-repeat;
 		@include g.mq( pc ) {
-			background: url(../images/biscuit_pc.png)no-repeat;
+			background: url(../images/biscuit/pc.png)no-repeat;
 			width: 128px;
 			height: 128px;
 		}
 	}
-	&--diamond{
+	&--diamond {
 		width: 95px;
 		height: 95px;
 		text-align: center;
 		position: relative;
-		&::after{
+		&::after {
 			content: "";
 			display: inline-block;
 			width: 67px;
@@ -83,7 +70,7 @@
 			position: relative;
 			top: 14px;
 		}
-		&__number{
+		&__number {
 			position: absolute;
 			left: 0;
 			right: 0;
