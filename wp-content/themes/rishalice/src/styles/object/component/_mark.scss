@@ -26,4 +26,16 @@
 			
 		}
 	}
+	&--device {
+		display: block;
+		background-image: url( ../images/site-production/device.png );
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center center;
+		width: 73px;
+		height: 50.59px;
+		@include g.mq( pc ) {
+			
+		}
+	}
 }

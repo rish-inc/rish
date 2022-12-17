@@ -1,0 +1,189 @@
+<?php get_header(); ?>
+	<main class="l-main">
+		<article class="c-inner c-content">
+			<article class="p-site-production--about">
+				<section class="p-site-production--about--intro">
+					<figure class="p-site-production--about--intro__figure">
+						<img src="<?php echo esc_url( get_theme_file_uri( '/images/site-production/01.png' ) );?>" alt="タイトル画像">
+						<figcaption class="p-site-production--about--intro__caption">
+							<h2 class="p-site-production--about--intro__caption__head">
+								<i class="c-mark--device"></i>サイト制作について
+							</h2>
+							<ul class="p-site-production--about--intro__caption__list">
+								<li class="c-font--normal">- 企業を周知するためのコーポレートサイト</li>
+								<li class="c-font--normal">- ネットショッピングを可能にする ECサイト</li>
+								<li class="c-font--normal">- お問い合わせの獲得や集客を行う ランディングページや Web サイト</li>
+								<li class="c-font--normal">- ブランディング周知のためのブログ・メディアサイト</li>
+								<li class="c-font--normal">- ジムや学習区のような予約申し込みに対応した Webサイト</li>
+							</ul>
+							<p class="p-site-production--about--intro__caption__text">など必要な機能を元に様々なタイプのサイト制作を承ります。</p>
+						</figcaption>
+					</figure>
+				</section>
+				<img src="<?php echo esc_url( get_theme_file_uri( '/images/rabbit-icon/frame.png' ) );?>" alt="ページ区切り">
+				<section class="p-site-production--about--site-type">
+					<dl>
+						<dt>コーポレートサイト</dt>
+						<dd>
+							企業の印象は今や Web で知ることが多い時代になり、コーポレートサイトへのこだわりが非常に強くなりました。<br>
+							どのような会社で、どんな事をしている会社かは消費者・競合他社・就職活動を行う学生・取引先など多岐にわたって気になるところ。<br>
+							そのニーズに正しく情報を伝えるのがコーポレートサイトの役割です。
+						</dd>
+						<dt>ECサイト</dt>
+						<dd>
+							インターネットを通じて商品を販売することが容易な時代になりました。<br>
+							Shopify という CMS 導入によるサイト制作や、楽天・Yahoo!ショッピングなどのショッピングモールへの出店など企業様が露出したい場所への店舗作成が可能です。<br>
+							弊社には EC サイト運用経験があるスタッフが居ますので、作った後のサポートも対応が可能です。
+						</dd>
+						<dt>ブランディングサイト</dt>
+						<dd>
+							特定の製品やサービスを下層ページも使ってしっかりと情報を伝えるための Web サイトです。 人は知らないものに対しては関心をなかなか抱きません。 サイトに訪問するユーザーは多少なりとも関心を持った状態なので、そのユーザーが知りたい事やメリット・デメリットを伝えることは ユーザーに安心感を与えるとともにベネフィットを与え、購買意欲が高まることとなります。
+						</dd>
+						<dt>ランディングページ</dt>
+						<dd>
+							広告運用を主体に集客を行い、閲覧ユーザーをコンバージョンまで導く1ページ完結型の Web サイトは様々なジャンルで利用されている手法です。<br>
+							サイトに訪問したユーザーの疑問をじっくり読んでもらいながら解消し、安心して商品を購入してもらう。<br>
+							企業様のサービスをしっかり解説し、興味を持って問い合わせてもらう。<br>
+							これらの役割を果たすにはただ長ければいいわけではなく、伝えるべき内容を1ページで完結させて伝える必要があります。<br>
+							そのため情報過多になってしまうものをどのようにわかりやすく解説するか？が重要であり、弊社では写真とテキストだけでなくイラストや漫画コンテンツを利用した施策が行なえます。
+						</dd>
+						<dt>ブログ・メディアサイト</dt>
+						<dd>
+							コーポレートサイトでは伝えきれない企業の日常や、インターネットショップの商品ページだけでは伝えきれない使い方や流行り廃りの情報など<br>
+							Web サイトを通じて情報を提供することで企業様のユーザーを増やしファンを作ることで企業様のブランディングが行えます。<br>
+							そのためにはどういった事を書かなければならないか？が大きなポイントとなるので、制作後の運用サポートも対応可能です
+						</dd>
+						<dt>予約システムなど簡易Webシステム</dt>
+						<dd>
+							WordPress という CMS（コンテンツマネジメントシステム）を利用し、プラグインを活用することでご要望に沿ったシステムを導入できます。<br>
+							世界で最も利用されている WordPress はアメリカのホワイトハウスでも利用されるほどの人気のシステムは様々なニーズに答えることができ、企業様のサービスに多くの貢献をもたらせます。<br>
+							WordPress に関するイベントで多数登壇・イベントの主催・テーマやプラグインの開発を行っている代表がスクールで講師も行っておりますので、安全安心な WordPress 運用や構築対応が可能です。
+						</dd>
+					</dl>
+				</section>
+			</article>
+			
+			<article class="p-site-production--production-flow">
+				<h3>制作フロー</h3>
+				<span class="c-decoration--english">Production flow</span>
+				<dl class="c-frame--ornament--top-bottom">
+					<dt>01 設計フェーズ</dt>
+					<dd>
+						弊社では当事者になると当たり前になりすぎて見落としてしまう情報をヒアリングの段階で導き出し、それをコンセプトとしてコンテンツに落とし込み、企業様の世界観を大切にしながらユーザーに届けやすい情報設計を行いワイヤフレームを作成します。
+					</dd>
+					<dt>02 デザインフェーズ</dt>
+					<dd>
+						ワイヤーフレームを元にヒアリングで受け取った世界観をもとにサイト全体のビジュアル・UIをデザインします。<br>
+						訪問したユーザーに届けるビジュアルは企業様の世界観を伝えられるものか？<br>
+						訪問したユーザーが迷いなく知りたい情報にたどり着けるか？<br>
+						閲覧する情報は見やすく読みやすいか？<br>
+						様々な環境で閲覧しても情報が正しく伝わるか？<br>
+						あらゆる課題を解決しながら適切に情報を伝えるためのデザインを制作します。
+					</dd>
+					<dt>03 構築フェーズ</dt>
+					<dd>
+						デザインをブラウザで見れるよう専門の HTML や CSS、JavaScript といった言語を利用して Web サイトを構築します。<br>
+						小規模なサイトはもちろん、大規模なサイトの場合でも運用しやすい設計をもとにサイトを構築し、納品後に編集やページ追加依頼があっても1から作成するより短時間で対応可能。<br>
+						システム構築についても WordPress や Shopify といった CMS を活用しますので、フルスクラッチで1から開発するよりも低い予算で対応が可能です。
+					</dd>
+					<dt>04 サイトの解析ツール導入</dt>
+					<dd>
+						サイト運用のかなめとなるアナリティクスの設置やサーチコンソールの設定など、作ってから始まる Web サイトの状況を把握するにはアクセス解析が必須です。<br>
+						サイト制作の時点の設計はプランを立てた段階でしかなく、実際に稼働させて評価を行い、改善していかねばなりません。<br>
+						それにはデータあって初めて行えることで、これらのツールはそのデータを蓄積してくれます。<br>
+						サイトは作って終わるのではなく、そこからが始まりです。<br>
+						データを活用してよりよいサイトにしていきましょう。<br>
+						弊社では運用を一緒に行いデータの解析から改善提案・実装も承ることが可能です。
+					</dd>
+					<dt>05 サーバーへの納品</dt>
+					<dd>
+						作成するサイトタイプに合わせてレンタルサーバーやサーバースペックの選定を行い納品いたします。<br>
+						またトラフィック（サイトのアクセス数など）の高いサイトの場合レンタルサーバーだけでなく、VPS の構築や AWS を活用したサーバー構築の対応も可能。<br>
+						そしてセキュアな通信を証明する SSL の対応も対応可能です。
+					</dd>
+				</dl>
+			</article>
+
+			<article class="p-site-production--price">
+				<h3>料金表</h3>
+				<span class="c-decoration--english">price list</span>
+				<ul class="p-top-article--price__list">
+					<li class="p-top-article--price__list__item">
+						<div class="p-card--price c-frame--dent">
+							<dl class="p-card--price__inner c-bg--white">
+								<dt class="p-card--price__inner__plan c-hedding-bg--square-twodent">
+									<span class="p-card--price__inner__plan__big">01.ミニマムプラン</span>
+									<span class="p-card--price__inner__plan__small">（コーポレートサイト向け）</span>
+								</dt>
+								<dd class="p-card--price__inner__number c-font--price">25<span class="c-font--price-complement">万円</span>〜</dd>
+								<dd class="p-card--price__inner__text c-font--normal">小規模なコーポレートサイト向けのプランです。<br>5ページほどのサイトになります。</dd>
+							</dl>
+						</div>
+					</li>
+					<li class="p-top-article--price__list__item">
+						<div class="p-card--price c-frame--dent">
+							<dl class="p-card--price__inner c-bg--white">
+								<dt class="p-card--price__inner__plan c-hedding-bg--square-twodent">
+									<span class="p-card--price__inner__plan__big">02.ノーマルプラン</span>
+									<span class="p-card--price__inner__plan__small">（中規模サイト向け）</span>
+								</dt>
+								<dd class="p-card--price__inner__number c-font--price">50<span class="c-font--price-complement">万円</span>〜</dd>
+								<dd class="p-card--price__inner__text c-font--normal">中規模サイト向けのプランです。20ページほどのサイトになります。</dd>
+							</dl>
+						</div>
+					</li>
+					<li class="p-top-article--price__list__item">
+						<div class="p-card--price c-frame--dent">
+							<dl class="p-card--price__inner c-bg--white">
+								<dt class="p-card--price__inner__plan c-hedding-bg--square-twodent">
+									<span class="p-card--price__inner__plan__big">03. CMS プラン</span>
+									<span class="p-card--price__inner__plan__small">（ブログ・ショッピングサイト・予約システム等）</span>
+								</dt>
+								<dd class="p-card--price__inner__number c-font--price">80<span class="c-font--price-complement">万円</span>〜</dd>
+								<dd class="p-card--price__inner__text c-font--normal">Web サイトにシステムを組み込み可能な CMS を利用したプランです。トップページ・一覧ページ・下層ページ・お問い合わせページ・商品ページなどを管理画面から登録運用できるサイトになります。</dd>
+							</dl>
+						</div>
+					</li>
+					<li class="p-top-article--price__list__item">
+						<div class="p-card--price c-frame--dent">
+							<dl class="p-card--price__inner c-bg--white">
+								<dt class="p-card--price__inner__plan-other c-hedding-bg--square-twodent">
+									<span class="p-card--price__inner__plan__big">04.コンテンツマーケティング</span>
+								</dt>
+								<dd class="p-card--price__inner__number c-font--price">150<span class="c-font--price-complement">万円</span>〜</dd>
+								<dd class="p-card--price__inner__text c-font--normal">集客の動線を設計し、サイトの構築を行うプランです。お客様の叶えたいビジネスに沿った構造と集客・運用を含めて制作いたします。</dd>
+							</dl>
+						</div>
+					</li>
+				</ul>
+			</article>
+
+			<article class="p-site-production--all-flow">
+				<h3>お問合せから公開までの流れ</h3>
+				<span class="c-decoration--english">Flow from contacting to website release</span>
+				<ol class="c-frame--ornament--top-bottom">
+					<li>
+						<span>1</span>弊社からご連絡後お打ち合わせさせていただき、御社のビジネスに関するヒアリングをはじめ、Web サイトの方向性などお伺いしながらサイト制作のお話をさせていただきます。またこのタイミングで契約書の取り交わしを行います。
+					</li>
+					<li>
+						<span>2</span>弊社でサイトマップを作成しますので、そちらご確認いただき必要な素材や外部サービスのアカウント作成、サーバーのご契約（弊社代行も可能）をお願いいたします。
+					</li>
+					<li>
+						<span>3</span>サイトマップをもとにサイト全体のコンテンツを掲載したワイヤーフレームを作成します。そちらをご確認いただきサイトの設計が問題ないかご確認いただきます。
+					</li>
+					<li>
+						<span>4</span>ワイヤーフレームをもとに Web サイトのデザインを行います。そちらをご確認いただき必要情報に漏れがないかなどご確認いただきます。
+					</li>
+					<li>
+						<span>5</span>確定したデザインをブラウザで表示させるための専用のプログラミングを行います。そちらをテストサーバーもしくは本番サーバーにアップロードしますので挙動をご確認いただきます。
+					</li>
+					<li>
+						<span>6</span>テストサーバーでの確認の場合は、問題がなければ本番サーバーにアップロードいたしますのでそちらの挙動を改めてご確認いただきます。
+					</li>
+				</ol>
+			</article>
+
+			<?php get_template_part( 'components/template/contact' ); ?>
+		</article>
+	</main>
+<?php get_footer(); ?>
