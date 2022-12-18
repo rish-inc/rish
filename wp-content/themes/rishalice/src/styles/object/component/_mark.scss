@@ -38,4 +38,17 @@
 			
 		}
 	}
+	&--rabbit-face {
+		display: inline-block;
+		background-image: url( ../images/rabbit-icon/face.png );
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center center;
+		width: 22px;
+		height: 32px;
+		margin-right: 20px;
+		@include g.mq( pc ) {
+			
+		}
+	}
 }

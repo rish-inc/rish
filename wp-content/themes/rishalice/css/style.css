@@ -701,6 +701,17 @@ h5 {
   height: 50.59px;
 }
 
+.c-mark--rabbit-face {
+  display: inline-block;
+  background-image: url(../images/rabbit-icon/face.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  width: 22px;
+  height: 32px;
+  margin-right: 20px;
+}
+
 .c-position {
   text-align: center;
 }
@@ -1244,7 +1255,7 @@ h5 {
   }
 }
 .p-site-production--about--intro__caption .c-mark--device {
-  margin: 52px auto 22px;
+  margin: 52px auto 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1267,20 +1278,29 @@ h5 {
     align-items: center;
   }
 }
-.p-site-production--about--intro__caption__explanation {
-  margin-bottom: 42px;
+.p-site-production--about--intro__caption__text {
+  margin-top: 42px;
+  margin-bottom: 64px;
 }
 
-@media screen and (min-width: 768px) {
-  .p-site-production--about--intro__caption__explanation {
-    width: 84.16%;
-  }
-}
 @media screen and (min-width: 768px) {
   .p-site-production--about--intro__caption {
     order: 1;
   }
 }
+.p-site-production--about--mark {
+  margin: 0 auto 58px;
+}
+
+.p-site-production--about--site-type__list__title {
+  font-size: 1.75rem;
+  line-height: 1.5;
+  color: #6E6221;
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
 .p-site-production--problem__figure img {
   margin-bottom: 17px;
 }

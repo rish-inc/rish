@@ -20,41 +20,41 @@
 						</figcaption>
 					</figure>
 				</section>
-				<img src="<?php echo esc_url( get_theme_file_uri( '/images/rabbit-icon/frame.png' ) );?>" alt="ページ区切り">
+				<img src="<?php echo esc_url( get_theme_file_uri( '/images/rabbit-icon/frame.png' ) );?>" class="p-site-production--about--mark" alt="ページ区切り">
 				<section class="p-site-production--about--site-type">
-					<dl>
-						<dt>コーポレートサイト</dt>
-						<dd>
+					<dl class="p-site-production--about--site-type__list">
+						<dt class="p-site-production--about--site-type__list__title"><i class="c-mark--rabbit-face"></i>コーポレートサイト</dt>
+						<dd class="p-site-production--about--site-type__list__description">
 							企業の印象は今や Web で知ることが多い時代になり、コーポレートサイトへのこだわりが非常に強くなりました。<br>
 							どのような会社で、どんな事をしている会社かは消費者・競合他社・就職活動を行う学生・取引先など多岐にわたって気になるところ。<br>
 							そのニーズに正しく情報を伝えるのがコーポレートサイトの役割です。
 						</dd>
-						<dt>ECサイト</dt>
-						<dd>
+						<dt class="p-site-production--about--site-type__list__title"><i class="c-mark--rabbit-face"></i>ECサイト</dt>
+						<dd class="p-site-production--about--site-type__list__description">
 							インターネットを通じて商品を販売することが容易な時代になりました。<br>
 							Shopify という CMS 導入によるサイト制作や、楽天・Yahoo!ショッピングなどのショッピングモールへの出店など企業様が露出したい場所への店舗作成が可能です。<br>
 							弊社には EC サイト運用経験があるスタッフが居ますので、作った後のサポートも対応が可能です。
 						</dd>
-						<dt>ブランディングサイト</dt>
-						<dd>
+						<dt class="p-site-production--about--site-type__list__title"><i class="c-mark--rabbit-face"></i>ブランディングサイト</dt>
+						<dd class="p-site-production--about--site-type__list__description">
 							特定の製品やサービスを下層ページも使ってしっかりと情報を伝えるための Web サイトです。 人は知らないものに対しては関心をなかなか抱きません。 サイトに訪問するユーザーは多少なりとも関心を持った状態なので、そのユーザーが知りたい事やメリット・デメリットを伝えることは ユーザーに安心感を与えるとともにベネフィットを与え、購買意欲が高まることとなります。
 						</dd>
-						<dt>ランディングページ</dt>
-						<dd>
+						<dt class="p-site-production--about--site-type__list__title"><i class="c-mark--rabbit-face"></i>ランディングページ</dt>
+						<dd class="p-site-production--about--site-type__list__description">
 							広告運用を主体に集客を行い、閲覧ユーザーをコンバージョンまで導く1ページ完結型の Web サイトは様々なジャンルで利用されている手法です。<br>
 							サイトに訪問したユーザーの疑問をじっくり読んでもらいながら解消し、安心して商品を購入してもらう。<br>
 							企業様のサービスをしっかり解説し、興味を持って問い合わせてもらう。<br>
 							これらの役割を果たすにはただ長ければいいわけではなく、伝えるべき内容を1ページで完結させて伝える必要があります。<br>
 							そのため情報過多になってしまうものをどのようにわかりやすく解説するか？が重要であり、弊社では写真とテキストだけでなくイラストや漫画コンテンツを利用した施策が行なえます。
 						</dd>
-						<dt>ブログ・メディアサイト</dt>
-						<dd>
+						<dt class="p-site-production--about--site-type__list__title"><i class="c-mark--rabbit-face"></i>ブログ・<br class="u-br--sp">メディアサイト</dt>
+						<dd class="p-site-production--about--site-type__list__description">
 							コーポレートサイトでは伝えきれない企業の日常や、インターネットショップの商品ページだけでは伝えきれない使い方や流行り廃りの情報など<br>
 							Web サイトを通じて情報を提供することで企業様のユーザーを増やしファンを作ることで企業様のブランディングが行えます。<br>
 							そのためにはどういった事を書かなければならないか？が大きなポイントとなるので、制作後の運用サポートも対応可能です
 						</dd>
-						<dt>予約システムなど簡易Webシステム</dt>
-						<dd>
+						<dt class="p-site-production--about--site-type__list__title"><i class="c-mark--rabbit-face"></i>予約システムなど<br class="u-br--sp">簡易Webシステム</dt>
+						<dd class="p-site-production--about--site-type__list__description">
 							WordPress という CMS（コンテンツマネジメントシステム）を利用し、プラグインを活用することでご要望に沿ったシステムを導入できます。<br>
 							世界で最も利用されている WordPress はアメリカのホワイトハウスでも利用されるほどの人気のシステムは様々なニーズに答えることができ、企業様のサービスに多くの貢献をもたらせます。<br>
 							WordPress に関するイベントで多数登壇・イベントの主催・テーマやプラグインの開発を行っている代表がスクールで講師も行っておりますので、安全安心な WordPress 運用や構築対応が可能です。
