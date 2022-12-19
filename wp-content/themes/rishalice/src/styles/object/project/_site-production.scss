@@ -70,6 +70,18 @@
                     align-items: center;
                     margin-bottom: 18px;
                 }
+                &__description:not(:last-child) {
+                    &::after {
+                        content: url( ../images/site-production/dot-line.png );
+                        display: block;
+                        width: 292px;
+                        height: auto;
+                        margin: 54px auto 54px;
+                        @include g.mq( pc ) {
+                            display: none;
+                        }
+                    }
+                }
             }
         }
     }

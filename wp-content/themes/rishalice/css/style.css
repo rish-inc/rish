@@ -640,6 +640,13 @@ h5 {
   border-bottom: 2px dotted #b9a72f;
 }
 
+.c-line--dot--bottom--bg {
+  background-image: linear-gradient(to right, #b9a72f 2px, transparent 2px);
+  background-size: 10px 2px;
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
 .c-line--ornament {
   position: relative;
 }
@@ -1301,6 +1308,19 @@ h5 {
   margin-bottom: 18px;
 }
 
+.p-site-production--about--site-type__list__description:not(:last-child)::after {
+  content: url(../images/site-production/dot-line.png);
+  display: block;
+  width: 292px;
+  height: auto;
+  margin: 54px auto 54px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-site-production--about--site-type__list__description:not(:last-child)::after {
+    display: none;
+  }
+}
 .p-site-production--problem__figure img {
   margin-bottom: 17px;
 }
