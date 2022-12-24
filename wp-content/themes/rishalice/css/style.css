@@ -1358,13 +1358,12 @@ h5 {
 .p-site-production--production-flow__wrapper.c-bg-arrow--tip {
   width: auto;
   height: auto;
-  background-position: bottom 117px left;
+  background-position: bottom 121px left;
 }
 
-.p-site-production--production-flow__flow .c-bg-arrow--body {
-  width: auto;
-  height: auto;
-  background-position: top left -10px;
+.p-site-production--production-flow__flow__inner {
+  position: relative;
+  z-index: 1;
 }
 
 .p-site-production--production-flow__flow__title {
@@ -1398,6 +1397,14 @@ h5 {
 
 .p-site-production--production-flow__flow__description:last-child {
   margin-bottom: 0;
+}
+
+.p-site-production--production-flow__flow .c-bg-arrow--body {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  height: 97%;
+  z-index: -1;
 }
 
 .p-top-article--about__head {

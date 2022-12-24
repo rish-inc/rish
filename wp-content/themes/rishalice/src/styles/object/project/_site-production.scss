@@ -109,17 +109,17 @@
             .c-frame--ornament--top-bottom {
                 padding: 90px 0;
             }
+            // 矢印の先端
             &.c-bg-arrow--tip {
-                width: auto;
+                width: auto;  // コンテンツ幅に合わせる
                 height: auto;
-                background-position: bottom 117px left;
+                background-position: bottom 121px left;  // 矢印がコンテンツ内に食い込むように
             }
         }
         &__flow {
-            .c-bg-arrow--body {
-                width: auto;
-                height: auto;
-                background-position: top left -10px;
+            &__inner {
+                position: relative;
+                z-index: 1;
             }
             &__title {
                 color: g.$fontcolor--brown;
@@ -151,6 +151,13 @@
                 &:last-child {
                     margin-bottom: 0;
                 }
+            }
+            .c-bg-arrow--body {
+                position: absolute;
+                top: 0;
+                left: -10px;
+                height: 97%;  // 矢印先端部分を考慮して短く
+                z-index: -1;
             }
         }
     }

@@ -68,7 +68,8 @@
 				<span class="c-decoration--english">Production flow</span>
 				<div class="p-site-production--production-flow__wrapper c-bg-arrow--tip">
 					<dl class="p-site-production--production-flow__flow c-frame--ornament--top-bottom">
-						<div class="c-bg-arrow--body">
+						<div class="p-site-production--production-flow__flow__inner">
+							<div class="c-bg-arrow--body"></div>
 							<dt class="p-site-production--production-flow__flow__title">
 								<span class="p-site-production--production-flow__flow__title__num c-decoration--biscuit">01</span>設計フェーズ
 							</dt>
