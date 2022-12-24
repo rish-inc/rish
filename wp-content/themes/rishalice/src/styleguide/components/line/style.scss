@@ -6,6 +6,13 @@
 		&--bottom {
 			border-bottom: 2px dotted #b9a72f;
 		}
+		// bgにするとドットの間隔が調整可能
+		&--bottom--bg {
+			background-image : linear-gradient(to right, #b9a72f 2px, transparent 2px);
+			background-size: 10px 2px;
+			background-repeat: repeat-x;
+			background-position: bottom;
+		}
 	}
 	&--ornament {
 		position: relative;

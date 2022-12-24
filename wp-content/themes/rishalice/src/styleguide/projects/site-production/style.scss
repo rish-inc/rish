@@ -109,18 +109,8 @@
             .c-frame--ornament--top-bottom {
                 padding: 90px 0;
             }
-            &.c-bg-arrow--tip {
-                width: auto;
-                height: auto;
-                background-position: bottom 117px left;
-            }
         }
         &__flow {
-            .c-bg-arrow--body {
-                width: auto;
-                height: auto;
-                background-position: top left -10px;
-            }
             &__title {
                 color: g.$fontcolor--brown;
                 @include g.font-rem( g.$font-size--Lv7 );
