@@ -161,4 +161,31 @@
             }
         }
     }
+
+    &--price {
+        .c-decoration--english {
+            margin-bottom: 46px;
+            // @include g.mq( pc ) {
+            //     margin-bottom: 70px;
+            // }
+        }
+		&__list {
+			margin-bottom: 96px;
+			@include g.mq( pc ) {
+				margin-bottom: 150px;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 1fr 1fr;
+				gap: 30px 60px;
+				height: 100%;
+			}
+			&__item {
+                margin-bottom: 20px;
+				@include g.mq( pc ) {
+					display: flex;
+					align-items: stretch;
+				}
+			}
+		}
+	}
 }

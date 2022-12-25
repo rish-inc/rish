@@ -1,6 +1,9 @@
 @use "../../foundation/global" as g;
 
 .c-font{
+	&--tiny {
+		@include g.font-rem( 10 );
+	}
 	&--small {
 		@include g.font-rem( g.$font-size--Lv1 );
 	}

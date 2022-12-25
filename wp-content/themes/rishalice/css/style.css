@@ -340,6 +340,10 @@ h5 {
   align-content: center;
 }
 
+.c-font--tiny {
+  font-size: 0.625rem;
+}
+
 .c-font--small {
   font-size: 0.75rem;
 }
@@ -849,6 +853,16 @@ h5 {
   color: #1D1D1D;
 }
 
+.p-card--price__out-inner {
+  position: absolute;
+  top: 8px;
+  left: 27px;
+  width: 84%;
+  height: 91%;
+  background: #FFF;
+  z-index: -1;
+}
+
 .p-card--price__inner__plan, .p-card--price__inner__plan-other {
   display: flex;
   flex-flow: column;
@@ -857,6 +871,7 @@ h5 {
 
 .p-card--price__inner__plan__big, .p-card--price__inner__plan-other__big {
   font-size: 1rem;
+  line-height: 1.5;
 }
 
 @media screen and (min-width: 768px) {
@@ -865,8 +880,9 @@ h5 {
   }
 }
 .p-card--price__inner__plan__small, .p-card--price__inner__plan-other__small {
-  margin-top: 10px;
+  margin-top: 7px;
   font-size: 0.75rem;
+  line-height: 1.5;
 }
 
 @media screen and (min-width: 768px) {
@@ -875,12 +891,16 @@ h5 {
     font-size: 0.875rem;
   }
 }
+.p-card--price__inner__plan__small.c-font--tiny, .p-card--price__inner__plan-other__small.c-font--tiny {
+  font-size: 0.625rem;
+}
+
 .p-card--price__inner__plan {
-  padding: 20px;
+  padding: 15px 0 10px;
 }
 
 .p-card--price__inner__plan-other {
-  padding: 40px 20px;
+  padding: 25px 0 22px;
 }
 
 @media screen and (min-width: 768px) {
@@ -902,7 +922,7 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: baseline;
-  margin: 30px 0 20px;
+  margin: 20px 0 14px;
 }
 
 @media screen and (min-width: 768px) {
@@ -911,7 +931,8 @@ h5 {
   }
 }
 .p-card--price__inner__text {
-  line-height: 2.5;
+  line-height: 1.5;
+  padding: 0 6px;
 }
 
 .p-form {
@@ -1407,6 +1428,34 @@ h5 {
   z-index: -1;
 }
 
+.p-site-production--price .c-decoration--english {
+  margin-bottom: 46px;
+}
+
+.p-site-production--price__list {
+  margin-bottom: 96px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-site-production--price__list {
+    margin-bottom: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px 60px;
+    height: 100%;
+  }
+}
+.p-site-production--price__list__item {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-site-production--price__list__item {
+    display: flex;
+    align-items: stretch;
+  }
+}
 .p-top-article--about__head {
   color: #FFF;
   text-align: center;
