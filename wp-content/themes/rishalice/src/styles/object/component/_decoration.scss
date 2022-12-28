@@ -56,15 +56,19 @@
 		}
 	}
 	&--diamond {
-		width: 95px;
-		height: 95px;
+		// width: 95px;
+		// height: 95px;
+		width: 77px;
+		height: 77px;
 		text-align: center;
 		position: relative;
 		&::after {
 			content: "";
 			display: inline-block;
-			width: 67px;
-			height: 67px;
+			// width: 67px;
+			// height: 67px;
+			width: 40px;
+			height: 40px;
 			background: #5EA79C;
 			transform: rotate(45deg);
 			position: relative;

@@ -178,30 +178,37 @@
 			</article>
 
 			<article class="p-site-production--all-flow">
-				<h3>お問合せから<br class="u-br--sp">公開までの流れ</h3>
+				<h3 class="p-site-production--all-flow__head">お問合せから<br class="u-br--sp">公開までの流れ</h3>
 				<span class="c-decoration--english">Flow from contacting to website release</span>
-				<div>
-					<ol class="c-frame--ornament--top-bottom">
-						<li>
-							<span>1</span>弊社からご連絡後お打ち合わせさせていただき、御社のビジネスに関するヒアリングをはじめ、Web サイトの方向性などお伺いしながらサイト制作のお話をさせていただきます。またこのタイミングで契約書の取り交わしを行います。
+				<div class="p-site-production--all-flow__wrapper">
+					<ol class="p-site-production--all-flow__list c-frame--ornament--top-bottom">
+						<li class="p-site-production--all-flow__list__item">
+							<span class="c-decoration--diamond"></span>
+							弊社からご連絡後お打ち合わせさせていただき、御社のビジネスに関するヒアリングをはじめ、Web サイトの方向性などお伺いしながらサイト制作のお話をさせていただきます。またこのタイミングで契約書の取り交わしを行います。
 						</li>
-						<li>
-							<span>2</span>弊社でサイトマップを作成しますので、そちらご確認いただき必要な素材や外部サービスのアカウント作成、サーバーのご契約（弊社代行も可能）をお願いいたします。
+						<li class="p-site-production--all-flow__list__item">
+							<span class="c-decoration--diamond"></span>
+							弊社でサイトマップを作成しますので、そちらご確認いただき必要な素材や外部サービスのアカウント作成、サーバーのご契約（弊社代行も可能）をお願いいたします。
 						</li>
-						<li>
-							<span>3</span>サイトマップをもとにサイト全体のコンテンツを掲載したワイヤーフレームを作成します。そちらをご確認いただきサイトの設計が問題ないかご確認いただきます。
+						<li class="p-site-production--all-flow__list__item">
+							<span class="c-decoration--diamond"></span>
+							サイトマップをもとにサイト全体のコンテンツを掲載したワイヤーフレームを作成します。そちらをご確認いただきサイトの設計が問題ないかご確認いただきます。
 						</li>
-						<li>
-							<span>4</span>ワイヤーフレームをもとに Web サイトのデザインを行います。そちらをご確認いただき必要情報に漏れがないかなどご確認いただきます。
+						<li class="p-site-production--all-flow__list__item">
+							<span class="c-decoration--diamond"></span>
+							ワイヤーフレームをもとに Web サイトのデザインを行います。そちらをご確認いただき必要情報に漏れがないかなどご確認いただきます。
 						</li>
-						<li>
-							<span>5</span>確定したデザインをブラウザで表示させるための専用のプログラミングを行います。そちらをテストサーバーもしくは本番サーバーにアップロードしますので挙動をご確認いただきます。
+						<li class="p-site-production--all-flow__list__item">
+							<span class="c-decoration--diamond"></span>
+							確定したデザインをブラウザで表示させるための専用のプログラミングを行います。そちらをテストサーバーもしくは本番サーバーにアップロードしますので挙動をご確認いただきます。
 						</li>
-						<li>
-							<span>6</span>テストサーバーでの確認の場合は、問題がなければ本番サーバーにアップロードいたしますのでそちらの挙動を改めてご確認いただきます。
+						<li class="p-site-production--all-flow__list__item">
+							<span class="c-decoration--diamond"></span>
+							テストサーバーでの確認の場合は、問題がなければ本番サーバーにアップロードいたしますのでそちらの挙動を改めてご確認いただきます。
 						</li>
-						<li>
-							<span>7</span>テストサーバーでの確認の場合は、問題がなければ本番サーバーにアップロードいたしますのでそちらの挙動を改めてご確認いただきます。
+						<li class="p-site-production--all-flow__list__item">
+							<span class="c-decoration--diamond"></span>
+							テストサーバーでの確認の場合は、問題がなければ本番サーバーにアップロードいたしますのでそちらの挙動を改めてご確認いただきます。
 						</li>
 					</ol>
 				</div>

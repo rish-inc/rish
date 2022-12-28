@@ -188,4 +188,40 @@
 			}
 		}
 	}
+
+    &--all-flow {
+        margin-bottom: 100px;
+        .c-decoration--english {
+            margin-bottom: 39px;
+        }
+        &__wrapper {
+            background-color: g.$bgcolor--white;
+            padding: 10px 10px;
+            @include g.font-rem( g.$font-size--Lv2 );
+            .c-frame--ornament--top-bottom {
+                padding: 90px 0;
+            }
+        }
+        ol {
+            counter-reset : item 0;     // カウンタ[item]を0に初期化
+        }
+        li {
+            display: flex;
+        }
+        span:before {
+            counter-increment: item 1;  // カウンタ[item]は1ずつ増加
+            content: counter(item);     // 表示形式
+            display: inline-block;
+            @include g.font-rem( g.$font-size--Lv10 );
+            color: g.$fontcolor--white;
+            position: absolute;
+            top: 4px;
+			left: 0;
+			right: 0;
+			// bottom: 50%;
+			// transform: translateY(50%);
+			// margin: auto;
+			z-index: 1;
+        }
+    }
 }

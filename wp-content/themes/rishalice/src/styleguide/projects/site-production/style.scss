@@ -109,8 +109,18 @@
             .c-frame--ornament--top-bottom {
                 padding: 90px 0;
             }
+            // 矢印の先端
+            &.c-bg-arrow--tip {
+                width: auto;  // コンテンツ幅に合わせる
+                height: auto;
+                background-position: bottom 121px left;  // 矢印がコンテンツ内に食い込むように
+            }
         }
         &__flow {
+            &__inner {
+                position: relative;
+                z-index: 1;
+            }
             &__title {
                 color: g.$fontcolor--brown;
                 @include g.font-rem( g.$font-size--Lv7 );
@@ -142,6 +152,62 @@
                     margin-bottom: 0;
                 }
             }
+            .c-bg-arrow--body {
+                position: absolute;
+                top: 0;
+                left: -10px;
+                height: 97%;  // 矢印先端部分を考慮して短く
+                z-index: -1;
+            }
+        }
+    }
+
+    &--price {
+        .c-decoration--english {
+            margin-bottom: 46px;
+            // @include g.mq( pc ) {
+            //     margin-bottom: 70px;
+            // }
+        }
+		&__list {
+			margin-bottom: 96px;
+			@include g.mq( pc ) {
+				margin-bottom: 150px;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: 1fr 1fr;
+				gap: 30px 60px;
+				height: 100%;
+			}
+			&__item {
+                margin-bottom: 20px;
+				@include g.mq( pc ) {
+					display: flex;
+					align-items: stretch;
+				}
+			}
+		}
+	}
+
+    &--all-flow {
+        margin-bottom: 100px;
+        .c-decoration--english {
+            margin-bottom: 39px;
+        }
+        &__wrapper {
+            background-color: g.$bgcolor--white;
+            padding: 10px 10px;
+            @include g.font-rem( g.$font-size--Lv2 );
+            .c-frame--ornament--top-bottom {
+                padding: 90px 0;
+            }
+        }
+        ol {
+            counter-reset : item 0;        // カウンタ[item]を0に初期化
+        }
+        li:before {
+            counter-increment: item 1;     // カウンタ[item]は1ずつ増加
+            content: counter(item);  // 表示形式
         }
     }
 }
