@@ -183,32 +183,39 @@
 				<div class="p-site-production--all-flow__wrapper">
 					<ol class="p-site-production--all-flow__list c-frame--ornament--top-bottom">
 						<li class="p-site-production--all-flow__list__item">
-							<span class="c-decoration--diamond"></span>
-							弊社からご連絡後お打ち合わせさせていただき、御社のビジネスに関するヒアリングをはじめ、Web サイトの方向性などお伺いしながらサイト制作のお話をさせていただきます。またこのタイミングで契約書の取り交わしを行います。
+							<div class="c-line--dot--left--bg"></div>
+							<div class="c-decoration--diamond"></div>
+							<div class="p-site-production--all-flow__list__description">弊社からご連絡後お打ち合わせさせていただき、御社のビジネスに関するヒアリングをはじめ、Web サイトの方向性などお伺いしながらサイト制作のお話をさせていただきます。またこのタイミングで契約書の取り交わしを行います。</div>
 						</li>
 						<li class="p-site-production--all-flow__list__item">
-							<span class="c-decoration--diamond"></span>
-							弊社でサイトマップを作成しますので、そちらご確認いただき必要な素材や外部サービスのアカウント作成、サーバーのご契約（弊社代行も可能）をお願いいたします。
+							<div class="c-line--dot--left--bg"></div>
+							<div class="c-decoration--diamond"></div>
+							<div class="p-site-production--all-flow__list__description">弊社でサイトマップを作成しますので、そちらご確認いただき必要な素材や外部サービスのアカウント作成、サーバーのご契約（弊社代行も可能）をお願いいたします。</div>
 						</li>
 						<li class="p-site-production--all-flow__list__item">
-							<span class="c-decoration--diamond"></span>
-							サイトマップをもとにサイト全体のコンテンツを掲載したワイヤーフレームを作成します。そちらをご確認いただきサイトの設計が問題ないかご確認いただきます。
+							<div class="c-line--dot--left--bg"></div>
+							<div class="c-decoration--diamond"></div>
+							<div class="p-site-production--all-flow__list__description">サイトマップをもとにサイト全体のコンテンツを掲載したワイヤーフレームを作成します。そちらをご確認いただきサイトの設計が問題ないかご確認いただきます。</div>
 						</li>
 						<li class="p-site-production--all-flow__list__item">
-							<span class="c-decoration--diamond"></span>
-							ワイヤーフレームをもとに Web サイトのデザインを行います。そちらをご確認いただき必要情報に漏れがないかなどご確認いただきます。
+							<div class="c-line--dot--left--bg"></div>
+							<div class="c-decoration--diamond"></div>
+							<div class="p-site-production--all-flow__list__description">ワイヤーフレームをもとに Web サイトのデザインを行います。そちらをご確認いただき必要情報に漏れがないかなどご確認いただきます。</div>
 						</li>
 						<li class="p-site-production--all-flow__list__item">
-							<span class="c-decoration--diamond"></span>
-							確定したデザインをブラウザで表示させるための専用のプログラミングを行います。そちらをテストサーバーもしくは本番サーバーにアップロードしますので挙動をご確認いただきます。
+							<div class="c-line--dot--left--bg"></div>
+							<div class="c-decoration--diamond"></div>
+							<div class="p-site-production--all-flow__list__description">確定したデザインをブラウザで表示させるための専用のプログラミングを行います。そちらをテストサーバーもしくは本番サーバーにアップロードしますので挙動をご確認いただきます。</div>
 						</li>
 						<li class="p-site-production--all-flow__list__item">
-							<span class="c-decoration--diamond"></span>
-							テストサーバーでの確認の場合は、問題がなければ本番サーバーにアップロードいたしますのでそちらの挙動を改めてご確認いただきます。
+							<div class="c-line--dot--left--bg"></div>
+							<div class="c-decoration--diamond"></div>
+							<div class="p-site-production--all-flow__list__description">テストサーバーでの確認の場合は、問題がなければ本番サーバーにアップロードいたしますのでそちらの挙動を改めてご確認いただきます。</div>
 						</li>
 						<li class="p-site-production--all-flow__list__item">
-							<span class="c-decoration--diamond"></span>
-							テストサーバーでの確認の場合は、問題がなければ本番サーバーにアップロードいたしますのでそちらの挙動を改めてご確認いただきます。
+							<div class="c-line--dot--left--bg"></div>
+							<div class="c-decoration--diamond"></div>
+							<div class="p-site-production--all-flow__list__description">テストサーバーでの確認の場合は、問題がなければ本番サーバーにアップロードいたしますのでそちらの挙動を改めてご確認いただきます。</div>
 						</li>
 					</ol>
 				</div>

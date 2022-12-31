@@ -199,29 +199,35 @@
             padding: 10px 10px;
             @include g.font-rem( g.$font-size--Lv2 );
             .c-frame--ornament--top-bottom {
-                padding: 90px 0;
+                padding: 90px 0 35px;
             }
         }
-        ol {
-            counter-reset : item 0;     // カウンタ[item]を0に初期化
-        }
-        li {
-            display: flex;
-        }
-        span:before {
-            counter-increment: item 1;  // カウンタ[item]は1ずつ増加
-            content: counter(item);     // 表示形式
-            display: inline-block;
-            @include g.font-rem( g.$font-size--Lv10 );
-            color: g.$fontcolor--white;
-            position: absolute;
-            top: 4px;
-			left: 0;
-			right: 0;
-			// bottom: 50%;
-			// transform: translateY(50%);
-			// margin: auto;
-			z-index: 1;
+        &__list {
+            counter-reset : cnt 0;  // CSSカウンタを0に初期化
+            &__item {
+                display: flex;
+                position: relative;
+                &:last-child {
+                    .c-line--dot--left--bg {
+                        height: 60%;
+                    }
+                }
+                .c-decoration--diamond:before {
+                    counter-increment: cnt 1;  // CSSカウンタは1ずつ増加
+                    content: counter(cnt);     // 表示形式
+                    display: inline-block;
+                    @include g.font-rem( g.$font-size--Lv10 );
+                    color: g.$fontcolor--white;
+                    position: absolute;
+                    top: 5px;
+                    left: 19px;
+                    z-index: 1;
+                }
+            }
+            &__description {
+                width: calc( 100% - 67px );
+                margin-bottom: 65px;
+            }
         }
     }
 }
