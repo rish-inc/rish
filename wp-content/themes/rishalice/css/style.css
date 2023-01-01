@@ -1281,16 +1281,31 @@ h5 {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .p-site-production--about h3, .p-site-production--production-flow h3, .p-site-production--price h3, .p-site-production--all-flow h3 {
+    font-size: 2.5rem;
+  }
+}
 .p-site-production--about .c-decoration--english, .p-site-production--production-flow .c-decoration--english, .p-site-production--price .c-decoration--english, .p-site-production--all-flow .c-decoration--english {
   font-size: 0.875rem;
   text-align: center;
   margin-top: -5px;
 }
 
+@media screen and (min-width: 768px) {
+  .p-site-production--about .c-decoration--english, .p-site-production--production-flow .c-decoration--english, .p-site-production--price .c-decoration--english, .p-site-production--all-flow .c-decoration--english {
+    font-size: 1rem;
+  }
+}
 .p-site-production--about {
   margin-bottom: 118px;
 }
 
+@media screen and (min-width: 768px) {
+  .p-site-production--about {
+    margin-bottom: 50px;
+  }
+}
 .p-site-production--about--intro__figure img {
   width: 280px;
   height: auto;
@@ -1301,7 +1316,8 @@ h5 {
   .p-site-production--about--intro__figure img {
     order: 2;
     width: 44.4%;
-    margin-bottom: 149px;
+    margin-top: -60px;
+    margin-bottom: 80px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1329,6 +1345,7 @@ h5 {
 
 @media screen and (min-width: 768px) {
   .p-site-production--about--intro__caption__head {
+    font-size: 2.375rem;
     display: flex;
     align-items: center;
   }
@@ -1341,12 +1358,47 @@ h5 {
 @media screen and (min-width: 768px) {
   .p-site-production--about--intro__caption {
     order: 1;
+    margin-right: 95px;
   }
 }
 .p-site-production--about--mark {
   margin: 0 auto 58px;
 }
 
+@media screen and (min-width: 768px) {
+  .p-site-production--about--mark {
+    margin-bottom: 115px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-site-production--about--site-type__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.p-site-production--about--site-type__list__wrapper:last-of-type dd::after {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .p-site-production--about--site-type__list__wrapper:nth-of-type(odd) {
+    width: 50%;
+    padding-right: 4%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-site-production--about--site-type__list__wrapper:nth-of-type(even) {
+    width: 50%;
+    margin-bottom: 158px;
+    padding-left: 4%;
+    background-image: linear-gradient(to bottom, #b9a72f 2px, transparent 2px);
+    background-size: 2px 10px;
+    background-repeat: repeat-y;
+    background-position: left top;
+    height: 100%;
+  }
+}
 .p-site-production--about--site-type__list__title {
   font-size: 1.75rem;
   line-height: 1.5;
@@ -1356,7 +1408,7 @@ h5 {
   margin-bottom: 30px;
 }
 
-.p-site-production--about--site-type__list__description:not(:last-child)::after {
+.p-site-production--about--site-type__list__description::after {
   content: url(../images/site-production/dot-line.png);
   display: block;
   width: 292px;
@@ -1365,7 +1417,7 @@ h5 {
 }
 
 @media screen and (min-width: 768px) {
-  .p-site-production--about--site-type__list__description:not(:last-child)::after {
+  .p-site-production--about--site-type__list__description::after {
     display: none;
   }
 }
@@ -1373,25 +1425,50 @@ h5 {
   margin-bottom: 100px;
 }
 
+@media screen and (min-width: 768px) {
+  .p-site-production--production-flow {
+    margin-bottom: 200px;
+  }
+}
 .p-site-production--production-flow .c-decoration--english {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .p-site-production--production-flow .c-decoration--english {
+    margin-bottom: 70px;
+  }
+}
 .p-site-production--production-flow__wrapper {
   background-color: #FFF;
   padding: 25px 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .p-site-production--production-flow__wrapper {
+    padding: 52px 82px;
+  }
+}
 .p-site-production--production-flow__wrapper .c-frame--ornament--top-bottom {
   padding: 90px 0;
 }
 
+@media screen and (min-width: 768px) {
+  .p-site-production--production-flow__wrapper .c-frame--ornament--top-bottom {
+    padding: 141px 0;
+  }
+}
 .p-site-production--production-flow__wrapper.c-bg-arrow--tip {
   width: auto;
   height: auto;
   background-position: bottom 121px left;
 }
 
+@media screen and (min-width: 768px) {
+  .p-site-production--production-flow__wrapper.c-bg-arrow--tip {
+    background-position: bottom 176px left 42px;
+  }
+}
 .p-site-production--production-flow__flow__inner {
   position: relative;
   z-index: 1;
@@ -1406,6 +1483,11 @@ h5 {
   margin-bottom: 26px;
 }
 
+@media screen and (min-width: 768px) {
+  .p-site-production--production-flow__flow__title {
+    font-size: 2.25rem;
+  }
+}
 .p-site-production--production-flow__flow__title__num {
   font-size: 2.125rem;
   display: inline-block;
@@ -1416,20 +1498,46 @@ h5 {
   line-height: 78px;
 }
 
+@media screen and (min-width: 768px) {
+  .p-site-production--production-flow__flow__title__num {
+    font-size: 4.375rem;
+    width: 128px;
+    height: 128px;
+    line-height: 128px;
+  }
+}
 .p-site-production--production-flow__flow__title:nth-of-type(4) span {
   width: 88px;
 }
 
+@media screen and (min-width: 768px) {
+  .p-site-production--production-flow__flow__title:nth-of-type(4) span {
+    width: 128px;
+  }
+}
 .p-site-production--production-flow__flow__description {
   font-size: 0.875rem;
   padding: 0 10px;
   margin-bottom: 37px;
 }
 
+@media screen and (min-width: 768px) {
+  .p-site-production--production-flow__flow__description {
+    margin-bottom: 50px;
+  }
+}
 .p-site-production--production-flow__flow__description:last-child {
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .p-site-production--production-flow__flow__description {
+    font-size: 1rem;
+    width: 96%;
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
 .p-site-production--production-flow__flow .c-bg-arrow--body {
   position: absolute;
   top: 0;
@@ -1438,10 +1546,20 @@ h5 {
   z-index: -1;
 }
 
+@media screen and (min-width: 768px) {
+  .p-site-production--production-flow__flow .c-bg-arrow--body {
+    left: -39px;
+  }
+}
 .p-site-production--price .c-decoration--english {
   margin-bottom: 46px;
 }
 
+@media screen and (min-width: 768px) {
+  .p-site-production--price .c-decoration--english {
+    margin-bottom: 76px;
+  }
+}
 .p-site-production--price__list {
   margin-bottom: 96px;
 }
