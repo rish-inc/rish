@@ -20,6 +20,10 @@
 			left: 27px;
 			width: 100%;
 			height: 100%;
+			@include g.mq( pc ) {
+				top: -29px;
+				left: 45px;
+			}
 			&::before {
 				content: "";
 				background-image : linear-gradient(to bottom, #b9a72f 2px, transparent 2px);

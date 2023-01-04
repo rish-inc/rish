@@ -60,6 +60,9 @@
 		height: 67px;
 		// text-align: center;
 		// position: relative;
+		@include g.mq( pc ) {
+			width: 126px;
+		}
 		&::after {
 			content: "";
 			display: inline-block;
@@ -70,6 +73,12 @@
 			position: relative;
 			top: 14px;
 			left: 8px;
+			@include g.mq( pc ) {
+				width: 67px;
+				height: 67px;
+				top: 0;
+				left: 13px;
+			}
 		}
 		// &__number {
 		// 	position: absolute;

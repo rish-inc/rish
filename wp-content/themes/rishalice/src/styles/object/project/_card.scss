@@ -55,6 +55,10 @@
 			height: 91%;
 			background: g.$bgcolor--white;
 			z-index: -1;
+			@include g.mq( pc ) {
+				top: 10px;
+				left: 40px;
+			}
 		}
 		&__inner {
 			&__plan,
@@ -74,17 +78,23 @@
 					@include g.font-rem( g.$font-size--Lv1 );
 					line-height: 1.5; //coni
 					@include g.mq( pc ) {
-						margin-top: 20px;
+						margin-top: 10px; //coni
 						@include g.font-rem( g.$font-size--Lv2 );
 					}
-					&.c-font--tiny {
+					&.c-font--tiny { //coni
 						@include g.font-rem( 10 );
+						@include g.mq( pc ) {
+							@include g.font-rem( g.$font-size--Lv2 );
+						}
 					}
 				}
 			}
 			&__plan {
 				// padding: 20px;  //変更前
 				padding: 15px 0 10px; //coni
+				@include g.mq( pc ) {
+					padding: 15px 0; //coni
+				}
 			}
 			&__plan-other {
 				// padding: 40px 20px;  //変更前
@@ -96,7 +106,8 @@
 					padding: 20px;
 				}
 				@include g.mq( wide-2 ) {
-					padding: 40px 20px;
+					// padding: 40px 20px;  //変更前
+					padding: 30.5px 0; //coni
 				}
 			}
 			&__number {
@@ -106,12 +117,16 @@
 				// margin: 30px 0 20px;  //変更前
 				margin: 20px 0 14px; //coni
 				@include g.mq( pc ) {
-					margin: 60px 0 40px;
+					// margin: 60px 0 40px; //変更前
+					margin: 40px 0 20px; //coni
 				}
 			}
 			&__text {
 				line-height: 1.5; //coni
 				padding: 0 6px;
+				@include g.mq( pc ) {
+					line-height: 2; //coni
+				}
 			}
 		}
 	}
