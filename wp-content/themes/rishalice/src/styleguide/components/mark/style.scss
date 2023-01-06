@@ -14,4 +14,16 @@
 
 		}
 	}
+	&--megaphone {
+		display: block;
+		background-image: url( ../images/marketing/megaphone.png );
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center center;
+		width: 57.47px;
+		height: 44px;
+		@include g.mq( pc ) {
+			
+		}
+	}
 }
