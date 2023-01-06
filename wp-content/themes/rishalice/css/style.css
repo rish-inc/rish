@@ -1098,7 +1098,7 @@ h5 {
 @media screen and (min-width: 768px) {
   .p-top-article--about__explanation::after {
     bottom: 0;
-    top: 20%;
+    top: -20%;
     right: 20px;
   }
 }
@@ -1179,7 +1179,13 @@ h5 {
 
 @media screen and (min-width: 768px) {
   .p-top-article--advantage__forte {
-    margin-bottom: 150px;
+    width: 95%;
+    margin: 0 auto 150px auto;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .p-top-article--advantage__forte {
+    width: 100%;
   }
 }
 .p-top-article--advantage__forte__head {
@@ -1191,6 +1197,11 @@ h5 {
   line-height: 2;
 }
 
+@media screen and (min-width: 768px) {
+  .p-top-article--advantage__forte .c-font--general {
+    line-height: 2.5;
+  }
+}
 .p-top-article--price__head {
   margin-bottom: 50px;
 }

@@ -45,10 +45,7 @@
 			&::before {
 				top: 60px;
 				@include g.mq( pc ) {
-					// top: 10px;
 					top: 20%;
-					// bottom: 0;
-					// left: -5%;
 					left: 20px;
 				}
 			}
@@ -56,8 +53,7 @@
 				bottom: 60px;
 				@include g.mq( pc ) {
 					bottom: 0;
-					top: 20%;
-					// right: -5%;
+					top: -20%;
 					right: 20px;
 				}
 			}
@@ -125,7 +121,11 @@
 		&__forte {
 			margin-bottom: 100px;
 			@include g.mq( pc ) {
-				margin-bottom: 150px;
+				width: 95%;
+				margin: 0 auto 150px auto;
+			}
+			@include g.mq( wide ) {
+				width: 100%
 			}
 			&__head {
 				@include g.font-rem( g.$font-size--Lv7 );
@@ -133,6 +133,9 @@
 			}
 			.c-font--general {
 				line-height: 2;
+				@include g.mq( pc ) {
+					line-height: 2.5;
+				}
 			}
 		}
 	}
