@@ -12,16 +12,25 @@
             color: g.$fontcolor--base;
             line-height: 1.5;
             text-align: center;
+            @include g.mq( pc ) {
+                @include g.font-rem( g.$font-size--Lv15 );
+            }
         }
         .c-decoration--english {
             @include g.font-rem( g.$font-size--Lv2 );
             text-align: center;
             margin-top: -5px;
+            @include g.mq( pc ) {
+                @include g.font-rem( g.$font-size--Lv3 );
+            }
         }
     }
 
     &--about {
         margin-bottom: 118px;
+        @include g.mq( pc ) {
+            margin-bottom: 50px;
+        }
         &--intro {
             &__figure {
                 img {
@@ -31,7 +40,8 @@
                     @include g.mq( pc ) {
                         order: 2;
                         width: 44.4%;
-                        margin-bottom: 149px;
+                        margin-top: -60px;
+                        margin-bottom: 80px;
                     }
                 }
                 @include g.mq( pc ) {
@@ -53,6 +63,7 @@
                     text-align: center;
                     margin-bottom: 50px;
                     @include g.mq( pc ) {
+                        @include g.font-rem( g.$font-size--Lv14 );
                         display: flex;
                         align-items: center;
                     }
@@ -60,20 +71,54 @@
                 &__text {
                     margin-top: 42px;
                     margin-bottom: 64px;
-                    @include g.mq( pc ) {
-                        // width: 84.16%;
-                    }
                 }
                 @include g.mq( pc ) {
                     order: 1;
+                    margin-right: 95px;
                 }
             }
         }
         &--mark {
             margin: 0 auto 58px;
+            @include g.mq( pc ) {
+                margin-bottom: 115px;
+            }
         }
         &--site-type {
             &__list {
+                @include g.mq( pc ) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+                &__wrapper {
+                    // SP版：最後のdot-lineは非表示
+                    &:last-of-type {
+                        dd::after {
+                            display: none;
+                        }
+                    }
+                    // PC版：奇数番目のdiv
+                    &:nth-of-type(odd) {
+                        @include g.mq( pc ) {
+                            width: 50%;
+                            padding-right: 4%;
+                        }
+                    }
+                    // PC版：偶数番目のdiv
+                    &:nth-of-type(even) {
+                        @include g.mq( pc ) {
+                            width: 50%;
+                            margin-bottom: 158px;
+                            padding-left: 4%;
+                            background-image : linear-gradient(to bottom, #b9a72f 2px, transparent 2px);
+                            background-size: 2px 10px;
+                            background-repeat: repeat-y;
+                            background-position: left top;
+                            height: 100%;
+                        }
+                    }
+                }
                 &__title {
                     @include g.font-rem( g.$font-size--Lv9 );
                     line-height: 1.5;
@@ -82,7 +127,7 @@
                     align-items: center;
                     margin-bottom: 30px;
                 }
-                &__description:not(:last-child) {
+                &__description {
                     &::after {
                         content: url( ../images/site-production/dot-line.png );
                         display: block;
@@ -100,20 +145,35 @@
     
     &--production-flow {
         margin-bottom: 100px;
+        @include g.mq( pc ) {
+            margin-bottom: 200px;
+        }
         .c-decoration--english {
             margin-bottom: 30px;
+            @include g.mq( pc ) {
+                margin-bottom: 70px;
+            }
         }
         &__wrapper {
             background-color: g.$bgcolor--white;
             padding: 25px 10px;
+            @include g.mq( pc ) {
+                padding: 52px 82px;
+            }
             .c-frame--ornament--top-bottom {
                 padding: 90px 0;
+                @include g.mq( pc ) {
+                    padding: 141px 0;
+                }
             }
             // 矢印の先端
             &.c-bg-arrow--tip {
                 width: auto;  // コンテンツ幅に合わせる
                 height: auto;
                 background-position: bottom 121px left;  // 矢印がコンテンツ内に食い込むように
+                @include g.mq( pc ) {
+                    background-position: bottom 176px left 42px;
+                }
             }
         }
         &__flow {
@@ -128,6 +188,9 @@
                 display: flex;
                 align-items: center;
                 margin-bottom: 26px;
+                @include g.mq( pc ) {
+                    @include g.font-rem( g.$font-size--Lv13 );
+                }
                 &__num {
                     @include g.font-rem( g.$font-size--Lv12 );
                     display: inline-block;
@@ -136,11 +199,20 @@
                     height: 78px;
                     text-align: center;
                     line-height: 78px;
+                    @include g.mq( pc ) {
+                        @include g.font-rem( 70 );
+                        width: 128px;
+                        height: 128px;
+                        line-height: 128px;
+                    }
                 }
-                //「04 サイトの解析ツール導入」のみビスケットが崩れないよう調整
+                // SP版：「04 サイトの解析ツール導入」のみビスケットが崩れないよう調整
                 &:nth-of-type(4) {
                     span {
                         width: 88px;
+                        @include g.mq( pc ) {
+                            width: 128px;
+                        }
                     }
                 }
             }
@@ -148,8 +220,18 @@
                 @include g.font-rem( g.$font-size--Lv2 );
                 padding: 0 10px;
                 margin-bottom: 37px;
+                @include g.mq( pc ) {
+                    margin-bottom: 50px;
+                }
                 &:last-child {
                     margin-bottom: 0;
+                }
+                @include g.mq( pc ) {
+                    @include g.font-rem( g.$font-size--Lv3 );
+                    width: 92%;
+                    padding: 0;
+                    margin-right: 26px;
+                    margin-left: auto;
                 }
             }
             .c-bg-arrow--body {
@@ -158,6 +240,9 @@
                 left: -10px;
                 height: 97%;  // 矢印先端部分を考慮して短く
                 z-index: -1;
+                @include g.mq( pc ) {
+                    left: -39px;
+                }
             }
         }
     }
@@ -165,14 +250,14 @@
     &--price {
         .c-decoration--english {
             margin-bottom: 46px;
-            // @include g.mq( pc ) {
-            //     margin-bottom: 70px;
-            // }
+            @include g.mq( pc ) {
+                margin-bottom: 76px;
+            }
         }
 		&__list {
 			margin-bottom: 96px;
 			@include g.mq( pc ) {
-				margin-bottom: 150px;
+				margin-bottom: 170px;
 				display: grid;
 				grid-template-columns: 1fr 1fr;
 				grid-template-rows: 1fr 1fr;
@@ -191,23 +276,71 @@
 
     &--all-flow {
         margin-bottom: 100px;
+        @include g.mq( pc ) {
+            margin-bottom: 178px;
+        }
         .c-decoration--english {
             margin-bottom: 39px;
+            @include g.mq( pc ) {
+                margin-bottom: 54px;
+            }
         }
         &__wrapper {
             background-color: g.$bgcolor--white;
-            padding: 10px 10px;
+            padding: 10px;
+            @include g.mq( pc ) {
+                padding: 38px 95px;
+            }
             @include g.font-rem( g.$font-size--Lv2 );
+            @include g.mq( pc ) {
+                @include g.font-rem( g.$font-size--Lv3 );
+            }
             .c-frame--ornament--top-bottom {
-                padding: 90px 0;
+                padding: 90px 0 35px;
+                @include g.mq( pc ) {
+                    padding: 146px 0;
+                }
             }
         }
-        ol {
-            counter-reset : item 0;        // カウンタ[item]を0に初期化
-        }
-        li:before {
-            counter-increment: item 1;     // カウンタ[item]は1ずつ増加
-            content: counter(item);  // 表示形式
+        &__list {
+            counter-reset : cnt 0;  // CSSカウンタを0に初期化
+            &__item {
+                display: flex;
+                position: relative;
+                &:last-child {
+                    .c-line--dot--left--bg {
+                        height: 60%;
+                    }
+                    .p-site-production--all-flow__list__description {
+                        @include g.mq( pc ) {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                .c-decoration--diamond:before {
+                    counter-increment: cnt 1;  // CSSカウンタは1ずつ増加
+                    content: counter(cnt);     // 表示形式
+                    display: inline-block;
+                    @include g.font-rem( g.$font-size--Lv10 );
+                    color: g.$fontcolor--white;
+                    position: absolute;
+                    top: 5px;
+                    left: 19px;
+                    z-index: 1;
+                    @include g.mq( pc ) {
+                        @include g.font-rem( g.$font-size--Lv20 );
+                        top: -14px;
+                        left: 32px;
+                    }
+                }
+            }
+            &__description {
+                width: calc( 100% - 67px );
+                margin-bottom: 65px;
+                @include g.mq( pc ) {
+                    width: calc( 100% - 126px );
+                }
+            }
         }
     }
 }

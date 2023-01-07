@@ -47,19 +47,6 @@
 		@include g.mq( pc ) {
 			// padding: 60px 50px;
 		}
-		&__out-inner { // 隙間から背景が透けるのを調整（coni）
-			position: absolute;
-			top: 8px;
-			left: 27px;
-			width: 84%;
-			height: 91%;
-			background: g.$bgcolor--white;
-			z-index: -1;
-			@include g.mq( pc ) {
-				top: 10px;
-				left: 40px;
-			}
-		}
 		&__inner {
 			&__plan,
 			&__plan-other {

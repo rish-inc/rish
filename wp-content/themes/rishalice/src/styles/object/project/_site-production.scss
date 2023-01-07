@@ -40,6 +40,7 @@
                     @include g.mq( pc ) {
                         order: 2;
                         width: 44.4%;
+                        object-fit: contain;
                         margin-top: -60px;
                         margin-bottom: 80px;
                     }
@@ -74,6 +75,9 @@
                 }
                 @include g.mq( pc ) {
                     order: 1;
+                    margin-right: 30px;
+                }
+                @include g.mq( wide ) {
                     margin-right: 95px;
                 }
             }
@@ -126,6 +130,17 @@
                     display: flex;
                     align-items: center;
                     margin-bottom: 30px;
+                    .u-br--sp {
+                        @media (min-width: 533px) {
+                            display: none;
+                        }
+                        @media (min-width: 768px) and (max-width: 1070px) {
+                            display: block;
+                        }
+                        @media (min-width: 1071px) {
+                            display: none;
+                        }
+                    }
                 }
                 &__description {
                     &::after {
@@ -170,7 +185,7 @@
             &.c-bg-arrow--tip {
                 width: auto;  // コンテンツ幅に合わせる
                 height: auto;
-                background-position: bottom 121px left;  // 矢印がコンテンツ内に食い込むように
+                background-position: bottom 125px left;  // 矢印がコンテンツ内に食い込むように
                 @include g.mq( pc ) {
                     background-position: bottom 176px left 42px;
                 }
@@ -210,6 +225,9 @@
                 &:nth-of-type(4) {
                     span {
                         width: 88px;
+                        @media (min-width: 398px) {
+                            width: 78px;
+                        }
                         @include g.mq( pc ) {
                             width: 128px;
                         }
@@ -220,8 +238,10 @@
                 @include g.font-rem( g.$font-size--Lv2 );
                 padding: 0 10px;
                 margin-bottom: 37px;
+                line-height: 2.28;
                 @include g.mq( pc ) {
                     margin-bottom: 50px;
+                    line-height: 2;
                 }
                 &:last-child {
                     margin-bottom: 0;
@@ -265,7 +285,8 @@
 				height: 100%;
 			}
 			&__item {
-                margin-bottom: 20px;
+                margin: 0 auto 20px;
+                max-width: 510px;  // タブレット版の最大幅
 				@include g.mq( pc ) {
 					display: flex;
 					align-items: stretch;

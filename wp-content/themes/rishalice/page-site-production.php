@@ -137,7 +137,6 @@
 				<ul class="p-site-production--price__list">
 					<li class="p-site-production--price__list__item">
 						<div class="p-card--price c-frame--dent">
-							<div class="p-card--price__out-inner"></div>
 							<dl class="p-card--price__inner c-bg--white">
 								<dt class="p-card--price__inner__plan c-hedding-bg--square-twodent">
 									<span class="p-card--price__inner__plan__big">01.ミニマムプラン</span>
@@ -150,7 +149,6 @@
 					</li>
 					<li class="p-site-production--price__list__item">
 						<div class="p-card--price c-frame--dent">
-							<div class="p-card--price__out-inner"></div>
 							<dl class="p-card--price__inner c-bg--white">
 								<dt class="p-card--price__inner__plan c-hedding-bg--square-twodent">
 									<span class="p-card--price__inner__plan__big">02.ノーマルプラン</span>
@@ -163,7 +161,6 @@
 					</li>
 					<li class="p-site-production--price__list__item">
 						<div class="p-card--price c-frame--dent">
-							<div class="p-card--price__out-inner"></div>
 							<dl class="p-card--price__inner c-bg--white">
 								<dt class="p-card--price__inner__plan c-hedding-bg--square-twodent">
 									<span class="p-card--price__inner__plan__big">03. CMS プラン</span>
@@ -176,7 +173,6 @@
 					</li>
 					<li class="p-site-production--price__list__item">
 						<div class="p-card--price c-frame--dent">
-							<div class="p-card--price__out-inner"></div>
 							<dl class="p-card--price__inner c-bg--white">
 								<dt class="p-card--price__inner__plan-other c-hedding-bg--square-twodent">
 									<span class="p-card--price__inner__plan__big">04.コンテンツマーケティング</span>
