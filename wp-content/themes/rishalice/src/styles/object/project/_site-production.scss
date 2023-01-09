@@ -1,10 +1,8 @@
 @use "../../foundation/global" as g;
-@use "../../foundation/variables";
 
 .p-site-production {
     &--about,
     &--production-flow,
-    &--price,
     &--all-flow {
         line-height: 2;
         h3 {
@@ -266,34 +264,6 @@
             }
         }
     }
-
-    &--price {
-        .c-decoration--english {
-            margin-bottom: 46px;
-            @include g.mq( pc ) {
-                margin-bottom: 76px;
-            }
-        }
-		&__list {
-			margin-bottom: 96px;
-			@include g.mq( pc ) {
-				margin-bottom: 170px;
-				display: grid;
-				grid-template-columns: 1fr 1fr;
-				grid-template-rows: 1fr 1fr;
-				gap: 30px 60px;
-				height: 100%;
-			}
-			&__item {
-                margin: 0 auto 20px;
-                max-width: 510px;  // タブレット版の最大幅
-				@include g.mq( pc ) {
-					display: flex;
-					align-items: stretch;
-				}
-			}
-		}
-	}
 
     &--all-flow {
         margin-bottom: 100px;
