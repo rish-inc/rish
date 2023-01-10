@@ -38,6 +38,12 @@
 			@include g.font-rem( g.$font-size--Lv7 );
 		}
 	}
+	&--big--middle {
+		@include g.font-rem( g.$font-size--Lv1--sp );
+		@include g.mq( pc ) {
+			@include g.font-rem( g.$font-size--Lv2--sp );
+		}
+	}
 	&--big {
 		@include g.font-rem( g.$font-size--Lv1--sp );
 		@include g.mq( pc ) {

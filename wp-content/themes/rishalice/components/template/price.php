@@ -1,6 +1,8 @@
 <article class="p-price">
-    <h3 class="p-price__head">料金表</h3>
-    <span class="c-decoration--english">price list</span>
+    <div class="p-price__head c-decoration--wing-line--under">
+        <span class="c-decoration--english">price list</span>
+        <h3 class="c-font--big--middle">料金表</h3>
+    </div>
     <ul class="p-price__list">
         <li class="p-price__list__item">
             <div class="p-card--price c-frame--dent">

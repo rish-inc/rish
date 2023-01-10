@@ -70,11 +70,9 @@ select {
     scroll-behavior: auto;
   }
   *,
-*::before,
-*::after {
-    -webkit-animation-duration: 0.01ms !important;
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
@@ -395,6 +393,15 @@ h5 {
 @media screen and (min-width: 768px) {
   .c-font--regular {
     font-size: 1.5rem;
+  }
+}
+.c-font--big--middle {
+  font-size: 1.875rem;
+}
+
+@media screen and (min-width: 768px) {
+  .c-font--big--middle {
+    font-size: 2.5rem;
   }
 }
 .c-font--big {
@@ -1051,7 +1058,7 @@ h5 {
 
 @media screen and (min-width: 768px) {
   .p-form__inner .wpcf7-form .wpcf7-form-control-wrap .wpcf7-text,
-.p-form__inner .wpcf7-form .wpcf7-form-control-wrap .wpcf7-textarea {
+  .p-form__inner .wpcf7-form .wpcf7-form-control-wrap .wpcf7-textarea {
     max-width: 750px;
   }
 }
@@ -1307,31 +1314,40 @@ h5 {
   line-height: 2;
 }
 
-.p-price h3 {
-  font-size: 1.875rem;
-  color: #1D1D1D;
-  line-height: 1.5;
-  text-align: center;
+.p-price__head {
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) {
-  .p-price h3 {
-    font-size: 2.5rem;
+  .p-price__head {
+    margin-bottom: 80px;
+  }
+}
+.p-price .c-decoration--wing-line--under::after {
+  bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .p-price .c-decoration--wing-line--under::after {
+    bottom: -6px;
   }
 }
 .p-price .c-decoration--english {
   font-size: 0.875rem;
   text-align: center;
-  margin-top: -5px;
-  margin-bottom: 46px;
 }
 
 @media screen and (min-width: 768px) {
   .p-price .c-decoration--english {
     font-size: 1rem;
-    margin-bottom: 76px;
   }
 }
+.p-price h3 {
+  color: #1D1D1D;
+  line-height: 1.5;
+  text-align: center;
+}
+
 .p-price__list {
   margin-bottom: 96px;
 }
@@ -1361,22 +1377,18 @@ h5 {
   line-height: 2;
 }
 
-.p-site-production--about h3, .p-site-production--production-flow h3, .p-site-production--all-flow h3 {
-  font-size: 1.875rem;
-  color: #1D1D1D;
-  line-height: 1.5;
-  text-align: center;
+.p-site-production--about .c-decoration--wing-line--under::after, .p-site-production--production-flow .c-decoration--wing-line--under::after, .p-site-production--all-flow .c-decoration--wing-line--under::after {
+  bottom: 0;
 }
 
 @media screen and (min-width: 768px) {
-  .p-site-production--about h3, .p-site-production--production-flow h3, .p-site-production--all-flow h3 {
-    font-size: 2.5rem;
+  .p-site-production--about .c-decoration--wing-line--under::after, .p-site-production--production-flow .c-decoration--wing-line--under::after, .p-site-production--all-flow .c-decoration--wing-line--under::after {
+    bottom: -6px;
   }
 }
 .p-site-production--about .c-decoration--english, .p-site-production--production-flow .c-decoration--english, .p-site-production--all-flow .c-decoration--english {
   font-size: 0.875rem;
   text-align: center;
-  margin-top: -5px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1384,6 +1396,12 @@ h5 {
     font-size: 1rem;
   }
 }
+.p-site-production--about h3, .p-site-production--production-flow h3, .p-site-production--all-flow h3 {
+  color: #1D1D1D;
+  line-height: 1.5;
+  text-align: center;
+}
+
 .p-site-production--about {
   margin-bottom: 118px;
 }
@@ -1539,13 +1557,13 @@ h5 {
     margin-bottom: 200px;
   }
 }
-.p-site-production--production-flow .c-decoration--english {
-  margin-bottom: 30px;
+.p-site-production--production-flow__head {
+  margin-bottom: 35px;
 }
 
 @media screen and (min-width: 768px) {
-  .p-site-production--production-flow .c-decoration--english {
-    margin-bottom: 70px;
+  .p-site-production--production-flow__head {
+    margin-bottom: 76px;
   }
 }
 .p-site-production--production-flow__wrapper {
@@ -1677,13 +1695,13 @@ h5 {
     margin-bottom: 178px;
   }
 }
-.p-site-production--all-flow .c-decoration--english {
-  margin-bottom: 39px;
+.p-site-production--all-flow__head {
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
-  .p-site-production--all-flow .c-decoration--english {
-    margin-bottom: 54px;
+  .p-site-production--all-flow__head {
+    margin-bottom: 64px;
   }
 }
 .p-site-production--all-flow__wrapper {
