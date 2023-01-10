@@ -54,6 +54,8 @@
 				background-image: url(../images/frame/dent/top_sp.png),url(../images/frame/dent/bottom_sp.png);
 				background-repeat:repeat-x;
 				background-position:top,bottom;
+				background-color: #fff; //coni
+				z-index: -1; //coni
 			}
 			&::after {
 				content: "";
