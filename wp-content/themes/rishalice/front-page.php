@@ -59,7 +59,10 @@
 						<h2>制作実績</h2>
 					</div>
 				</article>
-				<article class="p-top-article--price">
+
+				<?php get_template_part( 'components/template/price' ); ?>
+
+				<!-- <article class="p-top-article--price">
 					<div class="p-top-article--price__head c-decoration--wing-line--under">
 						<span class="c-decoration--english">Price</span>
 						<h2 class="c-font--big">サイト制作料金表</h2>
@@ -113,8 +116,8 @@
 							</div>
 						</li>
 					</ul>
-					<a class="p-btn c-button--noise-line">サイト制作について</a>
-				</article>
+				</article> -->
+				<a class="p-btn c-button--noise-line">サイト制作について</a>
 				<article class="p-top-article--blog">
 					<div class="p-top-article--blog__head c-decoration--wing-line--under">
 						<span class="c-decoration--english">Blog</span>
@@ -159,7 +162,6 @@
 						<?php endif; ?>
 					</ul>
 				</article>
-
 
 				<?php get_template_part( 'components/template/contact' ); ?>
 			</div>
