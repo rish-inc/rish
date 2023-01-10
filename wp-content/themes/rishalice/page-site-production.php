@@ -76,8 +76,10 @@
 			</article>
 			
 			<article class="p-site-production--production-flow">
-				<h3 class="p-site-production--production-flow__head">制作フロー</h3>
-				<span class="c-decoration--english">Production flow</span>
+				<div class="p-site-production--production-flow__head c-decoration--wing-line--under">
+					<span class="c-decoration--english">Production flow</span>
+					<h3 class="c-font--big--middle">制作フロー</h3>
+				</div>
 				<div class="p-site-production--production-flow__wrapper c-bg-arrow--tip">
 					<dl class="p-site-production--production-flow__flow c-frame--ornament--top-bottom">
 						<div class="p-site-production--production-flow__flow__inner">
@@ -134,8 +136,10 @@
 			<?php get_template_part( 'components/template/price' ); ?>
 
 			<article class="p-site-production--all-flow">
-				<h3 class="p-site-production--all-flow__head">お問合せから<br class="u-br--sp">公開までの流れ</h3>
-				<span class="c-decoration--english">Flow from contacting to website release</span>
+				<div class="p-site-production--all-flow__head c-decoration--wing-line--under">
+					<span class="c-decoration--english">Flow from contacting to website release</span>
+					<h3 class="c-font--big--middle">お問合せから<br class="u-br--sp">公開までの流れ</h3>
+				</div>
 				<div class="p-site-production--all-flow__wrapper">
 					<ol class="p-site-production--all-flow__list c-frame--ornament--top-bottom">
 						<li class="p-site-production--all-flow__list__item">
