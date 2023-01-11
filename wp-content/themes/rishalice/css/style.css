@@ -800,6 +800,49 @@ h5 {
     transform: rotate(354deg);
   }
 }
+.p-about__head {
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-about__head {
+    margin-bottom: 90px;
+  }
+}
+.p-about__head .c-font--big {
+  color: #1D1D1D;
+  line-height: 1.5;
+}
+
+.p-about__head.c-decoration--wing-line--under::after {
+  bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .p-about__head.c-decoration--wing-line--under::after {
+    bottom: -6px;
+  }
+}
+.p-about--philosophy {
+  line-height: 2;
+  margin-bottom: 115px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-about--philosophy {
+    margin-bottom: 400px;
+  }
+}
+.p-about--profile {
+  line-height: 1.5;
+  margin-bottom: 196px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-about--profile {
+    margin-bottom: 270px;
+  }
+}
 .p-bg {
   background-attachment: fixed;
   background-position: center;
