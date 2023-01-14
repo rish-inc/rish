@@ -39,7 +39,7 @@
             span {
                 display: inline-block;
                 background-color: g.$bgcolor--turquoise-green;
-                padding: 0 1em;  // 左右に1文字分の余白
+                padding: 0 1.5rem;  // 左右に1文字分の余白
             }
         }
 
@@ -59,24 +59,9 @@
             &__title {
                 @include g.font-rem( g.$font-size--Lv6 );
                 line-height: 2;
-                margin: 54px 0 6px;
                 span {
                     @include g.font-rem( g.$font-size--Lv2 );
                     margin-left: 10px;
-                }
-            }
-            .c-line--ornament {
-                &::before {
-                    top: -32px;
-                }
-                &::after {
-                    top: -26px;
-                }
-            }
-            &__text {
-                margin-left: 1.5em;
-                dt {
-                    margin-bottom: 12px;
                 }
             }
         }

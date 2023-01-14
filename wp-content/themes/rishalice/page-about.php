@@ -6,11 +6,11 @@
 				<h1 class="c-font--big">会社概要</h1>
 			</div>
 			<section class="p-about--philosophy">
-				<figure class="p-about--philosophy__figure c-drop-shadow-bg--left">
+				<figure class="p-about--philosophy__figure c-drop-shadow-bg--big--left">
 					<img src="<?php echo esc_url( get_theme_file_uri( '/images/about/alice.jpg' ) ); ?>" alt="アリス">
 				</figure>
 				<div class="p-about--philosophy__inner">
-					<h2 class="p-about--philosophy__head">あなたらしく</h2>
+					<h2 class="p-about--philosophy__head"><span>あなたらしく</span></h2>
 					<p class="p-about--philosophy__text">自分らしくありたい。 この気持ちを持って生きているからこそ、関わる人に対してあなたらしくあってほしいと我々は考えています。</p>
 					<p class="p-about--philosophy__text">弊社のビジョンは「相手の意見や生き方を尊重し、自分も自分らしく生きていく事」です。 自分らしくいきる権利は誰にも存在しますが、権利は義務を果たしてこそ。 会社という場所は関わってくださる方々をまず幸せにし、それがかなって初めて自分たちに幸せが返ってくると考えています。</p>
 					<p class="p-about--philosophy__text">これをシンプルに表現した言葉が 「あなたらしく」 であり、会社のキャッチフレーズとしています。</p>
@@ -23,44 +23,44 @@
 					<dd class="p-about--profile__list__text">株式会社 リッシュ</dd>
 					<dd class="p-about--profile__list__text">Rish inc.</dd>
 
-					<dt class="p-about--profile__list__title">住所<span>-Address-</span></dt>
+					<dt class="p-about--profile__list__title c-line--ornament">住所<span>-Address-</span></dt>
 					<dd class="p-about--profile__list__text">
 						<dl>
 							<dt>本社</dt>
 							<dd>〒540-0025 大阪府大阪市中央区徳井町2−2−10 アークマインB201</dd>
-							<dd>2-2-10 Tokui-cho, Chuo-ku, Osaka-shi, Osaka Arkmine B201 540-0025</dd>
+							<dd class="u-mb--40">2-2-10 Tokui-cho, Chuo-ku, Osaka-shi, Osaka Arkmine B201 540-0025</dd>
 							<dt>事業所</dt>
 							<dd>〒581-0091 大阪府八尾市南植松町4丁目114</dd>
 							<dd>4-114 Minami Uematsucho, Yao City, Osaka 581-0091</dd>
 						</dl>
 					</dd>
 
-					<dt class="p-about--profile__list__title">設立日<span>-Founded-</span></dt>
+					<dt class="p-about--profile__list__title c-line--ornament">設立日<span>-Founded-</span></dt>
 					<dd class="p-about--profile__list__text">2020年 8月</dd>
 					<dd class="p-about--profile__list__text">August 2020</dd>
 
-					<dt class="p-about--profile__list__title">資本金<span>-Capital-</span></dt>
+					<dt class="p-about--profile__list__title c-line--ornament">資本金<span>-Capital-</span></dt>
 					<dd class="p-about--profile__list__text">1,000,000円</dd>
 					<dd class="p-about--profile__list__text">1,000,000 Yen</dd>
 
-					<dt class="p-about--profile__list__title">代表取締役<span>-CEO-</span></dt>
+					<dt class="p-about--profile__list__title c-line--ornament">代表取締役<span>-CEO-</span></dt>
 					<dd class="p-about--profile__list__text">川西 康人</dd>
 					<dd class="p-about--profile__list__text">Yasuhito Kawanishi</dd>
 
-					<dt class="p-about--profile__list__title">事業内容<span>-Business-</span></dt>
-					<dd class="p-about--profile__list__text">ウェブデザイン, ウェブ開発, コンテンツマーケティング,写真・動画撮影, 写真・動画編集, コンサルティング,電子商取引, ファッション・アパレルの物販</dd>
+					<dt class="p-about--profile__list__title c-line--ornament">事業内容<span>-Business-</span></dt>
+					<dd class="p-about--profile__list__text u-mb--14">ウェブデザイン, ウェブ開発, コンテンツマーケティング,写真・動画撮影, 写真・動画編集, コンサルティング,電子商取引, ファッション・アパレルの物販</dd>
 					<dd class="p-about--profile__list__text">E-commerce, Fashion and apparel product sales, Web design, Web Developent, Photo/video shooting, Photo/video edting, Consulting</dd>
 
-					<dt class="p-about--profile__list__title">古物商許可番号<span>-Curio dealer-</span></dt>
-					<dd class="p-about--profile__list__text">古物商許可番号: 62107R021247</dd>
+					<dt class="p-about--profile__list__title c-line--ornament">古物商許可番号<span>-Curio dealer-</span></dt>
+					<dd class="p-about--profile__list__text u-mb--14">古物商許可番号: 62107R021247</dd>
 					<dd class="p-about--profile__list__text">Secondhand dealer license number: 62107R021247</dd>
 
-					<dt class="p-about--profile__list__title">就業規則<span>-Labor regulations-</span></dt>
+					<dt class="p-about--profile__list__title c-line--ornament">就業規則<span>-Labor regulations-</span></dt>
 					<dd class="p-about--profile__list__text">GitHub のリポジトリをお読みください</dd>
-					<dd class="p-about--profile__list__text">Read GitHub repository</dd>
+					<dd class="p-about--profile__list__text">Lead GitHub repository</dd>
 
-					<dt class="p-about--profile__list__title">主要取引先<span>-Main client-</span></dt>
-					<dd class="p-about--profile__list__text">株式会社 TAM, 株式会社 RaiseTech, 株式会社 Studio Cologne</dd>
+					<dt class="p-about--profile__list__title c-line--ornament">主要取引先<span>-Main client-</span></dt>
+					<dd class="p-about--profile__list__text u-mb--14">株式会社 TAM, 株式会社 RaiseTech, 株式会社 Studio Cologne</dd>
 					<dd class="p-about--profile__list__text">TAM Co., Ltd., Raise Tech Co., Ltd., Studio Cologne</dd>
 				</dl>
 			</section>

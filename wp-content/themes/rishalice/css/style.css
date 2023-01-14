@@ -330,6 +330,44 @@ h5 {
   bottom: -40px;
 }
 
+.c-drop-shadow-bg--big, .c-drop-shadow-bg--big--left {
+  position: relative;
+}
+
+.c-drop-shadow-bg--big::before, .c-drop-shadow-bg--big--left::before, .c-drop-shadow-bg--big::after, .c-drop-shadow-bg--big--left::after {
+  content: "";
+  width: 241px;
+  height: 233px;
+  position: absolute;
+  background: #6BB7AC;
+}
+
+@media screen and (min-width: 768px) {
+  .c-drop-shadow-bg--big::before, .c-drop-shadow-bg--big--left::before, .c-drop-shadow-bg--big::after, .c-drop-shadow-bg--big--left::after {
+    width: 410px;
+    height: 396px;
+  }
+}
+.c-drop-shadow-bg--big::before, .c-drop-shadow-bg--big--left::before {
+  z-index: -1;
+}
+
+.c-drop-shadow-bg--big::after, .c-drop-shadow-bg--big--left::after {
+  opacity: 0.3;
+  z-index: -2;
+  filter: blur(23px);
+}
+
+.c-drop-shadow-bg--big--left::before {
+  left: -24px;
+  bottom: -21px;
+}
+
+.c-drop-shadow-bg--big--left::after {
+  left: -44px;
+  bottom: -41px;
+}
+
 @media screen and (min-width: 768px) {
   .c-flex--parallel {
     display: flex;
@@ -706,7 +744,7 @@ h5 {
   background-position: left bottom, right bottom;
   background-repeat: no-repeat, no-repeat;
   position: absolute;
-  bottom: 0;
+  top: 0;
   height: 12px;
   width: 100%;
 }
@@ -720,7 +758,7 @@ h5 {
   right: 0;
   left: 0;
   margin: auto;
-  bottom: 6px;
+  top: 0;
 }
 
 .c-list-mark--round {
@@ -833,6 +871,30 @@ h5 {
     margin-bottom: 400px;
   }
 }
+.p-about--philosophy .c-drop-shadow-bg--big--left {
+  width: 77vw;
+  margin-left: 7.2vw;
+  margin-bottom: 122.3px;
+}
+
+.p-about--philosophy__head {
+  font-size: 1.875rem;
+  line-height: 1.2;
+  color: #FFF;
+  text-align: center;
+  margin-bottom: 98px;
+}
+
+.p-about--philosophy__head span {
+  display: inline-block;
+  background-color: #43897F;
+  padding: 0 1em;
+}
+
+.p-about--philosophy__text {
+  margin-bottom: 34px;
+}
+
 .p-about--profile {
   line-height: 1.5;
   margin-bottom: 196px;
@@ -843,6 +905,33 @@ h5 {
     margin-bottom: 270px;
   }
 }
+.p-about--profile__list__title {
+  font-size: 1.375rem;
+  line-height: 2;
+  margin: 54px 0 6px;
+}
+
+.p-about--profile__list__title span {
+  font-size: 0.875rem;
+  margin-left: 10px;
+}
+
+.p-about--profile__list .c-line--ornament::before {
+  top: -32px;
+}
+
+.p-about--profile__list .c-line--ornament::after {
+  top: -26px;
+}
+
+.p-about--profile__list__text {
+  margin-left: 1.5em;
+}
+
+.p-about--profile__list__text dt {
+  margin-bottom: 12px;
+}
+
 .p-bg {
   background-attachment: fixed;
   background-position: center;
@@ -2030,6 +2119,10 @@ h5 {
     align-items: center;
   }
 }
+.u-mb--14 {
+  margin-bottom: 14px;
+}
+
 .u-mb--30 {
   margin-bottom: 30px;
 }
