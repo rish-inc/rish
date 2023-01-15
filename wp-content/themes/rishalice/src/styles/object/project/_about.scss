@@ -22,12 +22,39 @@
         line-height: 2;
         margin-bottom: 115px;
         @include g.mq( pc ) {
-            margin-bottom: 400px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0;
         }
         .c-drop-shadow-bg--big--left {
             width: 77vw;
             margin-left: 7.2vw;
             margin-bottom: 122.3px;
+            @include g.mq( tb ) {
+                width: 64vw;
+                margin: 0 auto 122.3px;
+            }
+            @include g.mq( pc ) {
+                width: 44%;
+                margin-left: 46px;
+                margin-bottom: 152px;
+            }
+            // pc～full間の余白調整する！
+            @include g.mq( full ) {
+                width: auto;
+                margin-left: 0;
+            }
+        }
+
+        &__inner {
+            @include g.mq( pc ) {
+                width: 40%;
+                margin-right: 20px;
+            }
+            @include g.mq( wide ) {
+                width: 50%;
+                margin-right: 0;
+            }
         }
 
         &__head {
@@ -36,6 +63,10 @@
             color: g.$fontcolor--white;
             text-align: center;
             margin-bottom: 98px;
+            @include g.mq( pc ) {
+                text-align: left;
+                margin-bottom: 70px;
+            }
             span {
                 display: inline-block;
                 background-color: g.$bgcolor--turquoise-green;
@@ -52,31 +83,65 @@
         line-height: 1.5;
         margin-bottom: 196px;
         @include g.mq( pc ) {
-            margin-bottom: 270px;
+            line-height: 2;
+            margin-bottom: 210px;
         }
 
         &__list {
+            @include g.mq( pc ) {
+                display: flex;
+                flex-wrap: wrap;
+            }
             &__title {
                 @include g.font-rem( g.$font-size--Lv6 );
                 line-height: 2;
                 margin: 54px 0 6px;
+                @include g.mq( pc ) {
+                    @include g.font-rem( g.$font-size--Lv3 );
+                    width: 30%;
+                    margin: 0;
+                }
                 span {
                     @include g.font-rem( g.$font-size--Lv2 );
                     margin-left: 10px;
+                    @include g.mq( wide ) {
+                        margin-left: 17px;
+                    }
                 }
             }
             .c-line--ornament {
                 &::before {
                     top: -32px;
+                    @include g.mq( pc ) {
+                        top: -39px;
+                        width: 333%;
+                    }
                 }
                 &::after {
                     top: -26px;
+                    @include g.mq( pc ) {
+                        top: -33px;
+                        width: calc( 333% - 30px );
+                        left: 15px;
+                    }
+                }
+            }
+            &__wrapper {
+                @include g.mq( pc ) {
+                    width: 70%;
+                    margin-bottom: 60px;
                 }
             }
             &__text {
                 margin-left: 1.5em;
+                @include g.mq( pc ) {
+                    margin-left: 0;
+                }
                 dt {
                     margin-bottom: 12px;
+                    @include g.mq( pc ) {
+                        margin-bottom: 0;
+                    }
                 }
             }
         }

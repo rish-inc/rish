@@ -54,14 +54,12 @@
 	&::before,
 	&::after {
 		content: "";
-		width: 241px;
-		height: 233px;
+		// width: 241px;  //coni
+		width: 82%;  //coni
+		// height: 233px;  //coni
+		height: 65%;  //coni
 		position: absolute;
 		background:#6BB7AC;
-		@include g.mq( pc ) {
-		width: 410px;
-		height: 396px;
-		}
 	}
 	&::before {
 		z-index: -1;
@@ -77,10 +75,28 @@
 		&::before{
 			left: -24px;
 			bottom: -21px;
+			@include g.mq( pc ) {
+				bottom: 13%;
+			}
+			@media (min-width: 768px) and (max-width: 800px) {
+				height: 268px;
+				bottom: 16%;
+			}  // 位置見直す！！！
+			@include g.mq( wide ) {
+				left: -43.6px;
+				// bottom: 5%;
+			}
 		}
 		&::after{
 			left: -44px;
 			bottom: -41px;
+			@include g.mq( pc ) {
+				bottom: 44px;
+			}
+			@include g.mq( wide ) {
+				left: -63.6px;
+				bottom: -63.5px;
+			}
 		}
 	}
 }
