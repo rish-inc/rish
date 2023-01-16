@@ -47,3 +47,40 @@
 		}
 	}
 }
+
+// 縦長
+.c-drop-shadow-bg--big {
+	position: relative;
+	&::before,
+	&::after {
+		content: "";
+		width: 241px;
+		height: 233px;
+		position: absolute;
+		background:#6BB7AC;
+		@include g.mq( pc ) {
+		width: 410px;
+		height: 396px;
+		}
+	}
+	&::before {
+		z-index: -1;
+	}
+	&::after {
+		opacity: 0.3;
+		z-index: -2;
+		filter: blur( 23px );
+	}
+
+	&--left{
+		@extend .c-drop-shadow-bg--big;
+		&::before{
+			left: -24px;
+			bottom: -21px;
+		}
+		&::after{
+			left: -44px;
+			bottom: -41px;
+		}
+	}
+}
