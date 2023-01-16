@@ -36,10 +36,9 @@
             }
             @include g.mq( pc ) {
                 width: 44%;
-                margin-left: 46px;
-                margin-bottom: 152px;
+                margin-left: 60px;
+                margin-bottom: 255px;
             }
-            // pc～full間の余白調整する！
             @include g.mq( full ) {
                 width: auto;
                 margin-left: 0;
@@ -49,9 +48,9 @@
         &__inner {
             @include g.mq( pc ) {
                 width: 40%;
-                margin-right: 20px;
+                margin-right: 24px;
             }
-            @include g.mq( wide ) {
+            @include g.mq( full ) {
                 width: 50%;
                 margin-right: 0;
             }

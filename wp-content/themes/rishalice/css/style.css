@@ -336,8 +336,8 @@ h5 {
 
 .c-drop-shadow-bg--big::before, .c-drop-shadow-bg--big--left::before, .c-drop-shadow-bg--big::after, .c-drop-shadow-bg--big--left::after {
   content: "";
-  width: 82%;
-  height: 65%;
+  width: 83%;
+  height: 68%;
   position: absolute;
   background: #6BB7AC;
 }
@@ -353,42 +353,15 @@ h5 {
 }
 
 .c-drop-shadow-bg--big--left::before {
-  left: -24px;
-  bottom: -21px;
+  left: -9%;
+  top: 39%;
 }
 
-@media screen and (min-width: 768px) {
-  .c-drop-shadow-bg--big--left::before {
-    bottom: 13%;
-  }
-}
-@media (min-width: 768px) and (max-width: 800px) {
-  .c-drop-shadow-bg--big--left::before {
-    height: 268px;
-    bottom: 16%;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .c-drop-shadow-bg--big--left::before {
-    left: -43.6px;
-  }
-}
 .c-drop-shadow-bg--big--left::after {
-  left: -44px;
-  bottom: -41px;
+  left: -19%;
+  top: 49%;
 }
 
-@media screen and (min-width: 768px) {
-  .c-drop-shadow-bg--big--left::after {
-    bottom: 44px;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .c-drop-shadow-bg--big--left::after {
-    left: -63.6px;
-    bottom: -63.5px;
-  }
-}
 @media screen and (min-width: 768px) {
   .c-flex--parallel {
     display: flex;
@@ -909,8 +882,8 @@ h5 {
 @media screen and (min-width: 768px) {
   .p-about--philosophy .c-drop-shadow-bg--big--left {
     width: 44%;
-    margin-left: 46px;
-    margin-bottom: 152px;
+    margin-left: 60px;
+    margin-bottom: 255px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -922,10 +895,10 @@ h5 {
 @media screen and (min-width: 768px) {
   .p-about--philosophy__inner {
     width: 40%;
-    margin-right: 20px;
+    margin-right: 24px;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   .p-about--philosophy__inner {
     width: 50%;
     margin-right: 0;
