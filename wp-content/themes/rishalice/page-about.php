@@ -17,7 +17,7 @@
 				</div>
 			</section>
 			
-			<section class="p-about--profile">
+			<div class="p-about--profile">
 				<dl class="p-about--profile__list">
 					<dt class="p-about--profile__list__title">会社名<span>-Company name-</span></dt>
 					<div class="p-about--profile__list__wrapper">
@@ -81,7 +81,7 @@
 						<dd class="p-about--profile__list__text">TAM Co., Ltd., Raise Tech Co., Ltd., Studio Cologne</dd>
 					</div>
 				</dl>
-			</section>
+			</div>
 			
 			<?php get_template_part( 'components/template/contact' ); ?>
 		</article>
