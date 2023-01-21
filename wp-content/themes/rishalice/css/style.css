@@ -1360,6 +1360,65 @@ h5 {
     height: 150px;
   }
 }
+@media screen and (min-width: 768px) {
+  .p-header {
+    margin-bottom: 8.5rem;
+  }
+}
+.p-header a {
+  color: #1D1D1D;
+}
+
+@media screen and (min-width: 768px) {
+  .p-header__menu {
+    display: grid;
+    grid-template-columns: 1fr 310px 1fr;
+    margin: 0;
+    padding-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-header__menu .menu {
+    margin: 0 0 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-header__menu .menu .menu-item:not(:last-child) {
+    padding-right: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-header__menu #menu-header-left-menu {
+    order: 1;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-header__menu__logo {
+    order: 2;
+  }
+}
+.p-header__menu__logo img {
+  width: 128.16px;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .p-header__menu__logo img {
+    width: 229px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-header__menu #menu-header-right-menu {
+    order: 3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+}
 .p-marketing--intro, .p-marketing--problem, .p-marketing--solution {
   line-height: 2;
 }

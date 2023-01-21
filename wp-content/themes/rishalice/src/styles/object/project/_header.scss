@@ -1,0 +1,59 @@
+@use "../../foundation/global" as g;
+
+.p-header {
+    @include g.mq( pc ) {
+        margin-bottom: 8.5rem;
+    }
+
+    a {
+        color: g.$fontcolor--base;
+    }
+
+    &__menu {
+        @include g.mq( pc ) {
+            display: grid;
+            grid-template-columns: 1fr 310px 1fr;
+            margin: 0;
+            padding-top: 30px;
+        }
+        .menu {
+            @include g.mq( pc ) {
+                margin: 0 0 10px;
+            }
+            .menu-item:not(:last-child) {
+                @include g.mq( pc ) {
+                    padding-right: 60px;
+                }
+            }
+        }
+        #menu-header-left-menu {
+            @include g.mq( pc ) {
+                order: 1;
+                display: flex;
+                justify-content: end;
+                align-items: flex-end;
+            }
+        }
+        &__logo {
+            @include g.mq( pc ) {
+                order: 2;
+            }
+            img {
+                width: 128.16px;
+                height: auto;
+                margin: 0 auto;
+                @include g.mq( pc ) {
+                    width: 229px;
+                }
+            }
+        }
+        #menu-header-right-menu {
+            @include g.mq( pc ) {
+                order: 3;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-end;
+            }
+        }
+    }
+}

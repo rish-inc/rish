@@ -2,7 +2,8 @@
 
 function register_my_menus() {
 	register_nav_menus( array (
-		'header-menu' => 'header-menu',
+		'header-left-menu' => 'header-left-menu',
+		'header-right-menu' => 'header-right-menu',
 		'footer-menu' => 'footer-menu'
 	) );
 }
