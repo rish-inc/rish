@@ -4,6 +4,7 @@ function register_my_menus() {
 	register_nav_menus( array (
 		'header-left-menu' => 'header-left-menu',
 		'header-right-menu' => 'header-right-menu',
+		'header-menu' => 'header-menu',
 		'footer-menu' => 'footer-menu'
 	) );
 }

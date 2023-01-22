@@ -1365,39 +1365,72 @@ h5 {
     margin-bottom: 8.5rem;
   }
 }
-.p-header a {
-  color: #1D1D1D;
+.p-header__button {
+  position: absolute;
+  top: 42px;
+  right: 20px;
+  width: 46px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+@media screen and (min-width: 768px) {
+  .p-header__button {
+    display: none;
+  }
+}
+.p-header__button span {
+  position: relative;
+  display: block;
+  width: 46px;
+  height: 0.8px;
+  background-color: #1B1B1B;
+}
+
+.p-header__button span::before, .p-header__button span::after {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #1B1B1B;
+}
+
+.p-header__button span::before {
+  top: -10px;
+}
+
+.p-header__button span::after {
+  top: 10px;
+}
+
+.p-header__menu {
+  display: grid;
+  padding-top: 13px;
 }
 
 @media screen and (min-width: 768px) {
   .p-header__menu {
-    display: grid;
     grid-template-columns: 1fr 310px 1fr;
-    margin: 0;
     padding-top: 30px;
   }
 }
-@media screen and (min-width: 768px) {
-  .p-header__menu .menu {
-    margin: 0 0 10px;
-  }
+.p-header__menu__logo {
+  order: 1;
+  margin-bottom: 70px;
 }
-@media screen and (min-width: 768px) {
-  .p-header__menu .menu .menu-item:not(:last-child) {
-    padding-right: 60px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .p-header__menu #menu-header-left-menu {
-    order: 1;
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
-  }
-}
+
 @media screen and (min-width: 768px) {
   .p-header__menu__logo {
     order: 2;
+    margin-bottom: 0;
   }
 }
 .p-header__menu__logo img {
@@ -1411,12 +1444,79 @@ h5 {
     width: 229px;
   }
 }
+.p-header__menu .menu {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .p-header__menu .menu {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 10px;
+  }
+}
+.p-header__menu .menu .menu-item {
+  height: 52px;
+  line-height: 54.5px;
+  padding-left: 7.5px;
+  border-bottom: 1px solid #B9A72F;
+}
+
+@media screen and (min-width: 768px) {
+  .p-header__menu .menu .menu-item {
+    height: 1.5em;
+    line-height: 1.5em;
+    padding-left: 0;
+    border-bottom: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-header__menu .menu .menu-item:not(:last-child) {
+    padding-right: 60px;
+  }
+}
+.p-header__menu .menu a {
+  color: #1D1D1D;
+  display: block;
+}
+
+.p-header__menu #menu-header-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  order: 2;
+  padding: 44px 20px 62px;
+  background-color: #FFF;
+}
+
+@media screen and (min-width: 768px) {
+  .p-header__menu #menu-header-menu {
+    display: none;
+  }
+}
+.p-header__menu #menu-header-left-menu {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .p-header__menu #menu-header-left-menu {
+    display: flex;
+    order: 1;
+    justify-content: end;
+  }
+}
+.p-header__menu #menu-header-right-menu {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .p-header__menu #menu-header-right-menu {
-    order: 3;
     display: flex;
+    order: 3;
     justify-content: flex-start;
-    align-items: flex-end;
   }
 }
 .p-marketing--intro, .p-marketing--problem, .p-marketing--solution {
