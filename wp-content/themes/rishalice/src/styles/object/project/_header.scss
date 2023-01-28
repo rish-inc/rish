@@ -1,4 +1,5 @@
 @use "../../foundation/global" as g;
+@use "../../object/component/decoration";
 
 .p-header {
     @include g.mq( pc ) {
@@ -88,15 +89,63 @@
                     padding-left: 0;
                     border-bottom: none;
                 }
+                a {
+                    color: g.$fontcolor--base;
+                    display: block;
+                    width: auto;
+                    text-align: left;
+                    @include g.mq( pc ) {
+                        min-width: 94px;  // hover時の擬似要素に幅を合わせる
+                        display: inline-block;
+                        text-align: center;
+                    }
+                    &::after {
+                        opacity: 0;  // 通常時、擬似要素は非表示
+                        width: 100%;
+                        content: "";
+                        @extend %wing-line;
+                        position: relative;
+                        bottom: -6px;
+                    }
+                    &:hover {
+                        @include g.mq( pc ) {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                        }
+                        &::after {
+                            @include g.mq( pc ) {
+                                opacity: 1;  // hover時は擬似要素を表示
+                            }
+                        }
+                    }
+                }
+                &.menu-item-has-children {
+                    position: relative;
+                    &::after {
+                        @include g.mq( pc ) {
+                            content: "";
+                            background: url( ../images/sub-menu-arrow.png );
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center top;
+                            width: 10px;
+                            height: 6px;
+                            position: absolute;
+                            top: 45%;
+                            right: 12px;
+                        }
+                    }
+                }
+                .sub-menu {
+                    display: none;
+                }
             }
             .menu-item:not(:last-child) {
                 @include g.mq( pc ) {
-                    padding-right: 60px;
+                    padding-right: 46px;
                 }
-            }
-            a {
-                color: g.$fontcolor--base;
-                display: block;
             }
         }
         // タブレット・SP用メニュー

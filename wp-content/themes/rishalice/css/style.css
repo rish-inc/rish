@@ -185,7 +185,7 @@ h5 {
     max-width: 1080px;
   }
 }
-.c-hover--gmenu:hover::after, .c-decoration--wing-line--under::after {
+.p-header__menu .menu .menu-item a::after, .c-hover--gmenu:hover::after, .c-decoration--wing-line--under::after {
   background: url(../images/gold-wing-line.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -1018,7 +1018,7 @@ h5 {
   background-position: center;
   background-repeat: repeat;
   position: relative;
-  z-index: -4;
+  z-index: 0;
 }
 
 .p-bg::before {
@@ -1470,16 +1470,68 @@ h5 {
     border-bottom: none;
   }
 }
-@media screen and (min-width: 768px) {
-  .p-header__menu .menu .menu-item:not(:last-child) {
-    padding-right: 60px;
-  }
-}
-.p-header__menu .menu a {
+.p-header__menu .menu .menu-item a {
   color: #1D1D1D;
   display: block;
+  width: auto;
+  text-align: left;
 }
 
+@media screen and (min-width: 768px) {
+  .p-header__menu .menu .menu-item a {
+    min-width: 94px;
+    display: inline-block;
+    text-align: center;
+  }
+}
+.p-header__menu .menu .menu-item a::after {
+  opacity: 0;
+  width: 100%;
+  content: "";
+  position: relative;
+  bottom: -6px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-header__menu .menu .menu-item a:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-header__menu .menu .menu-item a:hover::after {
+    opacity: 1;
+  }
+}
+.p-header__menu .menu .menu-item.menu-item-has-children {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .p-header__menu .menu .menu-item.menu-item-has-children::after {
+    content: "";
+    background: url(../images/sub-menu-arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 10px;
+    height: 6px;
+    position: absolute;
+    top: 45%;
+    right: 12px;
+  }
+}
+.p-header__menu .menu .menu-item .sub-menu {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .p-header__menu .menu .menu-item:not(:last-child) {
+    padding-right: 46px;
+  }
+}
 .p-header__menu #menu-header-menu {
   display: none;
   position: absolute;
