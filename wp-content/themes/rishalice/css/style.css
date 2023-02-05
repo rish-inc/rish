@@ -185,7 +185,7 @@ h5 {
     max-width: 1080px;
   }
 }
-.p-header__menu .menu .menu-item::after, .c-hover--gmenu:hover::after, .c-decoration--wing-line--under::after {
+.p-header__menu .menu > .menu-item::after, .c-hover--gmenu:hover::after, .c-decoration--wing-line--under::after {
   background: url(../images/gold-wing-line.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -1367,7 +1367,7 @@ h5 {
 }
 .p-header__button {
   position: absolute;
-  top: 42px;
+  top: 38px;
   right: 20px;
   width: 46px;
   height: 20px;
@@ -1467,7 +1467,7 @@ h5 {
     align-items: flex-end;
   }
 }
-.p-header__menu .menu .menu-item {
+.p-header__menu .menu > .menu-item {
   height: 52px;
   line-height: 54.5px;
   padding-left: 7.5px;
@@ -1475,7 +1475,7 @@ h5 {
 }
 
 @media screen and (min-width: 768px) {
-  .p-header__menu .menu .menu-item {
+  .p-header__menu .menu > .menu-item {
     height: 2em;
     line-height: 1.5em;
     padding-left: 0;
@@ -1486,7 +1486,7 @@ h5 {
     flex-direction: column;
   }
 }
-.p-header__menu .menu .menu-item::after {
+.p-header__menu .menu > .menu-item::after {
   opacity: 0;
   content: "";
   position: relative;
@@ -1495,11 +1495,11 @@ h5 {
 }
 
 @media screen and (min-width: 768px) {
-  .p-header__menu .menu .menu-item:hover::after {
+  .p-header__menu .menu > .menu-item:hover::after {
     opacity: 1;
   }
 }
-.p-header__menu .menu .menu-item a {
+.p-header__menu .menu > .menu-item a {
   color: #1D1D1D;
   display: block;
   width: auto;
@@ -1507,23 +1507,23 @@ h5 {
 }
 
 @media screen and (min-width: 768px) {
-  .p-header__menu .menu .menu-item a {
+  .p-header__menu .menu > .menu-item a {
     display: inline-block;
     text-align: center;
   }
 }
-.p-header__menu .menu .menu-item a:hover {
+.p-header__menu .menu > .menu-item a:hover {
   opacity: 0.7;
 }
 
-.p-header__menu .menu .menu-item.menu-item-has-children a {
+.p-header__menu .menu > .menu-item.menu-item-has-children > a {
   position: relative;
 }
 
 @media screen and (min-width: 768px) {
-  .p-header__menu .menu .menu-item.menu-item-has-children a::after {
+  .p-header__menu .menu > .menu-item.menu-item-has-children > a::after {
     content: "";
-    background: url(../images/sub-menu-arrow.png);
+    background: url(../images/sub-menu-arrow.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center top;
@@ -1535,16 +1535,16 @@ h5 {
   }
 }
 @media screen and (min-width: 768px) {
-  .p-header__menu .menu .menu-item.current-menu-item::after {
+  .p-header__menu .menu > .menu-item.current-menu-item::after {
     opacity: 1;
   }
 }
-.p-header__menu .menu .menu-item .sub-menu {
+.p-header__menu .menu > .menu-item .sub-menu {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .p-header__menu .menu .menu-item:not(:last-child) {
+  .p-header__menu .menu > .menu-item:not(:last-child) {
     margin-right: 54px;
   }
 }
@@ -1567,6 +1567,23 @@ h5 {
 }
 .p-header__menu #menu-header-menu.open {
   display: block;
+}
+
+.p-header__menu #menu-header-menu .menu-item.menu-item-has-children > a {
+  position: relative;
+}
+
+.p-header__menu #menu-header-menu .menu-item.menu-item-has-children > a::after {
+  content: "";
+  background: url(../images/sub-menu-arrow_sp-down.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 14px;
+  height: 7px;
+  position: absolute;
+  top: 47%;
+  right: 8px;
 }
 
 .p-header__menu #menu-header-left-menu {

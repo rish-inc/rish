@@ -9,7 +9,7 @@
     // ハンバーガーボタン
     &__button {
         position: absolute;
-        top: 42px;
+        top: 38px;
         right: 20px;
         width: 46px;
         height: 20px;
@@ -86,7 +86,7 @@
                 display: flex;
                 align-items: flex-end;
             }
-            .menu-item {
+            > .menu-item {
                 height: 52px;
                 line-height: 54.5px;
                 padding-left: 7.5px;
@@ -130,12 +130,12 @@
                     }
                 }
                 &.menu-item-has-children {
-                    a {
+                    > a {
                         position: relative;
                         &::after {
                             @include g.mq( pc ) {
                                 content: "";
-                                background: url( ../images/sub-menu-arrow.png );
+                                background: url( ../images/sub-menu-arrow.svg );
                                 background-size: contain;
                                 background-repeat: no-repeat;
                                 background-position: center top;
@@ -159,7 +159,7 @@
                     display: none;
                 }
             }
-            .menu-item:not(:last-child) {
+            > .menu-item:not(:last-child) {
                 @include g.mq( pc ) {
                     margin-right: 54px;
                 }
@@ -181,6 +181,26 @@
             }
             &.open {
                 display: block;  // 仮
+            }
+
+            .menu-item {
+                &.menu-item-has-children {
+                    > a {
+                        position: relative;
+                        &::after {
+                            content: "";
+                            background: url( ../images/sub-menu-arrow_sp-down.svg );
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center top;
+                            width: 14px;
+                            height: 7px;
+                            position: absolute;
+                            top: 47%;
+                            right: 8px;
+                        }
+                    }
+                }
             }
         }
         // PC用メニュー
