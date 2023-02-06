@@ -1504,6 +1504,7 @@ h5 {
   display: block;
   width: auto;
   text-align: left;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -1523,7 +1524,7 @@ h5 {
 @media screen and (min-width: 768px) {
   .p-header__menu .menu > .menu-item.menu-item-has-children > a::after {
     content: "";
-    background: url(../images/sub-menu-arrow.svg);
+    background: url(../images/sub-menu-arrow-down.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center top;
@@ -1535,12 +1536,69 @@ h5 {
   }
 }
 @media screen and (min-width: 768px) {
+  .p-header__menu .menu > .menu-item.menu-item-has-children > a.open::after {
+    content: "";
+    background: url(../images/sub-menu-arrow-up.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 10px;
+    height: 6px;
+    position: absolute;
+    top: 40%;
+    right: -36px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-header__menu .menu > .menu-item.menu-item-has-children {
+    position: relative;
+  }
+}
+@media screen and (min-width: 768px) {
   .p-header__menu .menu > .menu-item.current-menu-item::after {
     opacity: 1;
   }
 }
 .p-header__menu .menu > .menu-item .sub-menu {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .p-header__menu .menu > .menu-item .sub-menu {
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    left: 0;
+    width: 255px;
+  }
+}
+.p-header__menu .menu > .menu-item .sub-menu li {
+  white-space: nowrap;
+  background-color: #E1F5F2;
+  padding-left: 27px;
+}
+
+.p-header__menu .menu > .menu-item .sub-menu li:hover {
+  background-color: #AACCC7;
+}
+
+.p-header__menu .menu > .menu-item .sub-menu li a {
+  display: block;
+  text-align: left;
+}
+
+.p-header__menu .menu > .menu-item .sub-menu li a::before {
+  content: "-";
+}
+
+.p-header__menu .menu > .menu-item .sub-menu li a:hover {
+  opacity: 1;
+}
+
+.p-header__menu .menu > .menu-item .sub-menu li:not(:last-child) {
+  border-bottom: 1px dashed #B9A72F;
 }
 
 @media screen and (min-width: 768px) {

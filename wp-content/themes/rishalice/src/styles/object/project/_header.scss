@@ -121,6 +121,7 @@
                     display: block;
                     width: auto;
                     text-align: left;
+                    cursor: pointer;  // サービス案内（リンク無し）用
                     @include g.mq( pc ) {
                         display: inline-block;
                         text-align: center;
@@ -135,7 +136,7 @@
                         &::after {
                             @include g.mq( pc ) {
                                 content: "";
-                                background: url( ../images/sub-menu-arrow.svg );
+                                background: url( ../images/sub-menu-arrow-down.svg );
                                 background-size: contain;
                                 background-repeat: no-repeat;
                                 background-position: center top;
@@ -146,6 +147,27 @@
                                 right: -36px;
                             }
                         }
+                        &.open {
+                            &::after {
+                                @include g.mq( pc ) {
+                                    content: "";
+                                    background: url( ../images/sub-menu-arrow-up.svg );
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                    background-position: center top;
+                                    width: 10px;
+                                    height: 6px;
+                                    position: absolute;
+                                    top: 40%;
+                                    right: -36px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.menu-item-has-children {
+                    @include g.mq( pc ) {
+                        position: relative;
                     }
                 }
                 &.current-menu-item {
@@ -157,6 +179,36 @@
                 }
                 .sub-menu {
                     display: none;
+                    @include g.mq( pc ) {
+                        height: 60px;
+                        line-height: 60px;
+                        position: absolute;
+                        z-index: 1;
+                        top: 30px;
+                        left: 0;
+                        width: 255px;
+                    }
+                    li {
+                        white-space: nowrap;  // 自動折り返しなし
+                        background-color: g.$bgcolor--light-green;
+                        padding-left: 27px;
+                        &:hover {
+                            background-color: g.$bgcolor--middle-green;
+                        }
+                        a {
+                            display: block;
+                            text-align: left;
+                            &::before {
+                                content: "-";
+                            }
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    li:not(:last-child) {
+                        border-bottom: 1px dashed g.$border-color--gold;
+                    }
                 }
             }
             > .menu-item:not(:last-child) {
