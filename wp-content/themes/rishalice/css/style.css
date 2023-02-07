@@ -1469,7 +1469,7 @@ h5 {
 }
 .p-header__menu .menu > .menu-item {
   height: 52px;
-  line-height: 54.5px;
+  line-height: 52px;
   padding-left: 7.5px;
   border-bottom: 1px solid #B9A72F;
 }
@@ -1571,7 +1571,7 @@ h5 {
     z-index: 1;
     top: 30px;
     left: 0;
-    width: 255px;
+    min-width: 255px;
   }
 }
 .p-header__menu .menu > .menu-item .sub-menu li {
@@ -1642,6 +1642,17 @@ h5 {
   position: absolute;
   top: 47%;
   right: 8px;
+}
+
+.p-header__menu #menu-header-menu .menu-item.menu-item-has-children .sub-menu {
+  position: absolute;
+  top: 110px;
+  left: 20px;
+  width: calc(100vw - 40px);
+}
+
+.p-header__menu #menu-header-menu .menu-item.menu-item-has-children .sub-menu.open {
+  display: block;
 }
 
 .p-header__menu #menu-header-left-menu {

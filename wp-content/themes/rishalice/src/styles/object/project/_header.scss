@@ -88,7 +88,7 @@
             }
             > .menu-item {
                 height: 52px;
-                line-height: 54.5px;
+                line-height: 52px;
                 padding-left: 7.5px;
                 border-bottom: 1px solid g.$border-color--gold;
                 @include g.mq( pc ) {
@@ -186,7 +186,7 @@
                         z-index: 1;
                         top: 30px;
                         left: 0;
-                        width: 255px;
+                        min-width: 255px;
                     }
                     li {
                         white-space: nowrap;  // 自動折り返しなし
@@ -250,6 +250,16 @@
                             position: absolute;
                             top: 47%;
                             right: 8px;
+                        }
+                    }
+
+                    .sub-menu {
+                        position: absolute;
+                        top: 110px;
+                        left: 20px;
+                        width: calc(100vw - 40px);
+                        &.open {
+                            display: block;
                         }
                     }
                 }
