@@ -1559,10 +1559,6 @@ h5 {
     opacity: 1;
   }
 }
-.p-header__menu .menu > .menu-item .sub-menu {
-  display: none;
-}
-
 @media screen and (min-width: 768px) {
   .p-header__menu .menu > .menu-item .sub-menu {
     height: 60px;
@@ -1597,10 +1593,6 @@ h5 {
   opacity: 1;
 }
 
-.p-header__menu .menu > .menu-item .sub-menu li:not(:last-child) {
-  border-bottom: 1px dashed #B9A72F;
-}
-
 @media screen and (min-width: 768px) {
   .p-header__menu .menu > .menu-item:not(:last-child) {
     margin-right: 54px;
@@ -1612,10 +1604,21 @@ h5 {
   top: 0;
   left: 0;
   width: 100%;
+  height: 100vh;
   z-index: 1;
   order: 2;
   padding: 60px 20px 62px;
   background-color: #FFF;
+  overflow-y: auto;
+  /* スクロールバー非表示（IE・Edge）*/
+  -ms-overflow-style: none;
+  /* スクロールバー非表示（Firefox）*/
+  scrollbar-width: none;
+  /* スクロールバー非表示（Chrome・Safari）*/
+}
+
+.p-header__menu #menu-header-menu::-webkit-scrollbar {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -1627,7 +1630,7 @@ h5 {
   display: block;
 }
 
-.p-header__menu #menu-header-menu .menu-item.active {
+.p-header__menu #menu-header-menu .menu-item {
   height: auto;
 }
 
@@ -1649,15 +1652,39 @@ h5 {
 }
 
 .p-header__menu #menu-header-menu .menu-item.menu-item-has-children .sub-menu {
-  position: absolute;
-  top: 110px;
-  left: 20px;
-  width: calc(100vw - 40px);
+  margin-left: -7.5px;
 }
 
-.p-header__menu #menu-header-menu .menu-item.menu-item-has-children .sub-menu.open {
-  position: static;
-  margin-left: -7.5px;
+.p-header__menu #menu-header-menu .menu-item.menu-item-has-children .sub-menu li {
+  padding: 0 33px 0 22px;
+}
+
+.p-header__menu #menu-header-menu .menu-item.menu-item-has-children .sub-menu li a {
+  padding: 0 14px;
+  border-bottom: 0 dashed #B9A72F;
+  height: 0;
+  line-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: height 0.3s ease-out, line-height 0.3s ease-out, opacity 0.1s ease-out;
+}
+
+.p-header__menu #menu-header-menu .menu-item.menu-item-has-children .sub-menu.open li a {
+  border-bottom: 1px dashed #B9A72F;
+  height: 52px;
+  line-height: 52px;
+  opacity: 1;
+  visibility: visible;
+  transition: height 0.3s ease-out, line-height 0.3s ease-out, opacity 0.1s ease-out, visibility 0.1s ease-out;
+}
+
+.p-header__menu #menu-header-menu .menu-item.menu-item-has-children .sub-menu.open li:last-child a {
+  border-bottom: none;
+}
+
+.p-header__menu #menu-header-left-menu .sub-menu li:not(:last-child),
+.p-header__menu #menu-header-right-menu .sub-menu li:not(:last-child) {
+  border-bottom: 1px dashed #B9A72F;
 }
 
 .p-header__menu #menu-header-left-menu {

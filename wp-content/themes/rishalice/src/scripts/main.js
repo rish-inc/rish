@@ -12,7 +12,7 @@ jQuery( function( $ ) {
         $(this).toggleClass('active');
         $(this).children("a").toggleClass('open');
         $(this).children(".sub-menu").toggleClass('open');
-        $(this).children(".sub-menu").slideToggle('fast');
+        // $(this).children(".sub-menu").slideToggle('fast');
     });
 
     // function mediaQueriesWin(){

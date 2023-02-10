@@ -178,7 +178,7 @@
                     }
                 }
                 .sub-menu {
-                    display: none;
+                    // display: none;
                     @include g.mq( pc ) {
                         height: 60px;
                         line-height: 60px;
@@ -206,9 +206,6 @@
                             }
                         }
                     }
-                    li:not(:last-child) {
-                        border-bottom: 1px dashed g.$border-color--gold;
-                    }
                 }
             }
             > .menu-item:not(:last-child) {
@@ -224,10 +221,22 @@
             top: 0;
             left: 0;
             width: 100%;
+            height: 100vh;  // 仮
             z-index: 1;
             order: 2;
             padding: 60px 20px 62px;
             background-color: g.$bgcolor--white;
+            overflow-y: auto;  // 仮（heightの指定が必要）
+
+            /* スクロールバー非表示（IE・Edge）*/
+            -ms-overflow-style: none;
+            /* スクロールバー非表示（Firefox）*/
+            scrollbar-width: none;
+            /* スクロールバー非表示（Chrome・Safari）*/
+            &::-webkit-scrollbar{
+                display:none;
+            }
+
             @include g.mq( pc ) {
                 display: none;
             }
@@ -236,9 +245,10 @@
             }
 
             .menu-item {
-                &.active {
-                    height: auto;
-                }
+                height: auto;
+                // &.active {
+                //     height: auto;
+                // }
 
                 &.menu-item-has-children {
                     > a {
@@ -258,19 +268,69 @@
                     }
 
                     .sub-menu {
-                        position: absolute;
-                        top: 110px;
-                        left: 20px;
-                        width: calc(100vw - 40px);
+                        // position: absolute;
+                        // top: 110px;
+                        // left: 20px;
+                        // width: calc(100vw - 40px);
+                        margin-left: -7.5px;
+                        // &.open {
+                        //     position: static;
+                        //     margin-left: -7.5px;
+                        // }
+                        
+                        li {
+                            padding: 0 33px 0 22px;
+                            a {
+                                padding: 0 14px;
+                                // ↓↓サブメニューを閉じている状態
+                                border-bottom: 0 dashed g.$border-color--gold;
+                                height: 0;
+                                line-height: 0;
+                                opacity: 0;
+                                visibility: hidden;
+                                // ↓↓閉じるアニメーション
+                                transition: 
+                                    height      .3s ease-out,
+                                    line-height .3s ease-out,
+                                    opacity     .1s ease-out,
+                                    // visibility  .1s ease-out;  // 崩れてるように見えるのでボツ
+                            }
+                        }
+
+                        // ↓↓サブメニューを開いている状態
                         &.open {
-                            position: static;
-                            margin-left: -7.5px;
+                            li {
+                                a {
+                                    border-bottom: 1px dashed g.$border-color--gold;
+                                    height: 52px;
+                                    line-height: 52px;
+                                    opacity: 1;
+                                    visibility: visible;
+                                    // ↓↓開くアニメーション
+                                    transition: 
+                                    height      .3s ease-out,
+                                    line-height .3s ease-out,
+                                    opacity     .1s ease-out,
+                                    visibility  .1s ease-out;
+                                }
+                                &:last-child a {
+                                    border-bottom: none;
+                                }
+                            }
                         }
                     }
                 }
             }
         }
         // PC用メニュー
+        #menu-header-left-menu,
+        #menu-header-right-menu {
+            .sub-menu {
+                li:not(:last-child) {
+                    border-bottom: 1px dashed g.$border-color--gold;
+                }
+            }
+        }
         #menu-header-left-menu {
             display: none;
             @include g.mq( pc ) {
