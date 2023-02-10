@@ -1366,7 +1366,7 @@ h5 {
   }
 }
 .p-header__button {
-  position: absolute;
+  position: fixed;
   top: 38px;
   right: 20px;
   width: 46px;
@@ -1608,7 +1608,7 @@ h5 {
 }
 .p-header__menu #menu-header-menu {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -1625,6 +1625,10 @@ h5 {
 }
 .p-header__menu #menu-header-menu.open {
   display: block;
+}
+
+.p-header__menu #menu-header-menu .menu-item.active {
+  height: auto;
 }
 
 .p-header__menu #menu-header-menu .menu-item.menu-item-has-children > a {
@@ -1652,7 +1656,8 @@ h5 {
 }
 
 .p-header__menu #menu-header-menu .menu-item.menu-item-has-children .sub-menu.open {
-  display: block;
+  position: static;
+  margin-left: -7.5px;
 }
 
 .p-header__menu #menu-header-left-menu {

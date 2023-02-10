@@ -8,7 +8,7 @@
 
     // ハンバーガーボタン
     &__button {
-        position: absolute;
+        position: fixed;
         top: 38px;
         right: 20px;
         width: 46px;
@@ -220,7 +220,7 @@
         // タブレット・SP用メニュー
         #menu-header-menu {
             display: none;
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
@@ -236,6 +236,10 @@
             }
 
             .menu-item {
+                &.active {
+                    height: auto;
+                }
+
                 &.menu-item-has-children {
                     > a {
                         position: relative;
@@ -259,7 +263,8 @@
                         left: 20px;
                         width: calc(100vw - 40px);
                         &.open {
-                            display: block;
+                            position: static;
+                            margin-left: -7.5px;
                         }
                     }
                 }
