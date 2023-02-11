@@ -134,32 +134,28 @@
                     > a {
                         position: relative;
                         &::after {
+                            content: "";
+                            position: absolute;
+                            top: 40%;
+                            right: 16px;
+                            width: 9px;
+                            height: 9px;
+                            border-top: 1px solid #1A1311;
+                            border-right: 1px solid #1A1311;
+                            transform: rotate(135deg);
                             @include g.mq( pc ) {
-                                content: "";
-                                background: url( ../images/sub-menu-arrow-down.svg );
-                                background-size: contain;
-                                background-repeat: no-repeat;
-                                background-position: center top;
-                                width: 10px;
-                                height: 6px;
-                                position: absolute;
-                                top: 40%;
+                                top: 30%;
                                 right: -36px;
+                                width: 6px;
+                                height: 6px;
                             }
                         }
                         &.open {
                             &::after {
+                                top: 48%;
+                                transform: rotate(-45deg);
                                 @include g.mq( pc ) {
-                                    content: "";
-                                    background: url( ../images/sub-menu-arrow-up.svg );
-                                    background-size: contain;
-                                    background-repeat: no-repeat;
-                                    background-position: center top;
-                                    width: 10px;
-                                    height: 6px;
-                                    position: absolute;
                                     top: 40%;
-                                    right: -36px;
                                 }
                             }
                         }
@@ -251,22 +247,6 @@
                 // }
 
                 &.menu-item-has-children {
-                    > a {
-                        position: relative;
-                        &::after {
-                            content: "";
-                            background: url( ../images/sub-menu-arrow_sp-down.svg );
-                            background-size: contain;
-                            background-repeat: no-repeat;
-                            background-position: center top;
-                            width: 14px;
-                            height: 7px;
-                            position: absolute;
-                            top: 47%;
-                            right: 8px;
-                        }
-                    }
-
                     .sub-menu {
                         // position: absolute;
                         // top: 110px;
@@ -285,15 +265,14 @@
                                 // ↓↓サブメニューを閉じている状態
                                 border-bottom: 0 dashed g.$border-color--gold;
                                 height: 0;
-                                line-height: 0;
                                 opacity: 0;
                                 visibility: hidden;
                                 // ↓↓閉じるアニメーション
                                 transition: 
-                                    height      .3s ease-out,
-                                    line-height .3s ease-out,
-                                    opacity     .1s ease-out,
-                                    // visibility  .1s ease-out;  // 崩れてるように見えるのでボツ
+                                    border-bottom .3s ease-out,
+                                    height        .3s ease-out,
+                                    opacity       .1s linear,
+                                    visibility    .1s linear;
                             }
                         }
 
@@ -303,15 +282,14 @@
                                 a {
                                     border-bottom: 1px dashed g.$border-color--gold;
                                     height: 52px;
-                                    line-height: 52px;
                                     opacity: 1;
                                     visibility: visible;
                                     // ↓↓開くアニメーション
                                     transition: 
-                                    height      .3s ease-out,
-                                    line-height .3s ease-out,
-                                    opacity     .1s ease-out,
-                                    visibility  .1s ease-out;
+                                        border-bottom .3s ease-out,
+                                        height        .3s ease-out,
+                                        opacity       .1s linear .1s,
+                                        visibility    .1s linear .1s;
                                 }
                                 &:last-child a {
                                     border-bottom: none;
