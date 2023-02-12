@@ -1646,7 +1646,8 @@ h5 {
 }
 .p-header__menu #menu-header-menu {
   opacity: 0;
-  transition: opacity 0.3s linear;
+  visibility: hidden;
+  transition: all 0.3s linear;
   position: fixed;
   top: 0;
   left: 0;
@@ -1673,6 +1674,7 @@ h5 {
 }
 .p-header__menu #menu-header-menu.open {
   opacity: 1;
+  visibility: visible;
 }
 
 .p-header__menu #menu-header-menu.is-long {
