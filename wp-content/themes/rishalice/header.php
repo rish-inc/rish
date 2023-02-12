@@ -6,6 +6,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title><?php bloginfo( 'name' ); ?></title>
 		<?php wp_head(); ?>
+		<!-- 管理画面にログイン中はアドミンバーを上に固定し、コンテンツを下げる -->
+		<?php if( is_user_logged_in() ): ?>
+			<style type="text/css">
+				.p-header__button {
+					top: 70px;
+				}
+				.p-header__menu #menu-header-menu {
+					top: 32px;
+				}
+				#wpadminbar {
+					position: fixed;
+				}
+			</style>
+		<?php endif; ?>
 	</head>
 	<body <?php body_class(); ?>>
 		<div class="p-bg c-bg--stripe">
