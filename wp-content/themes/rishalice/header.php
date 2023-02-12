@@ -11,9 +11,7 @@
 		<div class="p-bg c-bg--stripe">
 			<header class="l-header p-header">
 				<button class="p-header__button">
-					<span></span>
-					<span></span>
-					<span></span>
+					<span>メニュー展開ボタン</span>
 				</button>
 				<nav class="p-header__menu">
 					<?php
