@@ -1,0 +1,330 @@
+@use "../../foundation/global" as g;
+@use "../../object/component/decoration";
+
+.p-header {
+    @include g.mq( pc ) {
+        margin-bottom: 8.5rem;
+    }
+
+    // ハンバーガーボタン
+    &__button {
+        position: fixed;
+        top: 38px;
+        right: 20px;
+        width: 46px;
+        height: 20px;
+        z-index: 2;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        appearance: none;
+        @include g.mq( pc ) {
+            display: none;
+        }
+        span {
+            font-size: 0;
+            position: absolute;
+            display: block;
+            width: 46px;
+            height: 1px;
+            background-color: #1B1B1B;
+            transition: all .5s;
+            &::before,
+            &::after {
+                position: absolute;
+                left: 0;
+                content: "";
+                width: 100%;
+                height: 1px;
+                background-color: #1B1B1B;
+                transition: all .5s;
+            }
+            &::before {
+                top: -10px;
+            }
+            &::after {
+                top: 10px;
+            }
+            &.open {
+                background: none;
+                &::before {
+                    top: -20px;
+                    transform: translateY(20px) rotate(-26deg);
+                }
+                &::after {
+                    top: 20px;
+                    transform: translateY(-20px) rotate(26deg);
+                }
+            }
+        }
+    }
+
+    &__menu {
+        display: grid;
+        padding-top: 13px;
+        @include g.mq( pc ) {
+            grid-template-columns: 1fr 310px 1fr;
+            padding-top: 30px;
+        }
+        &__logo {
+            order: 1;
+            margin-bottom: 70px;
+            @include g.mq( pc ) {
+                order: 2;
+                margin-bottom: 0;
+            }
+            img {
+                width: 128.16px;
+                height: auto;
+                margin: 0 auto;
+                @include g.mq( pc ) {
+                    width: 229px;
+                }
+            }
+        }
+        .menu {
+            margin: 0;
+            @include g.mq( pc ) {
+                display: flex;
+                align-items: flex-end;
+            }
+
+            // 全てのmenu-item
+            .menu-item {
+                height: auto;
+            }
+
+            // menu直下のmenu-item（サブメニュー以外）
+            > .menu-item {
+                line-height: 52px;
+                padding-left: 7.5px;
+                border-bottom: 1px solid g.$border-color--gold;
+                @include g.mq( pc ) {
+                    height: 2em;
+                    line-height: 1.5em;
+                    padding-left: 0;
+                    border-bottom: none;
+                    min-width: 94px;  // PC版：hover時の擬似要素に幅を合わせる
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
+                &::after {
+                    opacity: 0;  // 通常時、擬似要素は非表示
+                    content: "";
+                    @extend %wing-line;
+                    position: relative;
+                    bottom: -6px;
+                    transition: .4s;
+                }
+                &:hover {
+                    &::after {
+                        @include g.mq( pc ) {
+                            opacity: 1;  // PC版：hover時は擬似要素を表示
+                        }
+                    }
+                }
+                a {
+                    color: g.$fontcolor--base;
+                    display: block;
+                    width: auto;
+                    text-align: left;
+                    cursor: pointer;  // サービス案内（リンク無し）用
+                    @include g.mq( pc ) {
+                        display: inline-block;
+                        text-align: center;
+                    }
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+                &.menu-item-has-children {
+                    > a {
+                        position: relative;
+                        // サブメニューの矢印
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: 40%;
+                            right: 16px;
+                            width: 9px;
+                            height: 9px;
+                            border-top: 1px solid #1A1311;
+                            border-right: 1px solid #1A1311;
+                            transform: rotate(135deg);
+                            @include g.mq( pc ) {
+                                top: 30%;
+                                right: -36px;
+                                width: 6px;
+                                height: 6px;
+                            }
+                        }
+                        &.open {
+                            &::after {
+                                top: 48%;
+                                transform: rotate(-45deg);
+                                @include g.mq( pc ) {
+                                    top: 40%;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.menu-item-has-children {
+                    @include g.mq( pc ) {
+                        position: relative;
+                    }
+                }
+                &.current-menu-item {
+                    &::after {
+                        @include g.mq( pc ) {
+                            opacity: 1;  // PC版：閲覧中のページは擬似要素を表示
+                        }
+                    }
+                }
+                .sub-menu {
+                    margin-left: -7.5px;
+                    @include g.mq( pc ) {
+                        line-height: 60px;
+                        position: absolute;
+                        z-index: 1;
+                        top: 30px;
+                        left: 0;
+                        min-width: 255px;
+                    }
+                    li {
+                        white-space: nowrap;  // 自動折り返しなし
+                        background-color: g.$bgcolor--light-green;
+                        padding: 0 33px 0 22px;
+                        @include g.mq( pc ) {
+                            padding: 0 0 0 27px;
+                            // サブメニューを閉じている状態
+                            border-bottom: 0 dashed g.$border-color--gold;
+                            // 閉じるアニメーション（これがないと残像が気になる）
+                            transition: border-bottom .1s ease-out;
+                        }
+                        &:hover {
+                            background-color: g.$bgcolor--middle-green;
+                        }
+                        a {
+                            display: block;
+                            text-align: left;
+                            padding: 0 14px;
+                            // サブメニューを閉じている状態
+                            border-bottom: 0 dashed g.$border-color--gold;
+                            height: 0;
+                            opacity: 0;
+                            visibility: hidden;
+                            // 閉じるアニメーション
+                            transition: 
+                                border-bottom .3s ease-out,
+                                height        .3s ease-out,
+                                opacity       .1s linear,
+                                visibility    .1s linear;
+                            @include g.mq( pc ) {
+                                padding: 0;
+                            }
+                            &::before {
+                                content: "-";
+                            }
+                        }
+                    }
+
+                    // サブメニューを開いている状態
+                    &.open {
+                        li {
+                            a {
+                                border-bottom: 1px dashed g.$border-color--gold;
+                                height: 52px;
+                                opacity: 1;
+                                visibility: visible;
+                                // 開くアニメーション
+                                transition: 
+                                    border-bottom .3s ease-out,
+                                    height        .3s ease-out,
+                                    opacity       .1s linear .1s,
+                                    visibility    .1s linear .1s;
+                                @include g.mq( pc ) {
+                                    height: 60px;
+                                    border-bottom: none;
+                                }
+                            }
+                            &:not(:last-child) {
+                                @include g.mq( pc ) {
+                                    border-bottom: 1px dashed g.$border-color--gold;
+                                    // 開くアニメーション
+                                    transition: border-bottom .3s ease-out;
+                                }
+                            }
+                            &:last-child a {
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                }
+            }
+            > .menu-item:not(:last-child) {
+                @include g.mq( pc ) {
+                    margin-right: 54px;
+                }
+            }
+        }
+
+        // タブレット・SP用メニュー
+        #menu-header-menu {
+            opacity: 0;
+            visibility: hidden;
+            transition: all .3s linear;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            order: 2;
+            padding: 60px 20px 62px;
+            background-color: g.$bgcolor--white;
+
+            /* スクロールバー非表示（IE・Edge）*/
+            -ms-overflow-style: none;
+            /* スクロールバー非表示（Firefox）*/
+            scrollbar-width: none;
+            /* スクロールバー非表示（Chrome・Safari）*/
+            &::-webkit-scrollbar{
+                display:none;
+            }
+
+            @include g.mq( pc ) {
+                display: none;
+            }
+            &.open {
+                opacity: 1;
+                visibility: visible;
+            }
+            &.is-long {
+                height: 100vh;
+                overflow-y: auto;
+            }
+        }
+
+        // PC用メニュー（左）
+        #menu-header-left-menu {
+            display: none;
+            @include g.mq( pc ) {
+                display: flex;
+                order: 1;
+                justify-content: end;
+            }
+        }
+        // PC用メニュー（右）
+        #menu-header-right-menu {
+            display: none;
+            @include g.mq( pc ) {
+                display: flex;
+                order: 3;
+                justify-content: flex-start;
+            }
+        }
+    }
+}

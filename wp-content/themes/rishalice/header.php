@@ -9,11 +9,31 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<div class="p-bg c-bg--stripe">
-			<header>
-				<nav>
+			<header class="l-header p-header">
+				<button class="p-header__button">
+					<span>メニュー展開ボタン</span>
+				</button>
+				<nav class="p-header__menu">
 					<?php
 						wp_nav_menu( array (
 							'theme_location' => 'header-menu',
+							'container'		 => false
+						) );
+					?>
+					<?php
+						wp_nav_menu( array (
+							'theme_location' => 'header-left-menu',
+							'container'		 => false
+						) );
+					?>
+					<h1 class="p-header__menu__logo">
+						<a href="<?php echo esc_url(home_url('/')); ?>">
+							<img src="<?php echo esc_url( get_theme_file_uri( '/images/header-footer/logo_header.svg' ) ); ?>" alt="ロゴ画像">
+						</a>
+					</h1>
+					<?php
+						wp_nav_menu( array (
+							'theme_location' => 'header-right-menu',
 							'container'		 => false
 						) );
 					?>
