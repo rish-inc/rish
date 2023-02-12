@@ -16,12 +16,15 @@ Tags: blog
 // ==========================================================================
 // Foundation
 // ==========================================================================
-@import "foundation/*";
+@import "src/styles/foundation/base.scss";
+@import "src/styles/foundation/mixin.scss";
+@import "src/styles/foundation/variable.scss";
+@import "src/styles/foundation/wordpress.scss";
 
 // ==========================================================================
 // Layout
 // ==========================================================================
-@import "layout/*";
+@import "src/styles/layout/*.scss";
 
 // ==========================================================================
 // Object
@@ -29,14 +32,14 @@ Tags: blog
 // -----------------------------------------------------------------
 // Component
 // -----------------------------------------------------------------
-@import "object/component/*";
+@import "src/styles/object/component/*.scss";
 
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
-@import "object/project/*";
+@import "src/styles/object/project/*.scss";
 
 // -----------------------------------------------------------------
 // Utility
 // -----------------------------------------------------------------
-@import "object/utility/*";
+@import "src/styles/object/utility/*.scss";

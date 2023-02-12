@@ -1,3 +1,5 @@
+@use 'global' as g;
+
 :root {
 	font-size: 10px;
 }
@@ -17,6 +19,7 @@ body {
 	position: relative;
 	display: flex;
 	flex-direction: column;
+	display: none;
 }
 
 img {
@@ -57,34 +60,4 @@ li, dl, dd {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
-
-
-// mixin
-@mixin breakpoint( $point ) {
-	@if $point == tablet {
-		@media ( min-width: 641px ) {
-			@content ;
-		}
-	}
-	@if $point == pc {
-		@media ( min-width: 769px ) {
-			@content ;
-		}
-	}
-	@if $point == wide {
-		@media ( min-width: 961px ) {
-			@content ;
-		}
-	}
-	@if $point == full {
-		@media ( min-width: 1141px ) {
-			@content ;
-		}
-	}
-	@if $point == contents {
-		@media ( min-width: 1300px ) {
-			@content ;
-		}
-	}
 }

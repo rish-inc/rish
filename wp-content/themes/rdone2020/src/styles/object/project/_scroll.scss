@@ -1,3 +1,5 @@
+@use '../../foundation/global' as g;
+
 .p-scroll {
 	position: fixed;
 	bottom: 50px;
@@ -5,7 +7,7 @@
 	color: #000;
 	transform: rotate( -90deg );
 	z-index: 1;
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 		left: 20px;
 		bottom: 80px;
 	}

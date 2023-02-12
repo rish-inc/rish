@@ -1,20 +1,22 @@
+@use '../../../../foundation/global' as g;
+
 .p-top--animation {
 	padding: 70px 20px 0;
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 		padding: 50px 0 20px;
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 		// width: 930px;
 		padding: 50px 0 0;
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 	&__header {
-		@include breakpoint( tablet ) {
+		@include g.breakpoint( tablet ) {
 			width: 80%;
 			margin: auto;
 		}
-		@include breakpoint( pc ) {
+		@include g.breakpoint( pc ) {
 		}
 		h2 {
 			margin-left: -10px;
@@ -23,31 +25,31 @@
 			font-weight: 400;
 			// position: absolute;
 			// left: 0;
-			@include breakpoint( tablet ) {
+			@include g.breakpoint( tablet ) {
 				font-size: 10vw;
 			}
-			@include breakpoint( pc ) {
+			@include g.breakpoint( pc ) {
 			}
-			@include breakpoint( wide ) {
+			@include g.breakpoint( wide ) {
 			}
 		}
 		.description {
-			@include breakpoint( tablet ) {
+			@include g.breakpoint( tablet ) {
 				width: 45%;
 			}
-			@include breakpoint( pc ) {
+			@include g.breakpoint( pc ) {
 				width: 100%;
 			}
 			.title {
 				font-size: 3.0rem;
 				font-weight: bold;
-				@include breakpoint( tablet ) {
+				@include g.breakpoint( tablet ) {
 					font-size: 3vw;
 				}
-				@include breakpoint( pc ) {
+				@include g.breakpoint( pc ) {
 					white-space: nowrap;
 				}
-				@include breakpoint( wide ) {
+				@include g.breakpoint( wide ) {
 					font-size: 2.4vw;
 				}
 			}
@@ -58,14 +60,14 @@
 	}
 	&__items {
 		margin-top: 20px;
-		@include breakpoint( tablet ) {
+		@include g.breakpoint( tablet ) {
 			margin-top: 40px;
 			display: flex;
 			flex-wrap: wrap;
 		}
 		li {
 			margin-bottom: 20px;
-			@include breakpoint( tablet ) {
+			@include g.breakpoint( tablet ) {
 				width: 50%;
 				height: 315px;
 				margin-bottom: 0;
@@ -78,10 +80,10 @@
 			&:nth-child( odd ) {
 			}
 			&:nth-child( even ) {
-				@include breakpoint( tablet ) {
+				@include g.breakpoint( tablet ) {
 					margin-top: -100px;
 				}
-				@include breakpoint( pc ) {
+				@include g.breakpoint( pc ) {
 				}
 			}
 		}
