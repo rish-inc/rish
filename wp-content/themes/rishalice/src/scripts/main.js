@@ -13,4 +13,13 @@ jQuery( function( $ ) {
         $(this).children(".sub-menu").toggleClass('open');
         $("#menu-header-menu").toggleClass('is-long');
     });
+
+    $(document).click(function(event) {
+        // 親メニューの外側をクリックしたとき、クラス名を削除
+        if(!$(event.target).closest('.menu-item-has-children').length) {
+            $('.menu-item-has-children').children("a").removeClass('open');
+            $('.menu-item-has-children').children(".sub-menu").removeClass('open');
+            $("#menu-header-menu").removeClass('is-long');
+        }
+    });
 } );

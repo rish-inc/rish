@@ -278,7 +278,6 @@
             order: 2;
             padding: 60px 20px 62px;
             background-color: g.$bgcolor--white;
-            overflow-y: auto;
 
             /* スクロールバー非表示（IE・Edge）*/
             -ms-overflow-style: none;
@@ -297,6 +296,7 @@
             }
             &.is-long {
                 height: 100vh;
+                overflow-y: auto;
             }
         }
 

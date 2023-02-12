@@ -1655,7 +1655,6 @@ h5 {
   order: 2;
   padding: 60px 20px 62px;
   background-color: #FFF;
-  overflow-y: auto;
   /* スクロールバー非表示（IE・Edge）*/
   -ms-overflow-style: none;
   /* スクロールバー非表示（Firefox）*/
@@ -1678,6 +1677,7 @@ h5 {
 
 .p-header__menu #menu-header-menu.is-long {
   height: 100vh;
+  overflow-y: auto;
 }
 
 .p-header__menu #menu-header-left-menu {
