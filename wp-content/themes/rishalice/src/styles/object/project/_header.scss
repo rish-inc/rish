@@ -156,9 +156,12 @@
                             transform: rotate(135deg);
                             @include g.mq( full ) {
                                 top: 30%;
-                                right: -36px;
+                                right: -24px;
                                 width: 6px;
                                 height: 6px;
+                            }
+                            @media (min-width: 1260px) {
+                                right: -36px;
                             }
                         }
                         &.open {
@@ -267,6 +270,9 @@
             }
             > .menu-item:not(:last-child) {
                 @include g.mq( full ) {
+                    margin-right: 36px;
+                }
+                @media (min-width: 1260px) {
                     margin-right: 54px;
                 }
             }

@@ -1545,9 +1545,14 @@ h5 {
 @media screen and (min-width: 1200px) {
   .p-header__menu .menu > .menu-item.menu-item-has-children > a::after {
     top: 30%;
-    right: -36px;
+    right: -24px;
     width: 6px;
     height: 6px;
+  }
+}
+@media (min-width: 1260px) {
+  .p-header__menu .menu > .menu-item.menu-item-has-children > a::after {
+    right: -36px;
   }
 }
 .p-header__menu .menu > .menu-item.menu-item-has-children > a.open::after {
@@ -1646,6 +1651,11 @@ h5 {
 }
 
 @media screen and (min-width: 1200px) {
+  .p-header__menu .menu > .menu-item:not(:last-child) {
+    margin-right: 36px;
+  }
+}
+@media (min-width: 1260px) {
   .p-header__menu .menu > .menu-item:not(:last-child) {
     margin-right: 54px;
   }
