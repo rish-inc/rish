@@ -154,6 +154,7 @@
 					</ul>
 				</article>
 
+
 				<?php get_template_part( 'components/template/contact' ); ?>
 			</div>
 		</article>
