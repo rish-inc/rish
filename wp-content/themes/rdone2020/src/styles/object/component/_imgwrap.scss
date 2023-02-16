@@ -1,12 +1,14 @@
+@use '../../foundation/global' as g;
+
 .c-imgwrap {
-    margin-bottom: 10px;
-    @include hovanime;
-    @include breakpoint( tablet ) {
-        margin-bottom: 20px;
-    }
-    @include breakpoint( pc ) {
-    }
-    > a {
-        display: block;
-    }
+	margin-bottom: 10px;
+	@include hovanime;
+	@include g.breakpoint( tablet ) {
+		margin-bottom: 20px;
+	}
+	@include g.breakpoint( pc ) {
+	}
+	> a {
+		display: block;
+	}
 }

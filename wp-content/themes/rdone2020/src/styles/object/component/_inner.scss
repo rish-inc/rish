@@ -1,12 +1,14 @@
+@use '../../foundation/global' as g;
+
 .c-inner {
 	width: 100%;
 	margin: auto;
 	display: block;
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 		width: 950px;
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 }

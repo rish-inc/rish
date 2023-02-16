@@ -1,218 +1,220 @@
+@use 'global' as g;
+
 p {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 }
 
 h3 {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 }
 h4 {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 }
 h5 {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 }
 h6 {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 }
 
 hr {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 }
 dl {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 
 	dt {
-		@include breakpoint( tablet ) {
+		@include g.breakpoint( tablet ) {
 		}
-		@include breakpoint( pc ) {
+		@include g.breakpoint( pc ) {
 		}
-		@include breakpoint( wide ) {
+		@include g.breakpoint( wide ) {
 		}
 	}
 	dd {
-		@include breakpoint( tablet ) {
+		@include g.breakpoint( tablet ) {
 		}
-		@include breakpoint( pc ) {
+		@include g.breakpoint( pc ) {
 		}
-		@include breakpoint( wide ) {
+		@include g.breakpoint( wide ) {
 		}
 	}
 }
 ul {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 	li {
-		@include breakpoint( tablet ) {
+		@include g.breakpoint( tablet ) {
 		}
-		@include breakpoint( pc ) {
+		@include g.breakpoint( pc ) {
 		}
-		@include breakpoint( wide ) {
+		@include g.breakpoint( wide ) {
 		}
 	}
 }
 
 ol {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 	li {
-		@include breakpoint( tablet ) {
+		@include g.breakpoint( tablet ) {
 		}
-		@include breakpoint( pc ) {
+		@include g.breakpoint( pc ) {
 		}
-		@include breakpoint( wide ) {
+		@include g.breakpoint( wide ) {
 		}
 	}
 }
 
 blockquote {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 }
 
 img {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 }
 
 code {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 }
 
 table {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 	thead {
-		@include breakpoint( tablet ) {
+		@include g.breakpoint( tablet ) {
 		}
-		@include breakpoint( pc ) {
+		@include g.breakpoint( pc ) {
 		}
-		@include breakpoint( wide ) {
+		@include g.breakpoint( wide ) {
 		}
 		tr {
-			@include breakpoint( tablet ) {
+			@include g.breakpoint( tablet ) {
 			}
-			@include breakpoint( pc ) {
+			@include g.breakpoint( pc ) {
 			}
-			@include breakpoint( wide ) {
+			@include g.breakpoint( wide ) {
 			}
 			th {
-				@include breakpoint( tablet ) {
+				@include g.breakpoint( tablet ) {
 				}
-				@include breakpoint( pc ) {
+				@include g.breakpoint( pc ) {
 				}
-				@include breakpoint( wide ) {
+				@include g.breakpoint( wide ) {
 				}
 			}
 		}
 	}
 	tbody {
-		@include breakpoint( tablet ) {
+		@include g.breakpoint( tablet ) {
 		}
-		@include breakpoint( pc ) {
+		@include g.breakpoint( pc ) {
 		}
-		@include breakpoint( wide ) {
+		@include g.breakpoint( wide ) {
 		}
 		tr {
-			@include breakpoint( tablet ) {
+			@include g.breakpoint( tablet ) {
 			}
-			@include breakpoint( pc ) {
+			@include g.breakpoint( pc ) {
 			}
-			@include breakpoint( wide ) {
+			@include g.breakpoint( wide ) {
 			}
 			th {
-				@include breakpoint( tablet ) {
+				@include g.breakpoint( tablet ) {
 				}
-				@include breakpoint( pc ) {
+				@include g.breakpoint( pc ) {
 				}
-				@include breakpoint( wide ) {
+				@include g.breakpoint( wide ) {
 				}
 			}
 			td {
-				@include breakpoint( tablet ) {
+				@include g.breakpoint( tablet ) {
 				}
-				@include breakpoint( pc ) {
+				@include g.breakpoint( pc ) {
 				}
-				@include breakpoint( wide ) {
+				@include g.breakpoint( wide ) {
 				}
 			}
 		}
 	}
 }
 pre {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 }
 
 iframe {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 }
 
@@ -221,142 +223,142 @@ input,
 optgroup,
 select,
 textarea {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 }
 
 a {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 	&:link, &:visited {
-		@include breakpoint( tablet ) {
+		@include g.breakpoint( tablet ) {
 		}
-		@include breakpoint( pc ) {
+		@include g.breakpoint( pc ) {
 		}
-		@include breakpoint( wide ) {
+		@include g.breakpoint( wide ) {
 		}
 	}
 	&:hover, &:active {
-		@include breakpoint( tablet ) {
+		@include g.breakpoint( tablet ) {
 		}
-		@include breakpoint( pc ) {
+		@include g.breakpoint( pc ) {
 		}
-		@include breakpoint( wide ) {
+		@include g.breakpoint( wide ) {
 		}
 	}
 }
 .alignleft {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 }
 .aligncenter {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 }
 .alignright {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 }
 .menu {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 	li {
-		@include breakpoint( tablet ) {
+		@include g.breakpoint( tablet ) {
 		}
-		@include breakpoint( pc ) {
+		@include g.breakpoint( pc ) {
 		}
-		@include breakpoint( wide ) {
+		@include g.breakpoint( wide ) {
 		}
 	}
 }
 
 
 .wp-caption {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 }
 
 .sticky {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 }
 
 .gallery {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 }
 
 .bypostauthor {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 }
 
 /* Text meant only for screen readers. */
 .screen-reader-text {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 }
 
 .screen-reader-text:focus {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 
 }
 
 #wpadminbar {
 	position: fixed;
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 }

@@ -1,19 +1,21 @@
+@use '../../../../../foundation/global' as g;
+
 .p-top-section__items--2column {
 	&__list {
-		@include breakpoint( tablet ) {
+		@include g.breakpoint( tablet ) {
 			width: 80%;
 			margin: auto;
 			display: flex;
 			flex-wrap: wrap;
 			align-items: flex-start;
 		}
-		@include breakpoint( pc ) {
+		@include g.breakpoint( pc ) {
 		}
 		li {
 			display: flex;
 			flex-wrap: wrap;
 			margin-bottom: 40px;
-			@include breakpoint( tablet ) {
+			@include g.breakpoint( tablet ) {
 				width: calc( 50% - 30px );
 				margin-bottom: 50px;
 				&:nth-child( odd ) {
@@ -23,18 +25,18 @@
 					margin-left: 30px;
 				}
 			}
-			@include breakpoint( pc ) {
+			@include g.breakpoint( pc ) {
 				margin-bottom: 80px;
 			}
 		}
 		&__figure {
 			margin: auto;
-			@include breakpoint( tablet ) {
+			@include g.breakpoint( tablet ) {
 				// margin: 0;
 			}
 		}
 		.c-img-description {
-			@include breakpoint( tablet ) {
+			@include g.breakpoint( tablet ) {
 				margin-left: 25px;
 			}
 			&__title {
@@ -43,14 +45,14 @@
 			&__link {
 				width: 100%;
 				font-size: 1.4rem;
-				@include breakpoint( tablet ) {
+				@include g.breakpoint( tablet ) {
 				}
-				@include breakpoint( pc ) {
+				@include g.breakpoint( pc ) {
 					// width: 670px;
 				}
 			}
 			&__partner {
-				@include breakpoint( tablet ) {
+				@include g.breakpoint( tablet ) {
 					margin-left: 25px;
 				}
 			}
@@ -61,11 +63,11 @@
 			width: 92%;
 			margin: auto auto 25px;
 			display: block;
-			@include breakpoint( tablet ) {
+			@include g.breakpoint( tablet ) {
 				width: 80%;
 				margin-bottom: 50px;
 			}
-			@include breakpoint( pc ) {
+			@include g.breakpoint( pc ) {
 			}
 		}
 	}

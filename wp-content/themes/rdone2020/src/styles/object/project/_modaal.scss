@@ -1,3 +1,5 @@
+@use '../../foundation/global' as g;
+
 .modaal {
 	&-container {
 		top: 50%;
@@ -15,7 +17,7 @@
 						margin-top: ( -25/2 )+px;
 						top: 50%;
 						border-radius: 0;
-						@include breakpoint( tablet ) {
+						@include g.breakpoint( tablet ) {
 							width: 50px;
 							height: 50px;
 						}
@@ -25,20 +27,20 @@
 							height: 6px;
 							left: 13px;
 							border-radius: 0;
-							@include breakpoint( tablet ) {
+							@include g.breakpoint( tablet ) {
 								height: 18px;
 								left: 25px;
 							}
 						}
 						&::before {
 							margin-top: -8px;
-							@include breakpoint( tablet ) {
+							@include g.breakpoint( tablet ) {
 								margin-top: -6px;
 							}
 						}
 						&::after {
 							margin-top: -4px;
-							@include breakpoint( tablet ) {
+							@include g.breakpoint( tablet ) {
 								margin-top: 6px;
 							}
 						}
@@ -49,12 +51,12 @@
 					.modaal-gallery-prev {
 						left: 0;
 						transform: rotate( 180deg );
-						@include breakpoint( tablet ) {
+						@include g.breakpoint( tablet ) {
 						}
 					}
 					.modaal-gallery-next {
 						right: 0;
-						@include breakpoint( tablet ) {
+						@include g.breakpoint( tablet ) {
 						}
 					}
 				}
@@ -63,7 +65,7 @@
 					&::after {
 						width: 1px;
 						top: 7px;
-						@include breakpoint( tablet ) {
+						@include g.breakpoint( tablet ) {
 							height: 58px;
 							border-radius: 0;
 							top: 5px;
@@ -71,13 +73,13 @@
 					}
 					&::before {
 						left: 17px;
-						@include breakpoint( tablet ) {
+						@include g.breakpoint( tablet ) {
 							left: 35px;
 						}
 					}
 					&::after {
 						left: 17px;
-						@include breakpoint( tablet ) {
+						@include g.breakpoint( tablet ) {
 							left: 34px;
 						}
 					}
@@ -90,7 +92,7 @@
 				top: 0;
 				right: 0;
 				border-radius: 0;
-				@include breakpoint( tablet ) {
+				@include g.breakpoint( tablet ) {
 					width: 70px;
 					height: 70px;
 				}

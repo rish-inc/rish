@@ -1,11 +1,13 @@
+@use '../foundation/global' as g;
+
 .l-header {
 	height: 100vh;
 	position: relative;
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 	.p-logo--header {
 		z-index: 2;
@@ -16,7 +18,7 @@
 		position: relative;
 		opacity: 0;
 		z-index: 1;
-		@include breakpoint( pc ) {
+		@include g.breakpoint( pc ) {
 			width: 100%;
 		}
 	}

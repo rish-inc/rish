@@ -1,13 +1,15 @@
+@use '../../foundation/global' as g;
+
 .p-bgborder {
-    content: "";
-    width: 120%;
-    height: 200%;
-    margin: 0;
-    border-left: .5px solid #000;
-    top: -100%;
-    left: 10%;
-    position: fixed;
-    transform: rotate( -50deg );
-    z-index: -1;
-    display: block;
+	content: "";
+	width: 120%;
+	height: 200%;
+	margin: 0;
+	border-left: .5px solid #000;
+	top: -100%;
+	left: 10%;
+	position: fixed;
+	transform: rotate( -50deg );
+	z-index: -1;
+	display: block;
 }

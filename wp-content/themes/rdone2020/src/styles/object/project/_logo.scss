@@ -1,3 +1,5 @@
+@use '../../foundation/global' as g;
+
 .p-logo {
 	&--header {
 		width: 50%;
@@ -6,12 +8,12 @@
 		top: 50%;
 		transform: translateY( -50% ) translateX( -50% );
 		opacity: 1;
-		@include breakpoint( tablet ) {
+		@include g.breakpoint( tablet ) {
 		}
-		@include breakpoint( pc ) {
+		@include g.breakpoint( pc ) {
 			width: 20%;
 		}
-		@include breakpoint( wide ) {
+		@include g.breakpoint( wide ) {
 		}
 		&__svg {
 			&__path {

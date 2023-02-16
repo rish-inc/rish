@@ -1,10 +1,12 @@
+@use '../../foundation/global' as g;
+
 .p-slide-panel {
 	margin: 245px 0 0 0;
 	padding: 0;
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 		margin-top: 0;
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
 	.infiniteslide_wrap {
 		margin: 0;

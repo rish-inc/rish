@@ -1,8 +1,10 @@
+@use '../../foundation/global' as g;
+
 .post {
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 	}
-	@include breakpoint( wide ) {
+	@include g.breakpoint( wide ) {
 	}
 }

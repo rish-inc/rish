@@ -1,11 +1,13 @@
+@use '../../../foundation/global' as g;
+
 .p-header {
 	&--achievement {
 		height: auto;
 		position: relative;
-		@include breakpoint( tablet ) {
+		@include g.breakpoint( tablet ) {
 			min-height: 337px;
 		}
-		@include breakpoint( pc ) {
+		@include g.breakpoint( pc ) {
 		}
 		.c-inner {
 			width: 100%;
@@ -16,9 +18,9 @@
 			background-position: right bottom;
 			background-repeat: no-repeat;
 			top: 0;
-			@include breakpoint( tablet ) {
+			@include g.breakpoint( tablet ) {
 			}
-			@include breakpoint( pc ) {
+			@include g.breakpoint( pc ) {
 				padding: 0 70px;
 				margin-top: 50px;
 			}
@@ -27,9 +29,9 @@
 			padding: 0;
 			margin: 0;
 			font-size: 3.2rem;
-			@include breakpoint( tablet ) {
+			@include g.breakpoint( tablet ) {
 			}
-			@include breakpoint( pc ) {
+			@include g.breakpoint( pc ) {
 			}
 		}
 		&__url {
@@ -39,9 +41,9 @@
 			text-decoration: none;
 			color: #252522;
 			display: inline-block;
-			@include breakpoint( tablet ) {
+			@include g.breakpoint( tablet ) {
 			}
-			@include breakpoint( pc ) {
+			@include g.breakpoint( pc ) {
 			}
 		}
 		&__tag {
@@ -63,18 +65,18 @@
 		}
 		.c-img-description__partner {
 			font-size: 1.4rem;
-			@include breakpoint( tablet ) {
+			@include g.breakpoint( tablet ) {
 			}
-			@include breakpoint( pc ) {
+			@include g.breakpoint( pc ) {
 			}
 		}
 	}
 	&--print {
 		@extend .p-header--achievement;
-		@include breakpoint( tablet ) {
+		@include g.breakpoint( tablet ) {
 			min-height: 180px;
 		}
-		@include breakpoint( pc ) {
+		@include g.breakpoint( pc ) {
 			min-height: 200px;
 		}
 	}
