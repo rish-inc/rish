@@ -22,4 +22,13 @@ jQuery( function( $ ) {
             $("#menu-header-menu").removeClass('is-long');
         }
     });
+
+    // 画面がリサイズされたとき、全てのクラス名を削除
+    $(window).resize(function(){
+        $(".p-header__button").children("span").removeClass('open');
+		$("#menu-header-menu").removeClass('open');
+        $('.menu-item-has-children').children("a").removeClass('open');
+        $('.menu-item-has-children').children(".sub-menu").removeClass('open');
+        $("#menu-header-menu").removeClass('is-long');
+    });
 } );
