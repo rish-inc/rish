@@ -3,6 +3,9 @@
 
 
 .u-mb {
+	&--14 {
+		margin-bottom: 14px;
+	}
 	&--30 {
 		margin-bottom: 30px;
 	}
@@ -26,6 +29,16 @@
 	}
 
 	// PC用
+	&--pc--0 {
+		@include g.mq( pc ) {
+			margin-bottom: 0;
+		}
+	}
+	&--pc--24 {
+		@include g.mq( pc ) {
+			margin-bottom: 24px;
+		}
+	}
 	&--pc--32 {
 		@include g.mq( pc ) {
 			margin-bottom: 32px;

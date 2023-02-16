@@ -1,6 +1,12 @@
 @use "../../foundation/global" as g;
 
 .c-font{
+	&--tiny {
+		@include g.font-rem( 10 );
+		@include g.mq( pc ) {
+			@include g.font-rem( g.$font-size--Lv2 );
+		}
+	}
 	&--small {
 		@include g.font-rem( g.$font-size--Lv1 );
 	}
@@ -30,6 +36,12 @@
 		@include g.font-rem( g.$font-size--Lv3 );
 		@include g.mq( pc ) {
 			@include g.font-rem( g.$font-size--Lv7 );
+		}
+	}
+	&--big--middle {
+		@include g.font-rem( g.$font-size--Lv1--sp );
+		@include g.mq( pc ) {
+			@include g.font-rem( g.$font-size--Lv2--sp );
 		}
 	}
 	&--big {

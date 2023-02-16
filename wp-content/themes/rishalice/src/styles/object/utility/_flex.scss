@@ -1,0 +1,13 @@
+@use "../../foundation/global" as g;
+@use "../../foundation/variables";
+
+.u-ai {
+	&--sp {
+		&--start {
+			align-items: start;
+			@include g.mq( pc ) {
+				align-items: center;
+			}
+		}
+	}
+}
