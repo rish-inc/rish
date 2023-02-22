@@ -1,0 +1,9 @@
+@use "../../foundation/global" as g;
+
+.p-go-to-top {
+    display: none;
+    @include g.mq( pc ) {
+        display: block;
+        color: g.$fontcolor--green;
+    }
+}

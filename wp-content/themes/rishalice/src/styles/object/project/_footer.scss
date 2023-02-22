@@ -1,1 +1,43 @@
 @use "../../foundation/global" as g;
+
+.p-footer {
+    width: 100%;
+    padding: 20px;
+    background-image: url(../images/header-footer/green-wave_small.svg),url(../images/header-footer/green-wave_big.svg),url(../images/header-footer/footer-background.png);
+    background-repeat: no-repeat,no-repeat,repeat-y;
+    background-position: center bottom,center bottom,center;
+    position: relative;
+    // @include g.mq( pc ) {
+    // }
+    &__menu {
+        width: 100%;
+        position: relative;
+        .menu {
+            margin-bottom: 298px;
+        }
+    }
+    &__logoCopy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -5px;
+        margin: auto;
+        &__logo {
+            width: 171.32px;
+            height: 52.48px;
+            margin-bottom: 6px;
+        }
+        &__copy {
+            padding: 0 8px;
+            background-color: g.$bgcolor--deep-green;
+            small {
+                @include g.font-rem( g.$font-size--Lv1 );
+                line-height: 2;
+                color: g.$fontcolor--white;
+            }
+        }
+    }
+}
