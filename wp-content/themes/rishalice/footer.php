@@ -18,6 +18,10 @@
 						</p>
 						<p class="p-footer__logoCopy__copy"><small>&copy; Rish inc. All Rights Reserved.</small></p>
 					</div>
+					<div class="p-footer__img">
+						<img src="<?php echo esc_url( get_theme_file_uri( '/images/header-footer/rabbit.png' ) ); ?>" alt="ウサギ" class="p-footer__img--rabbit">
+						<img src="<?php echo esc_url( get_theme_file_uri( '/images/header-footer/alice.png' ) ); ?>" alt="アリス" class="p-footer__img--alice">
+					</div>
 				</nav>
 			</footer>
 			<?php wp_footer(); ?>
