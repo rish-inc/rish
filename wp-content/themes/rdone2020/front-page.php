@@ -191,7 +191,7 @@
 					TAM Co., Ltd., Raise Tech Co., Frontier Works Inc, Ltd., CodeUps LLC., Studio Cologne<br>
 					<small>株式会社 TAM, 株式会社 RaiseTech, 株式会社フロンティアワークス, 合同会社CodeUps, 株式会社 Studio Cologne</small>
 				</dd>
-				<dt>Legal adviso</dt>
+				<dt>Legal advisor</dt>
 				<dd>
 					<a href="https://vs-group.jp/lawyer/" target="_blank">Venture Support Law Office</a><br>
 					<small><a href="https://vs-group.jp/lawyer/" target="_blank">弁護士法人ベンチャーサポート法律事務所</a></small>
