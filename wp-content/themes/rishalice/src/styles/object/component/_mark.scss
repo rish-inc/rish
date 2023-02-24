@@ -1,0 +1,54 @@
+@use "../../foundation/global" as g;
+@use "../../foundation/variables";
+
+.c-mark {
+	&--rabbit-trumpet {
+		display: block;
+		background-image: url( ../images/rabbit-icon/body.png );
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center center;
+		width: 54.74px;
+		height: 74.26px;
+		@include g.mq( pc ) {
+
+		}
+	}
+	&--megaphone {
+		display: block;
+		background-image: url( ../images/marketing/megaphone.png );
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center center;
+		width: 57.47px;
+		height: 44px;
+		@include g.mq( pc ) {
+			
+		}
+	}
+	&--device {
+		display: block;
+		background-image: url( ../images/site-production/device.png );
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center center;
+		width: 73px;
+		height: 50.59px;
+		@include g.mq( pc ) {
+			
+		}
+	}
+	&--rabbit-face {
+		display: inline-block;
+		background-image: url( ../images/rabbit-icon/face.png );
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center center;
+		width: 22px;
+		height: 32px;
+		margin-right: 20px;
+		@include g.mq( pc ) {
+			
+		}
+	}
+}

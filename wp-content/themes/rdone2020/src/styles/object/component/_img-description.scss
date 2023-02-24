@@ -1,23 +1,25 @@
+@use '../../foundation/global' as g;
+
 .c-img-description {
 	dt {
 		font-size: 1.4rem;
-		@include breakpoint( tablet ) {
+		@include g.breakpoint( tablet ) {
 		}
-		@include breakpoint( pc ) {
+		@include g.breakpoint( pc ) {
 			font-size: 1.6rem;
 		}
 	}
 	dd {
 		font-size: 1.4rem;
-		@include breakpoint( tablet ) {
+		@include g.breakpoint( tablet ) {
 		}
-		@include breakpoint( pc ) {
+		@include g.breakpoint( pc ) {
 			font-size: 1.4rem;
 		}
 	}
 	&__link {
 		margin-left: 10px;
-		@include breakpoint( tablet ) {
+		@include g.breakpoint( tablet ) {
 			margin-left: 0;
 		}
 	}
@@ -29,16 +31,16 @@
 			display: block;
 			clear: both;
 		}
-		@include breakpoint( tablet ) {
+		@include g.breakpoint( tablet ) {
 			display: flex;
 		}
-		@include breakpoint( pc ) {
+		@include g.breakpoint( pc ) {
 		}
 		&__title {
 			font-size: 1.4rem;
-			@include breakpoint( tablet ) {
+			@include g.breakpoint( tablet ) {
 			}
-			@include breakpoint( pc ) {
+			@include g.breakpoint( pc ) {
 			}
 
 		}
@@ -48,13 +50,13 @@
 			float: left;
 			&:nth-of-type( 1 ) {
 				margin-left: 10px;
-				@include breakpoint( tablet ) {
+				@include g.breakpoint( tablet ) {
 					margin-left: 0;
 				}
 			}
-			@include breakpoint( tablet ) {
+			@include g.breakpoint( tablet ) {
 			}
-			@include breakpoint( pc ) {
+			@include g.breakpoint( pc ) {
 			}
 		}
 	}

@@ -43,6 +43,8 @@
 					<?php endif; ?>
 					<?php if ( $tags ) : ?>
 						<p class="p-header--achievement__tag"><?php echo esc_html( $type_tags ); ?></p>
+					<?php elseif ( is_single() ) : ?>
+						<p class="p-header--achievement__tag"><?php the_category( '', 'multiple' ); ?></p>
 					<?php endif; ?>
 					<?php if ( $date ) : ?>
 						<p class="p-header--achievement__date">Release: <?php echo esc_html( $date ); ?></p>

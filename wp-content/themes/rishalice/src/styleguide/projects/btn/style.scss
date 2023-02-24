@@ -1,0 +1,18 @@
+@use "../../foundation/global" as g;
+@use "../../foundation/variables";
+
+.p-btn {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	color: g.$fontcolor--white;
+	@include g.font-rem( g.$font-size--Lv3 );
+	padding: 30px;
+	width: 335px;
+	height: 80px;
+	@include g.mq( pc ) {
+		@include g.font-rem( g.$font-size--Lv8 );
+		width: 500px;
+		height: 100px;
+	}
+}

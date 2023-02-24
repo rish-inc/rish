@@ -4,15 +4,23 @@
 	&--body {
 		background-image: url(../images/site-production/flow-arrow-body_sp.png);
 		background-repeat: repeat-y;
+		width: 99px;
+		height: 1px;
 		@include g.mq( pc ) {
 			background-image: url(../images/site-production/flow-arrow-body_pc.png);
+			width: 208px;
+			height: 1px;
 		}
 	}
 	&--tip {
 		background-repeat: no-repeat;
 		background-image: url(../images/site-production/flow-arrow-tip_sp.png);
+		width: 99px;
+		height: 69px;
 		@include g.mq( pc ) {
 			background-image: url(../images/site-production/flow-arrow-tip_pc.png);
+			width: 208px;
+			height: 148px;
 		}
 	}
 }

@@ -1,0 +1,148 @@
+@use "../../foundation/global" as g;
+
+.p-about {
+    &__head {
+        margin-bottom: 80px;
+        @include g.mq( pc ) {
+            margin-bottom: 90px;
+        }
+        .c-font--big {
+            color: g.$fontcolor--base;
+            line-height: 1.5;
+        }
+        &.c-decoration--wing-line--under::after {
+            bottom: 0;
+            @include g.mq( pc ) {
+                bottom: -6px;
+            }
+        }
+    }
+
+    &--philosophy {
+        line-height: 2;
+        margin-bottom: 115px;
+        @include g.mq( pc ) {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0;
+        }
+        .c-drop-shadow-bg--big--left {
+            width: 77vw;
+            margin-left: 7.2vw;
+            margin-bottom: 122.3px;
+            @include g.mq( tb ) {
+                width: 64vw;
+                margin: 0 auto 122.3px;
+            }
+            @include g.mq( pc ) {
+                width: 44%;
+                margin-left: 60px;
+                margin-bottom: 255px;
+            }
+            @include g.mq( full ) {
+                width: auto;
+                margin-left: 0;
+            }
+        }
+
+        &__inner {
+            @include g.mq( pc ) {
+                width: 40%;
+                margin-right: 24px;
+            }
+            @include g.mq( full ) {
+                width: 50%;
+                margin-right: 0;
+            }
+        }
+
+        &__head {
+            @include g.font-rem( g.$font-size--Lv1--sp);
+            line-height: 1.2;
+            color: g.$fontcolor--white;
+            text-align: center;
+            margin-bottom: 98px;
+            @include g.mq( pc ) {
+                text-align: left;
+                margin-bottom: 70px;
+            }
+            span {
+                display: inline-block;
+                background-color: g.$bgcolor--turquoise-green;
+                padding: 0 1em;  // 左右に1文字分の余白
+            }
+        }
+
+        &__text {
+            margin-bottom: 34px;
+        }
+    }
+
+    &--profile {
+        line-height: 1.5;
+        margin-bottom: 196px;
+        @include g.mq( pc ) {
+            line-height: 2;
+            margin-bottom: 210px;
+        }
+
+        &__list {
+            @include g.mq( pc ) {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            &__title {
+                @include g.font-rem( g.$font-size--Lv6 );
+                line-height: 2;
+                margin: 54px 0 6px;
+                @include g.mq( pc ) {
+                    @include g.font-rem( g.$font-size--Lv3 );
+                    width: 30%;
+                    margin: 0;
+                }
+                span {
+                    @include g.font-rem( g.$font-size--Lv2 );
+                    margin-left: 10px;
+                    @include g.mq( wide ) {
+                        margin-left: 17px;
+                    }
+                }
+            }
+            .c-line--ornament {
+                &::before {
+                    top: -32px;
+                    @include g.mq( pc ) {
+                        top: -39px;
+                        width: 333%;
+                    }
+                }
+                &::after {
+                    top: -26px;
+                    @include g.mq( pc ) {
+                        top: -33px;
+                        width: calc( 333% - 30px );
+                        left: 15px;
+                    }
+                }
+            }
+            &__wrapper {
+                @include g.mq( pc ) {
+                    width: 70%;
+                    margin-bottom: 60px;
+                }
+            }
+            &__text {
+                margin-left: 1.5em;
+                @include g.mq( pc ) {
+                    margin-left: 0;
+                }
+                dt {
+                    margin-bottom: 12px;
+                    @include g.mq( pc ) {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

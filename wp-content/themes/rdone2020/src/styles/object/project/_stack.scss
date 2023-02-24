@@ -1,14 +1,16 @@
+@use '../../foundation/global' as g;
+
 .p-stack {
 	margin-bottom: 25px;
 	position: relative;
 	top: -11px;
 	left: -11px;
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 		margin-bottom: 50px;
 		top: -22px;
 		left: -22px;
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 		width: 100%;
 	}
 	&__bg {
@@ -23,7 +25,7 @@
 			top: 22px;
 			left: 22px;
 			z-index: -1;
-			@include breakpoint( tablet ) {
+			@include g.breakpoint( tablet ) {
 				top: 44px;
 				left: 44px;
 			}
@@ -32,7 +34,7 @@
 			position: relative;
 			@include hovanime;
 			margin-bottom: 30px;
-			@include breakpoint( tablet ) {
+			@include g.breakpoint( tablet ) {
 				margin-bottom: 65px;
 			}
 			a {

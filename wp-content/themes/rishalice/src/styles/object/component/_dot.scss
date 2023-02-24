@@ -1,0 +1,16 @@
+@use "../../foundation/global" as g;
+@use "../../foundation/variables";
+
+.c-dot {
+	&--small {
+		&::before {
+			position: absolute;
+			content: '';
+			display: inline-block;
+			width: 2px;
+			height: 2px;
+			background: g.$bgcolor--black;
+			border-radius: 50%;
+		}
+	}
+}

@@ -1,13 +1,15 @@
+@use '../../../../foundation/global' as g;
+
 .p-top-masonry {
 	&__list {
-		@include breakpoint( tablet ) {
+		@include g.breakpoint( tablet ) {
 			display: flex;
 		}
 		&__item {
 			width: auto;
 			max-width: 300px;
 			margin: 0 auto 40px;
-			@include breakpoint( tablet ) {
+			@include g.breakpoint( tablet ) {
 				width: 250px;
 				margin: unset;
 				margin-bottom: 40px;

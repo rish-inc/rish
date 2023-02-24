@@ -1,17 +1,48 @@
 @use "sass:math"; //math.divを使う上で必要
 @use "../../foundation/global" as g;
 
-.c-line{
-	&--dot{
-		&--bottom{
+.c-line {
+	&--dot {
+		&--bottom {
 			border-bottom: 2px dotted #b9a72f;
 		}
+		// backgroundにしてドットの間隔を自由に設定（横）
+		&--bottom--bg {
+			background-image : linear-gradient(to right, #b9a72f 2px, transparent 2px);
+			background-size: 10px 2px;
+			background-repeat: repeat-x;
+			background-position: bottom;
+		}
+		// backgroundにしてドットの間隔を自由に設定（縦・左）
+		&--left--bg {
+			position: absolute;
+			top: 0;
+			left: 27px;
+			width: 100%;
+			height: 100%;
+			@include g.mq( pc ) {
+				top: -29px;
+				left: 45px;
+			}
+			&::before {
+				content: "";
+				background-image : linear-gradient(to bottom, #b9a72f 2px, transparent 2px);
+				background-size: 2px 10px;
+				background-repeat: repeat-y;
+				background-position: left top;
+				position: absolute;
+				right: 0;
+				left: 0;
+				top: 10px;
+				height: 100%;
+			}
+		}
 	}
-	&--ornament{
+	&--ornament {
 		position: relative;
-		&::before{
+		&::before {
 			content: "";
-			background-image: url( ../images/line-ornament--left.png ),url( ../images/line-ornament--right.png );
+			background-image: url( ../images/line-ornament/left.png ),url( ../images/line-ornament/right.png );
 			background-position: left bottom, right bottom;
 			background-repeat: no-repeat, no-repeat;
 			position: absolute;
@@ -19,9 +50,9 @@
 			height: 12px;
 			width: 100%;
 		}
-		&::after{
+		&::after {
 			content: "";
-			width: calc(100% - 30px);
+			width: calc( 100% - 30px );
 			background: #000;
 			height: 1px;
 			position: absolute;

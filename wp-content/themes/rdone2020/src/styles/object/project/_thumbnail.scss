@@ -1,10 +1,12 @@
+@use '../../foundation/global' as g;
+
 .p-thumbnail {
 	width: 100%;
 	padding: 35px;
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 		padding: 50px;
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 		padding: 100px;
 	}
 	&__imgbox {
@@ -14,18 +16,18 @@
 		align-items: center;
 		position: relative;
 		z-index: 1;
-		@include breakpoint( tablet ) {
+		@include g.breakpoint( tablet ) {
 		}
-		@include breakpoint( pc ) {
+		@include g.breakpoint( pc ) {
 		}
 	}
 	&--portfolio-detail {
 		@extend .p-thumbnail;
 		background: #ededed;
 		position: relative;
-		@include breakpoint( tablet ) {
+		@include g.breakpoint( tablet ) {
 		}
-		@include breakpoint( pc ) {
+		@include g.breakpoint( pc ) {
 		}
 		&::before {
 			content: "";
@@ -38,17 +40,17 @@
 			left: 0;
 			top: 0;
 			z-index: 1;
-			@include breakpoint( tablet ) {
+			@include g.breakpoint( tablet ) {
 				width: 400px;
 			}
-			@include breakpoint( pc ) {
+			@include g.breakpoint( pc ) {
 				width: 400px;
 			}
 		}
 		.p-thumbnail__imgbox {
 			.print {
 				width: 200px;
-				@include breakpoint( tablet ) {
+				@include g.breakpoint( tablet ) {
 					width: 300px;
 				}
 			}

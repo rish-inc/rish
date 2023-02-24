@@ -1,14 +1,16 @@
+@use '../../foundation/global' as g;
+
 .p-form {
 	width: 100%;
-	@include breakpoint( tablet ) {
+	@include g.breakpoint( tablet ) {
 		width: 50%;
 	}
-	@include breakpoint( pc ) {
+	@include g.breakpoint( pc ) {
 		width: 50%;
 	}
 	// .form-block {
 	// 	margin-bottom: 25px;
-	// 	@include breakpoint( tablet ) {
+	// 	@include g.breakpoint( tablet ) {
 	// 		margin-bottom: 50px;
 	// 	}
 	// }
@@ -24,7 +26,7 @@
 		margin: auto;
 		padding: 0 20px;
 		display: block;
-		@include breakpoint( tablet ) {
+		@include g.breakpoint( tablet ) {
 		}
 	}
 	input,
@@ -33,7 +35,7 @@
 		border: 0;
 		background-color: #ededed;
 		&:focus {
-			outline: 1px $color--red solid;
+			outline: 1px g.$color--red solid;
 		}
 	}
 	dl {
@@ -57,7 +59,7 @@
 		textarea,
 		select {
 			width: 100%;
-			@include breakpoint( tablet ) {
+			@include g.breakpoint( tablet ) {
 				padding: 5px;
 			}
 		}
@@ -102,7 +104,7 @@
 		border: 1px solid #000;
 		outline: none;
 		&:focus {
-			outline: 1px $color--red solid;
+			outline: 1px g.$color--red solid;
 		}
 	}
 	.reset-bt {
@@ -116,10 +118,10 @@
 		text-align: center;
 		.sec-copy {
 			font-size: 1.2rem;
-			@include breakpoint( tablet ) {
+			@include g.breakpoint( tablet ) {
 				font-size: 1.4rem;
 			}
-			@include breakpoint( tablet ) {
+			@include g.breakpoint( tablet ) {
 				font-size: 1.4rem;
 			}
 		}
