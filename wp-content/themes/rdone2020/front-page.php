@@ -191,6 +191,13 @@
 					TAM Co., Ltd., Raise Tech Co., Ltd., Studio Cologne<br>
 					<small>株式会社 TAM, 株式会社 RaiseTech, 株式会社 Studio Cologne</small>
 				</dd>
+				<dt>
+					Legal advisor
+				</dt>
+				<dd>
+					<a href="https://vs-group.jp/lawyer/" target="_blank">Venture Support Law Office</a><br>
+					<small><a href="https://vs-group.jp/lawyer/" target="_blank">弁護士法人ベンチャーサポート法律事務所</a></small>
+				</dd>
 				<!-- <dt>Qualification</dt>
 				<dd>
 					Antique dealer permit<br>
