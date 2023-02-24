@@ -188,8 +188,8 @@
 				</dd>
 				<dt>Main client</dt>
 				<dd>
-					TAM Co., Ltd., Raise Tech Co., Ltd., Studio Cologne<br>
-					<small>株式会社 TAM, 株式会社 RaiseTech, 株式会社 Studio Cologne</small>
+					TAM Co., Ltd., Raise Tech Co., Frontier Works Inc, Ltd., CodeUps LLC., Studio Cologne<br>
+					<small>株式会社 TAM, 株式会社 RaiseTech, 株式会社フロンティアワークス, 合同会社CodeUps, 株式会社 Studio Cologne</small>
 				</dd>
 				<dt>Legal adviso</dt>
 				<dd>
