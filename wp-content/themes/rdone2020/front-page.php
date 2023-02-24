@@ -141,42 +141,58 @@
 		<div class="c-inner">
 			<h2>About</h2>
 			<dl>
-				<dt>Company name</dt>
+				<dt>
+					Company name
+				</dt>
 				<dd>
 					Rish inc.<br>
 					<small>株式会社 リッシュ</small>
 				</dd>
-				<dt>Address - Business office</dt>
+				<dt>
+					Address - Business office
+				</dt>
 				<dd>
 					2-2-10 Tokui-cho, Chuo-ku, Osaka-shi, Osaka Arkmine B201 540-0025<br>
 					<small>〒540-0025 大阪府大阪市中央区徳井町2−2−10 アークマインB201</small>
 				</dd>
-				<dt>Address - Headquarters</dt>
+				<dt>
+					Address - Headquarters
+				</dt>
 				<dd>
 					4-114 Minami Uematsucho, Yao City, Osaka 581-0091<br>
 					<small>〒581-0091 大阪府八尾市南植松町4丁目114</small>
 				</dd>
-				<dt>Founded</dt>
+				<dt>
+					Founded
+				</dt>
 				<dd>
 					August 2020<br>
 					<small>2020年 8月</small>
 				</dd>
-				<dt>Capital</dt>
+				<dt>
+					Capital
+				</dt>
 				<dd>
 					1,000,000 Yen<br>
 					<small>1,000,000円</small>
 				</dd>
-				<dt>CEO</dt>
+				<dt>
+					CEO
+				</dt>
 				<dd>
 					Yasuhito Kawanishi<br>
 					<small>川西 康人</small>
 				</dd>
-				<dt>Business</dt>
+				<dt>
+					Business
+				</dt>
 				<dd>
 					E-commerce, Fashion and apparel product sales, Web design, Web Developent, Photo/video shooting, Photo/video edting, Consulting<br>
 					<small>電子商取引, ファッション・アパレルの物販, ウェブデザイン, ウェブ開発, 写真・動画撮影, 写真・動画編集, コンサルティング</small>
 				</dd>
-				<dt>Curio dealer</dt>
+				<dt>
+					Curio dealer
+				</dt>
 				<dd>
 					Secondhand dealer license number: 62107R021247<br>
 					<small>古物商許可番号: 62107R021247</small>
