@@ -21,16 +21,30 @@
         .menu {
             @include g.font-rem( g.$font-size--Lv3 );
             margin: 78px -24px 298px;
-            @include g.mq( pc ) {
+            @include g.mq( wide ) {
                 @include g.font-rem( g.$font-size--Lv5 );
                 margin: 32px auto 190px;
-                max-width: 834px;
+                max-width: 834px;  // SEOで改行される幅
             }
             .menu-item {
                 line-height: 2;
                 margin: 10px 0;
                 @include g.mq( pc ) {
                     margin: 12px 0;
+                }
+                // PC版：サービス案内、プライバシーポリシー以外はインライン要素にして横並びにする
+                // （会社紹介～お問い合わせ）
+                &:not(.menu-item-type-custom,.menu-item-privacy-policy) {
+                    @include g.mq( pc ) {
+                        display: inline;
+                    }
+                }
+                // PC版：トップページ、サービス案内、プライバシーポリシー以外は右に余白あり
+                // （会社紹介～お問い合わせ）
+                &:not(.menu-item-home,.menu-item-type-custom,.menu-item-privacy-policy) {
+                    @include g.mq( pc ) {
+                        margin-right: 30px;
+                    }
                 }
                 a {
                     display: block;
@@ -115,7 +129,7 @@
             bottom: 126px;
             width: 52.36px;
             height: 78.76px;
-            @include g.mq( pc ) {
+            @include g.mq( wide ) {
                 left: 58px;
                 bottom: 32px;
                 width: 100.38px;
@@ -128,7 +142,7 @@
             bottom: 118px;
             width: 144.26px;
             height: 175.12px;
-            @include g.mq( pc ) {
+            @include g.mq( wide ) {
                 right: 58px;
                 bottom: 28px;
                 width: 210.84px;
