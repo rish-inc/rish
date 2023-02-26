@@ -1,6 +1,7 @@
-			<div class="p-go-to-top">
-				<span>Go to Top</span>
-			</div>
+			<button class="p-go-to-top">
+				<span class="p-go-to-top__text">Go to Top</span>
+				<div class="p-go-to-top__icon"></div>
+			</button>
 			<footer class="p-footer">
 				<nav class="p-footer__menu c-frame--ornament--type-b">
 					<?php

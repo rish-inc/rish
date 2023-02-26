@@ -1543,14 +1543,57 @@ h5 {
 }
 .p-go-to-top {
   display: none;
+  position: fixed;
+  right: 8%;
+  bottom: 70px;
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 @media screen and (min-width: 768px) {
   .p-go-to-top {
     display: block;
-    color: #5EA79C;
+    right: 6%;
+    bottom: 48px;
   }
 }
+.p-go-to-top__text {
+  color: #5EA79C;
+  font-size: 1rem;
+  display: inline-block;
+  margin: 0 auto 18px;
+}
+
+.p-go-to-top__icon {
+  width: 61.84px;
+  height: 61.84px;
+  transform: rotate(45deg);
+  background-color: #5EA79C;
+  margin: auto;
+}
+
+.p-go-to-top__icon:hover {
+  opacity: 0.7;
+}
+
+.p-go-to-top__icon::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url(../images/header-footer/key.png) no-repeat;
+  transform: rotate(-45deg);
+  background-size: auto;
+  background-position: center;
+}
+
 @media screen and (min-width: 1200px) {
   .p-header {
     margin-bottom: 8.5rem;
