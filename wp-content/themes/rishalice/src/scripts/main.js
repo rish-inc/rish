@@ -32,16 +32,21 @@ jQuery( function( $ ) {
         $('#menu-header-menu').removeClass('is-long');
     });
 
-    // Go to Topボタンのクリック処理
-    var pagetop = $('.p-go-to-top');   
+    // PCサイズ(※)以上のとき、100pxスクロールしたらGo to Topボタンを表示
+    // ※スクロールバーの幅を加味して(768-17)pxで指定
+    var pagetop = $('.p-go-to-top');
     pagetop.hide();
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {  // 100pxスクロールしたら表示
-            pagetop.fadeIn();
-        } else {
-            pagetop.fadeOut();
+        var windowSize = $(window).width();
+        if (windowSize >= 751) {
+            if ($(this).scrollTop() > 100) {
+                pagetop.fadeIn();
+            } else {
+                pagetop.fadeOut();
+            }
         }
     });
+    // Go to Topボタンのクリック処理
     pagetop.click(function () {
         $('html, body').animate({
             scrollTop: 0

@@ -1544,8 +1544,8 @@ h5 {
 .p-go-to-top {
   display: none;
   position: fixed;
-  right: 8%;
-  bottom: 70px;
+  right: 6%;
+  bottom: 48px;
   z-index: 1;
   background-color: transparent;
   border: none;
@@ -1557,13 +1557,6 @@ h5 {
   appearance: none;
 }
 
-@media screen and (min-width: 768px) {
-  .p-go-to-top {
-    display: block;
-    right: 6%;
-    bottom: 48px;
-  }
-}
 .p-go-to-top__text {
   color: #5EA79C;
   font-size: 1rem;
