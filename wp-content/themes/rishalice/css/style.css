@@ -1572,21 +1572,65 @@ h5 {
   margin: auto;
 }
 
-.p-go-to-top__icon:hover {
-  opacity: 0.7;
-}
-
 .p-go-to-top__icon::after {
   content: "";
   display: inline-block;
   width: 100%;
   height: 100%;
-  background: url(../images/header-footer/key.png) no-repeat;
+  background: url(../images/header-footer/key1.png) no-repeat;
   transform: rotate(-45deg);
   background-size: auto;
   background-position: center;
 }
 
+.p-go-to-top__icon.is-hover::after {
+  animation: image_anime1 forwards 0.7s ease normal;
+}
+
+.p-go-to-top__icon.is-out::after {
+  animation: image_anime2 forwards 0.7s ease normal;
+}
+
+@keyframes image_anime1 {
+  0% {
+    background-image: url(../images/header-footer/key1.png);
+  }
+  20% {
+    background-image: url(../images/header-footer/key2.png);
+  }
+  40% {
+    background-image: url(../images/header-footer/key3.png);
+  }
+  60% {
+    background-image: url(../images/header-footer/key4.png);
+  }
+  80% {
+    background-image: url(../images/header-footer/key5.png);
+  }
+  100% {
+    background-image: url(../images/header-footer/key6.png);
+  }
+}
+@keyframes image_anime2 {
+  0% {
+    background-image: url(../images/header-footer/key6.png);
+  }
+  20% {
+    background-image: url(../images/header-footer/key5.png);
+  }
+  40% {
+    background-image: url(../images/header-footer/key4.png);
+  }
+  60% {
+    background-image: url(../images/header-footer/key3.png);
+  }
+  80% {
+    background-image: url(../images/header-footer/key2.png);
+  }
+  100% {
+    background-image: url(../images/header-footer/key1.png);
+  }
+}
 @media screen and (min-width: 1200px) {
   .p-header {
     margin-bottom: 8.5rem;
