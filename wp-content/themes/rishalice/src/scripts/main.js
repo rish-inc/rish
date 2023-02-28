@@ -43,6 +43,7 @@ jQuery( function( $ ) {
                 pagetop.fadeIn();
             } else {
                 pagetop.fadeOut();
+                $('.p-go-to-top__icon').removeClass('is-out');
             }
         }
     });
@@ -52,5 +53,14 @@ jQuery( function( $ ) {
             scrollTop: 0
         }, 300);  // 0.3秒かけてトップへ移動
         return false;
+    });
+
+    // Go to Topボタンのhover処理
+    $('.p-go-to-top__icon').hover(function(){
+        $(this).addClass('is-hover');
+        $(this).removeClass('is-out');
+    }, function(){
+        $(this).addClass('is-out');
+        $(this).removeClass('is-hover');
     });
 } );
