@@ -5,20 +5,33 @@
 				<span class="c-decoration--english">Blog</span>
 				<h1 class="c-font--big">ブログ</h1>
 			</div>
-			<ul class="p-blog-archive__list">
+			<ul class="p-blog-archive__list p-card--blog">
                 <?php
                     if( have_posts() ) :
-                        while( have_posts() ) :
-                            the_post(); ?>
-                            <li class="p-blog-archive__list__item">
-                                <a class="p-card__link" href="<?php the_permalink(); ?>">
-                                <h2><?php the_title(); ?></h2>
-                                </a>
-                            </li>
-                        <?php endwhile; ?>
+                        while( have_posts() ) : the_post(); ?>
+                        <li class="p-blog-archive__list__item">
+                            <a class="p-card--blog__link" href="<?php the_permalink(); ?>"></a>
+                            <figure class="p-card--blog__thumbnail">
+                                <?php
+                                    if(has_post_thumbnail() ):
+                                        the_post_thumbnail(array(333, 254), array("alt" => get_the_title(), "class" => "p-card--blog__thumbnail__img"));
+                                    else:
+                                        ?><img src="<?php echo get_template_directory_uri() ?>/images/blog/none-eye-catching.png" alt="画像はありません" class="p-card--blog__thumbnail__img"><?php
+                                    endif;
+                                ?>
+                            </figure>
+                            <?php the_category() ?>
+                            <figcaption class="p-card--blog__contents">
+                                <span class="p-card--blog__contents__day"><?php echo esc_html( get_the_date( 'Y年m月d日') ); ?></span>
+                                <h2 class="p-card--blog__contents__title"><?php the_title(); ?></h2>
+                                <p class="p-card--blog__contents__excerpt"><?php the_excerpt(); ?></p>
+                            </figcaption>
+                        </li>
+                    <?php endwhile; ?>
                 <?php endif; ?>
 			</ul>
-			
+			<div class="c-pagination">
+            </div>
 			<?php get_template_part( 'components/template/contact' ); ?>
 		</article>
 	</main>
