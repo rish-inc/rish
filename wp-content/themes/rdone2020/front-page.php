@@ -165,77 +165,14 @@
 			?>
 		</div>
 	</section>
-	<section class="p-top--corpinfo is-fade">
-		<div class="c-inner">
-			<h2>About</h2>
-			<dl>
-				<dt>Company name</dt>
-				<dd>
-					Rish inc.<br>
-					<small>株式会社 リッシュ</small>
-				</dd>
-				<dt>Address - Business office</dt>
-				<dd>
-					2-2-10 Tokui-cho, Chuo-ku, Osaka-shi, Osaka Arkmine B201 540-0025<br>
-					<small>〒540-0025 大阪府大阪市中央区徳井町2−2−10 アークマインB201</small>
-				</dd>
-				<dt>Address - Headquarters</dt>
-				<dd>
-					4-114 Minami Uematsucho, Yao City, Osaka 581-0091<br>
-					<small>〒581-0091 大阪府八尾市南植松町4丁目114</small>
-				</dd>
-				<dt>Founded</dt>
-				<dd>
-					August 2020<br>
-					<small>2020年 8月</small>
-				</dd>
-				<dt>Capital</dt>
-				<dd>
-					1,000,000 Yen<br>
-					<small>1,000,000円</small>
-				</dd>
-				<dt>CEO</dt>
-				<dd>
-					Yasuhito Kawanishi<br>
-					<small>川西 康人</small>
-				</dd>
-				<dt>Business</dt>
-				<dd>
-					E-commerce, Fashion and apparel product sales, Web design, Web Developent, Photo/video shooting, Photo/video edting, Consulting<br>
-					<small>電子商取引, ファッション・アパレルの物販, ウェブデザイン, ウェブ開発, 写真・動画撮影, 写真・動画編集, コンサルティング</small>
-				</dd>
-				<dt>Curio dealer</dt>
-				<dd>
-					Secondhand dealer license number: 62107R021247<br>
-					<small>古物商許可番号: 62107R021247</small>
-				</dd>
-				<dt>Labor regulations</dt>
-				<dd>
-					<a href="//github.com/yat8823jp/EmployeeHandbook" target="_blank">Lead GitHub repository</a><br>
-					<small><a href="//github.com/yat8823jp/EmployeeHandbook" target="_blank">GitHub のリポジトリをお読みください</a></small>
-				</dd>
-				<dt>Main client</dt>
-				<dd>
-					TAM Co., Ltd., Raise Tech Co., Frontier Works Inc, Ltd., CodeUps LLC., Studio Cologne<br>
-					<small>株式会社 TAM, 株式会社 RaiseTech, 株式会社フロンティアワークス, 合同会社CodeUps, 株式会社 Studio Cologne</small>
-				</dd>
-				<dt>Advisory tax accountant</dt>
-				<dd>
-					<a href="https://vs-group.jp/tax/" target="_blank">Venture Support Tax Corporation</a><br>
-					<small><a href="https://vs-group.jp/tax/" target="_blank">ベンチャーサポート税理士法人</a></small>
-				</dd>
-				<dt>Legal advisor</dt>
-				<dd>
-					<a href="https://vs-group.jp/lawyer/" target="_blank">Venture Support Law Office</a><br>
-					<small><a href="https://vs-group.jp/lawyer/" target="_blank">弁護士法人ベンチャーサポート法律事務所</a></small>
-				</dd>
-				<!-- <dt>Qualification</dt>
-				<dd>
-					Antique dealer permit<br>
-					<small>古物商許可証：</small>
-				</dd> -->
-			</dl>
-		</div>
-	</section>
+	<?php if ( $page_id = get_page_by_path( 'about_table' ) ) :
+		$page = get_post( $page_id ); ?>
+		<section class="p-top--corpinfo is-fade">
+			<div class="c-inner">
+				<h2><?php echo esc_html( $page -> post_title ); ?></h2>
+				<?php echo $page -> post_content; ?>
+			</div>
+		</section>
+	<?php endif; ?>
 </article>
 <?php get_footer(); ?>
