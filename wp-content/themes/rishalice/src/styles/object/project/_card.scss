@@ -117,7 +117,45 @@
 			}
 		}
 	}
-	// &--blog {
-
-	// }
+	&--blog {
+		@include g.font-rem( g.$font-size--Lv3 );
+		line-height: 1.8;
+		a {
+			color: g.$fontcolor--base;
+		}
+		&__list {
+			position: relative;
+			margin-bottom: 55px;
+			background-color: g.$bgcolor--white;
+			border: 2px solid g.$border-color--light-gold;
+		}
+		// &__link {
+		// 	position: absolute;
+		// 	width: 100%;
+		// 	height: 100%;
+		// }
+		&__contents {
+			padding: 15px 12px 15px 15px;
+			&__day {
+				@include g.font-rem( 17 );
+				line-height: 2;
+				color: g.$fontcolor--deep-green;
+				margin-bottom: 9px
+			}
+			&__title {
+				@include g.font-rem( g.$font-size--Lv4 );
+				margin-bottom: 38px;
+			}
+			&__excerpt {
+				margin-bottom: 18px;
+			}
+		}
+		&__tags {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 18px 0 10px;
+			gap: 10px;
+			border-top: 1px solid g.$border-color--green;
+		}
+	}
 }

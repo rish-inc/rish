@@ -801,6 +801,16 @@ h5 {
   margin-right: 20px;
 }
 
+.c-mark--tag-icon {
+  display: inline-block;
+  background-image: url(../images/blog/tag-icon.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  width: 19.76px;
+  height: 19.76px;
+}
+
 .c-position {
   text-align: center;
 }
@@ -1231,6 +1241,50 @@ h5 {
     line-height: 2;
   }
 }
+.p-card--blog {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.p-card--blog a {
+  color: #1D1D1D;
+}
+
+.p-card--blog__list {
+  position: relative;
+  margin-bottom: 55px;
+  background-color: #FFF;
+  border: 2px solid #D3BE39;
+}
+
+.p-card--blog__contents {
+  padding: 15px 12px 15px 15px;
+}
+
+.p-card--blog__contents__day {
+  font-size: 1.0625rem;
+  line-height: 2;
+  color: #277267;
+  margin-bottom: 9px;
+}
+
+.p-card--blog__contents__title {
+  font-size: 1.125rem;
+  margin-bottom: 38px;
+}
+
+.p-card--blog__contents__excerpt {
+  margin-bottom: 18px;
+}
+
+.p-card--blog__tags {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 18px 0 10px;
+  gap: 10px;
+  border-top: 1px solid #4C9D91;
+}
+
 .p-footer {
   width: 100%;
   padding: 20px;
