@@ -25,16 +25,19 @@
                                 <span class="p-card--blog__contents__day"><?php echo esc_html( get_the_date( 'Y年m月d日') ); ?></span>
                                 <h2 class="p-card--blog__contents__title"><?php the_title(); ?></h2>
                                 <p class="p-card--blog__contents__excerpt"><?php the_excerpt(); ?></p>
-                                <?php
-                                    $posttags = get_the_tags();
-                                    if( $posttags ){
-                                        echo '<ul class="p-card--blog__tags"><i class="c-mark--tag-icon"></i>';
-                                        foreach ( $posttags as $tag ) {
-                                            echo '<li><a href="' . get_tag_link( $tag->term_id ) . '">' . $tag->name . '</a></li>'; 
+                                <div class="p-card--blog__contents__tags">
+                                    <i class="c-mark--tag-icon"></i>
+                                    <?php
+                                        $posttags = get_the_tags();
+                                        if( $posttags ){
+                                            echo '<ul class="p-card--blog__tags">';
+                                            foreach ( $posttags as $tag ) {
+                                                echo '<li><a href="' . get_tag_link( $tag->term_id ) . '">' . $tag->name . '</a></li>'; 
+                                            }
+                                            echo '</ul>';
                                         }
-                                        echo '</ul>';
-                                    }
-                                ?>
+                                    ?>
+                                </div>
                             </figcaption>
                         </li>
                     <?php endwhile; ?>

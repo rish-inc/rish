@@ -54,10 +54,11 @@
 		display: inline-block;
 		background-image: url( ../images/blog/tag-icon.png );
 		background-repeat: no-repeat;
-		background-size: 100%;
-		background-position: center center;
-		width: 19.76px;
-		height: 19.76px;
+		// background-size: 100%;
+		// background-position: center center;
+		background-position: top 17px left;
+		// width: 19.76px;
+		// height: 19.76px;
 		@include g.mq( pc ) {
 			
 		}

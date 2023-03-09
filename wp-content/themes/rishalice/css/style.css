@@ -805,10 +805,7 @@ h5 {
   display: inline-block;
   background-image: url(../images/blog/tag-icon.png);
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center center;
-  width: 19.76px;
-  height: 19.76px;
+  background-position: top 17px left;
 }
 
 .c-position {
@@ -1277,12 +1274,21 @@ h5 {
   margin-bottom: 18px;
 }
 
+.p-card--blog__contents__tags {
+  display: flex;
+  line-height: 1.5;
+  border-top: 1px solid #4C9D91;
+}
+
+.p-card--blog__contents__tags .c-mark--tag-icon {
+  width: 33px;
+}
+
 .p-card--blog__tags {
   display: flex;
   flex-wrap: wrap;
   padding: 18px 0 10px;
   gap: 10px;
-  border-top: 1px solid #4C9D91;
 }
 
 .p-footer {
@@ -1728,7 +1734,7 @@ h5 {
   right: 20px;
   width: 46px;
   height: 20px;
-  z-index: 2;
+  z-index: 3;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -2024,7 +2030,7 @@ h5 {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   order: 2;
   padding: 60px 20px 62px;
   background-color: #FFF;

@@ -149,13 +149,20 @@
 			&__excerpt {
 				margin-bottom: 18px;
 			}
+			&__tags {
+				display: flex;
+				line-height: 1.5;
+				border-top: 1px solid g.$border-color--green;
+				.c-mark--tag-icon {
+					width: 33px;
+				}
+			}
 		}
 		&__tags {
 			display: flex;
 			flex-wrap: wrap;
 			padding: 18px 0 10px;
 			gap: 10px;
-			border-top: 1px solid g.$border-color--green;
 		}
 	}
 }
