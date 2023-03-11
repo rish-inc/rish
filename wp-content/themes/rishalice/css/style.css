@@ -1254,15 +1254,34 @@ h5 {
   border: 2px solid #D3BE39;
 }
 
+.p-card--blog__thumbnail__img {
+  opacity: 0.4;
+}
+
+.p-card--blog__category-list {
+  display: flex;
+  position: absolute;
+  top: 16px;
+  left: 10px;
+}
+
+.p-card--blog__category-list__item a {
+  display: block;
+  padding: 8px 20px 6px;
+  margin-right: 12px;
+  background-color: #D3BE39;
+}
+
 .p-card--blog__contents {
-  padding: 15px 12px 15px 15px;
+  padding: 0 12px 15px 15px;
 }
 
 .p-card--blog__contents__day {
+  display: block;
   font-size: 1.0625rem;
   line-height: 2;
   color: #277267;
-  margin-bottom: 9px;
+  padding-top: 15px;
 }
 
 .p-card--blog__contents__title {
