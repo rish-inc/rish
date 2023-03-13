@@ -26,6 +26,9 @@
                                 if( $categories ){
                                     echo '<ul class="p-card--blog__category-list">';
                                     foreach( $categories as $category ){
+                                        // if( $category->name != "ブログ") {
+                                        //     echo '<li class="p-card--blog__category-list__item"><a href="' . get_category_link( $category->term_id ) . '">' . $category->name . '</a></li>';
+                                        // }
                                         echo '<li class="p-card--blog__category-list__item"><a href="' . get_category_link( $category->term_id ) . '">' . $category->name . '</a></li>';
                                     }
                                     echo '</ul>';

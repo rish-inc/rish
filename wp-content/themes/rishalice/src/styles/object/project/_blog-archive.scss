@@ -19,7 +19,7 @@
     }
 
     &__list {
-        margin-bottom: 56px;
+        margin: 0 auto 56px;
         @include g.mq( pc ) {
             margin-bottom: 244px;
         }
