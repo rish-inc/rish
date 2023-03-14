@@ -19,9 +19,16 @@
     }
 
     &__list {
-        margin: 0 auto 56px;
+        margin: 0 auto 80px;
         @include g.mq( pc ) {
-            margin-bottom: 244px;
+            margin-bottom: 173px;
+        }
+    }
+
+    &__pagination {
+        margin-bottom: 162px;
+        @include g.mq( pc ) {
+            margin-bottom: 240px;
         }
     }
 }

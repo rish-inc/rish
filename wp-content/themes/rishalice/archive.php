@@ -58,7 +58,8 @@
                     <?php endwhile; ?>
                 <?php endif; ?>
 			</ul>
-			<div class="c-pagination">
+			<div class="p-blog-archive__pagination p-pagination">
+                <?php wp_pagenavi(); ?>
             </div>
 			<?php get_template_part( 'components/template/contact' ); ?>
 		</article>

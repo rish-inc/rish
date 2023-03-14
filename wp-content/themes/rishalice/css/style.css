@@ -1071,12 +1071,21 @@ h5 {
   }
 }
 .p-blog-archive__list {
-  margin: 0 auto 56px;
+  margin: 0 auto 80px;
 }
 
 @media screen and (min-width: 768px) {
   .p-blog-archive__list {
-    margin-bottom: 244px;
+    margin-bottom: 173px;
+  }
+}
+.p-blog-archive__pagination {
+  margin-bottom: 162px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-blog-archive__pagination {
+    margin-bottom: 240px;
   }
 }
 .p-btn {
@@ -1304,6 +1313,7 @@ h5 {
 
 .p-card--blog__category-list {
   display: flex;
+  flex-wrap: wrap;
   position: absolute;
   top: 16px;
   left: 10px;
@@ -1313,6 +1323,7 @@ h5 {
   display: block;
   padding: 8px 20px 6px;
   margin-right: 12px;
+  margin-bottom: 10px;
   background-color: #D3BE39;
 }
 
@@ -2311,6 +2322,67 @@ h5 {
 
 .p-marketing--solution__text__list {
   padding-left: 0;
+}
+
+.p-pagination {
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.p-pagination .wp-pagenavi {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-pagination .wp-pagenavi a {
+  color: #1D1D1D;
+}
+
+.p-pagination .wp-pagenavi a, .p-pagination .wp-pagenavi span {
+  display: inline-block;
+}
+
+.p-pagination .wp-pagenavi .current,
+.p-pagination .wp-pagenavi a.page {
+  display: none;
+}
+
+.p-pagination .wp-pagenavi .previouspostslink {
+  margin-right: auto;
+  position: relative;
+}
+
+.p-pagination .wp-pagenavi .previouspostslink::before {
+  content: "新しい記事へ";
+  text-decoration: underline;
+  position: absolute;
+  top: 2px;
+  left: 16px;
+  width: 6rem;
+}
+
+.p-pagination .wp-pagenavi .previouspostslink:hover::before {
+  text-decoration: none;
+}
+
+.p-pagination .wp-pagenavi .nextpostslink {
+  margin-left: auto;
+  position: relative;
+}
+
+.p-pagination .wp-pagenavi .nextpostslink::before {
+  content: "古い記事へ";
+  text-decoration: underline;
+  position: absolute;
+  top: 2px;
+  right: 16px;
+  width: 5rem;
+}
+
+.p-pagination .wp-pagenavi .nextpostslink:hover::before {
+  text-decoration: none;
 }
 
 .p-price {
