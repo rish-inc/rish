@@ -17,8 +17,23 @@
         .current,
         a.page {
             display: none;
-            // @include g.mq( pc ) {
-			// }
+            @include g.mq( pc ) {
+                display: block;
+                margin: 0 10px;
+                padding: 0 10px;
+                background-color: g.$bgcolor--light-green2;
+                border: 1px solid g.$border-color--green;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+			}
+        }
+        .current {
+            @include g.mq( pc ) {
+                background-color: transparent;
+                border: none;
+			}
         }
         .previouspostslink {
             margin-right: auto;
