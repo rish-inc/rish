@@ -10,7 +10,6 @@
 							'container'		 => false
 						) );
 					?>
-
 					<div class="p-footer__logoCopy">
 						<p class="p-footer__logoCopy__logo">
 							<a href="<?php echo esc_url(home_url('/')); ?>">
