@@ -26,9 +26,6 @@
                                 if( $categories ){
                                     echo '<ul class="p-card--blog__category-list">';
                                     foreach( $categories as $category ){
-                                        // if( $category->name != "ブログ") {
-                                        //     echo '<li class="p-card--blog__category-list__item"><a href="' . get_category_link( $category->term_id ) . '">' . $category->name . '</a></li>';
-                                        // }
                                         echo '<li class="p-card--blog__category-list__item"><a href="' . get_category_link( $category->term_id ) . '">' . $category->name . '</a></li>';
                                     }
                                     echo '</ul>';
@@ -59,7 +56,7 @@
                 <?php endif; ?>
 			</ul>
 			<div class="p-blog-archive__pagination p-pagination">
-                <?php wp_pagenavi(); ?>
+                <?php if ( function_exists( 'wp_pagenavi' ) ) { wp_pagenavi(); } ?>
             </div>
 			<?php get_template_part( 'components/template/contact' ); ?>
 		</article>

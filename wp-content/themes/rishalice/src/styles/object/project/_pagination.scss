@@ -8,6 +8,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        .pages {
+            display: none;  // 総ページ数は非表示
+        }
         a {
             color: g.$fontcolor--base;
         }
@@ -18,7 +21,7 @@
         a.page {
             display: none;
             @include g.mq( pc ) {
-                display: block;
+                display: inline-block;
                 margin: 0 10px;
                 padding: 0 10px;
                 background-color: g.$bgcolor--light-green2;
@@ -28,6 +31,9 @@
                 line-height: 50px;
                 text-align: center;
 			}
+        }
+        a.page:hover {
+            background-color: rgba(197,222,218, 0.5);
         }
         .current {
             @include g.mq( pc ) {
@@ -49,8 +55,9 @@
             &:hover::before {
                 text-decoration: none;
             }
-            // @include g.mq( pc ) {
-			// }
+            @include g.mq( pc ) {
+                margin-right: calc( 6rem + 40px );
+			}
         }
         .nextpostslink {
             margin-left: auto;
@@ -66,8 +73,9 @@
             &:hover::before {
                 text-decoration: none;
             }
-            // @include g.mq( pc ) {
-			// }
+            @include g.mq( pc ) {
+                margin-left: calc( 5rem + 40px );
+			}
         }
     }
 }

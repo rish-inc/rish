@@ -2336,6 +2336,10 @@ h5 {
   align-items: center;
 }
 
+.p-pagination .wp-pagenavi .pages {
+  display: none;
+}
+
 .p-pagination .wp-pagenavi a {
   color: #1D1D1D;
 }
@@ -2352,7 +2356,7 @@ h5 {
 @media screen and (min-width: 768px) {
   .p-pagination .wp-pagenavi .current,
   .p-pagination .wp-pagenavi a.page {
-    display: block;
+    display: inline-block;
     margin: 0 10px;
     padding: 0 10px;
     background-color: #C5DEDA;
@@ -2363,6 +2367,10 @@ h5 {
     text-align: center;
   }
 }
+.p-pagination .wp-pagenavi a.page:hover {
+  background-color: rgba(197, 222, 218, 0.5);
+}
+
 @media screen and (min-width: 768px) {
   .p-pagination .wp-pagenavi .current {
     background-color: transparent;
@@ -2387,6 +2395,11 @@ h5 {
   text-decoration: none;
 }
 
+@media screen and (min-width: 768px) {
+  .p-pagination .wp-pagenavi .previouspostslink {
+    margin-right: calc(6rem + 40px);
+  }
+}
 .p-pagination .wp-pagenavi .nextpostslink {
   margin-left: auto;
   position: relative;
@@ -2405,6 +2418,11 @@ h5 {
   text-decoration: none;
 }
 
+@media screen and (min-width: 768px) {
+  .p-pagination .wp-pagenavi .nextpostslink {
+    margin-left: calc(5rem + 40px);
+  }
+}
 .p-price {
   line-height: 2;
 }
