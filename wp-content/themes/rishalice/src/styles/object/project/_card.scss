@@ -117,4 +117,103 @@
 			}
 		}
 	}
+	&--blog {
+		@include g.font-rem( g.$font-size--Lv3 );
+		line-height: 1.8;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 40px;
+		a {
+			color: g.$fontcolor--base;
+		}
+		// space-betweenで、最後の行を左寄せにするための空要素
+		&::after {
+			content: "";
+			display: none;
+			max-width: 335px;
+			height: 0;
+			@include g.mq( pc ) {
+				display: block;
+				width: calc( (100% - 40px) / 2 ); // カードの幅と同じ
+			}
+			@include g.mq( full ) {
+				width: calc( (100% - 80px) / 3 );
+			}
+		}
+		@media (min-width: 750px) {
+			justify-content: space-between;
+			max-width: 710px;  // 真ん中に不自然な余白ができないよう最大幅を指定（カード2枚 + 40px）
+		}
+		@include g.mq( full ) {
+			max-width: 100%;
+		}
+		
+		&__list {
+			position: relative;
+			background-color: g.$bgcolor--white;
+			border: 2px solid g.$border-color--light-gold;
+			max-width: 335px;
+			margin-bottom: 10px;
+			@include g.mq( pc ) {
+				width: calc( (100% - 40px) / 2 );
+			}
+			@include g.mq( full ) {
+				width: calc( (100% - 80px) / 3 );
+			}
+		}
+		&__thumbnail__img {
+			opacity: 0.4;
+		}
+		&__category-list {
+			display: flex;
+			flex-wrap: wrap;
+			position: absolute;
+			top: 16px;
+			left: 10px;
+			&__item {
+				a {
+					display: block;
+					padding: 8px 20px 6px;
+					margin-right: 12px;
+					margin-bottom: 10px;
+					background-color: g.$border-color--light-gold;
+				}
+			}
+		}
+		&__contents {
+			padding: 0 12px 15px 15px;
+			@include g.mq( pc ) {
+				padding: 0 22px 15px 24px;
+			}
+			&__day {
+				display: block;
+				@include g.font-rem( 17 );
+				line-height: 2;
+				color: g.$fontcolor--deep-green;
+				padding-top: 15px;
+			}
+			&__title {
+				@include g.font-rem( g.$font-size--Lv4 );
+				margin-bottom: 38px;
+			}
+			&__excerpt {
+				margin-bottom: 18px;
+			}
+			&__tags {
+				display: flex;
+				line-height: 1.5;
+				border-top: 1px solid g.$border-color--green;
+				.c-mark--tag-icon {
+					width: 33px;
+				}
+			}
+		}
+		&__tags {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 18px 0 10px;
+			gap: 10px;
+		}
+	}
 }
