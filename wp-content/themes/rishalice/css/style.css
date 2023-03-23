@@ -1021,6 +1021,15 @@ h5 {
     margin-bottom: 0;
   }
 }
+.p-about--profile__list__text a {
+  color: #1D1D1D;
+  text-decoration: underline;
+}
+
+.p-about--profile__list__text a:hover {
+  opacity: 0.7;
+}
+
 .p-bg {
   background-attachment: fixed;
   background-position: center;
