@@ -83,13 +83,13 @@
 
 					<dt class="p-about--profile__list__title c-line--ornament">税理士<span>-Advisory tax accountant-</span></dt>
 					<div class="p-about--profile__list__wrapper">
-						<dd class="p-about--profile__list__text u-mb--14 u-mb--pc--0"><a href="https://vs-group.jp/tax/" target="_blank">ベンチャーサポート税理士法人</a></dd>
+						<dd class="p-about--profile__list__text"><a href="https://vs-group.jp/tax/" target="_blank">ベンチャーサポート税理士法人</a></dd>
 						<dd class="p-about--profile__list__text"><a href="https://vs-group.jp/tax/" target="_blank">Venture Support Tax Corporation</a></dd>
 					</div>
 
 					<dt class="p-about--profile__list__title c-line--ornament">弁護士<span>-Legal advisor-</span></dt>
 					<div class="p-about--profile__list__wrapper">
-						<dd class="p-about--profile__list__text u-mb--14 u-mb--pc--0"><a href="https://vs-group.jp/lawyer/" target="_blank">弁護士法人ベンチャーサポート法律事務所</a></dd>
+						<dd class="p-about--profile__list__text"><a href="https://vs-group.jp/lawyer/" target="_blank">弁護士法人ベンチャーサポート法律事務所</a></dd>
 						<dd class="p-about--profile__list__text"><a href="https://vs-group.jp/lawyer/" target="_blank">Venture Support Law Office</a></dd>
 					</div>
 				</dl>
