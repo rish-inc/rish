@@ -38,9 +38,8 @@
 						<figure class="p-single__contents__thumbnail">
 							<?php
 								if(has_post_thumbnail() ):
-									the_post_thumbnail(array(333, 254), array("alt" => get_the_title(), "class" => "p-single__contents__thumbnail__img"));
-								else:
-									?><img src="<?php echo get_template_directory_uri() ?>/images/blog/none-eye-catching.png" alt="画像はありません" class="p-single__contents__thumbnail--noimg"><?php
+									the_post_thumbnail(array(333, 254), array("alt" => get_the_title(), "class" => "p-single__contents__thumbnail__img")); ?>
+									<?php
 								endif;
 							?>
 						</figure>
