@@ -63,6 +63,73 @@
             margin-bottom: 180px;
             @include g.font-rem( g.$font-size--Lv3 );
 			line-height: 2.5;
+            h1 {
+                @include g.font-rem( g.$font-size--Lv13 );
+                line-height: 1.5;
+                background-color: g.$bgcolor--light-green;
+                padding: 24px 22px 16px;
+                margin-bottom: 50px;
+            }
+            h2 {
+                @include g.font-rem( g.$font-size--Lv11 );
+                line-height: 1.5;
+                background-color: g.$bgcolor--light-green;
+                border-left: 12px solid g.$border-color--green;
+                padding: 20px 15px 15px 20px;
+                margin-bottom: 50px;
+            }
+            h3 {
+                @include g.font-rem( g.$font-size--Lv9 );
+                line-height: 1.6;
+                background-color: g.$bgcolor--light-green;
+                outline: 2px dotted g.$border-color--green;
+                outline-offset: -9px;
+                padding: 19px 14px 18px 12px;
+                margin-bottom: 50px;
+            }
+            h4 {
+                @include g.font-rem( g.$font-size--Lv8 );
+                line-height: 1.8;
+                border-top: 2px solid g.$border-color--green;
+                border-bottom: 2px solid g.$border-color--green;
+                padding: 10px 15px;
+                margin-bottom: 50px;
+            }
+            h5 {
+                @include g.font-rem( g.$font-size--Lv6 );
+                line-height: 1.8;
+                border-bottom: 3px solid g.$border-color--light-green;
+                position: relative;
+                width: 100%;
+                padding-bottom: 2px;
+                margin-bottom: 50px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px;
+                    width: 24%;
+                    height: inherit;
+                    border-bottom: 3px solid g.$border-color--green;
+                }
+            }
+            h6 {
+                @include g.font-rem( g.$font-size--Lv4 );
+                line-height: 2.2;
+                font-weight: normal;
+                border-bottom: 1px solid g.$border-color--green;
+                position: relative;
+                padding: 15px 15px 2px;
+                margin-bottom: 50px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    border-bottom: 1px solid g.$border-color--green;
+                    width: 100%;
+                    left: 0;
+                    bottom: -4px;
+                }
+            }
         }
     }
     &__tags {
