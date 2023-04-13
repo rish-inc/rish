@@ -62,7 +62,7 @@
         &__content {
             margin-bottom: 180px;
             @include g.font-rem( g.$font-size--Lv3 );
-			line-height: 2.5;
+            line-height: 2.5;
             h1 {
                 @include g.font-rem( g.$font-size--Lv13 );
                 line-height: 1.5;
@@ -128,6 +128,31 @@
                     width: 100%;
                     left: 0;
                     bottom: -4px;
+                }
+            }
+            p {
+                margin-bottom: 42px;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 50px;
+            }
+            ol,ul {
+                margin: 0 0 50px;
+                padding-left: 0;
+                ol,ul {
+                    padding-left: 4rem;
+                }
+            }
+            ol {
+                li {
+                    list-style: decimal inside;
+                }
+            }
+            ul {
+                li {
+                    list-style: disc inside;
                 }
             }
         }

@@ -2658,6 +2658,33 @@ h5 {
   bottom: -4px;
 }
 
+.p-single__contents__content p {
+  margin-bottom: 42px;
+}
+
+.p-single__contents__content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.p-single__contents__content ol, .p-single__contents__content ul {
+  margin: 0 0 50px;
+  padding-left: 0;
+}
+
+.p-single__contents__content ol ol, .p-single__contents__content ol ul, .p-single__contents__content ul ol, .p-single__contents__content ul ul {
+  padding-left: 4rem;
+}
+
+.p-single__contents__content ol li {
+  list-style: decimal inside;
+}
+
+.p-single__contents__content ul li {
+  list-style: disc inside;
+}
+
 .p-single__tags {
   display: flex;
   flex-wrap: wrap;
