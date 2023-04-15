@@ -2685,6 +2685,53 @@ h5 {
   list-style: disc inside;
 }
 
+.p-single__contents__content blockquote {
+  background-color: #C5DEDA;
+  padding: 114px 22px 30px 26px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.p-single__contents__content blockquote p {
+  margin-bottom: 32px;
+}
+
+.p-single__contents__content blockquote p::before {
+  font-size: 13.8125rem;
+  line-height: 1;
+  content: "“";
+  position: absolute;
+  width: 55px;
+  height: 44px;
+  left: 0;
+  top: 20px;
+}
+
+.p-single__contents__content blockquote cite {
+  display: block;
+  width: 82%;
+  margin: 0 0 0 auto;
+}
+
+.p-single__contents__content table {
+  margin-bottom: 50px;
+  background-color: #FFF;
+}
+
+.p-single__contents__content table td {
+  border: 1px solid #1B1B1B;
+  height: 50px;
+}
+
+.p-single__contents__content table td:nth-child(1) {
+  width: 26%;
+}
+
+.p-single__contents__content .wp-block-button__link {
+  background-color: #5EA79C;
+  font-size: 1.125rem;
+}
+
 .p-single__tags {
   display: flex;
   flex-wrap: wrap;
