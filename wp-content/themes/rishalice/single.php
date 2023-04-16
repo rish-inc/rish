@@ -10,17 +10,19 @@
 					while( have_posts() ) : the_post(); ?>
 						<div class="p-single__contents">
 							<h2 class="p-single__contents__title"><?php the_title(); ?></h2>
-							<span class="p-single__contents__day"><?php echo esc_html( get_the_date( 'Y年m月d日') ); ?></span>
-							<?php
-                                $categories = get_the_category();
-                                if( $categories ){
-                                    echo '<ul class="p-single__contents__category-list">';
-                                    foreach( $categories as $category ){
-                                        echo '<li class="p-single__contents__category-list__item"><a href="' . get_category_link( $category->term_id ) . '">' . $category->name . '</a></li>';
-                                    }
-                                    echo '</ul>';
-                                }
-                            ?>
+							<div class="p-single__contents__inner">
+								<span class="p-single__contents__day"><?php echo esc_html( get_the_date( 'Y年m月d日') ); ?></span>
+								<?php
+									$categories = get_the_category();
+									if( $categories ){
+										echo '<ul class="p-single__contents__category-list">';
+										foreach( $categories as $category ){
+											echo '<li class="p-single__contents__category-list__item"><a href="' . get_category_link( $category->term_id ) . '">' . $category->name . '</a></li>';
+										}
+										echo '</ul>';
+									}
+								?>
+							</div>
 							<?php
 								$posttags = get_the_tags();
 								if( $posttags ){
