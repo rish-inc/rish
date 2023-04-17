@@ -76,10 +76,12 @@
                 width: 33px;
             }
             @include g.mq( pc ) {
-                margin-bottom: 54px;
+                margin-bottom: 48px;
             }
         }
         &__thumbnail__img {
+            max-width: 100%;
+            height: auto;
             margin-bottom: 47px;
             @include g.mq( pc ) {
                 margin-bottom: 40px;
@@ -99,6 +101,7 @@
                 padding: 24px 22px 16px;
                 margin-bottom: 50px;
                 @include g.mq( pc ) {
+                    padding: 21px 29px 12px;
                     margin-bottom: 40px;
                 }
             }
@@ -110,6 +113,7 @@
                 padding: 20px 15px 15px 20px;
                 margin-bottom: 50px;
                 @include g.mq( pc ) {
+                    padding: 22px 14px 16px 28px;
                     margin-bottom: 40px;
                 }
             }
@@ -122,6 +126,7 @@
                 padding: 19px 14px 18px 12px;
                 margin-bottom: 50px;
                 @include g.mq( pc ) {
+                    padding: 14px 14px 7px 12px;
                     margin-bottom: 40px;
                 }
             }
@@ -133,6 +138,7 @@
                 padding: 10px 15px;
                 margin-bottom: 50px;
                 @include g.mq( pc ) {
+                    padding: 12px 14px 4px 12px;
                     margin-bottom: 40px;
                 }
             }
@@ -145,6 +151,7 @@
                 padding-bottom: 2px;
                 margin-bottom: 50px;
                 @include g.mq( pc ) {
+                    padding-bottom: 0;
                     margin-bottom: 40px;
                 }
                 &::before {
@@ -277,9 +284,10 @@
             // プラグイン[AddToAny Share Buttons]の設定
             .addtoany_share_save_container {
                 text-align: center;  // アイコン中央寄せ
-            }
-            .addtoany_list a {
-                padding: 0 6px  // アイコン間隔
+                margin-top: 55px;
+                @include g.mq( pc ) {
+                    margin-top: 150px;
+                }
             }
         }
     }
