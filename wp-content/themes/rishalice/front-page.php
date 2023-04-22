@@ -1,9 +1,10 @@
 <?php get_header(); ?>
 	<main class="l-main">
+		<div class="p-top-article--mv">
+			<p class="p-top-article--mv__text">「何をすればいいのか…」を<br class="u-br--sp">成功に導くデザインオフィス</p>
+		</div>
 		<article class="c-inner">
 			<div class="c-content">
-				<article class="p-top-article--mv">
-				</article>
 				<article class="p-top-article--about">
 					<h2 class="p-top-article--about__head">
 						<span class="p-top-article--about__head__text c-font--regular">
