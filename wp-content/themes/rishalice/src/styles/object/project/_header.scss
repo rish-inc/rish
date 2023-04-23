@@ -2,10 +2,9 @@
 @use "../../object/component/decoration";
 
 .p-header {
-    margin-bottom: 18px;
+    margin-bottom: 64px;
     @include g.mq( full ) {
-        // margin-bottom: 8.5rem;  //仮コメ
-        margin-bottom: 16px;
+        margin-bottom: 119px;
     }
 
     // ハンバーガーボタン
@@ -72,10 +71,38 @@
         }
         &__logo {
             order: 1;
-            // margin-bottom: 70px;  //仮コメ
             @include g.mq( full ) {
                 order: 2;
-                // margin-bottom: 0;  //仮コメ
+            }
+            // SP版：フロントページのみ、ヘッダーに下線（ロゴ下は線なし）
+            span {
+                position: relative;
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    width: calc( 50% - 68px );
+                    height: 2px;
+                    background-color : g.$bgcolor--turquoise-green;
+                    position: absolute;
+                    left: 0;
+                    bottom: -13px;
+                    @include g.mq( pc ) {
+                        display: none;
+                    }
+                }
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    width: calc( 50% - 68px );
+                    height: 2px;
+                    background-color : g.$bgcolor--turquoise-green;
+                    position: absolute;
+                    right: 0;
+                    bottom: -13px;
+                    @include g.mq( pc ) {
+                        display: none;
+                    }
+                }
             }
             img {
                 width: 128.16px;
@@ -332,6 +359,49 @@
                 display: flex;
                 order: 3;
                 justify-content: flex-start;
+            }
+        }
+    }
+}
+
+// PC版：フロントページのみ、ヘッダーに下線（ロゴ下は線なし）
+.home {
+    .p-header {
+        margin-bottom: 19px;
+        @include g.mq( full ) {
+            margin-bottom: 20px;
+        }
+
+        // PC用メニュー（左）
+        #menu-header-left-menu {
+            @include g.mq( full ) {
+                position: relative;
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 82%;
+                    height: 2px;
+                    background-color : g.$bgcolor--turquoise-green;
+                    position: absolute;
+                    right: 0;
+                    bottom: -12px;
+                }
+            }
+        }
+        // PC用メニュー（右）
+        #menu-header-right-menu {
+            @include g.mq( full ) {
+                position: relative;
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 82%;
+                    height: 2px;
+                    background-color : g.$bgcolor--turquoise-green;
+                    position: absolute;
+                    left: 0;
+                    bottom: -12px;
+                }
             }
         }
     }

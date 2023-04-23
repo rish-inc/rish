@@ -2,6 +2,7 @@
 	<main class="l-main">
 		<div class="p-top-article--mv">
 			<p class="p-top-article--mv__text">「何をすればいいのか…」を<br class="u-br--sp">成功に導くデザインオフィス</p>
+			<span></span>
 		</div>
 		<article class="c-inner">
 			<div class="c-content">
