@@ -80,26 +80,34 @@
                 &::before {
                     content: "";
                     display: inline-block;
-                    width: calc( 50% - 68px );
+                    width: calc( (100% - 133px) / 2 ); // (画面幅 - ロゴ幅)÷2
                     height: 2px;
                     background-color : g.$bgcolor--turquoise-green;
                     position: absolute;
                     left: 0;
                     bottom: -13px;
                     @include g.mq( pc ) {
+                        width: calc( ((100% - 239px) / 2) - 7% ); // {(画面幅 - ロゴ幅)÷2}-7%（ﾒｲﾝﾋﾞｼﾞｭｱﾙ余白）
+                        left: 7%;
+                    }
+                    @include g.mq( full ) {
                         display: none;
                     }
                 }
                 &::after {
                     content: "";
                     display: inline-block;
-                    width: calc( 50% - 68px );
+                    width: calc( (100% - 133px) / 2 );
                     height: 2px;
                     background-color : g.$bgcolor--turquoise-green;
                     position: absolute;
                     right: 0;
                     bottom: -13px;
                     @include g.mq( pc ) {
+                        width: calc( ((100% - 239px) / 2) - 7% );
+                        right: 7%;
+                    }
+                    @include g.mq( full ) {
                         display: none;
                     }
                 }
@@ -379,12 +387,15 @@
                 &::after {
                     content: "";
                     display: block;
-                    width: 82%;
+                    width: calc( 100% - (200% + 310px)*0.07 ); //100% - 画面幅×7%（ﾒｲﾝﾋﾞｼﾞｭｱﾙ余白）
                     height: 2px;
                     background-color : g.$bgcolor--turquoise-green;
                     position: absolute;
                     right: 0;
                     bottom: -12px;
+                    @media (min-width: 1800px) {
+                        width: calc( 100% - (200% + 310px)*0.11 ); //100% - 画面幅×11%（ﾒｲﾝﾋﾞｼﾞｭｱﾙ余白）
+                    }
                 }
             }
         }
@@ -395,12 +406,15 @@
                 &::after {
                     content: "";
                     display: block;
-                    width: 82%;
+                    width: calc( 100% - (200% + 310px)*0.07 );
                     height: 2px;
                     background-color : g.$bgcolor--turquoise-green;
                     position: absolute;
                     left: 0;
                     bottom: -12px;
+                    @media (min-width: 1800px) {
+                        width: calc( 100% - (200% + 310px)*0.11 );
+                    }
                 }
             }
         }

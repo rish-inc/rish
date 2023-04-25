@@ -1924,7 +1924,7 @@ h5 {
 .p-header__menu__logo span::before {
   content: "";
   display: inline-block;
-  width: calc(50% - 68px);
+  width: calc((100% - 133px) / 2);
   height: 2px;
   background-color: #43897F;
   position: absolute;
@@ -1934,13 +1934,19 @@ h5 {
 
 @media screen and (min-width: 768px) {
   .p-header__menu__logo span::before {
+    width: calc((100% - 239px) / 2 - 7%);
+    left: 7%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .p-header__menu__logo span::before {
     display: none;
   }
 }
 .p-header__menu__logo span::after {
   content: "";
   display: inline-block;
-  width: calc(50% - 68px);
+  width: calc((100% - 133px) / 2);
   height: 2px;
   background-color: #43897F;
   position: absolute;
@@ -1949,6 +1955,12 @@ h5 {
 }
 
 @media screen and (min-width: 768px) {
+  .p-header__menu__logo span::after {
+    width: calc((100% - 239px) / 2 - 7%);
+    right: 7%;
+  }
+}
+@media screen and (min-width: 1200px) {
   .p-header__menu__logo span::after {
     display: none;
   }
@@ -2237,12 +2249,17 @@ h5 {
   .home .p-header #menu-header-left-menu::after {
     content: "";
     display: block;
-    width: 82%;
+    width: calc(100% - (200% + 310px) * 0.07);
     height: 2px;
     background-color: #43897F;
     position: absolute;
     right: 0;
     bottom: -12px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1800px) {
+  .home .p-header #menu-header-left-menu::after {
+    width: calc(100% - (200% + 310px) * 0.11);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2252,12 +2269,17 @@ h5 {
   .home .p-header #menu-header-right-menu::after {
     content: "";
     display: block;
-    width: 82%;
+    width: calc(100% - (200% + 310px) * 0.07);
     height: 2px;
     background-color: #43897F;
     position: absolute;
     left: 0;
     bottom: -12px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1800px) {
+  .home .p-header #menu-header-right-menu::after {
+    width: calc(100% - (200% + 310px) * 0.11);
   }
 }
 .p-marketing--intro, .p-marketing--problem, .p-marketing--solution {
@@ -3381,6 +3403,11 @@ h5 {
     min-height: 785.23px;
   }
 }
+@media (min-width: 1800px) {
+  .p-top-article--mv {
+    width: 78%;
+  }
+}
 .p-top-article--mv::before {
   content: "";
   display: block;
@@ -3425,6 +3452,15 @@ h5 {
   .p-top-article--mv__text {
     font-size: 2.25rem;
     margin-bottom: 56px;
+  }
+}
+.p-top-article--mv__text .u-br--sp {
+  display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .p-top-article--mv__text .u-br--sp {
+    display: none;
   }
 }
 .p-top-article--mv span::after {
