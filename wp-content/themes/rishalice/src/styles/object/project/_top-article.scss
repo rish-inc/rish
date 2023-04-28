@@ -4,7 +4,7 @@
 .p-top-article {
 	&--mv {
 		position: relative;
-		margin-bottom: 30px;
+		margin-bottom: 32px;
 		width: 100%;
 		min-height: 419.82px;
 		background-image: url( ../images/top/curtain-left-sp.png ),url(  ../images/top/curtain-right-sp.png ),url( ../images/top/mainvisual-sp_2x.jpg );
@@ -94,9 +94,10 @@
 				display: inline-block;
 				background: linear-gradient( transparent 10%, g.$bgcolor--turquoise-green 0% );
 				width: 100%;
-				line-height: 2;
+				line-height: 1.7;
 				@include g.mq( pc ) {
-					background: linear-gradient( transparent 0%, g.$bgcolor--turquoise-green 0% );
+					line-height: 2.125;
+					background: linear-gradient( transparent 5%, g.$bgcolor--turquoise-green 0% );
 					display: inline;
 					padding: 5px 20px;
 				}
@@ -114,7 +115,7 @@
 		}
 
 		&__explanation {
-			line-height: 2;
+			line-height: 1.7;
 			padding: 120px 0;
 			@include g.mq( pc ) {
 				text-align: center;
@@ -142,7 +143,7 @@
 
 	&--advantage {
 		&__parallel {
-			margin-bottom: 100px;
+			margin-bottom: 90px;
 			@include g.mq( pc ) {
 				display: flex;
 			}
@@ -181,11 +182,11 @@
 					.c-font--middle {
 						line-height: 2;
 						position: relative;
-						margin-bottom: 40px;
+						margin-bottom: 30px;
 						padding-left: 18px;
 						&::before {
-							top: 16px;
-							left: 4px;
+							top: 12px;
+							left: 6px;
 						}
 						&:last-of-type {
 							margin-bottom: 0;
@@ -193,13 +194,13 @@
 					}
 				}
 				.c-bg--spade {
-					background-position: center 35%;
+					background-position: center 42%;
 				}
 			}
 		}
 
 		&__forte {
-			margin-bottom: 100px;
+			margin-bottom: 90px;
 			@include g.mq( pc ) {
 				width: 95%;
 				margin: 0 auto 150px auto;
@@ -209,47 +210,25 @@
 			}
 			&__head {
 				@include g.font-rem( g.$font-size--Lv7 );
-				margin-bottom: 40px;
+				margin-bottom: 32px;
 			}
 			.c-font--general {
 				line-height: 2;
+				word-break: break-all;
 				@include g.mq( pc ) {
 					line-height: 2.5;
 				}
 			}
 		}
+
+		&__btn {
+			margin-bottom: 196px;
+		}
 	}
 
-	// &--price {
-	// 	// padding: 0 20px;
-	// 	@include g.mq( pc ) {
-	// 		// max-width: 1080px;
-	// 		// margin: 0 auto;
-	// 	}
-	// 	&__head {
-	// 		margin-bottom: 50px;
-	// 		@include g.mq( pc ) {
-	// 			margin-bottom: 70px;
-	// 		}
-	// 	}
-	// 	&__list {
-	// 		margin-bottom: 60px;
-	// 		@include g.mq( pc ) {
-	// 			margin-bottom: 150px;
-	// 			display: grid;
-	// 			grid-template-columns: 1fr 1fr;
-	// 			grid-template-rows: 1fr 1fr;
-	// 			gap: 30px 60px;
-	// 			height: 100%;
-	// 		}
-	// 		&__item {
-	// 			@include g.mq( pc ) {
-	// 				display: flex;
-	// 				align-items: stretch;
-	// 			}
-	// 		}
-	// 	}
-	// }
+	&--works {
+		margin-bottom: 100px;
+	}
 
 	&--blog {
 		padding: 60px 0 195px 0;

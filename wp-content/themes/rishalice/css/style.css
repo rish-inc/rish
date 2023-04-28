@@ -169,7 +169,7 @@ h5 {
 .c-button--noise-line {
   background: url(../images/button/cover.png);
   outline: 2px solid #FDFAE6;
-  outline-offset: -8px;
+  outline-offset: -9px;
   box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.16);
 }
 
@@ -1115,7 +1115,7 @@ h5 {
   text-align: center;
   margin: 0 auto;
   color: #FFF;
-  font-size: 1rem;
+  font-size: 1.125rem;
   padding: 30px;
   width: 335px;
   height: 80px;
@@ -3382,7 +3382,7 @@ h5 {
 }
 .p-top-article--mv {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   width: 100%;
   min-height: 419.82px;
   background-image: url(../images/top/curtain-left-sp.png), url(../images/top/curtain-right-sp.png), url(../images/top/mainvisual-sp_2x.jpg);
@@ -3483,12 +3483,13 @@ h5 {
   display: inline-block;
   background: linear-gradient(transparent 10%, #43897F 0%);
   width: 100%;
-  line-height: 2;
+  line-height: 1.7;
 }
 
 @media screen and (min-width: 768px) {
   .p-top-article--about__head__text {
-    background: linear-gradient(transparent 0%, #43897F 0%);
+    line-height: 2.125;
+    background: linear-gradient(transparent 5%, #43897F 0%);
     display: inline;
     padding: 5px 20px;
   }
@@ -3504,7 +3505,7 @@ h5 {
   }
 }
 .p-top-article--about__explanation {
-  line-height: 2;
+  line-height: 1.7;
   padding: 120px 0;
 }
 
@@ -3537,7 +3538,7 @@ h5 {
   }
 }
 .p-top-article--advantage__parallel {
-  margin-bottom: 100px;
+  margin-bottom: 90px;
 }
 
 @media screen and (min-width: 768px) {
@@ -3590,13 +3591,13 @@ h5 {
 .p-top-article--advantage__parallel__text__list .c-font--middle {
   line-height: 2;
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   padding-left: 18px;
 }
 
 .p-top-article--advantage__parallel__text__list .c-font--middle::before {
-  top: 16px;
-  left: 4px;
+  top: 12px;
+  left: 6px;
 }
 
 .p-top-article--advantage__parallel__text__list .c-font--middle:last-of-type {
@@ -3604,11 +3605,11 @@ h5 {
 }
 
 .p-top-article--advantage__parallel__text .c-bg--spade {
-  background-position: center 35%;
+  background-position: center 42%;
 }
 
 .p-top-article--advantage__forte {
-  margin-bottom: 100px;
+  margin-bottom: 90px;
 }
 
 @media screen and (min-width: 768px) {
@@ -3624,11 +3625,12 @@ h5 {
 }
 .p-top-article--advantage__forte__head {
   font-size: 1.5rem;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .p-top-article--advantage__forte .c-font--general {
   line-height: 2;
+  word-break: break-all;
 }
 
 @media screen and (min-width: 768px) {
@@ -3636,6 +3638,14 @@ h5 {
     line-height: 2.5;
   }
 }
+.p-top-article--advantage__btn {
+  margin-bottom: 196px;
+}
+
+.p-top-article--works {
+  margin-bottom: 100px;
+}
+
 .p-top-article--blog {
   padding: 60px 0 195px 0;
 }
