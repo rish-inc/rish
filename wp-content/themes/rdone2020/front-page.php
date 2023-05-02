@@ -229,11 +229,13 @@
 					<a href="https://vs-group.jp/lawyer/" target="_blank">Venture Support Law Office</a><br>
 					<small><a href="https://vs-group.jp/lawyer/" target="_blank">弁護士法人ベンチャーサポート法律事務所</a></small>
 				</dd>
-				<!-- <dt>Qualification</dt>
+				<dt>Qualification</dt>
 				<dd>
-					Antique dealer permit<br>
-					<small>古物商許可証：</small>
-				</dd> -->
+					IT Installation Support Provider 2023<br>
+					<small>IT導入支援事業者2023年</small>
+					<!-- Antique dealer permit<br>
+					<small>古物商許可証：</small> -->
+				</dd>
 			</dl>
 		</div>
 	</section>
