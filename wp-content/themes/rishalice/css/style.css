@@ -3513,7 +3513,7 @@ h5 {
   .p-top-article--about__explanation {
     text-align: center;
     margin: 0 auto;
-    padding: 60px 60px 160px;
+    padding: 60px 60px 185px;
   }
 }
 .p-top-article--about__explanation::before {
@@ -3522,7 +3522,6 @@ h5 {
 
 @media screen and (min-width: 768px) {
   .p-top-article--about__explanation::before {
-    top: 20%;
     left: 20px;
   }
 }
@@ -3532,8 +3531,8 @@ h5 {
 
 @media screen and (min-width: 768px) {
   .p-top-article--about__explanation::after {
-    bottom: 0;
-    top: -20%;
+    bottom: auto;
+    top: 60px;
     right: 20px;
   }
 }
@@ -3554,6 +3553,9 @@ h5 {
 @media screen and (min-width: 768px) {
   .p-top-article--advantage__parallel .c-drop-shadow-bg--right {
     order: 2;
+    width: 50%;
+    margin-right: -210px;
+    margin-left: 0;
   }
 }
 .p-top-article--advantage__parallel .c-drop-shadow-bg--right::before, .p-top-article--advantage__parallel .c-drop-shadow-bg--right::after {
@@ -3578,6 +3580,8 @@ h5 {
 @media screen and (min-width: 768px) {
   .p-top-article--advantage__parallel__text {
     order: 1;
+    width: 63%;
+    margin-top: 26px;
   }
 }
 .p-top-article--advantage__parallel__text__head {
@@ -3588,6 +3592,13 @@ h5 {
   margin: 0 12px 20px 0;
 }
 
+@media screen and (min-width: 768px) {
+  .p-top-article--advantage__parallel__text__list {
+    line-height: 1.75;
+    padding-top: 14px;
+    padding-bottom: 91px;
+  }
+}
 .p-top-article--advantage__parallel__text__list .c-font--middle {
   line-height: 2;
   position: relative;
@@ -3604,8 +3615,15 @@ h5 {
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .p-top-article--advantage__parallel__text__list .c-font--middle {
+    line-height: 1.75;
+    margin-bottom: 0;
+  }
+}
 .p-top-article--advantage__parallel__text .c-bg--spade {
   background-position: center 42%;
+  margin: 0;
 }
 
 .p-top-article--advantage__forte {
@@ -3616,6 +3634,7 @@ h5 {
   .p-top-article--advantage__forte {
     width: 95%;
     margin: 0 auto 150px auto;
+    line-height: 2;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -3633,11 +3652,6 @@ h5 {
   word-break: break-all;
 }
 
-@media screen and (min-width: 768px) {
-  .p-top-article--advantage__forte .c-font--general {
-    line-height: 2.5;
-  }
-}
 .p-top-article--advantage__btn {
   margin-bottom: 196px;
 }
