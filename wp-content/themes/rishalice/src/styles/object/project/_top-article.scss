@@ -188,8 +188,11 @@
 					margin-left: 0;
 				}
 				@media (min-width: 1400px) {
-					width: 50%;
+					width: 45%;
 					margin-right: -210px;
+				}
+				@media (min-width: 1510px) {
+					width: 50%;
 				}
 			}
 			&__text {

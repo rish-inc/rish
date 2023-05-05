@@ -12,6 +12,12 @@
 			@include g.mq( full ) {
 				height: calc( 74.57% - 91px );  // 親要素がpadding-bottomで伸びている分を差し引く
 			}
+			@media (min-width: 1400px) {
+				height: calc( 74.57% - 45.5px );
+			}
+			@media (min-width: 1510px) {
+				height: 74.57%;
+			}
 		}
 		&::before {
 			opacity: 0.8;
@@ -36,6 +42,9 @@
 				bottom: 17%;
 			}
 			@media (min-width: 1400px) {
+				bottom: 4%;
+			}
+			@media (min-width: 1510px) {
 				bottom: -6%;
 			}
 		}
@@ -50,6 +59,9 @@
 				bottom: 6%;
 			}
 			@media (min-width: 1400px) {
+				bottom: -8%;
+			}
+			@media (min-width: 1510px) {
 				bottom: -16%;
 			}
 		}
