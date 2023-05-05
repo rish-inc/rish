@@ -20,7 +20,7 @@
 				<article class="p-top-article--advantage">
 					<section class="p-top-article--advantage__parallel">
 						<figure class="c-drop-shadow-bg--right">
-							<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/solvable--alice-rabbit.jpg' ) ); ?>" alt="">
+							<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/solvable--alice-rabbit.jpg' ) ); ?>" alt="アリスとウサギ">
 						</figure>
 						<div class="p-top-article--advantage__parallel__text">
 							<h3 class="p-top-article--advantage__parallel__text__head c-flex--center">

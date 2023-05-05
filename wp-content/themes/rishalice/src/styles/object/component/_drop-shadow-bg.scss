@@ -5,16 +5,16 @@
 		&::before,
 		&::after {
 			content: "";
-			width: 175px;
-			height: 170px;
+			width: 72%;
+			height: 74.57%;
 			position: absolute;
 			background:#6BB7AC;
-			@include g.mq( pc ) {
-			width: 410px;
-			height: 396px;
+			@include g.mq( full ) {
+				height: calc( 74.57% - 91px );  // 親要素がpadding-bottomで伸びている分を差し引く
 			}
 		}
 		&::before {
+			opacity: 0.8;
 			z-index: -1;
 		}
 		&::after {
@@ -26,24 +26,32 @@
 	&--right {
 		@extend .c-drop-shadow-bg;
 		&::before {
-			right: -42px;
-			bottom: -40px;
-			opacity: .7;
+			right: -9%;
+			bottom: -9%;
+			@include g.mq( pc ) {
+				right: -6%;
+				bottom: -7%;
+			}
+			@include g.mq( full ) {
+				bottom: 17%;
+			}
+			@media (min-width: 1400px) {
+				bottom: -6%;
+			}
 		}
 		&::after {
-			right: -82px;
-			bottom: -80px;
-		}
-	}
-	&--left{
-		@extend .c-drop-shadow-bg;
-		&::before{
-			left: -42px;
-			bottom: -40px;
-		}
-		&::after{
-			left: -42px;
-			bottom: -40px;
+			right: -19%;
+			bottom: -20%;
+			@include g.mq( pc ) {
+				right: -12%;
+				bottom: -12%;
+			}
+			@include g.mq( full ) {
+				bottom: 6%;
+			}
+			@media (min-width: 1400px) {
+				bottom: -16%;
+			}
 		}
 	}
 }
@@ -60,6 +68,7 @@
 		background:#6BB7AC;
 	}
 	&::before {
+		opacity: 0.8;
 		z-index: -1;
 	}
 	&::after {

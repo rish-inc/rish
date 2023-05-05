@@ -83,12 +83,14 @@
 		}
 	}
 	&--about {
-		@include g.mq( pc ) {
-		}
 		&__head {
 			color: g.$fontcolor--white;
 			text-align: center;
-			@include g.mq( pc ) {
+			.u-br--sp {
+				display: block;
+				@include g.mq( full ) {
+					display: none;
+				}
 			}
 			&__text {
 				display: inline-block;
@@ -118,19 +120,30 @@
 			line-height: 1.7;
 			padding: 120px 0;
 			@include g.mq( pc ) {
+				width: 95%;
+				margin: 0 auto;
+			}
+			@include g.mq( wide-2 ) {
+				width: 100%;
 				text-align: center;
 				margin: 0 auto;
-				padding: 60px 60px 185px;
+				padding: 60px 60px 70px;
+			}
+			@include g.mq( full ) {
+				padding-bottom: 130px;
+			}
+			@media (min-width: 1400px) {
+				padding-bottom: 185px;
 			}
 			&::before {
 				top: 60px;
-				@include g.mq( pc ) {
+				@include g.mq( wide-2 ) {
 					left: 20px;
 				}
 			}
 			&::after {
 				bottom: 60px;
-				@include g.mq( pc ) {
+				@include g.mq( wide-2 ) {
 					bottom: auto;
 					top: 60px;
 					right: 20px;
@@ -143,34 +156,48 @@
 		&__parallel {
 			margin-bottom: 90px;
 			@include g.mq( pc ) {
+				width: 95%;
+				margin: 0 auto 90px
+			}
+			@media (min-width: 1100px) {
+				width: 100%;
+			}
+			@include g.mq( full ) {
 				display: flex;
+				margin-bottom: 74px;
 			}
 			.c-drop-shadow-bg--right {
 				width: 64vw;
-				margin-left: 9.06666667vw;
+				max-width: 568px;
+				margin-left: 10vw;
+				@media (min-width: 500px) {
+					margin-left: 13vw;
+				}
 				@include g.mq( pc ) {
+					margin-left: 15vw;
+				}
+				@media (min-width: 900px) {
+					margin-left: 17vw;
+				}
+				@include g.mq( wide ) {
+					margin-left: 19vw;
+				}
+				@include g.mq( full ) {
 					order: 2;
-					width: 50%;  //test
+					width: 40%;
+					margin-left: 0;
+				}
+				@media (min-width: 1400px) {
+					width: 50%;
 					margin-right: -210px;
-					margin-left: 0;  //test
-				}
-				&::before,
-				&::after {
-					width: 73%;
-					padding-top: 70%;
-				}
-				&::before {
-					right: -20px;
-					bottom: -20px;
-				}
-				&::after {
-					right: -40px;
-					bottom: -45px;
 				}
 			}
 			&__text {
 				margin-top: 60px;
 				@include g.mq( pc ) {
+					margin-top: 64px;
+				}
+				@include g.mq( full ) {
 					order: 1;
 					width: 63%;
 					margin-top: 26px;
@@ -182,10 +209,10 @@
 					@include g.font-rem( g.$font-size--Lv7 );
 				}
 				&__list {
-					@include g.mq( pc ) {
+					@include g.mq( full ) {
 						line-height: 1.75;
 						padding-top: 14px;
-						padding-bottom: 91px;
+						padding-bottom: 91px;  // 背景のスペードを大きくするための余白
 					}
 					.c-font--middle {
 						line-height: 2;
@@ -216,11 +243,11 @@
 			margin-bottom: 90px;
 			@include g.mq( pc ) {
 				width: 95%;
-				margin: 0 auto 150px auto;
+				margin: 0 auto 164px;
 				line-height: 2;
 			}
-			@include g.mq( wide ) {
-				width: 100%
+			@media (min-width: 1100px) {
+				width: 100%;
 			}
 			&__head {
 				@include g.font-rem( g.$font-size--Lv7 );
