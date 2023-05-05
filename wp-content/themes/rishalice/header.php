@@ -42,7 +42,11 @@
 					?>
 					<h1 class="p-header__menu__logo">
 						<a href="<?php echo esc_url(home_url('/')); ?>">
-							<img src="<?php echo esc_url( get_theme_file_uri( '/images/header-footer/logo_header.svg' ) ); ?>" alt="ロゴ画像">
+							<?php if ( is_home() || is_front_page() ) : //フロントページのみspanあり ?>
+								<span><img src="<?php echo esc_url( get_theme_file_uri( '/images/header-footer/logo_header.svg' ) ); ?>" alt="ロゴ画像"></span>
+							<?php else : ?>
+								<img src="<?php echo esc_url( get_theme_file_uri( '/images/header-footer/logo_header.svg' ) ); ?>" alt="ロゴ画像">
+							<?php endif; ?>
 						</a>
 					</h1>
 					<?php
