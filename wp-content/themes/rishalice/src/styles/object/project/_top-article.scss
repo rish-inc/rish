@@ -277,6 +277,9 @@
 			max-width: 1080px;
 			margin: 0 auto;
 		}
+		a {
+			cursor: pointer;
+		}
 		&__head {
 			margin-bottom: 75px;
 			@include g.mq( pc ) {
