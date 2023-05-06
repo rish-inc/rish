@@ -3810,6 +3810,10 @@ h5 {
     margin: 0 auto;
   }
 }
+.p-top-article--blog a {
+  cursor: pointer;
+}
+
 .p-top-article--blog__head {
   margin-bottom: 75px;
 }
