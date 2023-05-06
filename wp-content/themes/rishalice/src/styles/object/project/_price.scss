@@ -10,12 +10,6 @@
         }
     }
 
-    .c-decoration--wing-line--under::after {
-        bottom: 0;
-        @include g.mq( pc ) {
-            bottom: -6px;
-        }
-    }
     .c-decoration--english {
         @include g.font-rem( g.$font-size--Lv2 );
         text-align: center;
@@ -23,6 +17,7 @@
             @include g.font-rem( g.$font-size--Lv3 );
         }
     }
+    h2,
     h3 {
         color: g.$fontcolor--base;
         line-height: 1.5;
@@ -45,6 +40,18 @@
             @include g.mq( pc ) {
                 display: flex;
                 align-items: stretch;
+            }
+        }
+    }
+}
+
+// フロントページの文字サイズ調整
+.home {
+    .p-price {
+        .c-decoration--english {
+            @include g.font-rem( g.$font-size--Lv3 );
+            @include g.mq( pc ) {
+                @include g.font-rem( g.$font-size--Lv7 );
             }
         }
     }

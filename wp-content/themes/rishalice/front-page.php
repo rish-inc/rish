@@ -57,7 +57,7 @@
 				<article class="p-top-article--works">
 					<div class="c-decoration--wing-line--under">
 						<span class="c-decoration--english">Works</span>
-						<h2>制作実績</h2>
+						<h2 class="c-font--big">制作実績</h2>
 					</div>
 				</article>
 
@@ -71,13 +71,13 @@
 						<h2 class="c-font--big">ブログ</h2>
 					</div>
 					<ul class="p-top-article--blog__list c-flex--parallel">
-					<?php
-						$query = new WP_Query(
-							array(
-								'posts_per_page' => 3, /* １ページあたりの投稿表示数 */
-							)
-						);
-					?>
+						<?php
+							$query = new WP_Query(
+								array(
+									'posts_per_page' => 3, /* １ページあたりの投稿表示数 */
+								)
+							);
+						?>
 						<?php
 							if( $query -> have_posts() ):
 						?> <!--投稿があれば-->
@@ -88,24 +88,45 @@
 						<li class="p-top-article--blog__list__item p-card">
 							<a class="p-card__link" href="<?php the_permalink(); ?>">
 								<figure class="p-card__link__caption">
-									<?php if(has_post_thumbnail()): ?>
-										<div class="p-card__link__caption__wrap">
-											<img class="p-card__link__caption__wrap__img" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+									<div class="p-card__link__caption__wrap">
+										<div class="p-card__link__caption__wrap__inner">
+											<?php if(has_post_thumbnail()): ?>
+												<img class="p-card__link__caption__wrap__img" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="サムネイル">
+											<?php else: ?>
+												<img class="p-card__link__caption__wrap__img" src="<?php echo get_template_directory_uri(); ?>/images/blog/none-eye-catching.png" alt="サムネイルなし">
+											<?php endif; ?>
 										</div>
-									<?php else: ?>
-										<div class="p-card__link__caption__wrap">
-											<img class="p-card__link__caption__wrap__img" src="<?php echo get_template_directory_uri(); ?>/images/blog/none-eye-catching.png" alt="">
-										</div>
-									<?php endif; ?>
+									</div>
 									<figcaption class="p-card__link__caption__text">
 										<span class="p-card__link__caption__text__day c-font--small"><?php echo esc_html( get_the_date( 'Y.m.d' ) ); ?></span>
-										<h3 class="p-card__link__caption__text__title c-font--medium"><?php the_title(); ?></h3>
+										<h3 class="p-card__link__caption__text__title c-font--medium">
+											<!-- タイトルはスマホ28文字、PC66文字まで表示。超える場合は省略記号 -->
+											<?php if ( wp_is_mobile() ) : ?>
+												<!-- スマホの場合 -->
+												<?php if( mb_strlen( $post->post_title )>28 ) {
+													$title= mb_substr( $post->post_title,0,28 ) ;
+														echo $title . '...';
+													} else {
+														echo $post->post_title;
+													}
+												?>
+											<?php else: ?>
+												<!-- PCの場合 -->
+												<?php if( mb_strlen( $post->post_title )>66 ) {
+													$title= mb_substr( $post->post_title,0,66 ) ;
+														echo $title . '...';
+													} else {
+														echo $post->post_title;
+													}
+												?>
+											<?php endif; ?>
+										</h3>
 									</figcaption>
 								</figure>
 							</a>
 						</li>
 						<?php endwhile; ?>
-						<?php wp_reset_postdata(); ?> <!-- 投稿データをリセットする -->
+							<?php wp_reset_postdata(); ?> <!-- 投稿データをリセットする -->
 						<?php endif; ?>
 					</ul>
 				</article>

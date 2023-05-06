@@ -33,16 +33,19 @@
 				@extend %wing-line;
 				position: relative;
 				display: inline-block;
-				bottom:-16px;
+				bottom: 0;
+				@include g.mq( pc ) {
+					bottom: -6px;
+				}
 			}
 		}
 	}
 	&--english {
 		display: block;
 		color: #C1AF1E;
-		@include g.font-rem( 16 );
+		@include g.font-rem( g.$font-size--Lv3 );
 		@include g.mq( pc ) {
-			@include g.font-rem( 24 );
+			@include g.font-rem( g.$font-size--Lv7 );
 		}
 	}
 	&--biscuit {
