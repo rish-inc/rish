@@ -1653,12 +1653,12 @@ h5 {
   }
 }
 .p-form {
-  padding-bottom: 320px;
+  padding-bottom: 324px;
 }
 
 @media screen and (min-width: 768px) {
   .p-form {
-    padding-bottom: 230px;
+    padding-bottom: 245px;
   }
 }
 .p-form__head {
@@ -1671,24 +1671,24 @@ h5 {
   }
 }
 .p-form__sentence {
-  padding-bottom: 55px;
+  padding-bottom: 56px;
 }
 
 @media screen and (min-width: 768px) {
   .p-form__sentence {
-    padding-bottom: 50px;
+    padding-bottom: 77px;
     max-width: 690px;
     margin: 0 auto;
   }
 }
 .p-form__sentence__text {
-  margin-bottom: 45px;
+  margin-bottom: 39px;
   line-height: 2;
 }
 
 @media screen and (min-width: 768px) {
   .p-form__sentence__text {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     text-align: center;
   }
 }
@@ -1699,20 +1699,26 @@ h5 {
   }
 }
 .p-form__inner .wpcf7-form dl {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .p-form__inner .wpcf7-form dl dt {
-  margin-bottom: 10px;
+  margin-bottom: 4px;
+}
+
+.p-form__inner .wpcf7-form dl dt label {
+  position: relative;
 }
 
 .p-form__inner .wpcf7-form dl dt label span {
-  margin-left: 8px;
   font-size: 0.75rem;
-}
-
-.p-form__inner .wpcf7-form dl dd span input::-webkit-input-placeholder {
-  font-family: inherit;
+  color: #FFF;
+  background-color: #E34C4C;
+  border-radius: 3px;
+  padding: 1px 2px 0 2px;
+  position: absolute;
+  right: -2.1rem;
+  top: -1px;
 }
 
 .p-form__inner .wpcf7-form .wpcf7-form-control-wrap .wpcf7-text,
@@ -1729,12 +1735,10 @@ h5 {
     max-width: 750px;
   }
 }
-.p-form__inner .wpcf7-form .wpcf7-form-control-wrap .wpcf7-text::-moz-placeholder, .p-form__inner .wpcf7-form .wpcf7-form-control-wrap .wpcf7-textarea::-moz-placeholder {
-  font-family: "丸明オールドStdN";
-}
-.p-form__inner .wpcf7-form .wpcf7-form-control-wrap .wpcf7-text::placeholder,
-.p-form__inner .wpcf7-form .wpcf7-form-control-wrap .wpcf7-textarea::placeholder {
-  font-family: "丸明オールドStdN";
+.p-form__inner .wpcf7-form .wpcf7-form-control-wrap .wpcf7-text::-webkit-input-placeholder,
+.p-form__inner .wpcf7-form .wpcf7-form-control-wrap .wpcf7-textarea::-webkit-input-placeholder {
+  font-family: inherit;
+  color: #9F9F9F;
 }
 
 .p-form__inner .wpcf7-form .wpcf7-form-control-wrap .wpcf7-text {
@@ -1748,16 +1752,26 @@ h5 {
   resize: none;
 }
 
+.p-form__inner .wpcf7-form .wpcf7-form-control-wrap .wpcf7-not-valid-tip {
+  color: #E34C4C;
+  margin-top: 2px;
+}
+
+.p-form__inner .wpcf7-form dl:last-of-type .wpcf7-not-valid-tip {
+  margin-top: -5px;
+}
+
 .p-form__inner .wpcf7-form .set-bt {
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .p-form__inner .wpcf7-form .set-bt {
-    padding-top: 36px;
+    padding-top: 38px;
   }
 }
 .p-form__inner .wpcf7-form .set-bt input {
+  cursor: pointer;
   width: 198px;
   height: 64px;
   border: none;
@@ -1767,8 +1781,9 @@ h5 {
 
 .p-form__inner .wpcf7-form.invalid .wpcf7-response-output,
 .p-form__inner .wpcf7-form.sent .wpcf7-response-output {
-  margin: 2.5em 0.5em 1em;
   background: #FFF;
+  width: 100%;
+  margin: 42px 0 0;
 }
 
 .p-form__inner .wpcf7-form.sent .wpcf7-response-output {
