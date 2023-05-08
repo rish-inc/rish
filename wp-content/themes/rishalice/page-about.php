@@ -95,8 +95,8 @@
 
 					<dt class="p-about--profile__list__title c-line--ornament">資格<span>-Qualification-</span></dt>
 					<div class="p-about--profile__list__wrapper">
-						<dd class="p-about--profile__list__text u-mb--14 u-mb--pc--0">IT Installation Support Provider 2023</dd>
-						<dd class="p-about--profile__list__text">IT導入支援事業者2023年</dd>
+						<dd class="p-about--profile__list__text u-mb--14 u-mb--pc--0">IT導入支援事業者2023年</dd>
+						<dd class="p-about--profile__list__text">IT Installation Support Provider 2023</dd>
 					</div>
 				</dl>
 			</div>

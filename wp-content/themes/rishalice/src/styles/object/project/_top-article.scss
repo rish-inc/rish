@@ -272,7 +272,7 @@
 	}
 
 	&--blog {
-		padding: 60px 0 195px 0;
+		padding: 60px 0 179px 0;
 		@include g.mq( pc ) {
 			max-width: 1080px;
 			margin: 0 auto;
@@ -298,6 +298,50 @@
 					max-width: 340px; // (1080px - 30px - 30px) ÷ 3
 				}
 			}
+		}
+	}
+
+	&--about-us {
+		padding-top: 35px;
+		margin-bottom: 112px;
+		background-color: g.$bgcolor--light-green;
+		border-top: 30px solid g.$bgcolor--light-green2;
+		border-bottom: 30px solid g.$bgcolor--light-green2;
+		margin-right: calc(50% - 50vw); // 親要素を無視して画面幅いっぱいに広げる
+		margin-left: calc(50% - 50vw);
+		padding-right: calc(50vw - 50%); // 子要素は親要素の幅を維持
+		padding-left: calc(50vw - 50%);
+		position: relative;
+		@include g.mq( pc ) {
+		}
+		&__head {
+			margin-bottom: 66px;
+			@include g.mq( pc ) {
+			}
+		}
+		&__wrap {
+			background-color: g.$bgcolor--white;
+			padding: 7px;
+			margin-bottom: 110px;
+		}
+		&__list {
+			margin: 0;
+			padding: 98px 33px;
+			background-color: g.$bgcolor--white;
+			&__item {
+				@include g.font-rem( g.$font-size--Lv2 );
+				line-height: 2;
+			}
+		}
+		&__btn {
+			margin-bottom: 154px;
+		}
+		&__img {
+			width: 158.45px;
+			position: absolute;
+			bottom: -45px;
+			left: 50%;
+			transform: translateX(-50%);
 		}
 	}
 }
