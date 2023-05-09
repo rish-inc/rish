@@ -83,6 +83,7 @@ body {
   font-size: 1rem;
   color: #1D1D1D;
   min-width: 375px;
+  overflow-x: hidden;
 }
 
 a {
@@ -3867,27 +3868,60 @@ h5 {
   position: relative;
 }
 
+@media screen and (min-width: 768px) {
+  .p-top-article--about-us {
+    background: none;
+    border-top: none;
+    border-bottom: 1px solid transparent;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
 .p-top-article--about-us__head {
   margin-bottom: 66px;
 }
 
+@media screen and (min-width: 768px) {
+  .p-top-article--about-us__head {
+    margin-bottom: 36px;
+  }
+}
 .p-top-article--about-us__wrap {
   background-color: #FFF;
   padding: 7px;
   margin-bottom: 110px;
 }
 
+@media screen and (min-width: 768px) {
+  .p-top-article--about-us__wrap {
+    max-width: 1015px;
+    margin: 0 auto 95px;
+  }
+}
 .p-top-article--about-us__list {
   margin: 0;
   padding: 98px 33px;
   background-color: #FFF;
 }
 
+@media screen and (min-width: 768px) {
+  .p-top-article--about-us__list {
+    padding: 60px 228px 76px 212px;
+  }
+}
 .p-top-article--about-us__list__item {
   font-size: 0.875rem;
   line-height: 2;
 }
 
+@media screen and (min-width: 768px) {
+  .p-top-article--about-us__list__item {
+    font-size: 1.125rem;
+    min-width: 555px;
+  }
+}
 .p-top-article--about-us__btn {
   margin-bottom: 154px;
 }
