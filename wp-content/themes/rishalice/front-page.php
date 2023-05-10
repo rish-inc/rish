@@ -147,6 +147,7 @@
 					</div>
 					<a href="<?php echo esc_url( home_url( 'about' ) ); ?>" class="p-top-article--about-us__btn p-btn c-button--noise-line">会社情報はこちら</a>
 					<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/Tea-set.png' ) ); ?>" alt="ティーセット" class="p-top-article--about-us__img">
+					<div class="p-top-article--about-us__bg"></div>
 				</article>
 
 				<?php get_template_part( 'components/template/contact' ); ?>

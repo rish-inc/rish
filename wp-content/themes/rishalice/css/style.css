@@ -3824,6 +3824,7 @@ h5 {
   .p-top-article--blog {
     max-width: 1080px;
     margin: 0 auto;
+    padding-bottom: 263px;
   }
 }
 .p-top-article--blog a {
@@ -3870,6 +3871,7 @@ h5 {
 
 @media screen and (min-width: 768px) {
   .p-top-article--about-us {
+    margin-bottom: 169px;
     background: none;
     border-top: none;
     border-bottom: 1px solid transparent;
@@ -3934,6 +3936,37 @@ h5 {
   transform: translateX(-50%);
 }
 
+@media screen and (min-width: 768px) {
+  .p-top-article--about-us__img {
+    width: 239.89px;
+    bottom: -118px;
+    left: auto;
+    right: 0;
+    transform: translateX(62%);
+  }
+}
+.p-top-article--about-us__bg {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .p-top-article--about-us__bg {
+    display: block;
+    position: absolute;
+    top: -218px;
+    right: -200px;
+    width: 180%;
+    height: 180%;
+    z-index: -1;
+    background-image: url(../images/top/bg_about-us_2x.png);
+    background-size: contain;
+    background-position: left top;
+    background-repeat: no-repeat;
+    margin-left: calc(50% - 50vw);
+    padding-right: calc(50vw - 50%);
+    padding-left: calc(50vw - 50%);
+  }
+}
 @media screen and (min-width: 768px) {
   .u-br--sp {
     display: none;

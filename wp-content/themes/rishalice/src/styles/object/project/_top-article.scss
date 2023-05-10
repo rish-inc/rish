@@ -276,6 +276,7 @@
 		@include g.mq( pc ) {
 			max-width: 1080px;
 			margin: 0 auto;
+			padding-bottom: 263px;
 		}
 		a {
 			cursor: pointer;
@@ -314,6 +315,7 @@
 		padding-left: calc(50vw - 50%);
 		position: relative;
 		@include g.mq( pc ) {
+			margin-bottom: 169px;
 			background: none;
 			border-top: none;
 			border-bottom: 1px solid transparent;
@@ -362,6 +364,32 @@
 			bottom: -45px;
 			left: 50%;
 			transform: translateX(-50%);
+			@include g.mq( pc ) {
+				width: 239.89px;
+				bottom: -118px;
+				left: auto;
+				right: 0;
+				transform: translateX(62%);
+			}
+		}
+		&__bg {
+			display: none;
+			@include g.mq( pc ) {
+				display: block;
+				position: absolute;
+				top: -218px;
+				right: -200px;
+				width: 180%;
+				height: 180%;
+				z-index: -1;
+				background-image: url( ../images/top/bg_about-us_2x.png );
+				background-size: contain;
+				background-position: left top;
+				background-repeat: no-repeat;
+				margin-left: calc(50% - 50vw); // 親要素を無視して画面幅いっぱいに広げる
+				padding-right: calc(50vw - 50%); // 子要素は親要素の幅を維持
+				padding-left: calc(50vw - 50%);
+			}
 		}
 	}
 }
