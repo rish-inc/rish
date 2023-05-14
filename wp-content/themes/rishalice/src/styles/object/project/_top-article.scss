@@ -314,7 +314,7 @@
 		padding-right: calc(50vw - 50%); // 子要素は親要素の幅を維持
 		padding-left: calc(50vw - 50%);
 		position: relative;
-		@include g.mq( pc ) {
+		@include g.mq( full ) {
 			margin-bottom: 169px;
 			background: none;
 			border-top: none;
@@ -335,23 +335,33 @@
 			padding: 7px;
 			margin-bottom: 110px;
 			@include g.mq( pc ) {
-				max-width: 1015px;
+				max-width: 94%;
 				margin: 0 auto 95px;
 			}
 		}
-		&__list {
-			margin: 0;
-			padding: 98px 33px;
+		&__inner {
+			margin: 0 auto;
+			padding-top: 91px;
+			padding-bottom: 91px;
 			background-color: g.$bgcolor--white;
 			@include g.mq( pc ) {
-				padding: 60px 228px 76px 212px;
+				width: 100%;
+				padding-top: 60px;
+				padding-bottom: 76px;
+			}
+		}
+		&__list {
+			margin: 0 auto;
+			@include g.mq( pc ) {
+				width: 100%
 			}
 			&__item {
 				@include g.font-rem( g.$font-size--Lv2 );
 				line-height: 2;
 				@include g.mq( pc ) {
 					@include g.font-rem( g.$font-size--Lv4 );
-					min-width: 555px;
+					width: 61.73%;
+					margin: 0 auto;
 				}
 			}
 		}
@@ -364,31 +374,59 @@
 			bottom: -45px;
 			left: 50%;
 			transform: translateX(-50%);
-			@include g.mq( pc ) {
+			@include g.mq( full ) {
 				width: 239.89px;
 				bottom: -118px;
 				left: auto;
 				right: 0;
-				transform: translateX(62%);
+				transform: translateX(-6%);
+			}
+			@media (min-width: 1300px) {
+				transform: translateX(16%);
+			}
+			@media (min-width: 1400px) {
+				transform: translateX(32%);
+			}
+			@media (min-width: 1500px) {
+				transform: translateX(52%);
 			}
 		}
 		&__bg {
 			display: none;
-			@include g.mq( pc ) {
+			@include g.mq( full ) {
 				display: block;
+				opacity: 0;
+				transition: all .9s 0s ease-in;
 				position: absolute;
-				top: -218px;
-				right: -200px;
+				top: -26%;
+				left: -200%;
 				width: 180%;
 				height: 180%;
 				z-index: -1;
 				background-image: url( ../images/top/bg_about-us_2x.png );
 				background-size: contain;
-				background-position: left top;
+				background-position: top left;
 				background-repeat: no-repeat;
 				margin-left: calc(50% - 50vw); // 親要素を無視して画面幅いっぱいに広げる
 				padding-right: calc(50vw - 50%); // 子要素は親要素の幅を維持
 				padding-left: calc(50vw - 50%);
+			}
+		}
+		&.show {
+			.p-top-article--about-us__bg {
+				@include g.mq( full ) {
+					opacity: 1;
+					left: -70%;
+				}
+				@media (min-width: 1300px) {
+					left: -61%;
+				}
+				@media (min-width: 1400px) {
+					left: -52%;
+				}
+				@media (min-width: 1500px) {
+					left: -42%;
+				}
 			}
 		}
 	}

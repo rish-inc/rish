@@ -138,12 +138,15 @@
 						<h2 class="c-font--big">会社情報</h2>
 					</div>
 					<div class="p-top-article--about-us__wrap">
-						<ul class="p-top-article--about-us__list c-frame--ornament--type-a">
-							<li class="p-top-article--about-us__list__item">Rish inc.</li>
-							<li class="p-top-article--about-us__list__item">株式会社 リッシュ</li>
-							<li class="p-top-article--about-us__list__item">Address - Business office</li>
-							<li class="p-top-article--about-us__list__item">〒540-0025 大阪府大阪市中央区徳井町2−2−10 アークマインB201</li>
-						</ul>
+						<div class="p-top-article--about-us__inner c-frame--ornament--type-a">
+							<!-- <ul class="p-top-article--about-us__list c-frame--ornament--type-a"> -->
+							<ul class="p-top-article--about-us__list">
+								<li class="p-top-article--about-us__list__item">Rish inc.</li>
+								<li class="p-top-article--about-us__list__item">株式会社 リッシュ</li>
+								<li class="p-top-article--about-us__list__item">Address - Business office</li>
+								<li class="p-top-article--about-us__list__item">〒540-0025 大阪府大阪市中央区徳井町2−2−10 アークマインB201</li>
+							</ul>
+						</div>
 					</div>
 					<a href="<?php echo esc_url( home_url( 'about' ) ); ?>" class="p-top-article--about-us__btn p-btn c-button--noise-line">会社情報はこちら</a>
 					<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/Tea-set.png' ) ); ?>" alt="ティーセット" class="p-top-article--about-us__img">
