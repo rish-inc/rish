@@ -83,6 +83,7 @@ body {
   font-size: 1rem;
   color: #1D1D1D;
   min-width: 375px;
+  overflow-x: hidden;
 }
 
 a {
@@ -626,7 +627,7 @@ h5 {
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: left top, right top, left bottom, right bottom;
   position: relative;
-  padding: 20px 50px;
+  padding: 20px 33px;
 }
 
 .c-frame--ornament--type-a::before {
@@ -3816,13 +3817,14 @@ h5 {
 }
 
 .p-top-article--blog {
-  padding: 60px 0 195px 0;
+  padding: 60px 0 179px 0;
 }
 
 @media screen and (min-width: 768px) {
   .p-top-article--blog {
     max-width: 1080px;
     margin: 0 auto;
+    padding-bottom: 263px;
   }
 }
 .p-top-article--blog a {
@@ -3852,6 +3854,168 @@ h5 {
 @media screen and (min-width: 768px) {
   .p-top-article--blog__list__item {
     max-width: 340px;
+  }
+}
+.p-top-article--about-us {
+  padding-top: 35px;
+  margin-bottom: 112px;
+  background-color: #E1F5F2;
+  border-top: 30px solid #C5DEDA;
+  border-bottom: 30px solid #C5DEDA;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  padding-right: calc(50vw - 50%);
+  padding-left: calc(50vw - 50%);
+  position: relative;
+}
+
+@media screen and (min-width: 1200px) {
+  .p-top-article--about-us {
+    margin-bottom: 169px;
+    background: none;
+    border-top: none;
+    border-bottom: 1px solid transparent;
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.p-top-article--about-us__head {
+  margin-bottom: 66px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-top-article--about-us__head {
+    margin-bottom: 36px;
+  }
+}
+.p-top-article--about-us__wrap {
+  background-color: #FFF;
+  padding: 7px;
+  margin-bottom: 110px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-top-article--about-us__wrap {
+    max-width: 94%;
+    margin: 0 auto 95px;
+  }
+}
+.p-top-article--about-us__inner {
+  margin: 0 auto;
+  padding-top: 91px;
+  padding-bottom: 91px;
+  background-color: #FFF;
+}
+
+@media screen and (min-width: 768px) {
+  .p-top-article--about-us__inner {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 76px;
+  }
+}
+.p-top-article--about-us__list {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .p-top-article--about-us__list {
+    width: 100%;
+  }
+}
+.p-top-article--about-us__list__item {
+  font-size: 0.875rem;
+  line-height: 2;
+}
+
+@media screen and (min-width: 768px) {
+  .p-top-article--about-us__list__item {
+    font-size: 1.125rem;
+    width: 61.73%;
+    margin: 0 auto;
+  }
+}
+.p-top-article--about-us__btn {
+  margin-bottom: 154px;
+}
+
+.p-top-article--about-us__img {
+  width: 158.45px;
+  position: absolute;
+  bottom: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 1200px) {
+  .p-top-article--about-us__img {
+    width: 239.89px;
+    bottom: -118px;
+    left: auto;
+    right: 0;
+    transform: translateX(-6%);
+  }
+}
+@media (min-width: 1300px) {
+  .p-top-article--about-us__img {
+    transform: translateX(16%);
+  }
+}
+@media (min-width: 1400px) {
+  .p-top-article--about-us__img {
+    transform: translateX(32%);
+  }
+}
+@media (min-width: 1500px) {
+  .p-top-article--about-us__img {
+    transform: translateX(52%);
+  }
+}
+.p-top-article--about-us__bg {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .p-top-article--about-us__bg {
+    display: block;
+    opacity: 0;
+    transition: all 0.9s 0s ease-in;
+    position: absolute;
+    top: -26%;
+    left: -200%;
+    width: 180%;
+    height: 180%;
+    z-index: -1;
+    background-image: url(../images/top/bg_about-us_2x.png);
+    background-size: contain;
+    background-position: top left;
+    background-repeat: no-repeat;
+    margin-left: calc(50% - 50vw);
+    padding-right: calc(50vw - 50%);
+    padding-left: calc(50vw - 50%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .p-top-article--about-us.show .p-top-article--about-us__bg {
+    opacity: 1;
+    left: -70%;
+  }
+}
+@media (min-width: 1300px) {
+  .p-top-article--about-us.show .p-top-article--about-us__bg {
+    left: -61%;
+  }
+}
+@media (min-width: 1400px) {
+  .p-top-article--about-us.show .p-top-article--about-us__bg {
+    left: -52%;
+  }
+}
+@media (min-width: 1500px) {
+  .p-top-article--about-us.show .p-top-article--about-us__bg {
+    left: -42%;
   }
 }
 @media screen and (min-width: 768px) {
