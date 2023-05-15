@@ -2704,6 +2704,10 @@ h5 {
     font-size: 1.5rem;
   }
 }
+.home .p-price__list {
+  margin-bottom: 59.5px;
+}
+
 .p-single__head {
   margin-bottom: 64px;
 }
@@ -3816,6 +3820,18 @@ h5 {
   margin-bottom: 100px;
 }
 
+.p-top-article .p-btn {
+  margin-bottom: 200px;
+}
+
+.p-top-article--service {
+  margin-bottom: 58px;
+}
+
+.p-top-article--service__head {
+  margin-bottom: 42px;
+}
+
 .p-top-article--blog {
   padding: 60px 0 179px 0;
 }
@@ -3847,12 +3863,12 @@ h5 {
     gap: 30px;
   }
 }
-.p-top-article--blog__list__item {
+.p-top-article--blog__list .p-card {
   margin-bottom: 22px;
 }
 
 @media screen and (min-width: 768px) {
-  .p-top-article--blog__list__item {
+  .p-top-article--blog__list .p-card {
     max-width: 340px;
   }
 }
@@ -3937,7 +3953,7 @@ h5 {
     margin: 0 auto;
   }
 }
-.p-top-article--about-us__btn {
+.p-top-article--about-us .p-btn {
   margin-bottom: 154px;
 }
 

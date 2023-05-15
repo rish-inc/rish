@@ -45,7 +45,7 @@
     }
 }
 
-// フロントページの文字サイズ調整
+// フロントページの調整
 .home {
     .p-price {
         .c-decoration--english {
@@ -53,6 +53,9 @@
             @include g.mq( pc ) {
                 @include g.font-rem( g.$font-size--Lv7 );
             }
+        }
+        &__list {
+            margin-bottom: 59.5px;
         }
     }
 }

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<main class="l-main">
+	<main class="l-main p-top-article">
 		<div class="p-top-article--mv">
 			<p class="p-top-article--mv__text">「何をすればいいのか…」を<br class="u-br--sp">成功に導くデザインオフィス</p>
 			<span></span>
@@ -66,6 +66,28 @@
 
 				<a href="<?php echo esc_url( home_url( 'site-production' ) ); ?>" class="p-btn c-button--noise-line">サイト制作について</a>
 
+				<article class="p-top-article--service">
+					<div class="p-top-article--service__head c-decoration--wing-line--under">
+						<span class="c-decoration--english">Service</span>
+						<h2 class="c-font--big">サービス</h2>
+					</div>
+					<div class="p-top-article--service__wrap">
+						<div class="p-top-article--service__inner">
+							<ul class="p-top-article--service__list">
+								<li class="p-frame-circle">サイト制作</li>
+								<li class="p-frame-circle">写真撮影</li>
+								<li class="p-frame-circle">グラフィックデザイン</li>
+								<li class="p-frame-circle">WordPress運用サポート</li>
+								<li class="p-frame-circle">SEO</li>
+								<li class="p-frame-circle">コンテンツマーケティング</li>
+								<li class="p-frame-circle">イラスト制作</li>
+								<li class="p-frame-circle">漫画コンテンツ制作</li>
+							</ul>
+						</div>
+					</div>
+					<div class="p-top-article--service__bg"></div>
+				</article>
+
 				<article class="p-top-article--blog">
 					<div class="p-top-article--blog__head c-decoration--wing-line--under">
 						<span class="c-decoration--english">Blog</span>
@@ -86,7 +108,7 @@
 							while( $query -> have_posts() ):
 								$query -> the_post();
 						?> <!--投稿がある分だけ繰り返す-->
-						<li class="p-top-article--blog__list__item p-card">
+						<li class="p-card">
 							<a class="p-card__link" href="<?php the_permalink(); ?>">
 								<figure class="p-card__link__caption">
 									<div class="p-card__link__caption__wrap">
@@ -139,7 +161,6 @@
 					</div>
 					<div class="p-top-article--about-us__wrap">
 						<div class="p-top-article--about-us__inner c-frame--ornament--type-a">
-							<!-- <ul class="p-top-article--about-us__list c-frame--ornament--type-a"> -->
 							<ul class="p-top-article--about-us__list">
 								<li class="p-top-article--about-us__list__item">Rish inc.</li>
 								<li class="p-top-article--about-us__list__item">株式会社 リッシュ</li>
@@ -148,7 +169,7 @@
 							</ul>
 						</div>
 					</div>
-					<a href="<?php echo esc_url( home_url( 'about' ) ); ?>" class="p-top-article--about-us__btn p-btn c-button--noise-line">会社情報はこちら</a>
+					<a href="<?php echo esc_url( home_url( 'about' ) ); ?>" class="p-btn c-button--noise-line">会社情報はこちら</a>
 					<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/Tea-set.png' ) ); ?>" alt="ティーセット" class="p-top-article--about-us__img">
 					<div class="p-top-article--about-us__bg"></div>
 				</article>

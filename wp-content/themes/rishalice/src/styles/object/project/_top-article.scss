@@ -271,6 +271,18 @@
 		margin-bottom: 100px;
 	}
 
+	// 「サイト制作について」ボタン
+	.p-btn {
+		margin-bottom: 200px;
+	}
+
+	&--service {
+		margin-bottom: 58px;
+		&__head {
+			margin-bottom: 42px;
+		}
+	}
+
 	&--blog {
 		padding: 60px 0 179px 0;
 		@include g.mq( pc ) {
@@ -293,7 +305,7 @@
 				grid-template-columns: 1fr 1fr 1fr;
 				gap: 30px;
 			}
-			&__item {
+			.p-card {
 				margin-bottom: 22px;
 				@include g.mq( pc ) {
 					max-width: 340px; // (1080px - 30px - 30px) ÷ 3
@@ -365,7 +377,7 @@
 				}
 			}
 		}
-		&__btn {
+		.p-btn {
 			margin-bottom: 154px;
 		}
 		&__img {
