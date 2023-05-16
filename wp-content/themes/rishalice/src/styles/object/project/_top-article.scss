@@ -261,23 +261,16 @@
 				word-break: break-all;
 			}
 		}
-
-		&__btn {
-			margin-bottom: 196px;
-		}
 	}
 
 	&--works {
 		margin-bottom: 100px;
 	}
 
-	// 「サイト制作について」ボタン
-	.p-btn {
-		margin-bottom: 200px;
-	}
-
 	&--service {
 		margin-bottom: 58px;
+		padding-top: 35px;
+		padding-bottom: 122px;
 		&__head {
 			margin-bottom: 42px;
 		}
@@ -305,36 +298,14 @@
 				grid-template-columns: 1fr 1fr 1fr;
 				gap: 30px;
 			}
-			.p-card {
-				margin-bottom: 22px;
-				@include g.mq( pc ) {
-					max-width: 340px; // (1080px - 30px - 30px) ÷ 3
-				}
-			}
 		}
 	}
 
 	&--about-us {
 		padding-top: 35px;
 		margin-bottom: 112px;
-		background-color: g.$bgcolor--light-green;
-		border-top: 30px solid g.$bgcolor--light-green2;
-		border-bottom: 30px solid g.$bgcolor--light-green2;
-		// vw指定は縦スクロールバーの幅分はみ出すため、bodyに[overflow-x: hidden;]を指定
-		margin-right: calc(50% - 50vw); // 親要素を無視して画面幅いっぱいに広げる
-		margin-left: calc(50% - 50vw);
-		padding-right: calc(50vw - 50%); // 子要素は親要素の幅を維持
-		padding-left: calc(50vw - 50%);
-		position: relative;
 		@include g.mq( full ) {
 			margin-bottom: 169px;
-			background: none;
-			border-top: none;
-			border-bottom: 1px solid transparent;
-			margin-right: 0;
-			margin-left: 0;
-			padding-right: 0;
-			padding-left: 0;
 		}
 		&__head {
 			margin-bottom: 66px;
@@ -376,9 +347,6 @@
 					margin: 0 auto;
 				}
 			}
-		}
-		.p-btn {
-			margin-bottom: 154px;
 		}
 		&__img {
 			width: 158.45px;

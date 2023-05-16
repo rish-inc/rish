@@ -15,7 +15,7 @@
 			left: 0;
 			right: 0;
 			margin: auto;
-			@include g.mq( pc ) {
+			@include g.mq( wide-2 ) {
 				background: url( ../images/brackets/left.png )no-repeat;
 				width: 16px;
 				height: 190px;
@@ -26,7 +26,7 @@
 		&::after {
 			background: url( ../images/brackets/bottom.png )no-repeat;
 			top: auto;
-			@include g.mq( pc ) {
+			@include g.mq( wide-2 ) {
 				background: url( ../images/brackets/right.png )no-repeat;
 				left: auto;
 				right: 0;
@@ -42,7 +42,6 @@
 			background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 			background-position: left top, right top, left bottom, right bottom;
 			position: relative;
-			// padding: 27px;
 			padding: 40px 30px;
 			&::before {
 				content: "";
@@ -54,8 +53,8 @@
 				background-image: url(../images/frame/dent/top_sp.png),url(../images/frame/dent/bottom_sp.png);
 				background-repeat:repeat-x;
 				background-position:top,bottom;
-				background-color: #fff; //coni
-				z-index: -1; //coni
+				background-color: #fff;
+				z-index: -1;
 			}
 			&::after {
 				content: "";
@@ -73,7 +72,6 @@
 								url(../images/frame/dent/right-top_pc.png),
 								url(../images/frame/dent/left-bottom_pc.png),
 								url(../images/frame/dent/right-bottom_pc.png);
-			// padding: 41px;
 			padding: 60px 50px;
 			&::before {
 				content: "";
@@ -98,9 +96,6 @@
 				}
 			}
 		}
-		// &__content{
-		//	 background: #fff;
-		// }
 	}
 	&--ornament {
 		&--type-a {
@@ -111,7 +106,7 @@
 			background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 			background-position: left top, right top, left bottom, right bottom;
 			position: relative;
-			padding: 20px 50px;
+			padding: 20px 33px;
 			&::before {
 				content: "";
 				height: 100%;

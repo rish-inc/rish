@@ -52,7 +52,7 @@
 						<p class="c-font--general">Web 担当者を雇用するには人件費をまだかけられない方もいらっしゃいます。</p>
 						<p class="c-font--general">弊社ではその運用をアウトソーシングという形でお受けし、事業者様がなるべく事業に専念してもらえるのが強みです。</p>
 					</section>
-					<a href="<?php echo esc_url( home_url( 'contact' ) ); ?>" class="p-top-article--advantage__btn p-btn c-button--noise-line">お問い合わせはこちらから</a>
+					<a href="<?php echo esc_url( home_url( 'contact' ) ); ?>" class="p-btn c-button--noise-line">お問い合わせはこちらから</a>
 				</article>
 
 				<article class="p-top-article--works">
@@ -66,7 +66,7 @@
 
 				<a href="<?php echo esc_url( home_url( 'site-production' ) ); ?>" class="p-btn c-button--noise-line">サイト制作について</a>
 
-				<article class="p-top-article--service">
+				<article class="p-top-article--service c-bg--diamond">
 					<div class="p-top-article--service__head c-decoration--wing-line--under">
 						<span class="c-decoration--english">Service</span>
 						<h2 class="c-font--big">サービス</h2>
