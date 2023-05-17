@@ -22,6 +22,7 @@
 		padding-right: calc(50vw - 50%); // 子要素は親要素の幅を維持
 		padding-left: calc(50vw - 50%);
 		position: relative;
+		z-index: -1;
 		@include g.mq( pc ) {
 			background: url( ../images/background/diamond_pc.png );
 			background-color: g.$bgcolor--light-green;

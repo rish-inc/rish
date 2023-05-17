@@ -157,6 +157,7 @@ h5 {
   padding-right: calc(50vw - 50%);
   padding-left: calc(50vw - 50%);
   position: relative;
+  z-index: -1;
 }
 
 @media screen and (min-width: 768px) {
@@ -541,6 +542,41 @@ h5 {
   border-radius: 3px;
 }
 
+.c-frame-circle {
+  background-image: url(../images/top/round-shadow_sp.png);
+  background-repeat: no-repeat;
+  position: relative;
+  width: 167px;
+  height: 182px;
+}
+
+@media screen and (min-width: 768px) {
+  .c-frame-circle {
+    background-image: url(../images/top/round-shadow_pc.png);
+    right: 0px;
+    bottom: -14px;
+    width: 291px;
+    height: 318px;
+  }
+}
+.c-frame-circle::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 86px;
+  height: 86px;
+  right: 0px;
+  bottom: -29px;
+  background: #A39B7C;
+  filter: blur(48px);
+}
+
+@media screen and (min-width: 768px) {
+  .c-frame-circle::after {
+    width: 150px;
+    height: 150px;
+  }
+}
 .c-frame--brackets {
   position: relative;
 }
@@ -1836,41 +1872,6 @@ h5 {
   display: none;
 }
 
-.p-frame-circle {
-  background-image: url(../images/top/round-shadow_sp.png);
-  background-repeat: no-repeat;
-  position: relative;
-  width: 167px;
-  height: 182px;
-}
-
-@media screen and (min-width: 768px) {
-  .p-frame-circle {
-    background-image: url(../images/top/round-shadow_pc.png);
-    right: 0px;
-    bottom: -14px;
-    width: 291px;
-    height: 318px;
-  }
-}
-.p-frame-circle::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 86px;
-  height: 86px;
-  right: 0px;
-  bottom: -29px;
-  background: #a39b7c;
-  filter: blur(42px);
-}
-
-@media screen and (min-width: 768px) {
-  .p-frame-circle::after {
-    width: 150px;
-    height: 150px;
-  }
-}
 .p-go-to-top {
   display: none;
   position: fixed;
@@ -3865,6 +3866,31 @@ h5 {
 
 .p-top-article--service__head {
   margin-bottom: 42px;
+}
+
+.p-top-article--service__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.p-top-article--service__list__item__wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+}
+
+.p-top-article--service__list__item__inner {
+  max-width: 55px;
+  height: auto;
+  margin: 0 auto 5px;
+}
+
+.p-top-article--service__list__item p {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #6E6221;
+  text-align: center;
 }
 
 .p-top-article--blog {

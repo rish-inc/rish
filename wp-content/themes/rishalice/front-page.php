@@ -72,18 +72,72 @@
 						<h2 class="c-font--big">サービス</h2>
 					</div>
 					<div class="p-top-article--service__wrap">
-						<div class="p-top-article--service__inner">
-							<ul class="p-top-article--service__list">
-								<li class="p-frame-circle">サイト制作</li>
-								<li class="p-frame-circle">写真撮影</li>
-								<li class="p-frame-circle">グラフィックデザイン</li>
-								<li class="p-frame-circle">WordPress運用サポート</li>
-								<li class="p-frame-circle">SEO</li>
-								<li class="p-frame-circle">コンテンツマーケティング</li>
-								<li class="p-frame-circle">イラスト制作</li>
-								<li class="p-frame-circle">漫画コンテンツ制作</li>
-							</ul>
-						</div>
+						<ul class="p-top-article--service__list">
+							<li class="p-top-article--service__list__item c-frame-circle">
+								<div class="p-top-article--service__list__item__wrap">
+									<div class="p-top-article--service__list__item__inner">
+										<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_site-production.png' ) ); ?>" alt="サイト制作">
+									</div>
+									<p>サイト制作</p>
+								</div>
+							</li>
+							<li class="p-top-article--service__list__item c-frame-circle">
+								<div class="p-top-article--service__list__item__wrap">
+									<div class="p-top-article--service__list__item__inner">
+										<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_photo.png' ) ); ?>" alt="写真撮影">
+									</div>
+									<p>写真撮影</p>
+								</div>
+							</li>
+							<li class="p-top-article--service__list__item c-frame-circle">
+								<div class="p-top-article--service__list__item__wrap">
+									<div class="p-top-article--service__list__item__inner">
+										<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_graphic-design.png' ) ); ?>" alt="グラフィックデザイン">
+									</div>
+									<p>グラフィックデザイン</p>
+								</div>
+							</li>
+							<li class="p-top-article--service__list__item c-frame-circle">
+								<div class="p-top-article--service__list__item__wrap">
+									<div class="p-top-article--service__list__item__inner">
+										<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_support.png' ) ); ?>" alt="WordPress運用サポート">
+									</div>
+									<p>WordPress運用サポート</p>
+								</div>
+							</li>
+							<li class="p-top-article--service__list__item c-frame-circle">
+								<div class="p-top-article--service__list__item__wrap">
+									<div class="p-top-article--service__list__item__inner">
+										<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_SEO.png' ) ); ?>" alt="SEO">
+									</div>
+									<p>SEO</p>
+								</div>
+							</li>
+							<li class="p-top-article--service__list__item c-frame-circle">
+								<div class="p-top-article--service__list__item__wrap">
+									<div class="p-top-article--service__list__item__inner">
+										<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_marketing.png' ) ); ?>" alt="コンテンツマーケティング">
+									</div>
+									<p>コンテンツマーケティング</p>
+								</div>
+							</li>
+							<li class="p-top-article--service__list__item c-frame-circle">
+								<div class="p-top-article--service__list__item__wrap">
+									<div class="p-top-article--service__list__item__inner">
+										<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_illustration.png' ) ); ?>" alt="イラスト制作">
+									</div>
+									<p>イラスト制作</p>
+								</div>
+							</li>
+							<li class="p-top-article--service__list__item c-frame-circle">
+								<div class="p-top-article--service__list__item__wrap">
+									<div class="p-top-article--service__list__item__inner">
+										<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_comic.png' ) ); ?>" alt="漫画コンテンツ制作">
+									</div>
+									<p>漫画コンテンツ制作</p>
+								</div>
+							</li>
+						</ul>
 					</div>
 					<div class="p-top-article--service__bg"></div>
 				</article>

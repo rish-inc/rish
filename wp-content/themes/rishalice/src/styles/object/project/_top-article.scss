@@ -274,6 +274,29 @@
 		&__head {
 			margin-bottom: 42px;
 		}
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+			&__item {
+				&__wrap {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate( -50%, -30% )
+				}
+				&__inner {
+					max-width: 55px;
+					height: auto;
+					margin: 0 auto 5px;
+				}
+				p {
+					@include g.font-rem( g.$font-size--Lv1 );
+					line-height: 1.5;
+					color: g.$fontcolor--brown;
+					text-align: center;
+				}
+			}
+		}
 	}
 
 	&--blog {
