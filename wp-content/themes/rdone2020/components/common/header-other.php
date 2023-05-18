@@ -25,12 +25,14 @@
 						$tags = get_the_terms( $post -> ID, 'type_tag');
 						if ( $tags ) :
 							$type_tags = 'Website[ ';
-							if ( ! is_array( $tarms ) ) {
-								foreach( $tags as $tag ) {
-									if ( $tag === end( $tags ) ) {
-										$type_tags .= $tag -> name;
-									} else {
-										$type_tags .= $tag -> name . ', ';
+							if ( isset( $terms ) ) {
+								if ( ! is_array( $tarms ) ) {
+									foreach( $tags as $tag ) {
+										if ( $tag === end( $tags ) ) {
+											$type_tags .= $tag -> name;
+										} else {
+											$type_tags .= $tag -> name . ', ';
+										}
 									}
 								}
 							}
@@ -38,15 +40,15 @@
 						endif; ?>
 					<?php endif; ?>
 					<h1><?php echo esc_html( $title ); ?></h1>
-					<?php if ( $url ) : ?>
+					<?php if ( isset( $url ) ) : ?>
 						<a href="<?php echo $url ?>" target="_blank" class="p-header--achievement__url"><?php echo $url ?></a>
 					<?php endif; ?>
-					<?php if ( $tags ) : ?>
+					<?php if ( isset( $tags ) ) : ?>
 						<p class="p-header--achievement__tag"><?php echo esc_html( $type_tags ); ?></p>
 					<?php elseif ( is_single() ) : ?>
 						<p class="p-header--achievement__tag"><?php the_category( '', 'multiple' ); ?></p>
 					<?php endif; ?>
-					<?php if ( $date ) : ?>
+					<?php if ( isset( $date ) ) : ?>
 						<p class="p-header--achievement__date">Release: <?php echo esc_html( $date ); ?></p>
 					<?php endif; ?>
 					<?php echo imgdescription(); ?>
