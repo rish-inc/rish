@@ -28,15 +28,21 @@ if ( ! isset( $content_width ) ) :
 	$content_width = 1200;
 endif;
 
-$theme         = wp_get_theme();
-$theme_version = $theme->get( 'Version' );
+if ( wp_get_theme() ) {
+	$theme         = wp_get_theme();
+} else {
+	$theme = '1.0.0';
+}
+
+$theme_version = $theme -> get( 'Version' );
+
 define( 'COMMON_PFIX', get_template_directory_uri() );
 
-function readScript() {
-	wp_enqueue_style(  'a-modern-css-reset', get_template_directory_uri() . "/css/reset.css", array(), $theme_version );
-	wp_enqueue_style(  'googlefonts', "//fonts.googleapis.com/css2?family=Meie+Script&family=Vollkorn:ital,wght@0,400;0,600;1,400;1,600&display=swap", array(), $theme_version );
+function readScript( $theme_version ) {
+	wp_enqueue_style(  'a-modern-css-reset', get_template_directory_uri() . "/css/reset.css", array() );
+	wp_enqueue_style(  'googlefonts', "//fonts.googleapis.com/css2?family=Meie+Script&family=Vollkorn:ital,wght@0,400;0,600;1,400;1,600&display=swap", array() );
 	wp_enqueue_style(  'modaal', get_template_directory_uri() . '/js/modaal/css/modaal.min.css', array(), '0.4.4' );
-	wp_enqueue_style(  'tailwind', '//cdn.tailwindcss.com', array(), $theme_version );
+	wp_enqueue_style(  'tailwind', '//cdn.tailwindcss.com', array() );
 	wp_enqueue_style(  'style', get_stylesheet_uri(), array(), $theme_version );
 	wp_enqueue_style(  'main', get_template_directory_uri() . '/main.css', array(), $theme_version );
 	wp_enqueue_script( 'infiniteslide', get_template_directory_uri() . '/js/infiniteslidev2.js', array( 'jquery' ), "2.0.1", true );
@@ -46,16 +52,23 @@ function readScript() {
 add_action( 'wp_enqueue_scripts', 'readScript' );
 
 function imgdescription() {
-	if ( SCF::get( 'partner-group' )[0]['partner-name'] ) : ?>
+	if ( isset( SCF::get( 'partner-group' )[0]['partner-name'] ) ) : ?>
 		<dl class="c-img-description__partner">
 			<dt class="c-img-description__partner__title">パートナー：</dt>
-			<?php foreach ( SCF::get( 'partner-group' ) as $groups ) :
-				if ( $groups['partner-url'] ) : ?>
-					<dd class="c-img-description__partner__link"><a href="<?php echo esc_url( $groups['partner-url'] ); ?>" target="_blank"><?php echo esc_html( $groups['partner-name'] ); ?></a><?php if( $groups != end( SCF::get( 'partner-group' ) ) ) : ?>, <?php endif; ?></dd>
-				<?php else : ?>
-					<dd class="c-img-description__partner__link"><?php echo esc_html( $groups['partner-name'] ); ?><?php if( $groups != end( SCF::get( 'partner-group' ) ) ) : ?>, <?php endif; ?></dd>
-				<?php endif; ?>
-			<?php endforeach; ?>
+			<?php
+				$partner_groups = SCF::get( 'partner-group' );
+				foreach ( $partner_groups as $groups ) :
+					if ( $groups['partner-url'] ) : ?>
+						<dd class="c-img-description__partner__link"><a href="<?php echo esc_url( $groups['partner-url'] ); ?>" target="_blank"><?php echo esc_html( $groups['partner-name'] ); ?></a><?php if( $groups != end( $partner_groups ) ) : ?>, <?php endif; ?></dd>
+					<?php else : ?>
+						<dd class="c-img-description__partner__link">
+							<?php if ( isset( $groups ) ) : ?>
+								<?php echo esc_html( $groups['partner-name'] ); ?>
+								<? if ( $groups != end( $partner_groups ) ) : ?>, <?php endif; ?>
+							<?php  endif; ?>
+						</dd>
+					<?php endif; ?>
+				<?php endforeach; ?>
 			</dd>
 		</dl>
 	<?php endif;
