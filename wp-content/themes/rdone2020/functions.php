@@ -4,7 +4,7 @@
  */
 
 //develop mode config
-define( "IS_VITE_DEVELOPMENT", false );
+define( "IS_VITE_DEVELOPMENT", true );
 
 function custom_theme_support() {
 	add_theme_support( 'html5', array(
@@ -64,8 +64,8 @@ function imgdescription() {
 						<dd class="c-img-description__partner__link">
 							<?php if ( isset( $groups ) ) : ?>
 								<?php echo esc_html( $groups['partner-name'] ); ?>
-								<? if ( $groups != end( $partner_groups ) ) : ?>, <?php endif; ?>
-							<?php  endif; ?>
+								<?php if ( $groups != end( $partner_groups ) ) : ?>, <?php endif; ?>
+							<?php endif; ?>
 						</dd>
 					<?php endif; ?>
 				<?php endforeach; ?>
