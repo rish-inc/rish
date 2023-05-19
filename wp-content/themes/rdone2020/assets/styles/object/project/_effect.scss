@@ -24,7 +24,17 @@
 	}
 }
 
+body.is-fade-in {
+	opacity: 1;
+	transition: all 1s;
+}
+
 .mv.is-fade-in {
+	opacity: 1;
+	transition: all 1s;
+}
+
+.p-logo--header.is-fade-in {
 	opacity: 1;
 	transition: all 1s;
 }

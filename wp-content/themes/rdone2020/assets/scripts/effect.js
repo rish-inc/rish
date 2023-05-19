@@ -1,8 +1,16 @@
-const mv = document.querySelector( '.mv' );
+// const mv = document.querySelector( '.mv' );
+// mv.classList.add( 'is-fade-in' );
 
-mv.classList.add( 'is-fade' );
 
 window.onload = function() {
+	// document.querySelector( 'body' ).style.display = 'flex';
+	document.querySelectorAll( '.mv' ).forEach( function( el ) {
+		el.classList.add( 'is-fade-in' );
+	} );
+	document.querySelectorAll( '.p-logo--header' ).forEach( function( el ) {
+		el.classList.add( 'is-fade-in' );
+	} );
+	document.querySelector( 'body' ).classList.add( 'is-fade-in' );
 	scrollEffect();
 	window.addEventListener( 'scroll', function() {
 		scrollEffect();

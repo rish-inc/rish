@@ -57,6 +57,11 @@
 	</script>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="<?php echo COMMON_PFIX; ?>/assets/images/common/ico/favicons/favicon.ico">
+	<style>
+		body {
+			visibility: hidden;
+		}
+		</style>
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
