@@ -3,15 +3,15 @@
 // ==========================================================================
 // Foundation
 // ==========================================================================
-@import "src/styles/foundation/base.scss";
-@import "src/styles/foundation/mixin.scss";
-@import "src/styles/foundation/variable.scss";
-@import "src/styles/foundation/wordpress.scss";
+@import "assets/styles/foundation/base.scss";
+@import "assets/styles/foundation/mixin.scss";
+@import "assets/styles/foundation/variable.scss";
+@import "assets/styles/foundation/wordpress.scss";
 
 // ==========================================================================
 // Layout
 // ==========================================================================
-@import "src/styles/layout/*.scss";
+@import "assets/styles/layout/**/*.scss";
 
 // ==========================================================================
 // Object
@@ -19,14 +19,14 @@
 // -----------------------------------------------------------------
 // Component
 // -----------------------------------------------------------------
-@import "src/styles/object/component/*.scss";
+@import "assets/styles/object/component/**/*.scss";
 
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
-@import "src/styles/object/project/*.scss";
+@import "assets/styles/object/project/**/*.scss";
 
 // -----------------------------------------------------------------
 // Utility
 // -----------------------------------------------------------------
-@import "src/styles/object/utility/*.scss";
+@import "assets/styles/object/utility/**/*.scss";

@@ -1,5 +1,9 @@
-import './css/tailwind_config.css';
+import './assets/styles/reset.css';
+import './assets/styles/tailwind_config.css';
 import.meta.glob ( [
-    './src/scripts/**'
-], { eager: true } );
+	'./assets/scripts/**'
+] );
+import.meta.glob( [
+	'./assets/images/**',
+] );
 import './main.scss';

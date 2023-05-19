@@ -8,10 +8,13 @@ import glob from "glob";
 import path from "path";
 import fs from "fs";
 
+const themePath = '/wp-content/themes/rdone2020';
+const assets = process.env.NODE_ENV === 'development' ? '/' : '/dist/';
+
 export default defineConfig ( {
 	plugins: [
-		sassGlobImports,
 		liveReload( __dirname + '/**/*.php' ),
+		sassGlobImports(),
 	],
 	root: '',
 	base: process.env.NODE_ENV === 'development' ? './' : '/dist/',
@@ -25,19 +28,19 @@ export default defineConfig ( {
 				main: path.resolve( __dirname + '/main.js' )
 			},
 			output: {
-				entryFileNames: `src/[name].js`,
-				chunkFileNames: `src/[name].js`,
+				entryFileNames: `assets/[name].js`,
+				chunkFileNames: `assets/[name].js`,
 				assetFileNames: ( { name } ) => {
 					if ( /\.( gif|jpeg|jpg|png|svg|webp| )$/.test( name ?? '' ) ) {
-						return 'src/images/[name].[ext]';
+						return 'assets/images/[name].[ext]';
 					}
 					if ( /\.css$/.test( name ?? '' ) ) {
-						return 'src/css/[name].[ext]';
+						return 'assets/css/[name].[ext]';
 					}
 					if ( /\.js$/.test( name ?? '' ) ) {
-						return 'src/js/[name].[ext]';
+						return 'assets/js/[name].[ext]';
 					}
-					return 'src/[name].[ext]';
+					return 'assets/[name].[ext]';
 				}
 			},
 		},
@@ -55,6 +58,11 @@ export default defineConfig ( {
 		},
 	},
 	css: {
+		preprocessorOptions: {
+			scss: {
+				additionalData: `$base-dir: '` + themePath + assets + `';`,
+			},
+		},
 		postcss: {
 			plugins: [
 				postcssNesting,
@@ -63,8 +71,5 @@ export default defineConfig ( {
 			],
 		},
 		devSourcemap: true,
-		plugins: [
-			sassGlobImports,
-		]
 	},
 } );

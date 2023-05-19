@@ -1,3 +1,4 @@
+@use "sass:math";
 @use '../../foundation/global' as g;
 
 .modaal {
@@ -14,7 +15,7 @@
 					.modaal-gallery-control {
 						width: 25px;
 						height: 25px;
-						margin-top: ( -25/2 )+px;
+						margin-top: ( div( -25, 2 ) )+px;
 						top: 50%;
 						border-radius: 0;
 						@include g.breakpoint( tablet ) {
