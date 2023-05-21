@@ -1,25 +1,32 @@
 <?php
-	if ( is_plugin_active( "smart-custom-fields/smart-custom-fields.php" ) ) :
-		$args = array (
-			'post_type'     => $post_type,
+	if ( is_plugin_active( "smart-custom-fields/smart-custom-fields.php" ) ) {
+		$post_meta_data = array (
+			'post_type'         => $args,
 		);
-		if( $post_type == 'webdesign' ) :
-			$args = array (
-				'meta_query'    => array (
-					array (
-						'key'   => 'sticky',
-						'value' => true
+		if( $args == 'webdesign' ) {
+			array_push(
+				$post_meta_data,
+				array (
+					'meta_query'    => array (
+						array (
+							'key'   => 'sticky',
+							'value' => true
+						)
 					)
 				)
 			);
-		endif;
-	endif;
+		}
+	} else {
+		$post_meta_data = array (
+			'post_type' => "",
+		);
+	}
 	global $wp_query;
 ?>
 	<article class="p-thumbnail--portfolio-detail">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<div class="p-thumbnail__imgbox p-single__thumbnail">
-				<?php the_post_thumbnail( 'post-thumbnail', array( 'class' => $args['post_type'] ) ); ?>
+				<?php the_post_thumbnail( 'post-thumbnail', array( 'class' => $post_meta_data['post_type'] ) ); ?>
 			</div>
 		<?php else : ?>
 			<div class="p-thumbnail__imgbox no-thumbnail">
@@ -39,7 +46,7 @@
 							<?php
 								$images = SCF::get( 'sitecapturei-mage' );
 								foreach( $images as $image ) :
-									echo '<li>' . wp_get_attachment_image( $image, 'full', false, array( 'class' => $args['post_type'], ) ) . '</li>';
+									echo '<li>' . wp_get_attachment_image( $image, 'full', false, array( 'class' => $post_meta_data['post_type'], ) ) . '</li>';
 								endforeach;
 							?>
 						</ul>
