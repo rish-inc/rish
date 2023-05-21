@@ -270,14 +270,21 @@
 	&--service {
 		margin-bottom: 58px;
 		padding-top: 35px;
-		padding-bottom: 122px;
+		padding-bottom: 110px;
 		&__head {
 			margin-bottom: 42px;
 		}
 		&__list {
 			display: flex;
 			flex-wrap: wrap;
+			justify-content: center;
 			&__item {
+				&:nth-child(odd):not(:first-child) {
+					margin-top: -20px;
+				}
+				&:nth-child(even) {
+					margin-top: 47px;
+				}
 				&__wrap {
 					position: absolute;
 					top: 50%;
@@ -285,7 +292,6 @@
 					transform: translate( -50%, -30% )
 				}
 				&__inner {
-					max-width: 55px;
 					height: auto;
 					margin: 0 auto 5px;
 				}
@@ -294,6 +300,7 @@
 					line-height: 1.5;
 					color: g.$fontcolor--brown;
 					text-align: center;
+					white-space: nowrap;
 				}
 			}
 		}

@@ -1,0 +1,22 @@
+@use "../../foundation/global" as g;
+
+.u-mw {
+    &--30 {
+		max-width: 30px;
+	}
+    &--32 {
+		max-width: 32px;
+	}
+    &--40 {
+		max-width: 40px;
+	}
+    &--45 {
+		max-width: 45px;
+	}
+    &--50 {
+		max-width: 50px;
+	}
+	&--55 {
+		max-width: 55px;
+	}
+}
