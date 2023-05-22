@@ -61,6 +61,7 @@ export default defineConfig ( {
 		preprocessorOptions: {
 			scss: {
 				additionalData: `$base-dir: '` + themePath + assets + `';`,
+				rootpath: "http://localhost:3000/",
 			},
 		},
 		postcss: {
