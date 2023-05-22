@@ -11,7 +11,7 @@ define( 'DIST_DEF', 'dist' );
 define( 'DIST_URI',  get_template_directory_uri() . '/' . DIST_DEF );
 define( 'DIST_PATH', get_template_directory()     . '/' . DIST_DEF );
 
-define( 'JS_DEPENDENCY', array() ) ; // array( 'jquery' ) as example
+define( 'JS_DEPENDENCY', array( 'jquery' ) ) ; // array( 'jquery' ) as example
 define( 'JS_LOAD_IN_FOOTER', true ) ; // load scripts in footer?
 
 define('VITE_SERVER', 'http://localhost:3000');
@@ -20,7 +20,7 @@ define('VITE_ENTRY_POINT', '/main.js');
 function cors_http_header() {
 	header( "Access-Control-Allow-Origin: *" );
 }
-add_action( 'send_headers', 'cors_http_header' );
+add_action( 'wp_head', 'cors_http_header' );
 
 function custom_theme_support() {
 	add_theme_support( 'html5', array(
@@ -58,7 +58,6 @@ function readScript( $theme_version ) {
 	wp_enqueue_style(  'googlefonts', "//fonts.googleapis.com/css2?family=Meie+Script&family=Vollkorn:ital,wght@0,400;0,600;1,400;1,600&display=swap", array() );
 	wp_enqueue_style(  'tailwind', '//cdn.tailwindcss.com', array() );
 	wp_enqueue_style(  'style', get_stylesheet_uri(), array(), $theme_version );
-	wp_enqueue_script( 'jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js', array(), '3.7.0' );
 }
 add_action( 'wp_enqueue_scripts', 'readScript' );
 
