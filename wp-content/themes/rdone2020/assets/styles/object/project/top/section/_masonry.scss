@@ -2,20 +2,30 @@
 
 .p-top-masonry {
 	&__list {
+		display: flex;
+		justify-content: center;
 		@include g.breakpoint( tablet ) {
-			// display: flex;
-			display: grid;
 		}
-		// &__item {
-		// 	width: auto;
-		// 	max-width: 300px;
-		// 	margin: 0 auto 40px;
-		// 	@include g.breakpoint( tablet ) {
-		// 		width: 250px;
-		// 		margin: unset;
-		// 		margin-bottom: 40px;
-		// 	}
-		// }
+		@include g.breakpoint( pc ) {
+		}
+		@include g.breakpoint( wide ) {
+			max-width: inherit;
+		}
+		&__item {
+			width: 40%;
+			margin-bottom: 20px;
+			@include g.breakpoint( tablet ) {
+				width: 25%;
+				margin: unset;
+				margin-bottom: 40px;
+			}
+			@include g.breakpoint( pc ) {
+			}
+			@include g.breakpoint( wide ) {
+				width: 20%;
+				padding: 30px;
+			}
+		}
 	}
 	&__figure {
 	}

@@ -7,8 +7,8 @@
 	@include g.breakpoint( tablet ) {
 	}
 	@include g.breakpoint( pc ) {
-		width: 950px;
 	}
 	@include g.breakpoint( wide ) {
+		width: 1080px;
 	}
 }

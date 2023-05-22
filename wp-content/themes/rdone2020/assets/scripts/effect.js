@@ -3,7 +3,6 @@
 
 
 window.onload = function() {
-	// document.querySelector( 'body' ).style.display = 'flex';
 	document.querySelectorAll( '.mv' ).forEach( function( el ) {
 		el.classList.add( 'is-fade-in' );
 	} );

@@ -102,6 +102,11 @@
 		@include g.breakpoint( pc ) {
 			padding: 10px 50px 100px;
 		}
+		.c-inner {
+			@include g.breakpoint( wide ) {
+				width: 1280px;
+			}
+		}
 		.headline {
 			font-size: 5.0rem;
 			margin-left: 0;
@@ -128,7 +133,7 @@
 				height: 250px;
 			}
 			@include g.breakpoint( full ) {
-				margin-bottom: 120px;
+				margin-bottom: 160px;
 			}
 			.description {
 				@include g.breakpoint( tablet ) {

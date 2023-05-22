@@ -19,7 +19,6 @@
 .p-bgborder {
 	&.is-fade {
 		transform: translate( 0, 0 );
-		transition: all 10s;
 		transform: rotate( -50deg );
 	}
 }
