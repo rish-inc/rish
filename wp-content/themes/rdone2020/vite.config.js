@@ -8,7 +8,7 @@ import glob from "glob";
 import path from "path";
 import fs from "fs";
 
-const themePath = '/wp-content/themes/rdone2020';
+const themePath = '/wp/wp-content/themes/rdone2020';
 const assets = process.env.NODE_ENV === 'development' ? '/' : '/dist/';
 
 export default defineConfig ( {
@@ -16,7 +16,7 @@ export default defineConfig ( {
 		liveReload( __dirname + '/**/*.php' ),
 		sassGlobImports(),
 	],
-	root: '',
+	root: './',
 	base: process.env.NODE_ENV === 'development' ? './' : '/dist/',
 	build: {
 		outDir: path.resolve( __dirname, './dist' ),
@@ -31,7 +31,7 @@ export default defineConfig ( {
 				entryFileNames: `assets/[name].js`,
 				chunkFileNames: `assets/[name].js`,
 				assetFileNames: ( { name } ) => {
-					if ( /\.( gif|jpeg|jpg|png|svg|webp| )$/.test( name ?? '' ) ) {
+					if ( /\.( gif|jpeg|jpg|png|svg|webp|json| )$/.test( name ?? '' ) ) {
 						return 'assets/images/[name].[ext]';
 					}
 					if ( /\.css$/.test( name ?? '' ) ) {
@@ -60,7 +60,7 @@ export default defineConfig ( {
 	css: {
 		preprocessorOptions: {
 			scss: {
-				additionalData: `$base-dir: '` + themePath + assets + `';`,
+				additionalData: `$base-dir: unquote('` + themePath + assets + `');`,
 			},
 		},
 		postcss: {
