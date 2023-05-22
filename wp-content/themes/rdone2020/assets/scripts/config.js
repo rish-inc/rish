@@ -26,11 +26,15 @@ jQuery( function( $ ) {
 		overlay_opacity: '0.5',
 		fullscreen: true
 	} );
+
 	/*
 	 * Masonry
 	 */
-	let $grid = $( '.js-masonry' ).masonry( {
+	const elem = document.querySelector( '.js-masonry' );
+	let msnry = new Masonry( elem, {
 		itemSelector: '.js-masonry__item',
-		isFitWidth: true
+		// isFitWidth: true,
+		gutter: 40,
+		horizontalOrder: true
 	} );
 } );

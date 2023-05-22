@@ -6,6 +6,22 @@
 //develop mode config
 define( "IS_VITE_DEVELOPMENT", true );
 
+//define
+define( 'DIST_DEF', 'dist' );
+define( 'DIST_URI',  get_template_directory_uri() . '/' . DIST_DEF );
+define( 'DIST_PATH', get_template_directory()     . '/' . DIST_DEF );
+
+define( 'JS_DEPENDENCY', array() ) ; // array( 'jquery' ) as example
+define( 'JS_LOAD_IN_FOOTER', true ) ; // load scripts in footer?
+
+define('VITE_SERVER', 'http://localhost:3000');
+define('VITE_ENTRY_POINT', '/main.js');
+
+function cors_http_header() {
+	header( "Access-Control-Allow-Origin: *" );
+}
+add_action( 'send_headers', 'cors_http_header' );
+
 function custom_theme_support() {
 	add_theme_support( 'html5', array(
 		'search-form',
@@ -39,17 +55,46 @@ $theme_version = $theme -> get( 'Version' );
 define( 'COMMON_PFIX', get_template_directory_uri() );
 
 function readScript( $theme_version ) {
-	wp_enqueue_style(  'a-modern-css-reset', get_template_directory_uri() . "/css/reset.css", array() );
 	wp_enqueue_style(  'googlefonts', "//fonts.googleapis.com/css2?family=Meie+Script&family=Vollkorn:ital,wght@0,400;0,600;1,400;1,600&display=swap", array() );
-	wp_enqueue_style(  'modaal', get_template_directory_uri() . '/js/modaal/css/modaal.min.css', array(), '0.4.4' );
 	wp_enqueue_style(  'tailwind', '//cdn.tailwindcss.com', array() );
 	wp_enqueue_style(  'style', get_stylesheet_uri(), array(), $theme_version );
-	wp_enqueue_style(  'main', get_template_directory_uri() . '/main.css', array(), $theme_version );
-	wp_enqueue_script( 'infiniteslide', get_template_directory_uri() . '/js/infiniteslidev2.js', array( 'jquery' ), "2.0.1", true );
-	wp_enqueue_script( 'modal', get_template_directory_uri() . '/js/modaal/js/modaal.min.js', array( 'jquery' ), "0.4.4", true );
-	wp_enqueue_script( 'bundle', get_template_directory_uri() . '/js/bundle.js', array( 'jquery' ), $theme_version, true );
 }
 add_action( 'wp_enqueue_scripts', 'readScript' );
+
+
+add_action( 'wp_enqueue_scripts', function() {
+	if ( defined( 'IS_VITE_DEVELOPMENT') && IS_VITE_DEVELOPMENT === true ) {
+		//develop mode
+		function vite_head_module_hook() {
+			echo '<script type="module" crossorigin src="' . VITE_SERVER . VITE_ENTRY_POINT . '"></script>';
+		}
+		add_action( 'wp_footer', 'vite_head_module_hook' );
+	} else {
+		// production mode, 'npm run build' must be executed in order to generate assets
+
+		// read manifest.json to figure out what to enqueue
+		$manifest = json_decode( file_get_contents( DIST_PATH . '/manifest.json'), true );
+
+		// is ok
+		if ( is_array( $manifest ) ) {
+
+			// get first key, by default is 'main.js'
+			$manifest_key = array_keys( $manifest );
+			if ( isset( $manifest_key[0] ) ) {
+				// enqueue CSS files
+				foreach( @$manifest["main.css"] as $css_file ) {
+					wp_enqueue_style( 'main', DIST_URI . '/' . $css_file );
+				}
+				// enqueue main JS file
+				$js_file = @$manifest["main.js"]['file'];
+				if ( ! empty( $js_file ) ) {
+					wp_enqueue_script( 'main', DIST_URI . '/' . $js_file, JS_DEPENDENCY, '', JS_LOAD_IN_FOOTER );
+				}
+			}
+		}
+	}
+} );
+
 
 function imgdescription() {
 	if ( isset( SCF::get( 'partner-group' )[0]['partner-name'] ) ) : ?>

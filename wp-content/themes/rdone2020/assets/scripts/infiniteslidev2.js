@@ -50,7 +50,7 @@ Copyright 2017, T.Morimoto
 
 			var setClone = function(obj,clone){
 				var $clone = $(obj).children().clone(true).addClass('infiniteslide_clone');
-				i = 1;
+				var i = 1;
 				while(i <= clone){
 					$clone.clone(true).appendTo($(obj));
 					i++;
@@ -58,14 +58,14 @@ Copyright 2017, T.Morimoto
 			}
 
 			var getWidth = function(obj){
-				w = 0;
+				var w = 0;
 				$(obj).children(':not(.infiniteslide_clone)').each(function(key,value){
 					w = w + $(this).outerWidth(true);
 				});
 				return w;
 			}
 			var getHeight = function(obj){
-				h = 0;
+				var h = 0;
 				$(obj).children(':not(.infiniteslide_clone)').each(function(key,value){
 					h = h + $(this).outerHeight(true);
 				});
