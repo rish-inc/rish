@@ -294,6 +294,9 @@
 				&__inner {
 					height: auto;
 					margin: 0 auto 5px;
+					@include g.mq( pc ) {
+						margin-bottom: 12px;
+					}
 				}
 				p {
 					@include g.font-rem( g.$font-size--Lv1 );
@@ -301,13 +304,16 @@
 					color: g.$fontcolor--brown;
 					text-align: center;
 					white-space: nowrap;
+					@include g.mq( pc ) {
+						@include g.font-rem( g.$font-size--Lv3 );
+					}
 				}
 			}
 		}
 	}
 
 	&--blog {
-		padding: 60px 0 179px 0;
+		padding-bottom: 179px;
 		@include g.mq( pc ) {
 			max-width: 1080px;
 			margin: 0 auto;
