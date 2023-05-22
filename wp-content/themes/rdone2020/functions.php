@@ -58,6 +58,8 @@ function readScript( $theme_version ) {
 	wp_enqueue_style(  'googlefonts', "//fonts.googleapis.com/css2?family=Meie+Script&family=Vollkorn:ital,wght@0,400;0,600;1,400;1,600&display=swap", array() );
 	wp_enqueue_style(  'tailwind', '//cdn.tailwindcss.com', array() );
 	wp_enqueue_style(  'style', get_stylesheet_uri(), array(), $theme_version );
+	wp_enqueue_script( 'masonry', get_theme_file_uri( '/js/masonry.min.js' ), array(), '4.2.2', true );
+	wp_enqueue_script( 'masonry-config', get_theme_file_uri( '/js/masonry-config.js' ), array( 'masonry' ), '4.2.2', true );
 }
 add_action( 'wp_enqueue_scripts', 'readScript' );
 
