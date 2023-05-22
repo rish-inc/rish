@@ -110,7 +110,7 @@ function imgdescription() {
 							<?php if ( isset( $groups ) ) : ?>
 								<?php echo esc_html( $groups['partner-name'] ); ?>
 								<?php if ( $groups != end( $partner_groups ) ) : ?>, <?php endif; ?>
-							<?php  endif; ?>
+							<?php endif; ?>
 						</dd>
 					<?php endif; ?>
 				<?php endforeach; ?>
