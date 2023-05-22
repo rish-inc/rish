@@ -157,7 +157,7 @@
   },
   "assets/images/common/ico/favicons/apple-touch-icon-60x60-precomposed.png": {
     "file": "assets/images/apple-touch-icon-60x60.png",
-    "src": "assets/images/common/ico/favicons/apple-touch-icon-60x60-precomposed.png"
+    "src": "assets/images/common/ico/favicons/apple-touch-icon-60x60.png"
   },
   "assets/images/common/ico/favicons/apple-touch-icon-60x60-precomposed.png.webp": {
     "file": "assets/images/apple-touch-icon-60x60.png.webp",
@@ -165,7 +165,7 @@
   },
   "assets/images/common/ico/favicons/apple-touch-icon-60x60.png": {
     "file": "assets/images/apple-touch-icon-60x60.png",
-    "src": "assets/images/common/ico/favicons/apple-touch-icon-60x60-precomposed.png"
+    "src": "assets/images/common/ico/favicons/apple-touch-icon-60x60.png"
   },
   "assets/images/common/ico/favicons/apple-touch-icon-60x60.png.webp": {
     "file": "assets/images/apple-touch-icon-60x60.png.webp",
@@ -189,7 +189,7 @@
   },
   "assets/images/common/ico/favicons/apple-touch-icon-76x76-precomposed.png": {
     "file": "assets/images/apple-touch-icon-76x76.png",
-    "src": "assets/images/common/ico/favicons/apple-touch-icon-76x76.png"
+    "src": "assets/images/common/ico/favicons/apple-touch-icon-76x76-precomposed.png"
   },
   "assets/images/common/ico/favicons/apple-touch-icon-76x76-precomposed.png.webp": {
     "file": "assets/images/apple-touch-icon-76x76.png.webp",
@@ -197,7 +197,7 @@
   },
   "assets/images/common/ico/favicons/apple-touch-icon-76x76.png": {
     "file": "assets/images/apple-touch-icon-76x76.png",
-    "src": "assets/images/common/ico/favicons/apple-touch-icon-76x76.png"
+    "src": "assets/images/common/ico/favicons/apple-touch-icon-76x76-precomposed.png"
   },
   "assets/images/common/ico/favicons/apple-touch-icon-76x76.png.webp": {
     "file": "assets/images/apple-touch-icon-76x76.png.webp",
@@ -813,8 +813,7 @@
   },
   "main.js": {
     "assets": [
-      "assets/images/bg_r.svg",
-      "assets/images/bg_wrap.jpg"
+      "assets/images/bg_r.svg"
     ],
     "css": [
       "assets/css/main.css"
