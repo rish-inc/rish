@@ -22,6 +22,10 @@
 		</p>
 	</div>
 	<div class="p-form__inner">
-		<?php echo do_shortcode('[contact-form-7 id="16" title="お問い合わせ"]'); ?>
+		<!-- 環境によってidが変わるため、コンタクトフォームの情報を取得してからショートコードを埋め込む -->
+		<?php
+			$get_form = get_posts(array('post_type' => 'wpcf7_contact_form', 'posts_per_page' => -1, 'name' => 'Contact form 1'))[0];
+			echo do_shortcode( '[contact-form-7 id="'.$get_form->ID.'" title="'.$get_form->post_title.'"]' );
+		?>
 	</div>
 </article>

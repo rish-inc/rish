@@ -71,14 +71,32 @@
 
 					<dt class="p-about--profile__list__title c-line--ornament">就業規則<span>-Labor regulations-</span></dt>
 					<div class="p-about--profile__list__wrapper">
-						<dd class="p-about--profile__list__text">GitHub のリポジトリをお読みください</dd>
-						<dd class="p-about--profile__list__text">Lead GitHub repository</dd>
+						<dd class="p-about--profile__list__text"><a href="//github.com/yat8823jp/EmployeeHandbook" target="_blank">GitHub のリポジトリをお読みください</a></dd>
+						<dd class="p-about--profile__list__text"><a href="//github.com/yat8823jp/EmployeeHandbook" target="_blank">Lead GitHub repository</a></dd>
 					</div>
 
 					<dt class="p-about--profile__list__title c-line--ornament">主要取引先<span>-Main client-</span></dt>
 					<div class="p-about--profile__list__wrapper">
 						<dd class="p-about--profile__list__text u-mb--14 u-mb--pc--0">株式会社 TAM, 株式会社 RaiseTech, 株式会社 Studio Cologne</dd>
 						<dd class="p-about--profile__list__text">TAM Co., Ltd., Raise Tech Co., Ltd., Studio Cologne</dd>
+					</div>
+
+					<dt class="p-about--profile__list__title c-line--ornament">税理士<span>-Advisory tax accountant-</span></dt>
+					<div class="p-about--profile__list__wrapper">
+						<dd class="p-about--profile__list__text"><a href="https://vs-group.jp/tax/" target="_blank">ベンチャーサポート税理士法人</a></dd>
+						<dd class="p-about--profile__list__text"><a href="https://vs-group.jp/tax/" target="_blank">Venture Support Tax Corporation</a></dd>
+					</div>
+
+					<dt class="p-about--profile__list__title c-line--ornament">弁護士<span>-Legal advisor-</span></dt>
+					<div class="p-about--profile__list__wrapper">
+						<dd class="p-about--profile__list__text"><a href="https://vs-group.jp/lawyer/" target="_blank">弁護士法人ベンチャーサポート法律事務所</a></dd>
+						<dd class="p-about--profile__list__text"><a href="https://vs-group.jp/lawyer/" target="_blank">Venture Support Law Office</a></dd>
+					</div>
+
+					<dt class="p-about--profile__list__title c-line--ornament">資格<span>-Qualification-</span></dt>
+					<div class="p-about--profile__list__wrapper">
+						<dd class="p-about--profile__list__text u-mb--14 u-mb--pc--0">IT導入支援事業者2023年</dd>
+						<dd class="p-about--profile__list__text">IT Installation Support Provider 2023</dd>
 					</div>
 				</dl>
 			</div>

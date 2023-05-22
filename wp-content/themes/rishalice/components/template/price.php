@@ -1,7 +1,11 @@
 <article class="p-price">
     <div class="p-price__head c-decoration--wing-line--under">
-        <span class="c-decoration--english">price list</span>
-        <h3 class="c-font--big--middle">料金表</h3>
+        <span class="c-decoration--english">Price list</span>
+        <?php if ( is_home() || is_front_page() ) : //フロントページならh2 ?>
+            <h2 class="c-font--big">料金表</h2>
+        <?php else : ?>
+            <h3 class="c-font--big--middle">料金表</h3>
+        <?php endif; ?>
     </div>
     <ul class="p-price__list">
         <li class="p-price__list__item">

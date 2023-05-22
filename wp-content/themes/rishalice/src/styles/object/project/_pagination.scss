@@ -1,0 +1,81 @@
+@use "../../foundation/global" as g;
+
+.p-pagination {
+    @include g.font-rem( g.$font-size--Lv3 );
+	line-height: 2;
+    .wp-pagenavi {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .pages {
+            display: none;  // 総ページ数は非表示
+        }
+        a {
+            color: g.$fontcolor--base;
+        }
+        a,span {
+            display: inline-block;
+        }
+        .current,
+        a.page {
+            display: none;
+            @include g.mq( pc ) {
+                display: inline-block;
+                margin: 0 10px;
+                padding: 0 10px;
+                background-color: g.$bgcolor--light-green2;
+                border: 1px solid g.$border-color--green;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+			}
+        }
+        a.page:hover {
+            background-color: rgba(197,222,218, 0.5);
+        }
+        .current {
+            @include g.mq( pc ) {
+                background-color: transparent;
+                border: none;
+			}
+        }
+        .previouspostslink {
+            margin-right: auto;
+            position: relative;
+            &::before {
+                content: "新しい記事へ";
+                text-decoration: underline;
+                position: absolute;
+                top: 2px;
+                left: 16px;
+                width: 6rem;
+            }
+            &:hover::before {
+                text-decoration: none;
+            }
+            @include g.mq( pc ) {
+                margin-right: calc( 6rem + 40px );
+			}
+        }
+        .nextpostslink {
+            margin-left: auto;
+            position: relative;
+            &::before {
+                content: "古い記事へ";
+                text-decoration: underline;
+                position: absolute;
+                top: 2px;
+                right: 16px;
+                width: 5rem;
+            }
+            &:hover::before {
+                text-decoration: none;
+            }
+            @include g.mq( pc ) {
+                margin-left: calc( 5rem + 40px );
+			}
+        }
+    }
+}

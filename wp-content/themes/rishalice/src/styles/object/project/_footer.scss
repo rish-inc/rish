@@ -1,0 +1,153 @@
+@use "../../foundation/global" as g;
+
+.p-footer {
+    width: 100%;
+    padding: 20px;
+    background-image: url(../images/header-footer/green-wave_small.svg),url(../images/header-footer/green-wave_big.svg),url(../images/header-footer/footer-background.png);
+    background-repeat: no-repeat,no-repeat,repeat-y;
+    background-position: center bottom,center bottom,center;
+    position: relative;
+    @include g.mq( pc ) {
+    }
+    .c-frame--ornament--type-b {
+        &::before,
+        &::after {
+            pointer-events: none;  // メニューがクリックできなくなるのを防止
+        }
+    }
+    &__menu {
+        width: 100%;
+        position: relative;
+        .menu {
+            @include g.font-rem( g.$font-size--Lv3 );
+            margin: 78px -24px 298px;
+            @include g.mq( wide ) {
+                @include g.font-rem( g.$font-size--Lv5 );
+                margin: 32px auto 190px;
+                max-width: 834px;  // SEOで改行される幅
+            }
+            .menu-item {
+                line-height: 2;
+                margin: 10px 0;
+                @include g.mq( pc ) {
+                    margin: 12px 0;
+                }
+                // PC版：サービス案内、プライバシーポリシー以外はインライン要素にして横並びにする
+                // （会社紹介～お問い合わせ）
+                &:not(.menu-item-type-custom,.menu-item-privacy-policy) {
+                    @include g.mq( pc ) {
+                        display: inline;
+                    }
+                }
+                // PC版：トップページ、サービス案内、プライバシーポリシー以外は右に余白あり
+                // （会社紹介～お問い合わせ）
+                &:not(.menu-item-home,.menu-item-type-custom,.menu-item-privacy-policy) {
+                    @include g.mq( pc ) {
+                        margin-right: 30px;
+                    }
+                }
+                a {
+                    display: block;
+                    color: g.$fontcolor--white;
+                    @include g.mq( pc ) {
+                        display: inline;
+                    }
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+                .sub-menu {
+                    @include g.mq( pc ) {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-left: 38px;
+                    }
+                    .menu-item {
+                        margin-left: 17px;
+                        @include g.mq( pc ) {
+                            margin: 12px 30px 0 0;
+                        }
+                        &:first-child {
+                            margin-top: 6px;
+                            @include g.mq( pc ) {
+                                margin-top: 12px;
+                            }
+                        }
+                        &:last-child {
+                            margin-bottom: 18px;
+                            @include g.mq( pc ) {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__logoCopy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -8px;
+        margin: auto;
+        @include g.mq( pc ) {
+            bottom: -16px;
+        }
+        &__logo {
+            width: 171.32px;
+            height: 52.48px;
+            margin-bottom: 6px;
+            @include g.mq( pc ) {
+                width: 243.31px;
+                height: 74.54px;
+                margin-bottom: 11px;
+            }
+        }
+        &__copy {
+            padding: 0 8px;
+            background-color: g.$bgcolor--deep-green;
+            @include g.mq( pc ) {
+                padding: 0 19px;
+            }
+            small {
+                @include g.font-rem( g.$font-size--Lv1 );
+                line-height: 2;
+                color: g.$fontcolor--white;
+                @include g.mq( pc ) {
+                    @include g.font-rem( g.$font-size--Lv5 );
+                }
+            }
+        }
+    }
+    &__img {
+        &--rabbit {
+            position: absolute;
+            left: 18px;
+            bottom: 126px;
+            width: 52.36px;
+            height: 78.76px;
+            @include g.mq( wide ) {
+                left: 58px;
+                bottom: 32px;
+                width: 100.38px;
+                height: 150.97px;
+            }
+        }
+        &--alice {
+            position: absolute;
+            right: 12px;
+            bottom: 118px;
+            width: 144.26px;
+            height: 175.12px;
+            @include g.mq( wide ) {
+                right: 58px;
+                bottom: 28px;
+                width: 210.84px;
+                height: 255.95px;
+            }
+        }
+    }
+}

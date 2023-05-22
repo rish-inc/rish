@@ -3,7 +3,6 @@
 		<article class="c-inner">
 			<div class="c-content">
 				<article class="p-top-article--mv">
-
 				</article>
 				<article class="p-top-article--about">
 					<h2 class="p-top-article--about__head">
