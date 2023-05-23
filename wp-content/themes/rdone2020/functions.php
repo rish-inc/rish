@@ -87,8 +87,7 @@ add_action( 'wp_enqueue_scripts', function() {
 			if ( isset( $manifest_key[0] ) ) {
 				// enqueue CSS files
 				foreach( @$manifest["main.css"] as $css_file ) {
-					// wp_enqueue_style( 'main', DIST_URI . '/' . $css_file );
-					wp_enqueue_style( 'main', 'https://rish.style/wp/wp-content/themes/rdone2020/dist/assets/css/main.css?ver=6.2.2', array() );
+					wp_enqueue_style( 'main', DIST_URI . '/' . $css_file );
 				}
 				// enqueue main JS file
 				$js_file = @$manifest["main.js"]['file'];
