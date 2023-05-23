@@ -443,11 +443,4 @@ jQuery(function($) {
     overlay_opacity: "0.5",
     fullscreen: true
   });
-  const elem = document.querySelector(".js-masonry");
-  new Masonry(elem, {
-    itemSelector: ".js-masonry__item",
-    // isFitWidth: true,
-    gutter: 40,
-    horizontalOrder: true
-  });
 });
