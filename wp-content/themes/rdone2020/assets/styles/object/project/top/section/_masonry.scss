@@ -12,18 +12,20 @@
 			max-width: inherit;
 		}
 		&__item {
-			width: 40%;
+			width: 50%;
 			margin-bottom: 20px;
+			padding: 20px;
 			@include g.breakpoint( tablet ) {
-				width: 25%;
+				width: 33%;
 				margin: unset;
 				margin-bottom: 40px;
+				padding: 30px;
 			}
 			@include g.breakpoint( pc ) {
 			}
 			@include g.breakpoint( wide ) {
 				width: 20%;
-				padding: 30px;
+				padding: 40px;
 			}
 		}
 	}
