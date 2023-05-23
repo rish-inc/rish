@@ -6,7 +6,7 @@
  /*
 Plugin Name: Rish Custom Post
 Plugin URI: https://github.com/yat8823jp/rd-add-palecolors
-Description: This plugin is add pale colors palette
+Description: add custom post type for Rish
 Author: YAT
 Version: 1.1.0
 Author URI: http://wp.yat-net.com
