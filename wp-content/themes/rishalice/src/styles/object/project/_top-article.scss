@@ -278,13 +278,16 @@
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
+			@include g.mq( pc ) {
+				gap: 100px;
+			}
 			&__item {
-				&:nth-child(odd):not(:first-child) {
-					margin-top: -20px;
-				}
-				&:nth-child(even) {
-					margin-top: 47px;
-				}
+				// &:nth-child(odd):not(:first-child) {
+				// 	margin-top: -20px;
+				// }
+				// &:nth-child(even) {
+				// 	margin-top: 47px;
+				// }
 				&__wrap {
 					position: absolute;
 					top: 50%;
