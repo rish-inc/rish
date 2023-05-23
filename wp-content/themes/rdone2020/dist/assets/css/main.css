@@ -1613,6 +1613,7 @@ body.is-open {
   height: 100%;
   padding: 35px;
   background-image: url(/dist/assets/images/bg_r.svg);
+  background-image: url(/wp/wp-content/themes/rdone2020/dist/assets/images/bg_r.svg);
   background-size: contain;
   background-position: right bottom;
   background-repeat: no-repeat;
