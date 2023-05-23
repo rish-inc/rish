@@ -1,0 +1,34 @@
+@use '../../../../foundation/global' as g;
+
+.p-top-masonry {
+	&__list {
+		display: flex;
+		justify-content: center;
+		@include g.breakpoint( tablet ) {
+		}
+		@include g.breakpoint( pc ) {
+		}
+		@include g.breakpoint( wide ) {
+			max-width: inherit;
+		}
+		&__item {
+			width: 50%;
+			margin-bottom: 20px;
+			padding: 20px;
+			@include g.breakpoint( tablet ) {
+				width: 33%;
+				margin: unset;
+				margin-bottom: 40px;
+				padding: 30px;
+			}
+			@include g.breakpoint( pc ) {
+			}
+			@include g.breakpoint( wide ) {
+				width: 20%;
+				padding: 40px;
+			}
+		}
+	}
+	&__figure {
+	}
+}

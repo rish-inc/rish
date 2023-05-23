@@ -2,7 +2,7 @@
 	<h1 class="p-logo--header">
 	<?php echo '<?xml version="1.0" encoding="utf-8"?>'; ?>
 		<!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-		<svg class="p-logo--header__svg logo-img is-responsive" version="1.1" id="レイヤー_1" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" x="0px"
+		<svg class="p-logo--header__svg logo-img is-responsive" version="1.1" id="sitelogo" xmlns="//www.w3.org/2000/svg" xmlns:xlink="//www.w3.org/1999/xlink" x="0px"
 			y="0px" viewBox="0 0 421.6 176.9" style="enable-background:new 0 0 421.6 176.9;" xml:space="preserve">
 			<path class="p-logo--header__svg__path" d="M227.2,108.8c-27,45-50.7,53.7-62,39c-6.9-8.9-13.7-13.1-17.9-14.9c-1.2-0.6-2.4-1.2-3.5-1.8
 				c1.7,0,3.6,0,5.7,0.2c24,1.1,72.5-6.1,48-105.6c-0.4-3-0.7-5.7-1-8.3c2.4-5.3,4.6-11.2,4.9-13.8c0.3-2.6-4.5-7-5.8,1.3
