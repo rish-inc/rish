@@ -1,0 +1,39 @@
+@use '../../foundation/global' as g;
+
+.is-fade {
+	opacity: 0;
+	transform: translate( 0, 200px );
+	transition: all 600ms;
+	&.is-scroll {
+		opacity: 1;
+		transform: translate( 0, 0 );
+	}
+}
+
+.mv.is-fade {
+	transform: translate( 0, 0 );
+	&.is-scroll {
+	}
+}
+
+.p-bgborder {
+	&.is-fade {
+		transform: translate( 0, 0 );
+		transform: rotate( -50deg );
+	}
+}
+
+body.is-fade-in {
+	opacity: 1;
+	transition: all 1s;
+}
+
+.mv.is-fade-in {
+	opacity: 1;
+	transition: all 1s;
+}
+
+.p-logo--header.is-fade-in {
+	opacity: 1;
+	transition: all 1s;
+}
