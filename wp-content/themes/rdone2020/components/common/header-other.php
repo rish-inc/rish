@@ -24,9 +24,9 @@
 						}
 						$tags = get_the_terms( $post -> ID, 'type_tag');
 						if ( $tags ) :
-							$type_tags = 'Website[ ';
-							if ( isset( $terms ) ) {
-								if ( ! is_array( $tarms ) ) {
+							$type_tags = 'Works: [ ';
+							if ( ! isset( $terms ) ) {
+								// if ( ! is_array( $terms ) ) {
 									foreach( $tags as $tag ) {
 										if ( $tag === end( $tags ) ) {
 											$type_tags .= $tag -> name;
@@ -34,7 +34,7 @@
 											$type_tags .= $tag -> name . ', ';
 										}
 									}
-								}
+								// }
 							}
 							$type_tags .= ' ]';
 						endif; ?>
