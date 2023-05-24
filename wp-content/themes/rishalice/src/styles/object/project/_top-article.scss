@@ -278,8 +278,20 @@
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
-			@include g.mq( pc ) {
+			@include g.mq( wide ) {
+				gap: 50px;
+			}
+			@media (min-width: 1030px) {
+				gap: 70px;
+			}
+			@media (min-width: 1090px) {
 				gap: 100px;
+			}
+			.u-mt--20,
+			.u-mt--n-20 {
+				@media (min-width: 890px) and (max-width: 999px) {
+					margin-top: 0;
+				}
 			}
 			&__item {
 				// &:nth-child(odd):not(:first-child) {
@@ -288,6 +300,11 @@
 				// &:nth-child(even) {
 				// 	margin-top: 47px;
 				// }
+				&:nth-child(5) {
+					@media (min-width: 890px) and (max-width: 999px) {
+						margin-top: 47px;
+					}
+				}
 				&__wrap {
 					position: absolute;
 					top: 50%;

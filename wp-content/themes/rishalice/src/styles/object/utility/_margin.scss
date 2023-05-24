@@ -12,7 +12,7 @@
 // "u-mb--pc--70" → "margin-bottom: 70px"
 @for $i from 0 through 500 {
 	.u-mb--pc--#{$i} {
-		@include g.mq( pc ) {
+		@include g.mq( wide ) {
 			margin-bottom: ( $i ) + px;
 		}
 	}
@@ -28,7 +28,7 @@
 // "u-mr--pc--50" → "margin-right: 50px"
 @for $i from 1 through 100 {
 	.u-mr--pc--#{$i} {
-		@include g.mq( pc ) {
+		@include g.mq( wide ) {
 			margin-right: ( $i ) + px;
 		}
 	}
@@ -37,7 +37,7 @@
 // "u-ml--pc--50" → "margin-left: 50px"
 @for $i from 1 through 100 {
 	.u-ml--pc--#{$i} {
-		@include g.mq( pc ) {
+		@include g.mq( wide ) {
 			margin-left: ( $i ) + px;
 		}
 	}
@@ -54,7 +54,7 @@
 // "u-mt--pc--n-60" → "margin-top: -60px"
 @for $i from 1 through 150 {
 	.u-mt--pc--n-#{$i} {
-		@include g.mq( pc ) {
+		@include g.mq( wide ) {
 			margin-top: - ( $i ) + px;
 		}
 	}
