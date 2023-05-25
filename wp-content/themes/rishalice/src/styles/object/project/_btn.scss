@@ -22,6 +22,9 @@
 	// 「サイト制作について」ボタン
 	.p-btn {
 		margin-bottom: 200px;
+		@include g.mq( full ) {
+			margin-bottom: 289px;
+		}
 	}
 	&--advantage {
 		// 「お問い合わせはこちらから」ボタン

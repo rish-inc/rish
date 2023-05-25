@@ -71,90 +71,88 @@
 						<span class="c-decoration--english">Service</span>
 						<h2 class="c-font--big">サービス</h2>
 					</div>
-					<div class="p-top-article--service__wrap">
-						<ul class="p-top-article--service__list">
-							<li class="p-top-article--service__list__item c-frame-circle u-mt--pc--n-60">
-								<a href="<?php echo esc_url( home_url( 'site-production' ) ); ?>" class="">
-								<div class="p-top-article--service__list__item__wrap">
-									<div class="p-top-article--service__list__item__inner u-mw--55 u-mw--pc--96">
-										<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_site-production.png' ) ); ?>" alt="サイト制作">
-									</div>
-									<p>サイト制作</p>
+					<ul class="p-top-article--service__list">
+						<li class="p-top-article--service__list__item c-frame-circle u-mt--pc--n-60">
+							<a href="<?php echo esc_url( home_url( 'site-production' ) ); ?>" class="">
+							<div class="p-top-article--service__list__item__wrap">
+								<div class="p-top-article--service__list__item__inner u-mw--55 u-mw--pc--96">
+									<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_site-production.png' ) ); ?>" alt="サイト制作">
 								</div>
-								</a>
-							</li>
-							<li class="p-top-article--service__list__item c-frame-circle u-mt--47">
-								<a href="#" class="">
-								<div class="p-top-article--service__list__item__wrap">
-									<div class="p-top-article--service__list__item__inner u-mw--45 u-mw--pc--79">
-										<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_photo.png' ) ); ?>" alt="写真撮影">
-									</div>
-									<p>写真撮影</p>
+								<p>サイト制作</p>
+							</div>
+							</a>
+						</li>
+						<li class="p-top-article--service__list__item c-frame-circle u-mt--47">
+							<a href="#" class="">
+							<div class="p-top-article--service__list__item__wrap">
+								<div class="p-top-article--service__list__item__inner u-mw--45 u-mw--pc--79">
+									<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_photo.png' ) ); ?>" alt="写真撮影">
 								</div>
-								</a>
-							</li>
-							<li class="p-top-article--service__list__item c-frame-circle u-mt--n-20 u-mt--pc--n-60">
-								<a href="#" class="">
-								<div class="p-top-article--service__list__item__wrap">
-									<div class="p-top-article--service__list__item__inner u-mw--55 u-mw--pc--95">
-										<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_graphic-design.png' ) ); ?>" alt="グラフィックデザイン">
-									</div>
-									<p>グラフィック<br class="u-br--sp">デザイン</p>
+								<p>写真撮影</p>
+							</div>
+							</a>
+						</li>
+						<li class="p-top-article--service__list__item c-frame-circle u-mt--n-20 u-mt--pc--n-60">
+							<a href="#" class="">
+							<div class="p-top-article--service__list__item__wrap">
+								<div class="p-top-article--service__list__item__inner u-mw--55 u-mw--pc--95">
+									<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_graphic-design.png' ) ); ?>" alt="グラフィックデザイン">
 								</div>
-								</a>
-							</li>
-							<li class="p-top-article--service__list__item c-frame-circle u-mt--20 u-mt--pc--n-106">
-								<a href="#" class="">
-								<div class="p-top-article--service__list__item__wrap">
-									<div class="p-top-article--service__list__item__inner u-mw--55 u-mw--pc--93">
-										<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_support.png' ) ); ?>" alt="WordPress運用サポート">
-									</div>
-									<p>WordPress<br>運用サポート</p>
+								<p>グラフィック<br class="u-br--sp">デザイン</p>
+							</div>
+							</a>
+						</li>
+						<li class="p-top-article--service__list__item c-frame-circle u-mt--20 u-mt--pc--n-106">
+							<a href="#" class="">
+							<div class="p-top-article--service__list__item__wrap">
+								<div class="p-top-article--service__list__item__inner u-mw--55 u-mw--pc--93">
+									<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_support.png' ) ); ?>" alt="WordPress運用サポート">
 								</div>
-								</a>
-							</li>
-							<li class="p-top-article--service__list__item c-frame-circle u-mt--n-20">
-								<a href="#" class="">
-								<div class="p-top-article--service__list__item__wrap">
-									<div class="p-top-article--service__list__item__inner u-mw--40 u-mw--pc--66">
-										<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_SEO.png' ) ); ?>" alt="SEO">
-									</div>
-									<p>SEO</p>
+								<p>WordPress<br>運用サポート</p>
+							</div>
+							</a>
+						</li>
+						<li class="p-top-article--service__list__item c-frame-circle u-mt--n-20">
+							<a href="#" class="">
+							<div class="p-top-article--service__list__item__wrap">
+								<div class="p-top-article--service__list__item__inner u-mw--40 u-mw--pc--66">
+									<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_SEO.png' ) ); ?>" alt="SEO">
 								</div>
-								</a>
-							</li>
-							<li class="p-top-article--service__list__item c-frame-circle u-mt--20 u-mt--pc--n-106">
-								<a href="<?php echo esc_url( home_url( 'marketing' ) ); ?>" class="">
-								<div class="p-top-article--service__list__item__wrap">
-									<div class="p-top-article--service__list__item__inner u-mw--50 u-mw--pc--87">
-										<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_marketing.png' ) ); ?>" alt="コンテンツマーケティング">
-									</div>
-									<p>コンテンツ<br>マーケティング</p>
+								<p>SEO</p>
+							</div>
+							</a>
+						</li>
+						<li class="p-top-article--service__list__item c-frame-circle u-mt--20 u-mt--pc--n-106">
+							<a href="<?php echo esc_url( home_url( 'marketing' ) ); ?>" class="">
+							<div class="p-top-article--service__list__item__wrap">
+								<div class="p-top-article--service__list__item__inner u-mw--50 u-mw--pc--87">
+									<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_marketing.png' ) ); ?>" alt="コンテンツマーケティング">
 								</div>
-								</a>
-							</li>
-							<li class="p-top-article--service__list__item c-frame-circle u-mt--n-20 u-mt--pc--n-100 u-mr--pc--47">
-								<a href="#" class="">
-								<div class="p-top-article--service__list__item__wrap">
-									<div class="p-top-article--service__list__item__inner u-mw--32 u-mw--pc--56">
-										<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_illustration.png' ) ); ?>" alt="イラスト制作">
-									</div>
-									<p>イラスト制作</p>
+								<p>コンテンツ<br>マーケティング</p>
+							</div>
+							</a>
+						</li>
+						<li class="p-top-article--service__list__item c-frame-circle u-mt--n-20 u-mt--pc--n-100 u-mr--pc--47">
+							<a href="#" class="">
+							<div class="p-top-article--service__list__item__wrap">
+								<div class="p-top-article--service__list__item__inner u-mw--32 u-mw--pc--56">
+									<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_illustration.png' ) ); ?>" alt="イラスト制作">
 								</div>
-								</a>
-							</li>
-							<li class="p-top-article--service__list__item c-frame-circle u-mt--20 u-mt--pc--n-100 u-ml--pc--47">
-								<a href="#" class="">
-								<div class="p-top-article--service__list__item__wrap">
-									<div class="p-top-article--service__list__item__inner u-mw--30 u-mw--pc--50">
-										<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_comic.png' ) ); ?>" alt="漫画コンテンツ制作">
-									</div>
-									<p>漫画コンテンツ<br class="u-br--sp">制作</p>
+								<p>イラスト制作</p>
+							</div>
+							</a>
+						</li>
+						<li class="p-top-article--service__list__item c-frame-circle u-mt--20 u-mt--pc--n-100 u-ml--pc--47">
+							<a href="#" class="">
+							<div class="p-top-article--service__list__item__wrap">
+								<div class="p-top-article--service__list__item__inner u-mw--30 u-mw--pc--50">
+									<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_comic.png' ) ); ?>" alt="漫画コンテンツ制作">
 								</div>
-								</a>
-							</li>
-						</ul>
-					</div>
+								<p>漫画コンテンツ<br class="u-br--sp">制作</p>
+							</div>
+							</a>
+						</li>
+					</ul>
 					<div class="p-top-article--service__bg"></div>
 				</article>
 

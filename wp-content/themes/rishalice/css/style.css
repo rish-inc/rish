@@ -1236,6 +1236,11 @@ h5 {
   margin-bottom: 200px;
 }
 
+@media screen and (min-width: 1200px) {
+  .p-top-article .p-btn {
+    margin-bottom: 289px;
+  }
+}
 .p-top-article--advantage .p-btn {
   margin-bottom: 196px;
 }
@@ -3864,6 +3869,11 @@ h5 {
   padding-bottom: 110px;
 }
 
+@media screen and (min-width: 1200px) {
+  .p-top-article--service {
+    margin-bottom: 258px;
+  }
+}
 .p-top-article--service__head {
   margin-bottom: 42px;
 }
@@ -3872,8 +3882,15 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 510px;
+  margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) {
+  .p-top-article--service__list {
+    max-width: initial;
+  }
+}
 @media screen and (min-width: 1000px) {
   .p-top-article--service__list {
     gap: 50px;
@@ -3889,10 +3906,33 @@ h5 {
     gap: 100px;
   }
 }
+@media (min-width: 558px) and (max-width: 767px) {
+  .p-top-article--service__list .u-mt--20,
+  .p-top-article--service__list .u-mt--n-20 {
+    margin-top: 0;
+  }
+}
 @media (min-width: 890px) and (max-width: 999px) {
   .p-top-article--service__list .u-mt--20,
   .p-top-article--service__list .u-mt--n-20 {
     margin-top: 0;
+  }
+}
+@media (min-width: 558px) and (max-width: 767px) {
+  .p-top-article--service__list .u-mr--pc--47,
+  .p-top-article--service__list .u-ml--pc--47 {
+    margin: 0 10px;
+  }
+}
+@media (min-width: 890px) and (max-width: 999px) {
+  .p-top-article--service__list .u-mr--pc--47,
+  .p-top-article--service__list .u-ml--pc--47 {
+    margin: 0 10px;
+  }
+}
+@media (min-width: 558px) and (max-width: 767px) {
+  .p-top-article--service__list__item:nth-child(5) {
+    margin-top: 47px;
   }
 }
 @media (min-width: 890px) and (max-width: 999px) {
@@ -3917,6 +3957,12 @@ h5 {
     margin-bottom: 12px;
   }
 }
+.p-top-article--service__list__item a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .p-top-article--service__list__item p {
   font-size: 0.75rem;
   line-height: 1.5;
@@ -3928,6 +3974,29 @@ h5 {
 @media screen and (min-width: 768px) {
   .p-top-article--service__list__item p {
     font-size: 1rem;
+  }
+}
+.p-top-article--service__bg {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .p-top-article--service__bg {
+    display: block;
+    transition: all 0.9s 0s ease-in;
+    position: absolute;
+    top: -18%;
+    right: -81%;
+    width: 200%;
+    height: 200%;
+    z-index: -2;
+    background-image: url(../images/top/bg_service_2x.png);
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
+    margin-left: calc(50% - 50vw);
+    padding-right: calc(50vw - 50%);
+    padding-left: calc(50vw - 50%);
   }
 }
 .p-top-article--blog {
