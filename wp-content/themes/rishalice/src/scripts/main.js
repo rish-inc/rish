@@ -65,7 +65,7 @@ jQuery( function( $ ) {
     });
 
     // トップのコンテンツ部分にスクロールした瞬間、背景画像が横からスライドする動き
-    $('.p-top-article--about-us').each(function(i, elem){
+    $('.p-top-article--service, .p-top-article--about-us').each(function(i, elem){
         var contentsPOS = $(elem).offset().top;
         $(window).on('load scroll resize', function(){
             var winHeight = $(window).height();
