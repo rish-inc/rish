@@ -6,7 +6,8 @@
 	background-position: center;
 	background-repeat: repeat;
 	position: relative;
-	z-index: -4;
+	// z-index: -4;  //coni
+	z-index: 0;  //coni
 	&::before {
 		position: fixed;
 		content: '';

@@ -13,8 +13,28 @@
 
 	&--diamond{
 		background: url( ../images/background/diamond_sp.png );
+		background-color: g.$bgcolor--light-green;
+		border-top: 30px solid g.$bgcolor--light-green2;
+		border-bottom: 30px solid g.$bgcolor--light-green2;
+		// vw指定は縦スクロールバーの幅分はみ出すため、bodyに[overflow-x: hidden;]を指定
+		margin-right: calc(50% - 50vw); // 親要素を無視して画面幅いっぱいに広げる
+		margin-left: calc(50% - 50vw);
+		padding-right: calc(50vw - 50%); // 子要素は親要素の幅を維持
+		padding-left: calc(50vw - 50%);
+		position: relative;
+		z-index: 0;
 		@include g.mq( pc ) {
 			background: url( ../images/background/diamond_pc.png );
+			background-color: g.$bgcolor--light-green;
+		}
+		@include g.mq( full ) {
+			background: none;
+			border-top: none;
+			border-bottom: 1px solid transparent; // 下の余白を確保するため、noneにはしない
+			margin-right: 0;
+			margin-left: 0;
+			padding-right: 0;
+			padding-left: 0;
 		}
 	}
 	&--white{

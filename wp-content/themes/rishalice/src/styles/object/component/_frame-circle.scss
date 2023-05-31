@@ -1,6 +1,6 @@
 @use "../../foundation/global" as g;
 
-.p-frame-circle {
+.c-frame-circle {
 	background-image: url( ../images/top/round-shadow_sp.png );
 	background-repeat: no-repeat;
 	position: relative;
@@ -21,8 +21,8 @@
 		height: 86px;
 		right: 0px;
 		bottom: -29px;
-		background: #a39b7c;
-		filter: blur( 42px );
+		background: #A39B7C;
+		filter: blur( 48px );
 		@include g.mq( pc ) {
 			width: 150px;
 			height: 150px;

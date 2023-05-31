@@ -1,0 +1,93 @@
+@use "../../foundation/global" as g;
+
+.p-go-to-top {
+    display: none;
+    position: fixed;
+    right: 6%;
+    bottom: 48px;
+    z-index: 1;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+    // @include g.mq( pc ) {
+    //     display: block;  // jsで表示させる
+    // }
+    &__text {
+        color: g.$fontcolor--green;
+        @include g.font-rem( g.$font-size--Lv3 );
+        display: inline-block;
+        margin: 0 auto 18px;
+    }
+    &__icon {
+        width: 61.84px;
+        height: 61.84px;
+        transform: rotate(45deg);
+        background-color: g.$fontcolor--green;
+        margin: auto;
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background: url(../images/header-footer/key1.png) no-repeat;
+            transform: rotate(-45deg);
+            background-size: auto;
+            background-position: center;
+        }
+        &.is-hover {
+            &::after {
+                animation: image_anime1 forwards .7s ease normal;
+            }
+        }
+        &.is-out {
+            &::after {
+                animation: image_anime2 forwards .7s ease normal;
+            }
+        }
+        // hover-IN時の回転
+        @keyframes image_anime1 {
+            0% {
+                background-image: url(../images/header-footer/key1.png);
+            }
+            20% {
+                background-image: url(../images/header-footer/key2.png);
+            }
+            40% {
+                background-image: url(../images/header-footer/key3.png);
+            }
+            60% {
+                background-image: url(../images/header-footer/key4.png);
+            }
+            80% {
+                background-image: url(../images/header-footer/key5.png);
+            }
+            100% {
+                background-image: url(../images/header-footer/key6.png);
+            }
+        }
+        // hover-OUT時の逆回転
+        @keyframes image_anime2 {
+            0% {
+                background-image: url(../images/header-footer/key6.png);
+            }
+            20% {
+                background-image: url(../images/header-footer/key5.png);
+            }
+            40% {
+                background-image: url(../images/header-footer/key4.png);
+            }
+            60% {
+                background-image: url(../images/header-footer/key3.png);
+            }
+            80% {
+                background-image: url(../images/header-footer/key2.png);
+            }
+            100% {
+                background-image: url(../images/header-footer/key1.png);
+            }
+        }
+    }
+}

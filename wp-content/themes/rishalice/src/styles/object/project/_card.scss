@@ -241,3 +241,17 @@
 		}
 	}
 }
+
+// フロントページの調整
+.p-top-article {
+	&--blog {
+		&__list {
+			.p-card {
+				margin-bottom: 22px;
+				@include g.mq( pc ) {
+					max-width: 340px; // (1080px - 30px - 30px) ÷ 3
+				}
+			}
+		}
+	}
+}

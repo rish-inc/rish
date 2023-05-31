@@ -1,0 +1,16 @@
+@use "sass:math";
+@use "../../foundation/global" as g;
+
+// 使用例
+// "u-mw--50" → "max-width: 50px"
+// "u-mw--pc--70" → "max-width: 70px"
+@for $i from 1 through 100 {
+	.u-mw--#{$i} {
+		max-width: ( $i ) + px;
+	}
+	.u-mw--pc--#{$i} {
+		@include g.mq( pc ) {
+			max-width: ( $i ) + px;
+		}
+	}
+}

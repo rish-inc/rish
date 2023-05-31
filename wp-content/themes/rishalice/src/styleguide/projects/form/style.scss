@@ -1,9 +1,9 @@
 @use "../../foundation/global" as g;
 
 .p-form {
-	padding-bottom: 320px;
+	padding-bottom: 324px;
 	@include g.mq( pc ) {
-		padding-bottom: 230px;
+		padding-bottom: 245px;
 	}
 	&__head {
 		margin-bottom: 80px;
@@ -12,17 +12,17 @@
 		}
 	}
 	&__sentence {
-		padding-bottom: 55px;
+		padding-bottom: 56px;
 		@include g.mq( pc ) {
-			padding-bottom: 50px;
+			padding-bottom: 77px;
 			max-width: 690px;
 			margin: 0 auto;
 		}
 		&__text {
-			margin-bottom: 45px;
+			margin-bottom: 39px;
 			line-height: 2;
 			@include g.mq( pc ) {
-				margin-bottom: 50px;
+				margin-bottom: 40px;
 				text-align: center;
 			}
 		}
@@ -34,24 +34,20 @@
 		}
 		.wpcf7-form {
 			dl {
-				margin-bottom: 24px;
+				margin-bottom: 22px;
 				dt {
-					margin-bottom: 10px;
+					margin-bottom: 4px;
 					label {
-						span {
-							margin-left: 8px;
-							@include g.font-rem( 12 );
-						}
-					}
-				}
-				dd {
-					span {
-						input {
-							// font: inherit;
-							&::-webkit-input-placeholder {
-								font-family: inherit;
-
-							}
+						position: relative;
+						span { //「必須」表示
+							@include g.font-rem( g.$font-size--Lv1 );
+							color: g.$fontcolor--white;
+							background-color: #E34C4C;
+							border-radius: 3px;
+							padding: 1px 2px 0 2px;
+							position: absolute;
+							right: -2.1rem;
+							top: -1px;
 						}
 					}
 				}
@@ -66,8 +62,9 @@
 					@include g.mq( pc ) {
 						max-width: 750px;
 					}
-					&::placeholder {
-						font-family: '丸明オールドStdN';
+					&::-webkit-input-placeholder {
+						font-family: inherit; // 親要素を継承
+						color: #9F9F9F;
 					}
 				}
 				.wpcf7-text {
@@ -79,28 +76,43 @@
 					font: inherit;
 					resize: none;
 				}
+				.wpcf7-not-valid-tip {
+					color: #E34C4C;
+					margin-top: 2px;
+				}
 			}
+			// textarea下のメッセージ位置のみ調整
+			dl:last-of-type {
+				.wpcf7-not-valid-tip {
+					margin-top: -5px;
+				}
+			}
+			// 送信ボタン
 			.set-bt {
 				text-align: center;
 				@include g.mq( pc ) {
-					padding-top: 36px;
+					padding-top: 38px;
 				}
 				input {
+					cursor: pointer;
 					width: 198px;
 					height: 64px;
 					border: none;
-					@include g.font-rem( 24 );
+					@include g.font-rem( g.$font-size--Lv7 );
 					color: g.$fontcolor--white;
 				}
 			}
 		}
+		// 送信失敗＆成功メッセージ
 		.wpcf7-form.invalid,
 		.wpcf7-form.sent {
 			.wpcf7-response-output {
-				margin: 2.5em 0.5em 1em;
 				background: g.$bgcolor--white;
+				width: 100%;
+				margin: 42px 0 0;
 			}
 		}
+		// 送信成功は枠線の色を変更
 		.wpcf7-form.sent {
 			.wpcf7-response-output {
 				border-color: #00AEBC;

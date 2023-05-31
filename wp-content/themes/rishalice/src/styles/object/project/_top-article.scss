@@ -261,18 +261,153 @@
 				word-break: break-all;
 			}
 		}
-
-		&__btn {
-			margin-bottom: 196px;
-		}
 	}
 
 	&--works {
 		margin-bottom: 100px;
 	}
 
+	&--service {
+		margin-bottom: 58px;
+		padding-top: 35px;
+		padding-bottom: 110px;
+		@include g.mq( full ) {
+			margin-bottom: 258px;
+		}
+		&__head {
+			margin-bottom: 42px;
+		}
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			max-width: 510px;
+			margin: 0 auto;
+			@include g.mq( pc ) {
+				max-width: initial;
+			}
+			@include g.mq( wide ) {
+				gap: 50px;
+			}
+			@media (min-width: 1030px) {
+				gap: 70px;
+			}
+			@media (min-width: 1090px) {
+				gap: 100px;
+			}
+			.u-mt--20,
+			.u-mt--n-20 {
+				@media (min-width: 558px) and (max-width: 767px) {
+					margin-top: 0;
+				}
+				@media (min-width: 890px) and (max-width: 999px) {
+					margin-top: 0;
+				}
+			}
+			.u-mr--pc--47,
+			.u-ml--pc--47 {
+				@media (min-width: 558px) and (max-width: 767px) {
+					margin: 0 10px;
+				}
+				@media (min-width: 890px) and (max-width: 999px) {
+					margin: 0 10px;
+				}
+			}
+			&__item {
+				&:nth-child(5) {
+					@media (min-width: 558px) and (max-width: 767px) {
+						margin-top: 47px;
+					}
+					@media (min-width: 890px) and (max-width: 999px) {
+						margin-top: 47px;
+					}
+				}
+				// リスト要素8個を0.5秒ずつ遅らせてアニメーション
+				@for $i from 1 through 8 {
+					$DELAY: $i * .5s;
+
+					@keyframes fuwafuwa#{$i} {
+						0% {
+							transform: translateY(0);
+						}
+						100% {
+							transform: translateY(15px);
+						}
+					}
+					&:nth-child(#{$i}) {
+						animation: fuwafuwa#{$i} 2s ease-in-out $DELAY infinite alternate;
+						// 擬似要素（影）はアニメーション時間を長くして遅らせる
+						&::after {
+							animation: fuwafuwa#{$i} 5s ease-in-out $DELAY infinite alternate;
+						}
+					}
+				}
+				&__wrap {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate( -50%, -30% )
+				}
+				&__inner {
+					height: auto;
+					margin: 0 auto 5px;
+					@include g.mq( pc ) {
+						margin-bottom: 12px;
+					}
+				}
+				a {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+				}
+				p {
+					@include g.font-rem( g.$font-size--Lv1 );
+					line-height: 1.5;
+					color: g.$fontcolor--brown;
+					text-align: center;
+					white-space: nowrap;
+					@include g.mq( pc ) {
+						@include g.font-rem( g.$font-size--Lv3 );
+					}
+				}
+			}
+		}
+		&__bg {
+			display: none;
+			@include g.mq( full ) {
+				display: block;
+				opacity: 0;
+				transition: all .9s 0s ease-in;
+				position: absolute;
+				top: -18%;
+				right: -200%;
+				width: 200%;
+				height: 200%;
+				z-index: -2;
+				background-image: url( ../images/top/bg_service_2x.png );
+				background-size: contain;
+				background-position: top right;
+				background-repeat: no-repeat;
+				margin-left: calc(50% - 50vw); // 親要素を無視して画面幅いっぱいに広げる
+				padding-right: calc(50vw - 50%); // 子要素は親要素の幅を維持
+				padding-left: calc(50vw - 50%);
+			}
+		}
+		&.show {
+			.p-top-article--service__bg {
+				@include g.mq( full ) {
+					opacity: 1;
+					right: -84%;
+				}
+				@media (min-width: 1500px) {
+					right: -81%;
+				}
+			}
+		}
+	}
+
 	&--blog {
-		padding: 60px 0 179px 0;
+		padding-bottom: 179px;
 		@include g.mq( pc ) {
 			max-width: 1080px;
 			margin: 0 auto;
@@ -293,36 +428,14 @@
 				grid-template-columns: 1fr 1fr 1fr;
 				gap: 30px;
 			}
-			&__item {
-				margin-bottom: 22px;
-				@include g.mq( pc ) {
-					max-width: 340px; // (1080px - 30px - 30px) ÷ 3
-				}
-			}
 		}
 	}
 
 	&--about-us {
 		padding-top: 35px;
 		margin-bottom: 112px;
-		background-color: g.$bgcolor--light-green;
-		border-top: 30px solid g.$bgcolor--light-green2;
-		border-bottom: 30px solid g.$bgcolor--light-green2;
-		// vw指定は縦スクロールバーの幅分はみ出すため、bodyに[overflow-x: hidden;]を指定
-		margin-right: calc(50% - 50vw); // 親要素を無視して画面幅いっぱいに広げる
-		margin-left: calc(50% - 50vw);
-		padding-right: calc(50vw - 50%); // 子要素は親要素の幅を維持
-		padding-left: calc(50vw - 50%);
-		position: relative;
 		@include g.mq( full ) {
 			margin-bottom: 169px;
-			background: none;
-			border-top: none;
-			border-bottom: 1px solid transparent;
-			margin-right: 0;
-			margin-left: 0;
-			padding-right: 0;
-			padding-left: 0;
 		}
 		&__head {
 			margin-bottom: 66px;
@@ -364,9 +477,6 @@
 					margin: 0 auto;
 				}
 			}
-		}
-		&__btn {
-			margin-bottom: 154px;
 		}
 		&__img {
 			width: 158.45px;
