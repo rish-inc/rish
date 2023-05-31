@@ -322,49 +322,24 @@
 						margin-top: 47px;
 					}
 				}
-				&:nth-child(odd) {
-					animation: fuwafuwa1 4.5s ease-in-out 0s infinite;
-					// &::after {
-					// 	animation: fuwafuwa3 10s ease-in-out .5s infinite;
-					// }
-				}
-				&:nth-child(even) {
-					animation: fuwafuwa2 5s ease 0s infinite;
-					// &::after {
-					// 	animation: fuwafuwa3 10s ease-in-out .5s infinite;
-					// }
-				}
-				@keyframes fuwafuwa1 {
-					0% {
-						transform: translateY(0);
+				// リスト要素8個を0.5秒ずつ遅らせてアニメーション
+				@for $i from 1 through 8 {
+					$DELAY: $i * .5s;
+
+					@keyframes fuwafuwa#{$i} {
+						0% {
+							transform: translateY(0);
+						}
+						100% {
+							transform: translateY(15px);
+						}
 					}
-					50% {
-						transform: translateY(-12%);
-					}
-					100% {
-						transform: translateY(0);
-					}
-				}
-				@keyframes fuwafuwa2 {
-					0% {
-						transform: translateY(0);
-					}
-					50% {
-						transform: translateY(-10%);
-					}
-					100% {
-						transform: translateY(0);
-					}
-				}
-				@keyframes fuwafuwa3 {
-					0% {
-						transform: translateY(0);
-					}
-					50% {
-						transform: translateY(-20%);
-					}
-					100% {
-						transform: translateY(0);
+					&:nth-child(#{$i}) {
+						animation: fuwafuwa#{$i} 2s ease-in-out $DELAY infinite alternate;
+						// 擬似要素（影）はアニメーション時間を長くして遅らせる
+						&::after {
+							animation: fuwafuwa#{$i} 5s ease-in-out $DELAY infinite alternate;
+						}
 					}
 				}
 				&__wrap {
