@@ -8,7 +8,7 @@
 	height: 182px;
 	@include g.mq( pc ) {
 		background-image: url( ../images/top/round-shadow_pc.png );
-		right: 0px;
+		right: 0;
 		bottom: -14px;
 		width: 291px;
 		height: 318px;
@@ -18,14 +18,16 @@
 		position: absolute;
 		z-index: -1;
 		width: 86px;
-		height: 86px;
-		right: 0px;
-		bottom: -29px;
+		height: 24px; //86 → 24
+		right: 8%; //0 → 8%
+		bottom: -18px; //-29 → -18
 		background: #A39B7C;
-		filter: blur( 48px );
+		filter: blur( 22px ); //30 → 22
 		@include g.mq( pc ) {
 			width: 150px;
-			height: 150px;
+			height: 42px; //150 → 42
+			bottom: -35px; //add
+			filter: blur( 30px ); //add
 		}
 	}
 }

@@ -553,7 +553,7 @@ h5 {
 @media screen and (min-width: 768px) {
   .c-frame-circle {
     background-image: url(../images/top/round-shadow_pc.png);
-    right: 0px;
+    right: 0;
     bottom: -14px;
     width: 291px;
     height: 318px;
@@ -564,17 +564,19 @@ h5 {
   position: absolute;
   z-index: -1;
   width: 86px;
-  height: 86px;
-  right: 0px;
-  bottom: -29px;
+  height: 24px;
+  right: 8%;
+  bottom: -18px;
   background: #A39B7C;
-  filter: blur(48px);
+  filter: blur(22px);
 }
 
 @media screen and (min-width: 768px) {
   .c-frame-circle::after {
     width: 150px;
-    height: 150px;
+    height: 42px;
+    bottom: -35px;
+    filter: blur(30px);
   }
 }
 .c-frame--brackets {
@@ -3953,7 +3955,7 @@ h5 {
 }
 
 .p-top-article--service__list__item:nth-child(1)::after {
-  animation: fuwafuwa1 5s ease-in-out 0.5s infinite alternate;
+  animation: fuwafuwa1 2s ease-in-out 1.5s infinite alternate;
 }
 
 @keyframes fuwafuwa2 {
@@ -3969,7 +3971,7 @@ h5 {
 }
 
 .p-top-article--service__list__item:nth-child(2)::after {
-  animation: fuwafuwa2 5s ease-in-out 1s infinite alternate;
+  animation: fuwafuwa2 2s ease-in-out 3s infinite alternate;
 }
 
 @keyframes fuwafuwa3 {
@@ -3985,7 +3987,7 @@ h5 {
 }
 
 .p-top-article--service__list__item:nth-child(3)::after {
-  animation: fuwafuwa3 5s ease-in-out 1.5s infinite alternate;
+  animation: fuwafuwa3 2s ease-in-out 4.5s infinite alternate;
 }
 
 @keyframes fuwafuwa4 {
@@ -4001,7 +4003,7 @@ h5 {
 }
 
 .p-top-article--service__list__item:nth-child(4)::after {
-  animation: fuwafuwa4 5s ease-in-out 2s infinite alternate;
+  animation: fuwafuwa4 2s ease-in-out 6s infinite alternate;
 }
 
 @keyframes fuwafuwa5 {
@@ -4017,7 +4019,7 @@ h5 {
 }
 
 .p-top-article--service__list__item:nth-child(5)::after {
-  animation: fuwafuwa5 5s ease-in-out 2.5s infinite alternate;
+  animation: fuwafuwa5 2s ease-in-out 7.5s infinite alternate;
 }
 
 @keyframes fuwafuwa6 {
@@ -4033,7 +4035,7 @@ h5 {
 }
 
 .p-top-article--service__list__item:nth-child(6)::after {
-  animation: fuwafuwa6 5s ease-in-out 3s infinite alternate;
+  animation: fuwafuwa6 2s ease-in-out 9s infinite alternate;
 }
 
 @keyframes fuwafuwa7 {
@@ -4049,7 +4051,7 @@ h5 {
 }
 
 .p-top-article--service__list__item:nth-child(7)::after {
-  animation: fuwafuwa7 5s ease-in-out 3.5s infinite alternate;
+  animation: fuwafuwa7 2s ease-in-out 10.5s infinite alternate;
 }
 
 @keyframes fuwafuwa8 {
@@ -4065,7 +4067,7 @@ h5 {
 }
 
 .p-top-article--service__list__item:nth-child(8)::after {
-  animation: fuwafuwa8 5s ease-in-out 4s infinite alternate;
+  animation: fuwafuwa8 2s ease-in-out 12s infinite alternate;
 }
 
 .p-top-article--service__list__item__wrap {
