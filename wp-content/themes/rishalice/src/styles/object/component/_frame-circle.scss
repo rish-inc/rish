@@ -22,7 +22,7 @@
 		right: 8%; //0 → 8%
 		bottom: -18px; //-29 → -18
 		background: #A39B7C;
-		filter: blur( 22px ); //30 → 22
+		filter: blur( 22px ); //48 → 22
 		@include g.mq( pc ) {
 			width: 150px;
 			height: 42px; //150 → 42
