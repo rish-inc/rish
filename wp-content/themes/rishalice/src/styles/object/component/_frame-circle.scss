@@ -18,16 +18,16 @@
 		position: absolute;
 		z-index: -1;
 		width: 86px;
-		height: 24px; //86 → 24
-		right: 8%; //0 → 8%
-		bottom: -18px; //-29 → -18
+		height: 24px;
+		right: 8%;
+		bottom: -18px;
 		background: #A39B7C;
-		filter: blur( 22px ); //48 → 22
+		filter: blur( 30px );
 		@include g.mq( pc ) {
 			width: 150px;
-			height: 42px; //150 → 42
-			bottom: -35px; //add
-			filter: blur( 30px ); //add
+			height: 42px;
+			bottom: -35px;
+			filter: blur( 45px );
 		}
 	}
 }
