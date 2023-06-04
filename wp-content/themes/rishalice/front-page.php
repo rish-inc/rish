@@ -72,7 +72,7 @@
 						<h2 class="c-font--big">サービス</h2>
 					</div>
 					<ul class="p-top-article--service__list">
-						<li id="fuwa" class="p-top-article--service__list__item c-frame-circle u-mt--pc--n-60">
+						<li class="p-top-article--service__list__item c-frame-circle u-mt--pc--n-60">
 							<a href="<?php echo esc_url( home_url( 'site-production' ) ); ?>" class="">
 							<div class="p-top-article--service__list__item__wrap">
 								<div class="p-top-article--service__list__item__inner u-mw--55 u-mw--pc--96">

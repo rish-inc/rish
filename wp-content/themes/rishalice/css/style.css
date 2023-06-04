@@ -568,7 +568,7 @@ h5 {
   right: 8%;
   bottom: -18px;
   background: #A39B7C;
-  filter: blur(22px);
+  filter: blur(30px);
 }
 
 @media screen and (min-width: 768px) {
@@ -576,7 +576,7 @@ h5 {
     width: 150px;
     height: 42px;
     bottom: -35px;
-    filter: blur(30px);
+    filter: blur(45px);
   }
 }
 .c-frame--brackets {
