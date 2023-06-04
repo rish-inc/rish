@@ -325,6 +325,7 @@
 				// リスト要素8個を0.5秒ずつ遅らせてアニメーション
 				@for $i from 1 through 8 {
 					$DELAY: $i * .5s;
+					$DELAY2: $i * 1.5s;
 
 					@keyframes fuwafuwa#{$i} {
 						0% {
@@ -336,9 +337,9 @@
 					}
 					&:nth-child(#{$i}) {
 						animation: fuwafuwa#{$i} 2s ease-in-out $DELAY infinite alternate;
-						// 擬似要素（影）はアニメーション時間を長くして遅らせる
+						// 擬似要素（影）はさらに遅らせる
 						&::after {
-							animation: fuwafuwa#{$i} 5s ease-in-out $DELAY infinite alternate;
+							animation: fuwafuwa#{$i} 2s ease-in-out $DELAY2 infinite alternate;
 						}
 					}
 				}

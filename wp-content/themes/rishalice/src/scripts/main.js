@@ -80,3 +80,13 @@ jQuery( function( $ ) {
         });
     });
 } );
+
+// サービスの項目をフワフワ動かす
+// jQuery(function fuwafuwa() {
+//     jQuery('#fuwa').animate({
+//         marginTop: '-=15px'
+//     }, 1000).animate({
+//         marginTop: '+=15px'
+//     }, 1000);
+//     setTimeout(fuwafuwa, 2000); //アニメーションを繰り返す間隔
+// });
