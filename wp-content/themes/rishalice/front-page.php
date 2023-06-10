@@ -60,6 +60,10 @@
 						<span class="c-decoration--english">Works</span>
 						<h2 class="c-font--big">制作実績</h2>
 					</div>
+					<?php
+						$args = [ 'template_name' => 'webdesign' ];
+						get_template_part( 'components/template/top-webdesign', '', $args );
+					?>
 				</article>
 
 				<?php get_template_part( 'components/template/price' ); ?>
