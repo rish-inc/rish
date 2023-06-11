@@ -55,15 +55,18 @@
 					<a href="<?php echo esc_url( home_url( 'contact' ) ); ?>" class="p-btn c-button--noise-line">お問い合わせはこちらから</a>
 				</article>
 
-				<article class="p-top-article--works">
-					<div class="c-decoration--wing-line--under">
+				<article class="p-top-article--works c-bg--diamond">
+					<div class="p-top-article--works__head c-decoration--wing-line--under">
 						<span class="c-decoration--english">Works</span>
 						<h2 class="c-font--big">制作実績</h2>
 					</div>
 					<?php
 						$args = [ 'template_name' => 'webdesign' ];
-						get_template_part( 'components/template/top-webdesign', '', $args );
+						get_template_part( 'components/template/top-works', '', $args );
 					?>
+					<a href="#" class="p-btn c-button--noise-line">制作実績一覧へ</a>
+					<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/tableware.png' ) ); ?>" alt="テーブルウェア" class="p-top-article--works__img">
+					<div class="p-top-article--works__bg"></div>
 				</article>
 
 				<?php get_template_part( 'components/template/price' ); ?>

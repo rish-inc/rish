@@ -55,8 +55,26 @@
 				}
 			}
 		}
-		p {
+		p,a {
 			color: g.$fontcolor--base;
+		}
+		a {
+			position: relative;
+			&::after {
+				position: absolute;
+				content: '';
+				bottom: -1px;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				background: #707070;
+				transform: scale(1, 1);       // アンダーラインの縮尺比率。ホバー前はX軸方向に1
+				transform-origin: right top;  // 変形の原点がaタグの右端
+				transition: transform .3s;
+			}
+			&:hover::after {
+				transform: scale(0, 1);  // ホバー後、X軸方向に0
+			}
 		}
 	}
 	&--price {
@@ -238,20 +256,6 @@
 			flex-wrap: wrap;
 			padding: 18px 0 10px;
 			gap: 10px;
-		}
-	}
-}
-
-// フロントページの調整
-.p-top-article {
-	&--blog {
-		&__list {
-			.p-card {
-				margin-bottom: 22px;
-				@include g.mq( pc ) {
-					max-width: 340px; // (1080px - 30px - 30px) ÷ 3
-				}
-			}
 		}
 	}
 }

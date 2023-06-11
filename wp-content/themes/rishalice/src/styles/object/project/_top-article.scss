@@ -153,6 +153,10 @@
 	}
 
 	&--advantage {
+		margin-bottom: 196px;
+		@include g.mq( pc ) {
+			margin-bottom: 276px;
+		}
 		&__parallel {
 			margin-bottom: 90px;
 			@include g.mq( pc ) {
@@ -264,7 +268,121 @@
 	}
 
 	&--works {
+		padding-top: 35px;
 		margin-bottom: 100px;
+		@include g.mq( pc ) {
+			margin-bottom: 200px;
+		}
+		&__head {
+			margin-bottom: 80px;
+			@include g.mq( pc ) {
+				margin-bottom: 86px;
+			}
+		}
+		&__list {
+			margin-bottom: 100px;
+			@include g.mq( pc ) {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				gap: 24px;
+			}
+			.p-card__link {
+				margin-bottom: 56px;
+				@include g.mq( pc ) {
+					margin-bottom: 0;
+					max-width: 344px; // (1080px - 24px - 24px) ÷ 3
+				}
+				&:first-child,
+				&:nth-child(2),
+				&:nth-child(3) {
+					@include g.mq( pc ) {
+						margin-bottom: 40px;
+					}
+				}
+				&__caption {
+					display: block;
+					&__wrap {
+						width: 100%;
+					}
+					&__text {
+						width: 100%;
+						margin-top: 15px;
+						.c-font--normal {
+							@include g.mq( tb ) {
+								@include g.font-rem( g.$font-size--Lv3 );
+							}
+							@include g.mq( full ) {
+								@include g.font-rem( g.$font-size--Lv4 );
+							}
+						}
+						.c-font--medium {
+							margin-top: 4px;
+						}
+					}
+				}
+			}
+		}
+		&__img {
+			width: 160.97px;
+			position: absolute;
+			bottom: -60px;
+			left: 50%;
+			transform: translateX(-50%);
+			@include g.mq( full ) {
+				width: 218.19px;
+				bottom: -120px;
+				left: auto;
+				right: 0;
+				transform: translateX(12%);
+			}
+			@media (min-width: 1300px) {
+				transform: translateX(25%);
+			}
+			@media (min-width: 1400px) {
+				transform: translateX(11%);
+			}
+			@media (min-width: 1500px) {
+				transform: translateX(41%);
+			}
+		}
+		&__bg {
+			display: none;
+			@include g.mq( full ) {
+				display: block;
+				opacity: 0;
+				transition: all .9s 0s ease-in;
+				position: absolute;
+				top: -16%;
+				left: -200%;
+				width: 180%;
+				height: 180%;
+				z-index: -1;
+				background-image: url( ../images/top/bg_works_2x.png );
+				background-size: contain;
+				background-position: top left;
+				background-repeat: no-repeat;
+				margin-left: calc(50% - 50vw); // 親要素を無視して画面幅いっぱいに広げる
+				padding-right: calc(50vw - 50%); // 子要素は親要素の幅を維持
+				padding-left: calc(50vw - 50%);
+			}
+		}
+		&.show {
+			.p-top-article--works__bg {
+				@include g.mq( full ) {
+					opacity: 1;
+					left: -60%;
+				}
+				@media (min-width: 1300px) {
+					left: -53%;
+				}
+				@media (min-width: 1400px) {
+					left: -52%;
+				}
+				@media (min-width: 1500px) {
+					left: -42%;
+				}
+			}
+		}
 	}
 
 	&--service {
@@ -428,6 +546,12 @@
 				display: grid;
 				grid-template-columns: 1fr 1fr 1fr;
 				gap: 30px;
+			}
+			.p-card {
+				margin-bottom: 22px;
+				@include g.mq( pc ) {
+					max-width: 340px; // (1080px - 30px - 30px) ÷ 3
+				}
 			}
 		}
 	}
