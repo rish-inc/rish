@@ -1,0 +1,64 @@
+@use '../../foundation/global' as g;
+
+// coni 現行より
+.c-img-description {
+	dt {
+		font-size: 1.4rem;
+		@include g.mq( tb ) {
+		}
+		@include g.mq( pc ) {
+			font-size: 1.6rem;
+		}
+	}
+	dd {
+		font-size: 1.4rem;
+		@include g.mq( tb ) {
+		}
+		@include g.mq( pc ) {
+			font-size: 1.4rem;
+		}
+	}
+	&__link {
+		margin-left: 10px;
+		@include g.mq( tb ) {
+			margin-left: 0;
+		}
+	}
+	&__partner {
+		width: 100%;
+		margin-top: 10px;
+		&::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		@include g.mq( tb ) {
+			display: flex;
+		}
+		@include g.mq( pc ) {
+		}
+		&__title {
+			font-size: 1.4rem;
+			@include g.mq( tb ) {
+			}
+			@include g.mq( pc ) {
+			}
+
+		}
+		&__link {
+			font-size: 1.4rem;
+			margin-right: 10px;
+			float: left;
+			&:nth-of-type( 1 ) {
+				margin-left: 10px;
+				@include g.mq( tb ) {
+					margin-left: 0;
+				}
+			}
+			@include g.mq( tb ) {
+			}
+			@include g.mq( pc ) {
+			}
+		}
+	}
+}

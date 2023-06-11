@@ -65,13 +65,13 @@ jQuery( function( $ ) {
     });
 
     // トップのコンテンツ部分にスクロールした瞬間、背景画像が横からスライドする動き
-    $('.p-top-article--service, .p-top-article--about-us').each(function(i, elem){
+    $('.p-top-article--works, .p-top-article--service, .p-top-article--about-us').each(function(i, elem){
         var contentsPOS = $(elem).offset().top;
         $(window).on('load scroll resize', function(){
             var winHeight = $(window).height();
             var scrollTop = $(window).scrollTop();
             var showClass = 'show';
-            var timing = 100; // 100pxコンテンツが見えたら次のif文がtrue
+            var timing = 200; // 200pxコンテンツが見えたら次のif文がtrue
             if (scrollTop >= contentsPOS - winHeight + timing){
                 $(elem).addClass(showClass);
             } else {

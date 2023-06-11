@@ -1,0 +1,75 @@
+@use '../../foundation/global' as g;
+
+// coni 現行より
+.p-top-section__items--2column {
+	&__list {
+		@include g.mq( tb ) {
+			width: 80%;
+			margin: auto;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: flex-start;
+		}
+		@include g.mq( pc ) {
+		}
+		li {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 40px;
+			@include g.mq( tb ) {
+				width: calc( 50% - 30px );
+				margin-bottom: 50px;
+				&:nth-child( odd ) {
+					margin-right: 30px;
+				}
+				&:nth-child( even ) {
+					margin-left: 30px;
+				}
+			}
+			@include g.mq( pc ) {
+				margin-bottom: 80px;
+			}
+		}
+		&__figure {
+			margin: auto;
+			@include g.mq( tb ) {
+				// margin: 0;
+			}
+		}
+		.c-img-description {
+			@include g.mq( tb ) {
+				margin-left: 25px;
+			}
+			&__title {
+				font-size: 1.6rem;
+			}
+			&__link {
+				width: 100%;
+				font-size: 1.4rem;
+				@include g.mq( tb ) {
+				}
+				@include g.mq( pc ) {
+					// width: 670px;
+				}
+			}
+			&__partner {
+				@include g.mq( tb ) {
+					margin-left: 25px;
+				}
+			}
+		}
+	}
+	&__sticky {
+		.p-top-section__items--2column__sticky__figure {
+			width: 92%;
+			margin: auto auto 25px;
+			display: block;
+			@include g.mq( tb ) {
+				width: 80%;
+				margin-bottom: 50px;
+			}
+			@include g.mq( pc ) {
+			}
+		}
+	}
+}
