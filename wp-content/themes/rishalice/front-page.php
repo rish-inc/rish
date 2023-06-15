@@ -55,18 +55,30 @@
 					<a href="<?php echo esc_url( home_url( 'contact' ) ); ?>" class="p-btn c-button--noise-line">お問い合わせはこちらから</a>
 				</article>
 
-				<article class="p-top-article--works c-bg--diamond">
-					<div class="p-top-article--works__head c-decoration--wing-line--under">
-						<span class="c-decoration--english">Works</span>
-						<h2 class="c-font--big">制作実績</h2>
+				<article class="p-top-article--works">
+					<div class="p-top-article--works__bg-wrap c-bg--diamond">
+						<div class="p-top-article--works__head c-decoration--wing-line--under">
+							<span class="c-decoration--english">Works</span>
+							<h2 class="c-font--big">制作実績</h2>
+						</div>
+						<section class="p-top-article--works__webdesign">
+							<h3 class="p-top-article--works__webdesign__head">Web design</h3>
+							<?php
+								$args = [ 'template_name' => 'webdesign' ];
+								get_template_part( 'components/template/top-works', '', $args );
+							?>
+							<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/tableware.png' ) ); ?>" alt="テーブルウェア" class="p-top-article--works__img">
+							<div class="p-top-article--works__bg"></div>
+						</section>
 					</div>
-					<?php
-						$args = [ 'template_name' => 'webdesign' ];
-						get_template_part( 'components/template/top-works', '', $args );
-					?>
+					<section class="p-top-article--works__printgraphics">
+						<h3 class="p-top-article--works__printgraphics__head">Print&Graphic</h3>
+						<?php
+							$args = [ 'template_name' => 'webdesign' ]; //仮
+							get_template_part( 'components/template/top-works', '', $args );
+						?>
+					</section>
 					<a href="#" class="p-btn c-button--noise-line">制作実績一覧へ</a>
-					<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/tableware.png' ) ); ?>" alt="テーブルウェア" class="p-top-article--works__img">
-					<div class="p-top-article--works__bg"></div>
 				</article>
 
 				<?php get_template_part( 'components/template/price' ); ?>

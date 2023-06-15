@@ -4,7 +4,7 @@
         <?php if ( is_home() || is_front_page() ) : //フロントページならh2 ?>
             <h2 class="c-font--big">料金表</h2>
         <?php else : ?>
-            <h3 class="c-font--big--middle">料金表</h3>
+            <h3 class="c-font--big--middle">サイト制作料金表</h3>
         <?php endif; ?>
     </div>
     <ul class="p-price__list">
