@@ -65,7 +65,7 @@
 							<h3 class="p-top-article--works__webdesign__head">Web design</h3>
 							<?php
 								$args = [ 'template_name' => 'webdesign' ];
-								get_template_part( 'components/template/top-works', '', $args );
+								get_template_part( 'components/template/top-works-webdesign', '', $args );
 							?>
 							<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/tableware.png' ) ); ?>" alt="テーブルウェア" class="p-top-article--works__img">
 							<div class="p-top-article--works__bg"></div>
@@ -74,8 +74,8 @@
 					<section class="p-top-article--works__printgraphics">
 						<h3 class="p-top-article--works__printgraphics__head">Print&Graphic</h3>
 						<?php
-							$args = [ 'template_name' => 'webdesign' ]; //仮
-							get_template_part( 'components/template/top-works', '', $args );
+							$args = [ 'template_name' => 'print' ];
+							get_template_part( 'components/template/top-works-print', '', $args );
 						?>
 					</section>
 					<a href="#" class="p-btn c-button--noise-line">制作実績一覧へ</a>
