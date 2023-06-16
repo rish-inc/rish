@@ -268,15 +268,41 @@
 	}
 
 	&--works {
-		padding-top: 35px;
 		margin-bottom: 100px;
 		@include g.mq( pc ) {
 			margin-bottom: 200px;
 		}
-		&__head {
-			margin-bottom: 80px;
+		&__bg-wrap {
+			padding-top: 30px;
+			margin-bottom: 96px;
 			@include g.mq( pc ) {
-				margin-bottom: 86px;
+				padding-top: 64px;
+			}
+			@include g.mq( full ) {
+				padding-top: 0;
+				margin-bottom: 0;
+			}
+		}
+		&__head {
+			margin-bottom: 24px;
+			@include g.mq( pc ) {
+				margin-bottom: 40px;
+			}
+		}
+		&__webdesign,
+		&__printgraphics {
+			&__head {
+				@include g.font-rem( g.$font-size--Lv10 );
+				text-align: center;
+				margin-bottom: 24px;
+				@include g.mq( pc ) {
+					margin-bottom: 64px;
+				}
+			}
+		}
+		&__webdesign {
+			@include g.mq( full ) {
+				margin-bottom: 360px;
 			}
 		}
 		&__list {
@@ -285,6 +311,7 @@
 				display: grid;
 				grid-template-columns: 1fr 1fr 1fr;
 				gap: 24px;
+				margin-bottom: 144px;
 			}
 			.p-card__link {
 				margin-bottom: 56px;
@@ -330,16 +357,16 @@
 			transform: translateX(-50%);
 			@include g.mq( full ) {
 				width: 218.19px;
-				bottom: -120px;
+				bottom: 5px;
 				left: auto;
 				right: 0;
-				transform: translateX(12%);
+				transform: translateX(22%);
 			}
 			@media (min-width: 1300px) {
-				transform: translateX(25%);
+				transform: translateX(40%);
 			}
 			@media (min-width: 1400px) {
-				transform: translateX(11%);
+				transform: translateX(36%);
 			}
 			@media (min-width: 1500px) {
 				transform: translateX(41%);
@@ -352,7 +379,7 @@
 				opacity: 0;
 				transition: all .9s 0s ease-in;
 				position: absolute;
-				top: -16%;
+				top: -24%;
 				left: -200%;
 				width: 180%;
 				height: 180%;
@@ -370,13 +397,13 @@
 			.p-top-article--works__bg {
 				@include g.mq( full ) {
 					opacity: 1;
-					left: -60%;
+					left: -54%;
 				}
 				@media (min-width: 1300px) {
-					left: -53%;
+					left: -48%;
 				}
 				@media (min-width: 1400px) {
-					left: -52%;
+					left: -44%;
 				}
 				@media (min-width: 1500px) {
 					left: -42%;

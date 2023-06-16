@@ -14,8 +14,8 @@
 	&--diamond{
 		background: url( ../images/background/diamond_sp.png );
 		background-color: g.$bgcolor--light-green;
-		border-top: 30px solid g.$bgcolor--light-green2;
-		border-bottom: 30px solid g.$bgcolor--light-green2;
+		border-top: 32px solid g.$bgcolor--light-green2;
+		border-bottom: 32px solid g.$bgcolor--light-green2;
 		// vw指定は縦スクロールバーの幅分はみ出すため、bodyに[overflow-x: hidden;]を指定
 		margin-right: calc(50% - 50vw); // 親要素を無視して画面幅いっぱいに広げる
 		margin-left: calc(50% - 50vw);
