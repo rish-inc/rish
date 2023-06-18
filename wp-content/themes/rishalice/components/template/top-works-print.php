@@ -2,7 +2,7 @@
     if ( $args['template_name'] == 'print' ) :
         $query_args = array (
             'post_type' => $args['template_name'],
-            'posts_per_page' => 6 /* １ページあたりの投稿表示数 */
+            'posts_per_page' => 10 /* １ページあたりの投稿表示数 */
         );
         $wp_query = new WP_Query( $query_args );
         if ( $wp_query -> have_posts() ) : ?>
@@ -23,7 +23,7 @@
                             </div>
                             <figcaption class="p-card__link__caption__text">
                                 <ul>
-                                    <li class="c-font--normal"><?php the_title(); ?></li>
+                                    <li class="c-font--small"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
                                 </ul>
                             </figcaption>
                         </figure>

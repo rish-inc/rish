@@ -304,32 +304,78 @@
 			@include g.mq( full ) {
 				margin-bottom: 360px;
 			}
+			.p-top-article--works__list {
+				@include g.mq( pc ) {
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr;
+					gap: 24px;
+					margin-bottom: 144px;
+				}
+				.p-card__link {
+					&:first-child,
+					&:nth-child(2),
+					&:nth-child(3) {
+						@include g.mq( pc ) {
+							margin-bottom: 40px;
+						}
+					}
+				}
+			}
+		}
+		&__printgraphics {
+			.p-top-article--works__list {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 24px;
+				margin-bottom: 90px;
+				@media (min-width: 500px) {
+					grid-template-columns: 1fr 1fr 1fr;
+				}
+				@include g.mq( pc ) {
+					grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+					margin-bottom: 144px;
+				}
+				.p-card__link {
+					margin-bottom: 6px;
+					@media (min-width: 500px) {
+						margin-bottom: 16px;
+					}
+					@include g.mq( pc ) {
+						margin-bottom: 26px;
+					}
+					// リンク文字が改行されると下線が途切れるため、画面幅小さいときは下線非表示
+					a::after {
+						width: 0;
+						@include g.mq( wide-1 ) {
+							width: 100%;
+						}
+					}
+					&__caption__text {
+						margin-top: 10px;
+						@include g.mq( pc ) {
+							margin-top: 15px;
+						}
+					}
+				}
+			}
 		}
 		&__list {
 			margin-bottom: 100px;
-			@include g.mq( pc ) {
-				display: grid;
-				grid-template-columns: 1fr 1fr 1fr;
-				gap: 24px;
-				margin-bottom: 144px;
-			}
 			.p-card__link {
 				margin-bottom: 56px;
 				@include g.mq( pc ) {
 					margin-bottom: 0;
-					max-width: 344px; // (1080px - 24px - 24px) ÷ 3
-				}
-				&:first-child,
-				&:nth-child(2),
-				&:nth-child(3) {
-					@include g.mq( pc ) {
-						margin-bottom: 40px;
-					}
 				}
 				&__caption {
 					display: block;
 					&__wrap {
 						width: 100%;
+						&__inner {
+							background: transparent;  // 背景色の黒を無効化
+						}
+						&__img {
+							opacity: 1;
+						}
 					}
 					&__text {
 						width: 100%;
