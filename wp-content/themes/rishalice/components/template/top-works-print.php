@@ -6,9 +6,9 @@
         );
         $wp_query = new WP_Query( $query_args );
         if ( $wp_query -> have_posts() ) : ?>
-            <ul class="p-top-article--works__list">
+            <ul class="p-top-article--works__list js-masonry">
                 <?php while ( $wp_query -> have_posts() ) : $wp_query -> the_post(); ?>
-                    <li class="p-card__link">
+                    <li class="p-card__link js-masonry__item">
                         <figure class="p-card__link__caption">
                             <div class="p-card__link__caption__wrap">
                                 <div class="p-card__link__caption__wrap__inner">

@@ -324,29 +324,25 @@
 		}
 		&__printgraphics {
 			.p-top-article--works__list {
-				display: grid;
-				grid-template-columns: 1fr 1fr;
-				gap: 24px;
-				margin-bottom: 90px;
-				@media (min-width: 500px) {
-					grid-template-columns: 1fr 1fr 1fr;
-				}
-				@include g.mq( pc ) {
-					grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-					margin-bottom: 144px;
-				}
+				display: flex;
+				justify-content: center;
 				.p-card__link {
+					width: 50%;
+					padding: 20px;
 					margin-bottom: 6px;
-					@media (min-width: 500px) {
+					@media (min-width: 640px) {
+						width: calc( 100% / 3 );
 						margin-bottom: 16px;
 					}
 					@include g.mq( pc ) {
+						width: 20%;
+						padding: 12px;
 						margin-bottom: 26px;
 					}
-					// リンク文字が改行されると下線が途切れるため、画面幅小さいときは下線非表示
+					// リンク文字が改行されると擬似要素の下線が途切れるため、画面幅小さいときは下線非表示
 					a::after {
 						width: 0;
-						@include g.mq( wide-1 ) {
+						@include g.mq( wide-2 ) {
 							width: 100%;
 						}
 					}
