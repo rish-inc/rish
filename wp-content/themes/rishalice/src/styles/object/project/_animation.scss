@@ -1,0 +1,90 @@
+@use '../../foundation/global' as g;
+
+// coni 現行より
+.p-top--animation {
+	padding: 70px 20px 0;
+	@include g.mq( tb ) {
+		padding: 50px 0 20px;
+	}
+	@include g.mq( pc ) {
+		// width: 930px;
+		padding: 50px 0 0;
+	}
+	@include g.mq( wide ) {
+	}
+	&__header {
+		@include g.mq( tb ) {
+			width: 80%;
+			margin: auto;
+		}
+		@include g.mq( pc ) {
+		}
+		h2 {
+			margin-left: -10px;
+			font-size: 6.0rem;
+			font-family: 'Meie Script', cursive;
+			font-weight: 400;
+			// position: absolute;
+			// left: 0;
+			@include g.mq( tb ) {
+				font-size: 10vw;
+			}
+			@include g.mq( pc ) {
+			}
+			@include g.mq( wide ) {
+			}
+		}
+		.description {
+			@include g.mq( tb ) {
+				width: 45%;
+			}
+			@include g.mq( pc ) {
+				width: 100%;
+			}
+			.title {
+				font-size: 3.0rem;
+				font-weight: bold;
+				@include g.mq( tb ) {
+					font-size: 3vw;
+				}
+				@include g.mq( pc ) {
+					white-space: nowrap;
+				}
+				@include g.mq( wide ) {
+					font-size: 2.4vw;
+				}
+			}
+			.text {
+				font-size: 1.4rem;
+			}
+		}
+	}
+	&__items {
+		margin-top: 20px;
+		@include g.mq( tb ) {
+			margin-top: 40px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		li {
+			margin-bottom: 20px;
+			@include g.mq( tb ) {
+				width: 50%;
+				height: 315px;
+				margin-bottom: 0;
+			}
+			iframe {
+				width: 100%;
+				margin: 0;
+				padding: 0;
+			}
+			&:nth-child( even ) {
+				@include g.mq( tb ) {
+					margin-top: -100px;
+				}
+				@include g.mq( pc ) {
+				}
+			}
+		}
+	}
+}

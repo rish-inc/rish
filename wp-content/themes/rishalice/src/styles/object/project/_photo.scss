@@ -1,0 +1,121 @@
+@use '../../foundation/global' as g;
+
+// coni 現行より
+.p-top-photo {
+	margin: 0 auto 0;
+	z-index: 1;
+	@include g.mq( tb ) {
+		margin: 40px auto 30px;
+	}
+	@include g.mq( pc ) {
+		margin: 70px auto 100px;
+	}
+	.header {
+		width: 100%;
+		// min-height: 700px;
+		margin: 110px auto 70px;
+		padding: 90px 0;
+		// background: url( #{$base-dir}/assets/images/photo/bg_wrap.jpg ) no-repeat center center;
+		background: url( ../images/photo/bg_wrap.jpg ) no-repeat center center;
+		background-size: cover;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+		position: relative;
+		@include g.mq( tb ) {
+			width: 80%;
+			min-height: 700px;
+			margin-top: 0;
+			padding: 90px;
+		}
+		@include g.mq( pc ) {
+		}
+		.inner {
+			width: 90%;
+			height: 80%;
+			// min-height: 100%;
+			// padding-top: 100%;
+			background-color: rgba( 0, 0, 0, .6 );
+			// position: absolute;
+			// z-index: -1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-flow: column;
+			position: absolute;
+			@include g.mq( tb ) {
+				width: 80%;
+				height: 80%;
+			}
+			@include g.mq( pc ) {
+				width: 70%;
+				height: 70%;
+			}
+		}
+		.headline {
+			color: #fff;
+			margin: auto;
+			font-family: 'Meie Script', cursive;
+			font-size: 14.0vw;
+			text-align: center;
+			@include g.mq( tb ) {
+				padding-right: 20px;
+				font-size: 10vw;
+			}
+			@include g.mq( pc ) {
+				font-size: 8vw;
+			}
+		}
+		.description {
+			font-family: Vollkorn;
+			position: absolute;
+			top: 130%;
+			@include g.mq( tb ) {
+				// width: 100vw;
+				margin-right: 20px;
+				color: #fff;
+				top: 70%;
+				left: 10%;
+			}
+			@include g.mq( pc ) {
+				margin-right: inherit;
+				bottom: -30px;
+				top: 75%;
+				left: 40%;
+				white-space: nowrap;
+			}
+			.ttl {
+				margin-bottom: 18px;
+				font-weight: 600;
+				font-size: 3.0rem;
+				@include g.mq( tb ) {
+					font-size: 3.0vw;
+				}
+				@include g.mq( pc ) {
+					font-size: 2.0vw;
+				}
+			}
+			.data {
+				margin: 0 0 18px 0;
+				font-size: 1.4rem;
+				@include g.mq( tb ) {
+					font-size: 1.4vw;
+				}
+				@include g.mq( pc ) {
+					font-size: 1.0vw;
+				}
+			}
+			.link {
+				margin: 0;
+				font-size: 1.4rem;
+				@include g.mq( tb ) {
+					font-size: 1.4vw;
+				}
+				@include g.mq( pc ) {
+					font-size: 1.0vw;
+				}
+			}
+		}
+	}
+}
