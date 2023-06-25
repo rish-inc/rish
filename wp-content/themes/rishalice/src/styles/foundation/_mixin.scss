@@ -20,3 +20,26 @@ $breakpoints: (
 		@content;
 	}
 }
+
+@mixin hovanime( $color: default, $scale: 1.05 ) {
+	overflow: hidden;
+	img {
+		transition: all 0.2s;
+		&:hover {
+			mix-blend-mode: exclusion;
+			transition-timing-function: ease-in-out;
+			transform: scale( $scale );
+		}
+	}
+	@if( $color == default ) {
+		background: repeating-linear-gradient( 45deg, hsla( 60, 99% ,40% ,1 ), hsla( 170, 99%, 41%, 1), hsla( 335, 100%, 41%, 1), hsla( 271, 99%, 33%, 1) ) 0 0 / 200% no-repeat;
+	}
+	@if( $color == mono ) {
+		filter: grayscale( 0 ) invert( 0 );
+		img {
+			&:hover {
+				filter: grayscale( 100 ) invert( 100% );
+			}
+		}
+	}
+}

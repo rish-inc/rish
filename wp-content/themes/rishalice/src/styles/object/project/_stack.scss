@@ -33,7 +33,7 @@
 		}
 		.c-imgwrap {
 			position: relative;
-			// @include hovanime;
+			@include g.hovanime;
 			margin-bottom: 30px;
 			@include g.mq( tb ) {
 				margin-bottom: 65px;

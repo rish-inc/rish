@@ -41,11 +41,13 @@
 				margin-left: 25px;
 			}
 			&__title {
-				font-size: 1.6rem;
+				// font-size: 1.6rem;
+				@include g.font-rem( g.$font-size--Lv3 );
 			}
 			&__link {
 				width: 100%;
-				font-size: 1.4rem;
+				// font-size: 1.4rem;
+				@include g.font-rem( g.$font-size--Lv2 );
 				@include g.mq( tb ) {
 				}
 				@include g.mq( pc ) {

@@ -5,9 +5,9 @@
 	// @include g.mq( tb ) {
 	// 	padding: 50px 20px 50px;
 	// }
-	// @include g.mq( pc ) {
-	// 	padding: 100px 0;
-	// }
+	@include g.mq( pc ) {
+		padding: 0 0 100px;
+	}
     
     &__head {
         margin-bottom: 69px;
