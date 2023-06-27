@@ -3,20 +3,18 @@
 // coni 現行より
 .p-works-archive__items--2column {
 	&__list {
-		@include g.mq( tb ) {
+		@media (min-width: 641px) {
 			width: 80%;
 			margin: auto;
 			display: flex;
 			flex-wrap: wrap;
 			align-items: flex-start;
 		}
-		@include g.mq( pc ) {
-		}
 		li {
 			display: flex;
 			flex-wrap: wrap;
 			margin-bottom: 40px;
-			@include g.mq( tb ) {
+			@media (min-width: 641px) {
 				width: calc( 50% - 30px );
 				margin-bottom: 50px;
 				&:nth-child( odd ) {
@@ -32,12 +30,9 @@
 		}
 		&__figure {
 			margin: auto;
-			@include g.mq( tb ) {
-				// margin: 0;
-			}
 		}
 		.c-img-description {
-			@include g.mq( tb ) {
+			@media (min-width: 641px) {
 				margin-left: 25px;
 			}
 			&__title {
@@ -48,14 +43,11 @@
 				width: 100%;
 				// font-size: 1.4rem;
 				@include g.font-rem( g.$font-size--Lv2 );
-				@include g.mq( tb ) {
-				}
-				@include g.mq( pc ) {
-					// width: 670px;
+				@media (min-width: 641px) {
 				}
 			}
 			&__partner {
-				@include g.mq( tb ) {
+				@media (min-width: 641px) {
 					margin-left: 25px;
 				}
 			}
@@ -66,11 +58,9 @@
 			width: 92%;
 			margin: auto auto 25px;
 			display: block;
-			@include g.mq( tb ) {
+			@media (min-width: 641px) {
 				width: 80%;
 				margin-bottom: 50px;
-			}
-			@include g.mq( pc ) {
 			}
 		}
 	}

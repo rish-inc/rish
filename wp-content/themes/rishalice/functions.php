@@ -15,6 +15,7 @@ function custom_theme_support() {
 add_action( 'after_setup_theme', 'custom_theme_support' );
 
 function rishaliceScript() {
+    wp_enqueue_style( 'googlefonts', "//fonts.googleapis.com/css2?family=Meie+Script&family=Vollkorn:ital,wght@0,400;0,600;1,400;1,600&display=swap", array() );
 	wp_enqueue_style( 'rishalice_css', get_theme_file_uri( '/css/style.css' ), array(), '1.0.0' );
 	wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-3.6.3.min.js', '', '', true );
 	wp_enqueue_script( 'rishalice_js', get_theme_file_uri( '/js/bundle.js' ), array(), '1.0.0');

@@ -6,7 +6,7 @@
 	position: relative;
 	top: -11px;
 	left: -11px;
-	@include g.mq( tb ) {
+	@media (min-width: 641px) {
 		margin-bottom: 50px;
 		top: -22px;
 		left: -22px;
@@ -26,7 +26,7 @@
 			top: 22px;
 			left: 22px;
 			z-index: -1;
-			@include g.mq( tb ) {
+			@media (min-width: 641px) {
 				top: 44px;
 				left: 44px;
 			}
@@ -35,7 +35,7 @@
 			position: relative;
 			@include g.hovanime;
 			margin-bottom: 30px;
-			@include g.mq( tb ) {
+			@media (min-width: 641px) {
 				margin-bottom: 65px;
 			}
 			a {
