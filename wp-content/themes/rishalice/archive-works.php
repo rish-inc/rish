@@ -6,7 +6,7 @@ Template Name: 制作実績一覧
 <?php get_header(); ?>
     <main class="l-main">
 		<!-- <article class="p-works-archive c-inner c-content"> -->
-        <article class="p-works-archive c-content">
+        <article class="p-works-archive">
 			<div class="p-works-archive__head c-decoration--wing-line--under">
 				<span class="c-decoration--english">Works</span>
 				<h1 class="c-font--big">制作実績</h1>
@@ -36,7 +36,7 @@ Template Name: 制作実績一覧
             </section>
             <section id="print" class="p-works-archive--print is-fade">
                 <h2 class="headline">Print&amp;<span>Graphic</span></h2>
-                <div class="c-inner u-mt--20">
+                <div class="c-inner">
                     <header class="p-works-archive__header">
                         <dl class="description is-movetxt-r">
                             <dt class="title">

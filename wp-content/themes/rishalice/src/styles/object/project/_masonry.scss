@@ -5,7 +5,9 @@
 	&__list {
 		display: flex;
 		justify-content: center;
-		@include g.mq( tb ) {
+		flex-wrap: wrap;
+		margin: 0;
+		@media (min-width: 641px) {
 		}
 		@include g.mq( pc ) {
 		}
@@ -16,7 +18,7 @@
 			width: 50%;
 			margin-bottom: 20px;
 			padding: 20px;
-			@include g.mq( tb ) {
+			@media (min-width: 641px) {
 				width: 33%;
 				margin: unset;
 				margin-bottom: 40px;

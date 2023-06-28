@@ -25,6 +25,9 @@
 		@include g.mq( tb ) {
 			margin-left: 0;
 		}
+	}
+	&__link,
+	&__title {
 		a {
 			&:link, &:visited {
 				color: #8c8c8c;

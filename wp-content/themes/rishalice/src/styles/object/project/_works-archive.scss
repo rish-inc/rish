@@ -51,6 +51,13 @@
 			}
 		}
 	}
+	.c-inner {
+		width: auto;
+		margin: auto;
+		@include g.mq( wide ) {
+			width: 1080px;
+		}
+	}
 	&__header {
 		height: 280px;
 		margin-bottom: 20px;
@@ -123,6 +130,7 @@
 		}
 		.c-inner {
 			width: auto;
+			margin: -20px auto 0;
 			@include g.mq( wide ) {
 				max-width: 1280px;
 			}
@@ -176,11 +184,13 @@
 		}
 		.c-img-description__title {
 			@media (min-width: 641px) {
-				font-size: 1.2rem;
+				// font-size: 1.2rem;
+				@include g.font-rem( g.$font-size--Lv1 );
 			}
 		}
 		.c-img-description__link {
-			font-size: 1rem;
+			// font-size: 1rem;
+			@include g.font-rem( 10 );
 		}
 	}
 }
