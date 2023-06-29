@@ -799,11 +799,15 @@ h5 {
   margin-left: 10px;
 }
 
-@media screen and (min-width: 400px) {
+@media (min-width: 641px) {
   .c-img-description__link {
     margin-left: 0;
   }
 }
+.c-img-description__link, .c-img-description__title {
+  font-size: 0.625rem;
+}
+
 .c-img-description__link a:link, .c-img-description__link a:visited, .c-img-description__title a:link, .c-img-description__title a:visited {
   color: #8c8c8c;
   text-decoration: underline;
@@ -824,7 +828,7 @@ h5 {
   clear: both;
 }
 
-@media screen and (min-width: 400px) {
+@media (min-width: 641px) {
   .c-img-description__partner {
     display: flex;
   }
@@ -843,7 +847,7 @@ h5 {
   margin-left: 10px;
 }
 
-@media screen and (min-width: 400px) {
+@media (min-width: 641px) {
   .c-img-description__partner__link:nth-of-type(1) {
     margin-left: 0;
   }
@@ -864,7 +868,7 @@ h5 {
   transform: scale(1.05);
 }
 
-@media screen and (min-width: 400px) {
+@media (min-width: 641px) {
   .c-imgwrap {
     margin-bottom: 20px;
   }
@@ -2998,7 +3002,7 @@ h5 {
   z-index: 1;
 }
 
-@media screen and (min-width: 400px) {
+@media (min-width: 641px) {
   .p-top-photo {
     margin: 40px auto 30px;
   }
@@ -3021,7 +3025,7 @@ h5 {
   position: relative;
 }
 
-@media screen and (min-width: 400px) {
+@media (min-width: 641px) {
   .p-top-photo .header {
     width: 80%;
     min-height: 700px;
@@ -3040,7 +3044,7 @@ h5 {
   position: absolute;
 }
 
-@media screen and (min-width: 400px) {
+@media (min-width: 641px) {
   .p-top-photo .header .inner {
     width: 80%;
     height: 80%;
@@ -3058,9 +3062,10 @@ h5 {
   font-family: "Meie Script", cursive;
   font-size: 14vw;
   text-align: center;
+  left: auto;
 }
 
-@media screen and (min-width: 400px) {
+@media (min-width: 641px) {
   .p-top-photo .header .headline {
     padding-right: 20px;
     font-size: 10vw;
@@ -3077,7 +3082,7 @@ h5 {
   top: 130%;
 }
 
-@media screen and (min-width: 400px) {
+@media (min-width: 641px) {
   .p-top-photo .header .description {
     margin-right: 20px;
     color: #fff;
@@ -3097,10 +3102,10 @@ h5 {
 .p-top-photo .header .description .ttl {
   margin-bottom: 18px;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 1.875rem;
 }
 
-@media screen and (min-width: 400px) {
+@media (min-width: 641px) {
   .p-top-photo .header .description .ttl {
     font-size: 3vw;
   }
@@ -3112,10 +3117,10 @@ h5 {
 }
 .p-top-photo .header .description .data {
   margin: 0 0 18px 0;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
 }
 
-@media screen and (min-width: 400px) {
+@media (min-width: 641px) {
   .p-top-photo .header .description .data {
     font-size: 1.4vw;
   }
@@ -3130,7 +3135,7 @@ h5 {
   font-size: 1.4rem;
 }
 
-@media screen and (min-width: 400px) {
+@media (min-width: 641px) {
   .p-top-photo .header .description .link {
     font-size: 1.4vw;
   }

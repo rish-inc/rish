@@ -4,7 +4,7 @@
 .c-imgwrap {
 	margin-bottom: 10px;
 	@include g.hovanime;
-	@include g.mq( tb ) {
+	@media (min-width: 641px) {
 		margin-bottom: 20px;
 	}
 	@include g.mq( pc ){

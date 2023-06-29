@@ -5,7 +5,7 @@
 	dt {
 		// font-size: 1.4rem;
 		@include g.font-rem( g.$font-size--Lv3 );
-		// @include g.mq( tb ) {
+		// @media (min-width: 641px) {
 		// }
 		// @include g.mq( pc ) {
 		// 	font-size: 1.6rem;
@@ -14,7 +14,7 @@
 	dd {
 		// font-size: 1.4rem;
 		@include g.font-rem( g.$font-size--Lv2 );
-		// @include g.mq( tb ) {
+		// @media (min-width: 641px) {
 		// }
 		// @include g.mq( pc ) {
 		// 	font-size: 1.4rem;
@@ -22,12 +22,13 @@
 	}
 	&__link {
 		margin-left: 10px;
-		@include g.mq( tb ) {
+		@media (min-width: 641px) {
 			margin-left: 0;
 		}
 	}
 	&__link,
 	&__title {
+		@include g.font-rem( 10 );
 		a {
 			&:link, &:visited {
 				color: #8c8c8c;
@@ -46,14 +47,14 @@
 			display: block;
 			clear: both;
 		}
-		@include g.mq( tb ) {
+		@media (min-width: 641px) {
 			display: flex;
 		}
 		@include g.mq( pc ) {
 		}
 		&__title {
 			font-size: 1.4rem;
-			@include g.mq( tb ) {
+			@media (min-width: 641px) {
 			}
 			@include g.mq( pc ) {
 			}
@@ -65,11 +66,11 @@
 			float: left;
 			&:nth-of-type( 1 ) {
 				margin-left: 10px;
-				@include g.mq( tb ) {
+				@media (min-width: 641px) {
 					margin-left: 0;
 				}
 			}
-			@include g.mq( tb ) {
+			@media (min-width: 641px) {
 			}
 			@include g.mq( pc ) {
 			}
