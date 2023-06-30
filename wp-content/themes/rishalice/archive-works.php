@@ -5,13 +5,12 @@ Template Name: 制作実績一覧
 ?>
 <?php get_header(); ?>
     <main class="l-main">
-		<!-- <article class="p-works-archive c-inner c-content"> -->
         <article class="p-works-archive">
 			<div class="p-works-archive__head c-decoration--wing-line--under">
 				<span class="c-decoration--english">Works</span>
 				<h1 class="c-font--big">制作実績</h1>
 			</div>
-            <section class="p-works-archive is-fade">
+            <section class="p-works-archive--web is-fade">
                 <h2 class="headline">Web<span>Design</span></h2>
                 <div class="c-inner">
                     <header class="p-works-archive__header">
@@ -55,8 +54,8 @@ Template Name: 制作実績一覧
                     </article>
                 </div>
             </section>
-            <section id="photo" class="p-top-photo is-fade">
-                <header class="header">
+            <section id="photo" class="p-works-archive--photo is-fade">
+                <header class="p-works-archive__header">
                     <div class="inner">
                         <h2 class="headline">
                             Photography
@@ -131,8 +130,8 @@ Template Name: 制作実績一覧
                     <div class="js-imgover__bg"></div>
                 </article>
             </section>
-            <section class="p-top--animation is-fade">
-                <header class="p-top--animation__header">
+            <section class="p-works-archive--animation is-fade">
+                <header class="p-works-archive__header">
                     <h2>Animation</h2>
                     <div class="c-inner">
                         <dl class="description">
@@ -146,7 +145,7 @@ Template Name: 制作実績一覧
                         </dl>
                     </div>
                 </header>
-                <ul class="p-top--animation__items">
+                <ul class="p-works-archive--animation__items">
                     <li>
                         <iframe width="560" height="315" src="//www.youtube.com/embed/cNIKjufCbZQ?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </li>
