@@ -28,7 +28,7 @@ Template Name: 制作実績一覧
                     <article class="p-works-archive__items--2column">
                         <?php
                             $args = [ 'template_name' => 'webdesign' ];
-                            get_template_part( 'components/template/top-webdesign', '', $args );
+                            get_template_part( 'components/template/works-webdesign', '', $args );
                         ?>
                     </article>
                 </div>
@@ -49,7 +49,7 @@ Template Name: 制作実績一覧
                     <article class="p-top-masonry">
                         <?php
                             $args = [ 'template_name' => 'print' ];
-                            get_template_part( 'components/template/top-print', '', $args );
+                            get_template_part( 'components/template/works-print', '', $args );
                         ?>
                     </article>
                 </div>

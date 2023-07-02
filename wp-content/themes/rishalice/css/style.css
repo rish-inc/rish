@@ -1734,6 +1734,22 @@ h5 {
   gap: 10px;
 }
 
+.is-fade {
+  opacity: 0;
+  transform: translate(0, 200px);
+  transition: all 600ms;
+}
+
+.is-fade.is-scroll {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+body.is-fade-in {
+  opacity: 1;
+  transition: all 1s;
+}
+
 .p-footer {
   width: 100%;
   padding: 20px;
@@ -4885,190 +4901,6 @@ h5 {
     left: -42%;
   }
 }
-.p-top-section, .p-top-section--print {
-  padding: 70px 20px 50px;
-}
-
-@media screen and (min-width: 400px) {
-  .p-top-section, .p-top-section--print {
-    padding: 50px 20px 50px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .p-top-section, .p-top-section--print {
-    padding: 100px 0;
-  }
-}
-.p-top-section .headline, .p-top-section--print .headline {
-  margin-left: -16px;
-  font-size: 6rem;
-  font-family: "Meie Script", cursive;
-  font-weight: 400;
-  position: absolute;
-  left: 0;
-}
-
-@media screen and (min-width: 400px) {
-  .p-top-section .headline, .p-top-section--print .headline {
-    font-size: 10vw;
-  }
-}
-.p-top-section .headline span, .p-top-section--print .headline span {
-  margin-left: -10px;
-}
-
-@media screen and (min-width: 768px) {
-  .p-top-section .headline span, .p-top-section--print .headline span {
-    margin-left: -20px;
-  }
-}
-.p-top-section__header {
-  height: 280px;
-  margin-bottom: 20px;
-  position: relative;
-}
-
-@media screen and (min-width: 400px) {
-  .p-top-section__header {
-    height: 300px;
-    margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  .p-top-section__header {
-    height: 400px;
-  }
-}
-.p-top-section__header .description {
-  top: 100px;
-  right: 0;
-  left: 0;
-  position: absolute;
-  font-family: "Vollkorn", serif;
-}
-
-@media screen and (min-width: 400px) {
-  .p-top-section__header .description {
-    width: 57%;
-    top: 100px;
-    left: inherit;
-  }
-}
-@media screen and (min-width: 768px) {
-  .p-top-section__header .description {
-    width: inherit;
-    top: 150px;
-    right: inherit;
-    left: 55%;
-  }
-}
-.p-top-section__header .description > .title {
-  margin-bottom: 20px;
-  font-size: 3rem;
-  font-weight: bold;
-  line-height: 1;
-}
-
-@media screen and (min-width: 768px) {
-  .p-top-section__header .description > .title {
-    font-size: 3vw;
-    white-space: nowrap;
-  }
-}
-.p-top-section__header .description > .text {
-  font-size: 1.4rem;
-  margin-left: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .p-top-section__header .description > .text {
-    font-size: 1vw;
-    white-space: nowrap;
-  }
-}
-.p-top-section--print {
-  padding: 10px 50px 50px;
-}
-
-@media screen and (min-width: 768px) {
-  .p-top-section--print {
-    padding: 10px 50px 100px;
-  }
-}
-.p-top-section--print .c-inner {
-  width: auto;
-}
-
-@media screen and (min-width: 1000px) {
-  .p-top-section--print .c-inner {
-    max-width: 1280px;
-  }
-}
-.p-top-section--print .headline {
-  font-size: 5rem;
-  margin-left: 0;
-}
-
-@media screen and (min-width: 400px) {
-  .p-top-section--print .headline {
-    margin-left: 25px;
-    font-size: 10vw;
-  }
-}
-.p-top-section--print .headline span {
-  margin-left: -30px;
-}
-
-.p-top-section--print .p-top-section__header {
-  height: 190px;
-  margin-bottom: 50px;
-}
-
-@media screen and (min-width: 400px) {
-  .p-top-section--print .p-top-section__header {
-    margin-bottom: 80px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .p-top-section--print .p-top-section__header {
-    height: 250px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .p-top-section--print .p-top-section__header {
-    margin-bottom: 160px;
-  }
-}
-@media screen and (min-width: 400px) {
-  .p-top-section--print .p-top-section__header .description {
-    top: 150px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .p-top-section--print .p-top-section__header .description {
-    top: 200px;
-    left: 55%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .p-top-section--print .p-top-section__header .description {
-    top: 250px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .p-top-section--print .p-top-section__header .description > .title {
-    font-size: 2.5vw;
-  }
-}
-@media screen and (min-width: 400px) {
-  .p-top-section--print .c-img-description__title {
-    font-size: 1.2rem;
-  }
-}
-.p-top-section--print .c-img-description__link {
-  font-size: 1rem;
-}
-
 .p-works-archive, .p-works-archive--print {
   padding: 0 0 50px;
 }
