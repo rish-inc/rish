@@ -1,5 +1,4 @@
 jQuery( function( $ ) {
-    // const modaalmincss = require( './modaal/css/modaal.min.css' );
     const pageload = require( './pageload.js' );
     const effect = require( './effect.js' );
     const slide = require( './infiniteslidev2.js' );
