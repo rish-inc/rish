@@ -3873,7 +3873,7 @@ body.is-fade-in {
   padding: 0;
 }
 
-@media screen and (min-width: 400px) {
+@media (min-width: 641px) {
   .p-slide-panel {
     margin-top: 0;
   }

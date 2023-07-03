@@ -4,7 +4,7 @@
 .p-slide-panel {
 	margin: 245px 0 0 0;
 	padding: 0;
-	@include g.mq( tb ) {
+	@media (min-width: 641px) {
 		margin-top: 0;
 	}
 	@include g.mq( pc ) {
