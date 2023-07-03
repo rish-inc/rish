@@ -15,10 +15,10 @@
 			if ( $args['template_name'] == 'webdesign' ) :
 				$wp_query = new WP_Query( $query_args );
 				if ( $wp_query -> have_posts() ) : ?>
-					<ul class="p-top-section__items--2column__sticky">
+					<ul class="p-works-archive__items--2column__sticky">
 						<?php while ( $wp_query -> have_posts() ) : $wp_query -> the_post(); ?>
 							<li>
-								<figure class="p-top-section__items--2column__sticky__figure p-stack">
+								<figure class="p-works-archive__items--2column__sticky__figure p-stack">
 									<div class="p-stack__bg">
 										<div class="c-imgwrap">
 											<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'full' ); ?></a>
@@ -57,10 +57,10 @@
 			);
 			$wp_query = new WP_Query( $query_args );
 			if ( $wp_query -> have_posts() ) : ?>
-				<ul class="p-top-section__items--2column__list">
+				<ul class="p-works-archive__items--2column__list">
 					<?php while ( $wp_query -> have_posts() ) : $wp_query -> the_post(); ?>
 						<li>
-							<figure class="p-top-section__items--2column__list__figure">
+							<figure class="p-works-archive__items--2column__list__figure">
 								<div class="c-imgwrap">
 									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'webdesign-thumb' ); ?></a>
 								</div>

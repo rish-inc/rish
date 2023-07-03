@@ -3,13 +3,17 @@
 // coni 現行より
 .c-imgwrap {
 	margin-bottom: 10px;
-	// @include hovanime;
-	@include g.mq( tb ) {
+	@include g.hovanime;
+	@media (min-width: 641px) {
 		margin-bottom: 20px;
 	}
 	@include g.mq( pc ){
 	}
 	> a {
 		display: block;
+	}
+	img {
+		width: 100%;
+		height: auto;
 	}
 }

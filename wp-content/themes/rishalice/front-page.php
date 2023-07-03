@@ -78,7 +78,7 @@
 							get_template_part( 'components/template/top-works-print', '', $args );
 						?>
 					</section>
-					<a href="#" class="p-btn c-button--noise-line">制作実績一覧へ</a>
+					<a href="<?php echo esc_url( home_url( 'works' ) ); ?>" class="p-btn c-button--noise-line">制作実績一覧へ</a>
 				</article>
 
 				<?php get_template_part( 'components/template/price' ); ?>

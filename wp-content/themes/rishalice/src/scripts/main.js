@@ -1,5 +1,9 @@
 jQuery( function( $ ) {
-	const config = require( './config.js' );
+    const pageload = require( './pageload.js' );
+    const effect = require( './effect.js' );
+    const slide = require( './infiniteslidev2.js' );
+    const modaalminjs = require( './modaal/js/modaal.min.js' );
+    const config = require( './config.js' );
 
 	// ハンバーガーボタンのクリック処理
     $('.p-header__button').click(function () {
