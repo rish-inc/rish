@@ -1,0 +1,59 @@
+@use '../../foundation/global' as g;
+
+.p-thumbnail {
+	width: 100%;
+	padding: 35px;
+	@media (min-width: 641px) {
+		padding: 50px;
+	}
+	@include g.mq( pc ) {
+		padding: 100px;
+	}
+	&__imgbox {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		z-index: 1;
+		@media (min-width: 641px) {
+		}
+		@include g.mq( pc ) {
+		}
+	}
+	&--portfolio-detail {
+		@extend .p-thumbnail;
+		background: #ededed;
+		position: relative;
+		@media (min-width: 641px) {
+		}
+		@include g.mq( pc ) {
+		}
+		&::before {
+			content: "";
+			width: 200px;
+			height: 100%;
+			background: #e3e3e3;
+			clip-path: polygon( 0 0, 100% 0, 0 100% );
+			position: absolute;
+			display: block;
+			left: 0;
+			top: 0;
+			z-index: 1;
+			@media (min-width: 641px) {
+				width: 400px;
+			}
+			@include g.mq( pc ) {
+				width: 400px;
+			}
+		}
+		.p-thumbnail__imgbox {
+			.print {
+				width: 200px;
+				@media (min-width: 641px) {
+					width: 300px;
+				}
+			}
+		}
+	}
+}
