@@ -53,7 +53,8 @@
 		@include g.mq( pc ) {
 		}
 		&__title {
-			font-size: 1.4rem;
+			// font-size: 1.4rem;
+			@include g.font-rem( g.$font-size--Lv2 );
 			@media (min-width: 641px) {
 			}
 			@include g.mq( pc ) {
@@ -61,7 +62,8 @@
 
 		}
 		&__link {
-			font-size: 1.4rem;
+			// font-size: 1.4rem;
+			@include g.font-rem( g.$font-size--Lv2 );
 			margin-right: 10px;
 			float: left;
 			&:nth-of-type( 1 ) {

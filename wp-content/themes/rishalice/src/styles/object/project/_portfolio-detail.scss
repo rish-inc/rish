@@ -1,5 +1,6 @@
 @use '../../foundation/global' as g;
 
+// coni 現行より
 .p-portfolio-detail {
 	width: 100%;
 	margin: auto;
@@ -11,7 +12,8 @@
 	}
 	&__contents {
 		padding: 35px;
-		font-size: 1.4rem;
+		// font-size: 1.4rem;
+		@include g.font-rem( g.$font-size--Lv2 );
 		line-height: 1.8;
 		@media (min-width: 641px) {
 			padding: 50px;

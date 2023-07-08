@@ -834,11 +834,11 @@ h5 {
   }
 }
 .c-img-description__partner__title {
-  font-size: 1.4rem;
+  font-size: 0.875rem;
 }
 
 .c-img-description__partner__link {
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   margin-right: 10px;
   float: left;
 }
@@ -2162,6 +2162,69 @@ body.is-fade-in {
     background-image: url(../images/header-footer/key1.png);
   }
 }
+.p-header--achievement, .p-header--print {
+  height: auto;
+  position: relative;
+}
+
+.p-header--achievement .c-inner, .p-header--print .c-inner {
+  width: 100%;
+  height: 100%;
+  padding: 35px;
+  top: 0;
+}
+
+@media (min-width: 641px) {
+  .p-header--achievement .c-inner, .p-header--print .c-inner {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-header--achievement .c-inner, .p-header--print .c-inner {
+    padding: 0 70px;
+    margin-bottom: 90px;
+  }
+}
+.p-header--achievement h2, .p-header--print h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.p-header--achievement a:link, .p-header--print a:link, .p-header--achievement a:visited, .p-header--print a:visited {
+  color: #8c8c8c;
+  text-decoration: underline;
+}
+
+.p-header--achievement a:hover, .p-header--print a:hover, .p-header--achievement a:active, .p-header--print a:active {
+  color: #c1c1c1;
+}
+
+.p-header--achievement__url {
+  margin-bottom: 27.5px;
+  font-family: "Vollkorn";
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: #252522;
+  display: inline-block;
+}
+
+.p-header--achievement__tag {
+  font-family: "Vollkorn";
+  font-size: 0.875rem;
+  color: #252522;
+}
+
+.p-header--achievement__date {
+  font-family: "Vollkorn";
+  font-size: 0.875rem;
+  color: #252522;
+}
+
+.p-header--achievement .c-img-description__partner, .p-header--print .c-img-description__partner {
+  font-size: 0.875rem;
+}
+
 .p-header {
   margin-bottom: 64px;
 }
@@ -3044,7 +3107,7 @@ body.is-fade-in {
 }
 .p-portfolio-detail__contents {
   padding: 35px;
-  font-size: 1.4rem;
+  font-size: 0.875rem;
   line-height: 1.8;
 }
 
@@ -3185,6 +3248,63 @@ body.is-fade-in {
   margin-bottom: 59.5px;
 }
 
+.p-single-works {
+  padding: 0 0 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-single-works {
+    padding: 0 0 100px;
+  }
+}
+.p-single-works__head {
+  margin-bottom: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-single-works__head {
+    margin-bottom: 90px;
+  }
+}
+.p-single-works__head .c-font--big {
+  color: #1D1D1D;
+  line-height: 1.5;
+}
+
+.p-single-works__head.c-decoration--wing-line--under::after {
+  bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .p-single-works__head.c-decoration--wing-line--under::after {
+    bottom: -6px;
+  }
+}
+.p-single-works .p-portfolio-detail {
+  margin-bottom: 90px;
+}
+
+@media (min-width: 641px) {
+  .p-single-works .p-portfolio-detail {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-single-works .p-portfolio-detail {
+    margin-bottom: 240px;
+  }
+}
+.p-single-works .p-form {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-single-works .p-form {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
 .p-single__head {
   margin-bottom: 64px;
 }
@@ -4128,6 +4248,10 @@ body.is-fade-in {
     width: 400px;
   }
 }
+.p-thumbnail--portfolio-detail .p-thumbnail__imgbox img {
+  height: auto;
+}
+
 .p-thumbnail--portfolio-detail .p-thumbnail__imgbox .print {
   width: 200px;
 }

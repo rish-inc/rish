@@ -1,0 +1,101 @@
+@use '../../foundation/global' as g;
+
+// coni 現行より
+.p-header {
+	&--achievement {
+		height: auto;
+		position: relative;
+		// @media (min-width: 641px) {
+		// 	min-height: 337px;
+		// }
+		// @include g.mq( pc ) {
+		// }
+		.c-inner {
+			width: 100%;
+			height: 100%;
+			padding: 35px;
+			// background-image: url( assets/images/common/bg_r.svg );
+			// background-image: url( /wp/wp-content/themes/rdone2020/dist/assets/images/bg_r.svg );
+			// background-size: contain;
+			// background-position: right bottom;
+			// background-repeat: no-repeat;
+			top: 0;
+			@media (min-width: 641px) {
+				margin-bottom: 80px;
+			}
+			@include g.mq( pc ) {
+				padding: 0 70px;
+				margin-bottom: 90px;
+				// margin-top: 50px;
+			}
+		}
+		h2 {
+			padding: 0;
+			margin: 0;
+			// font-size: 3.2rem;
+			@include g.font-rem( g.$font-size--Lv11 );
+			// @media (min-width: 641px) {
+			// }
+			// @include g.mq( pc ) {
+			// }
+		}
+		a {
+			&:link, &:visited {
+				color: #8c8c8c;
+				text-decoration: underline;
+			}
+			&:hover, &:active {
+				color: #c1c1c1;
+			}
+		}
+		&__url {
+			margin-bottom: 27.5px;
+			font-family: 'Vollkorn';
+			// font-size: 1.4rem;
+			@include g.font-rem( g.$font-size--Lv2 );
+			text-decoration: none;
+			color: #252522;
+			display: inline-block;
+			// @media (min-width: 641px) {
+			// }
+			// @include g.mq( pc ) {
+			// }
+		}
+		&__tag {
+			font-family: 'Vollkorn';
+			// font-size: 1.4rem;
+			@include g.font-rem( g.$font-size--Lv2 );
+			color: #252522;
+		}
+		&__date {
+			font-family: 'Vollkorn';
+			// font-size: 1.4rem;
+			@include g.font-rem( g.$font-size--Lv2 );
+			color: #252522;
+		}
+		// .bg-r {
+		// 	width: 350px;
+		// 	height: 270px;
+		// 	position: absolute;
+		// 	top: 0;
+		// 	right: 0;
+		// }
+		.c-img-description__partner {
+			// font-size: 1.4rem;
+			@include g.font-rem( g.$font-size--Lv2 );
+			// @media (min-width: 641px) {
+			// }
+			// @include g.mq( pc ) {
+			// }
+		}
+	}
+	&--print {
+		@extend .p-header--achievement;
+		// @media (min-width: 641px) {
+		// 	min-height: 180px;
+		// }
+		// @include g.mq( pc ) {
+		// 	min-height: 200px;
+		// }
+	}
+}
