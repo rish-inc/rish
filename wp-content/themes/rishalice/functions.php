@@ -73,3 +73,28 @@ function mobile_posts_per_page( $query ) {
 	}
 }
 add_action( 'pre_get_posts', 'mobile_posts_per_page' );
+
+define( 'COMMON_PFIX', get_template_directory_uri() );
+
+function imgdescription() {
+	if ( isset( SCF::get( 'partner-group' )[0]['partner-name'] ) ) : ?>
+		<dl class="c-img-description__partner">
+			<dt class="c-img-description__partner__title">パートナー：</dt>
+			<?php
+				$partner_groups = SCF::get( 'partner-group' );
+				foreach ( $partner_groups as $groups ) :
+					if ( $groups['partner-url'] ) : ?>
+						<dd class="c-img-description__partner__link"><a href="<?php echo esc_url( $groups['partner-url'] ); ?>" target="_blank"><?php echo esc_html( $groups['partner-name'] ); ?></a><?php if( $groups != end( $partner_groups ) ) : ?>, <?php endif; ?></dd>
+					<?php else : ?>
+						<dd class="c-img-description__partner__link">
+							<?php if ( isset( $groups ) ) : ?>
+								<?php echo esc_html( $groups['partner-name'] ); ?>
+								<?php if ( $groups != end( $partner_groups ) ) : ?>, <?php endif; ?>
+							<?php endif; ?>
+						</dd>
+					<?php endif; ?>
+				<?php endforeach; ?>
+			</dd>
+		</dl>
+	<?php endif;
+}

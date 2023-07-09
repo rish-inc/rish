@@ -1,0 +1,69 @@
+@use '../../foundation/global' as g;
+
+// coni 現行より
+.p-portfolio-detail {
+	width: 100%;
+	margin: auto;
+	@media (min-width: 641px) {
+		max-width: 800px;
+	}
+	@include g.mq( pc ) {
+		max-width: 1200px;
+	}
+	&__contents {
+		padding: 35px;
+		// font-size: 1.4rem;
+		@include g.font-rem( g.$font-size--Lv2 );
+		line-height: 1.8;
+		@media (min-width: 641px) {
+			padding: 50px;
+		}
+		@include g.mq( pc ) {
+			padding: 50px 100px;
+		}
+		@media (min-width: 1300px) {
+			padding: 50px 0;
+		}
+		p {
+			margin-bottom: 20px;
+		}
+	}
+	&__imgs {
+		padding: 35px;
+		background: #ededed;
+		@media (min-width: 641px) {
+			padding: 70px 50px;
+		}
+		@include g.mq( pc ) {
+			padding: 100px;
+			margin-bottom: 100px;
+		}
+		ul {
+			width: 100%;
+			margin: auto;
+			display: block;
+			@media (min-width: 641px) {
+				max-width: 600px;
+			}
+			@include g.mq( pc ) {
+				max-width: 1000px;
+			}
+			li {
+				width: 100%;
+				margin-bottom: 35px;
+				@media (min-width: 641px) {
+				}
+				@include g.mq( pc ) {
+					margin-bottom: 100px;
+				}
+				&:last-child {
+					margin-bottom: 0;
+				}
+				img {
+					margin: auto;
+					height: auto;
+				}
+			}
+		}
+	}
+}

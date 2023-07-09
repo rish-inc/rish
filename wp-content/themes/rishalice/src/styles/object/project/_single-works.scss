@@ -1,0 +1,44 @@
+@use "../../foundation/global" as g;
+
+.p-single-works {
+    padding: 0 0 50px;
+	@include g.mq( pc ) {
+		padding: 0 0 100px;
+	}
+
+    &__head {
+        margin-bottom: 64px;
+        @include g.mq( pc ) {
+            margin-bottom: 90px;
+        }
+        .c-font--big {
+            color: g.$fontcolor--base;
+            line-height: 1.5;
+        }
+        &.c-decoration--wing-line--under::after {
+            bottom: 0;
+            @include g.mq( pc ) {
+                bottom: -6px;
+            }
+        }
+    }
+
+    .p-portfolio-detail {
+        margin-bottom: 90px;
+        @media (min-width: 641px) {
+			margin-bottom: 100px;
+		}
+        @include g.mq( pc ) {
+            margin-bottom: 240px;
+		}
+    }
+
+    .p-form {
+		padding-right: 20px;
+		padding-left: 20px;
+		@include g.mq( pc ) {
+			padding-right: 0;
+			padding-left: 0;
+		}
+	}
+}
