@@ -3178,6 +3178,7 @@ body.is-fade-in {
 
 .p-portfolio-detail__imgs ul li img {
   margin: auto;
+  height: auto;
 }
 
 .p-price {
