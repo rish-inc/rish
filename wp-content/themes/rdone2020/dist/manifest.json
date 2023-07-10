@@ -129,7 +129,7 @@
   },
   "assets/images/common/ico/favicons/apple-touch-icon-180x180-precomposed.png.webp": {
     "file": "assets/images/apple-touch-icon.png.webp",
-    "src": "assets/images/common/ico/favicons/apple-touch-icon.png.webp"
+    "src": "assets/images/common/ico/favicons/apple-touch-icon-precomposed.png.webp"
   },
   "assets/images/common/ico/favicons/apple-touch-icon-180x180.png": {
     "file": "assets/images/apple-touch-icon.png",
@@ -137,7 +137,7 @@
   },
   "assets/images/common/ico/favicons/apple-touch-icon-180x180.png.webp": {
     "file": "assets/images/apple-touch-icon.png.webp",
-    "src": "assets/images/common/ico/favicons/apple-touch-icon.png.webp"
+    "src": "assets/images/common/ico/favicons/apple-touch-icon-precomposed.png.webp"
   },
   "assets/images/common/ico/favicons/apple-touch-icon-57x57-precomposed.png": {
     "file": "assets/images/apple-touch-icon-57x57.png",
@@ -193,7 +193,7 @@
   },
   "assets/images/common/ico/favicons/apple-touch-icon-76x76-precomposed.png.webp": {
     "file": "assets/images/apple-touch-icon-76x76.png.webp",
-    "src": "assets/images/common/ico/favicons/apple-touch-icon-76x76-precomposed.png.webp"
+    "src": "assets/images/common/ico/favicons/apple-touch-icon-76x76.png.webp"
   },
   "assets/images/common/ico/favicons/apple-touch-icon-76x76.png": {
     "file": "assets/images/apple-touch-icon-76x76.png",
@@ -201,7 +201,7 @@
   },
   "assets/images/common/ico/favicons/apple-touch-icon-76x76.png.webp": {
     "file": "assets/images/apple-touch-icon-76x76.png.webp",
-    "src": "assets/images/common/ico/favicons/apple-touch-icon-76x76-precomposed.png.webp"
+    "src": "assets/images/common/ico/favicons/apple-touch-icon-76x76.png.webp"
   },
   "assets/images/common/ico/favicons/apple-touch-icon-precomposed.png": {
     "file": "assets/images/apple-touch-icon.png",
@@ -209,7 +209,7 @@
   },
   "assets/images/common/ico/favicons/apple-touch-icon-precomposed.png.webp": {
     "file": "assets/images/apple-touch-icon.png.webp",
-    "src": "assets/images/common/ico/favicons/apple-touch-icon.png.webp"
+    "src": "assets/images/common/ico/favicons/apple-touch-icon-precomposed.png.webp"
   },
   "assets/images/common/ico/favicons/apple-touch-icon.png": {
     "file": "assets/images/apple-touch-icon.png",
@@ -217,7 +217,7 @@
   },
   "assets/images/common/ico/favicons/apple-touch-icon.png.webp": {
     "file": "assets/images/apple-touch-icon.png.webp",
-    "src": "assets/images/common/ico/favicons/apple-touch-icon.png.webp"
+    "src": "assets/images/common/ico/favicons/apple-touch-icon-precomposed.png.webp"
   },
   "assets/images/common/ico/favicons/favicon-160x160.png": {
     "file": "assets/images/favicon-160x160.png",
