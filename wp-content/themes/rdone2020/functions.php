@@ -55,7 +55,7 @@ $theme_version = $theme -> get( 'Version' );
 define( 'COMMON_PFIX', get_template_directory_uri() );
 
 function readScript( $theme_version ) {
-	wp_enqueue_style(  'googlefonts', "//fonts.googleapis.com/css2?family=Meie+Script&family=Vollkorn:ital,wght@0,400;0,600;1,400;1,600&display=swap", array() );
+	wp_enqueue_style(  'googlefonts', "//fonts.googleapis.com/css2?family=Meie+Script&amp;family=Vollkorn:ital,wght@0,400;0,600;1,400;1,600&display=swap", array() );
 	wp_enqueue_style(  'tailwind', '//cdn.tailwindcss.com', array() );
 	wp_enqueue_style(  'style', get_stylesheet_uri(), array(), $theme_version );
 	if( is_front_page() ) {
