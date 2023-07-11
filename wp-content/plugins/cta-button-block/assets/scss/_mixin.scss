@@ -1,0 +1,18 @@
+@use "sass:math";
+
+/* font-size */
+@mixin font-rem( $font-size-px, $root-font-size: 16 ) {
+	font-size: math.div( ( $font-size-px * 1rem ), $root-font-size );
+}
+
+/* breakpoint */
+$breakpoints: (
+	'tb': 'screen and ( min-width: 641px )',
+	'pc': 'screen and ( min-width: 785px )',
+);
+
+@mixin mq( $breakpoint: tb ) {
+	@media #{ map-get( $breakpoints, $breakpoint ) } {
+		@content;
+	}
+}

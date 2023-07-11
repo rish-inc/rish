@@ -1,5 +1,13 @@
 @use 'global' as g;
 
+
+@font-face {
+	font-family: 'Cedarville Cursive', cursive;
+	font-family: 'Meie Script', cursive;
+	font-family: 'Vollkorn', serif;
+	src: url( 'https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Meie+Script&family=Vollkorn:ital,wght@0,400;0,600;1,400;1,600&display=swap' );
+}
+
 :root {
 	font-size: 10px;
 }
