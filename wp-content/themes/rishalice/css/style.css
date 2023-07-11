@@ -2165,24 +2165,42 @@ body.is-fade-in {
 .p-header--achievement, .p-header--print {
   height: auto;
   position: relative;
+  margin: auto;
 }
 
+@media (min-width: 641px) {
+  .p-header--achievement, .p-header--print {
+    max-width: 800px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .p-header--achievement, .p-header--print {
+    max-width: 1200px;
+  }
+}
 .p-header--achievement .c-inner, .p-header--print .c-inner {
   width: 100%;
   height: 100%;
   padding: 35px;
   top: 0;
+  margin: auto;
 }
 
 @media (min-width: 641px) {
   .p-header--achievement .c-inner, .p-header--print .c-inner {
+    padding: 50px;
     margin-bottom: 80px;
   }
 }
 @media screen and (min-width: 768px) {
   .p-header--achievement .c-inner, .p-header--print .c-inner {
-    padding: 0 70px;
+    padding: 0 100px;
     margin-bottom: 90px;
+  }
+}
+@media (min-width: 1300px) {
+  .p-header--achievement .c-inner, .p-header--print .c-inner {
+    padding: 0;
   }
 }
 .p-header--achievement h2, .p-header--print h2 {
@@ -3107,7 +3125,7 @@ body.is-fade-in {
 }
 .p-portfolio-detail__contents {
   padding: 35px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.8;
 }
 
@@ -5323,6 +5341,11 @@ body.is-fade-in {
     bottom: -6px;
   }
 }
+@media screen and (min-width: 768px) {
+  .p-works-archive--web {
+    padding-bottom: 100px;
+  }
+}
 .p-works-archive .headline, .p-works-archive--print .headline {
   margin-left: -16px;
   font-size: 3.75rem;
@@ -5349,8 +5372,14 @@ body.is-fade-in {
 .p-works-archive .c-inner, .p-works-archive--print .c-inner {
   width: auto;
   margin: auto;
+  padding: 0 20px 50px;
 }
 
+@media screen and (min-width: 768px) {
+  .p-works-archive .c-inner, .p-works-archive--print .c-inner {
+    padding: 0;
+  }
+}
 @media screen and (min-width: 1000px) {
   .p-works-archive .c-inner, .p-works-archive--print .c-inner {
     width: 1080px;

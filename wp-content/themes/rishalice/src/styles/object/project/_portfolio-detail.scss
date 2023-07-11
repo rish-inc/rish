@@ -12,8 +12,7 @@
 	}
 	&__contents {
 		padding: 35px;
-		// font-size: 1.4rem;
-		@include g.font-rem( g.$font-size--Lv2 );
+		@include g.font-rem( g.$font-size--Lv3 );
 		line-height: 1.8;
 		@media (min-width: 641px) {
 			padding: 50px;
