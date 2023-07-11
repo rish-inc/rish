@@ -16,7 +16,7 @@ export default defineConfig ( {
 	plugins: [
 		liveReload( __dirname + '/**/*.php' ),
 		webfontDownload([
-			'//fonts.googleapis.com/css2?family=Meie+Script&family=Vollkorn:ital,wght@0,400;0,600;1,400;1,500&display=swap'
+			'https://fonts.googleapis.com/css2?family=Meie+Script&family=Vollkorn:ital,wght@0,400;0,600;1,400;1,500&display=swap'
 		]),
 		sassGlobImports(),
 	],

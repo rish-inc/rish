@@ -57,6 +57,8 @@
 	</script>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="<?php echo COMMON_PFIX; ?>/assets/images/common/ico/favicons/favicon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<style>
 		body {
 			visibility: hidden;
