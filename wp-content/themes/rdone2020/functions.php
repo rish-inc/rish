@@ -4,7 +4,7 @@
  */
 
 //develop mode config
-define( "IS_VITE_DEVELOPMENT", true );
+define( "IS_VITE_DEVELOPMENT", false );
 
 //define
 define( 'DIST_DEF', 'dist' );
