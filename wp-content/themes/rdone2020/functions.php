@@ -55,7 +55,6 @@ $theme_version = $theme -> get( 'Version' );
 define( 'COMMON_PFIX', get_template_directory_uri() );
 
 function readScript( $theme_version ) {
-	wp_enqueue_style(  'googlefonts', "//fonts.googleapis.com/css2?family=Meie+Script&family=Vollkorn:ital,wght@0,400;0,600;1,400;1,600&display=swap", array() );
 	wp_enqueue_style(  'tailwind', '//cdn.tailwindcss.com', array() );
 	wp_enqueue_style(  'style', get_stylesheet_uri(), array(), $theme_version );
 	if( is_front_page() ) {
@@ -72,10 +71,11 @@ add_action( 'wp_enqueue_scripts', function() {
 		function vite_head_module_hook() {
 			echo '<script type="module" crossorigin src="' . VITE_SERVER . VITE_ENTRY_POINT . '"></script>';
 		}
+		wp_enqueue_style(  'googlefonts', "//fonts.googleapis.com/css2?family=Meie+Script&family=Vollkorn:ital,wght@0,400;0,600;1,400;1,500&display=swap", array() );
 		add_action( 'wp_footer', 'vite_head_module_hook' );
 	} else {
 		// production mode, 'npm run build' must be executed in order to generate assets
-
+		wp_enqueue_style(  'googlefonts', get_theme_file_uri( '/dist/assets/css/webfonts.css', array() ), );
 		// read manifest.json to figure out what to enqueue
 		$manifest = json_decode( file_get_contents( DIST_PATH . '/manifest.json'), true );
 
