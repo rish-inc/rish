@@ -1,0 +1,34 @@
+@use "../../foundation/global" as g;
+
+.p-blog-archive {
+    &__head {
+        margin-bottom: 69px;
+        @include g.mq( pc ) {
+            margin-bottom: 108px;
+        }
+        .c-font--big {
+            color: g.$fontcolor--base;
+            line-height: 1.5;
+        }
+        &.c-decoration--wing-line--under::after {
+            bottom: 0;
+            @include g.mq( pc ) {
+                bottom: -6px;
+            }
+        }
+    }
+
+    &__list {
+        margin: 0 auto 80px;
+        @include g.mq( pc ) {
+            margin-bottom: 173px;
+        }
+    }
+
+    &__pagination {
+        margin-bottom: 162px;
+        @include g.mq( pc ) {
+            margin-bottom: 240px;
+        }
+    }
+}

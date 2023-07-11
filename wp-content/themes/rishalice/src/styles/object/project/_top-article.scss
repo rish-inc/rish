@@ -153,6 +153,10 @@
 	}
 
 	&--advantage {
+		margin-bottom: 196px;
+		@include g.mq( pc ) {
+			margin-bottom: 276px;
+		}
 		&__parallel {
 			margin-bottom: 90px;
 			@include g.mq( pc ) {
@@ -261,18 +265,337 @@
 				word-break: break-all;
 			}
 		}
-
-		&__btn {
-			margin-bottom: 196px;
-		}
 	}
 
 	&--works {
 		margin-bottom: 100px;
+		@include g.mq( pc ) {
+			margin-bottom: 200px;
+		}
+		&__bg-wrap {
+			padding-top: 30px;
+			margin-bottom: 96px;
+			@include g.mq( pc ) {
+				padding-top: 64px;
+			}
+			@include g.mq( full ) {
+				padding-top: 0;
+				margin-bottom: 0;
+			}
+		}
+		&__head {
+			margin-bottom: 24px;
+			@include g.mq( pc ) {
+				margin-bottom: 40px;
+			}
+		}
+		&__webdesign,
+		&__printgraphics {
+			&__head {
+				@include g.font-rem( g.$font-size--Lv10 );
+				text-align: center;
+				margin-bottom: 24px;
+				@include g.mq( pc ) {
+					margin-bottom: 64px;
+				}
+			}
+		}
+		&__webdesign {
+			@include g.mq( full ) {
+				margin-bottom: 360px;
+			}
+			.p-top-article--works__list {
+				@include g.mq( pc ) {
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr;
+					gap: 24px;
+					margin-bottom: 144px;
+				}
+				.p-card__link {
+					&:first-child,
+					&:nth-child(2),
+					&:nth-child(3) {
+						@include g.mq( pc ) {
+							margin-bottom: 40px;
+						}
+					}
+				}
+			}
+		}
+		&__printgraphics {
+			.p-top-article--works__list {
+				display: flex;
+				justify-content: center;
+				.p-card__link {
+					width: 50%;
+					padding: 20px;
+					margin-bottom: 6px;
+					@media (min-width: 640px) {
+						width: calc( 100% / 3 );
+						margin-bottom: 16px;
+					}
+					@include g.mq( pc ) {
+						width: 20%;
+						padding: 12px;
+						margin-bottom: 26px;
+					}
+					// リンク文字が改行されると擬似要素の下線が途切れるため、画面幅小さいときは下線非表示
+					a::after {
+						width: 0;
+						@include g.mq( wide-2 ) {
+							width: 100%;
+						}
+					}
+					&__caption__text {
+						margin-top: 10px;
+						@include g.mq( pc ) {
+							margin-top: 15px;
+						}
+					}
+				}
+			}
+		}
+		&__list {
+			margin-bottom: 100px;
+			.p-card__link {
+				margin-bottom: 56px;
+				@include g.mq( pc ) {
+					margin-bottom: 0;
+				}
+				&__caption {
+					display: block;
+					&__wrap {
+						width: 100%;
+						&__inner {
+							background: transparent;  // 背景色の黒を無効化
+						}
+						&__img {
+							opacity: 1;
+						}
+					}
+					&__text {
+						width: 100%;
+						margin-top: 15px;
+						.c-font--normal {
+							@include g.mq( tb ) {
+								@include g.font-rem( g.$font-size--Lv3 );
+							}
+							@include g.mq( full ) {
+								@include g.font-rem( g.$font-size--Lv4 );
+							}
+						}
+						.c-font--medium {
+							margin-top: 4px;
+						}
+					}
+				}
+			}
+		}
+		&__img {
+			width: 160.97px;
+			position: absolute;
+			bottom: -60px;
+			left: 50%;
+			transform: translateX(-50%);
+			@include g.mq( full ) {
+				width: 218.19px;
+				bottom: 5px;
+				left: auto;
+				right: 0;
+				transform: translateX(22%);
+			}
+			@media (min-width: 1300px) {
+				transform: translateX(40%);
+			}
+			@media (min-width: 1400px) {
+				transform: translateX(36%);
+			}
+			@media (min-width: 1500px) {
+				transform: translateX(41%);
+			}
+		}
+		&__bg {
+			display: none;
+			@include g.mq( full ) {
+				display: block;
+				opacity: 0;
+				transition: all .9s 0s ease-in;
+				position: absolute;
+				top: -24%;
+				left: -200%;
+				width: 180%;
+				height: 180%;
+				z-index: -1;
+				background-image: url( ../images/top/bg_works_2x.png );
+				background-size: contain;
+				background-position: top left;
+				background-repeat: no-repeat;
+				margin-left: calc(50% - 50vw); // 親要素を無視して画面幅いっぱいに広げる
+				padding-right: calc(50vw - 50%); // 子要素は親要素の幅を維持
+				padding-left: calc(50vw - 50%);
+			}
+		}
+		&.show {
+			.p-top-article--works__bg {
+				@include g.mq( full ) {
+					opacity: 1;
+					left: -54%;
+				}
+				@media (min-width: 1300px) {
+					left: -48%;
+				}
+				@media (min-width: 1400px) {
+					left: -44%;
+				}
+				@media (min-width: 1500px) {
+					left: -42%;
+				}
+			}
+		}
+	}
+
+	&--service {
+		margin-bottom: 58px;
+		padding-top: 35px;
+		padding-bottom: 110px;
+		@include g.mq( full ) {
+			margin-bottom: 258px;
+		}
+		&__head {
+			margin-bottom: 42px;
+		}
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			max-width: 510px;
+			margin: 0 auto;
+			@include g.mq( pc ) {
+				max-width: initial;
+			}
+			@include g.mq( wide ) {
+				gap: 50px;
+			}
+			@media (min-width: 1030px) {
+				gap: 70px;
+			}
+			@media (min-width: 1090px) {
+				gap: 100px;
+			}
+			.u-mt--20,
+			.u-mt--n-20 {
+				@media (min-width: 558px) and (max-width: 767px) {
+					margin-top: 0;
+				}
+				@media (min-width: 890px) and (max-width: 999px) {
+					margin-top: 0;
+				}
+			}
+			.u-mr--pc--47,
+			.u-ml--pc--47 {
+				@media (min-width: 558px) and (max-width: 767px) {
+					margin: 0 10px;
+				}
+				@media (min-width: 890px) and (max-width: 999px) {
+					margin: 0 10px;
+				}
+			}
+			&__item {
+				&:nth-child(5) {
+					@media (min-width: 558px) and (max-width: 767px) {
+						margin-top: 47px;
+					}
+					@media (min-width: 890px) and (max-width: 999px) {
+						margin-top: 47px;
+					}
+				}
+				// リスト要素8個を0.5秒ずつ遅らせてアニメーション
+				@for $i from 1 through 8 {
+					$DELAY: $i * .5s;
+					$DELAY2: $i * 1.5s;
+
+					@keyframes fuwafuwa#{$i} {
+						0% {
+							transform: translateY(0);
+						}
+						100% {
+							transform: translateY(15px);
+						}
+					}
+					&:nth-child(#{$i}) {
+						animation: fuwafuwa#{$i} 2s ease-in-out $DELAY infinite alternate;
+						// 擬似要素（影）はさらに遅らせる
+						&::after {
+							animation: fuwafuwa#{$i} 2s ease-in-out $DELAY2 infinite alternate;
+						}
+					}
+				}
+				&__wrap {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate( -50%, -30% )
+				}
+				&__inner {
+					height: auto;
+					margin: 0 auto 5px;
+					@include g.mq( pc ) {
+						margin-bottom: 12px;
+					}
+				}
+				a {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+				}
+				p {
+					@include g.font-rem( g.$font-size--Lv1 );
+					line-height: 1.5;
+					color: g.$fontcolor--brown;
+					text-align: center;
+					white-space: nowrap;
+					@include g.mq( pc ) {
+						@include g.font-rem( g.$font-size--Lv3 );
+					}
+				}
+			}
+		}
+		&__bg {
+			display: none;
+			@include g.mq( full ) {
+				display: block;
+				opacity: 0;
+				transition: all .9s 0s ease-in;
+				position: absolute;
+				top: -18%;
+				right: -200%;
+				width: 200%;
+				height: 200%;
+				z-index: -2;
+				background-image: url( ../images/top/bg_service_2x.png );
+				background-size: contain;
+				background-position: top right;
+				background-repeat: no-repeat;
+				margin-left: calc(50% - 50vw); // 親要素を無視して画面幅いっぱいに広げる
+				padding-right: calc(50vw - 50%); // 子要素は親要素の幅を維持
+				padding-left: calc(50vw - 50%);
+			}
+		}
+		&.show {
+			.p-top-article--service__bg {
+				@include g.mq( full ) {
+					opacity: 1;
+					right: -84%;
+				}
+				@media (min-width: 1500px) {
+					right: -81%;
+				}
+			}
+		}
 	}
 
 	&--blog {
-		padding: 60px 0 179px 0;
+		padding-bottom: 179px;
 		@include g.mq( pc ) {
 			max-width: 1080px;
 			margin: 0 auto;
@@ -293,7 +616,7 @@
 				grid-template-columns: 1fr 1fr 1fr;
 				gap: 30px;
 			}
-			&__item {
+			.p-card {
 				margin-bottom: 22px;
 				@include g.mq( pc ) {
 					max-width: 340px; // (1080px - 30px - 30px) ÷ 3
@@ -305,24 +628,8 @@
 	&--about-us {
 		padding-top: 35px;
 		margin-bottom: 112px;
-		background-color: g.$bgcolor--light-green;
-		border-top: 30px solid g.$bgcolor--light-green2;
-		border-bottom: 30px solid g.$bgcolor--light-green2;
-		// vw指定は縦スクロールバーの幅分はみ出すため、bodyに[overflow-x: hidden;]を指定
-		margin-right: calc(50% - 50vw); // 親要素を無視して画面幅いっぱいに広げる
-		margin-left: calc(50% - 50vw);
-		padding-right: calc(50vw - 50%); // 子要素は親要素の幅を維持
-		padding-left: calc(50vw - 50%);
-		position: relative;
 		@include g.mq( full ) {
 			margin-bottom: 169px;
-			background: none;
-			border-top: none;
-			border-bottom: 1px solid transparent;
-			margin-right: 0;
-			margin-left: 0;
-			padding-right: 0;
-			padding-left: 0;
 		}
 		&__head {
 			margin-bottom: 66px;
@@ -364,9 +671,6 @@
 					margin: 0 auto;
 				}
 			}
-		}
-		&__btn {
-			margin-bottom: 154px;
 		}
 		&__img {
 			width: 158.45px;

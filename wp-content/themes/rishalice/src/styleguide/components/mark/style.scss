@@ -50,5 +50,13 @@
 		@include g.mq( pc ) {
 			
 		}
+	}&--tag-icon {
+		display: inline-block;
+		background-image: url( ../images/blog/tag-icon.png );
+		background-repeat: no-repeat;
+		background-position: top 17px left;
+		@include g.mq( pc ) {
+			
+		}
 	}
 }
