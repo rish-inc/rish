@@ -1,3 +1,5 @@
+			</div>  <!-- ./c-bg--parallax2 -->
+			</div>  <!-- ./c-bg--parallax1 -->
 			<button class="p-go-to-top">
 				<span class="p-go-to-top__text">Go to Top</span>
 				<div class="p-go-to-top__icon"></div>

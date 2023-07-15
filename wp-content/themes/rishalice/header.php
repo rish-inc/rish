@@ -23,6 +23,8 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<div class="p-bg c-bg--stripe">
+			<div class="c-bg--parallax1">
+			<div class="c-bg--parallax2">
 			<header class="l-header p-header">
 				<button class="p-header__button">
 					<span>メニュー展開ボタン</span>

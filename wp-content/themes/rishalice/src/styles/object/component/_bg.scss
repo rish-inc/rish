@@ -46,4 +46,18 @@
 		background-position: center center;
 		background-size: contain;
 	}
+	&--parallax1 {
+		width: 96%;
+		margin: 0 auto;
+		// background-image: url( ../images/background/bg1-left.png ), url( ../images/background/bg1-right.png );
+		background-image: url( ../images/background/bg1.png );
+		background-repeat: repeat-y;
+		// background-position: left 30vh, right top;
+		background-position: top;
+		background-size: contain;
+		position: relative;
+		z-index: -3;
+		// @include g.mq( pc ) {
+		// }
+	}
 }
