@@ -1,0 +1,48 @@
+@use "../../foundation/global" as g;
+
+.p-404 {
+    &__head {
+        margin-bottom: 80px;
+        @include g.mq( pc ) {
+            margin-bottom: 96px;
+        }
+        .c-font--big {
+            color: g.$fontcolor--base;
+            line-height: 1.5;
+        }
+        &.c-decoration--wing-line--under::after {
+            bottom: 0;
+            @include g.mq( pc ) {
+                bottom: -6px;
+            }
+        }
+    }
+
+    &__contents {
+        margin-bottom: 192px;
+        @include g.mq( pc ) {
+            margin-bottom: 292px;
+        }
+        h2 {
+            @include g.font-rem( g.$font-size--Lv9 );
+            line-height: 1.5;
+            margin-bottom: 54px;
+            @include g.mq( pc ) {
+                @include g.font-rem( g.$font-size--Lv15 );
+                margin-bottom: 60px;
+            }
+        }
+        p {
+            @include g.font-rem( g.$font-size--Lv3 );
+            margin-bottom: 16px;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            @include g.mq( pc ) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
