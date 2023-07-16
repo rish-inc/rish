@@ -83,4 +83,20 @@ jQuery( function( $ ) {
             }
         });
     });
+
+    // 背景画像のパララックス
+    $(window).scroll(function () {
+        var scrolled = $(window).scrollTop();
+        var weight1 = 0.5;
+        var weight2 = 0.2;
+        // if (scrolled > 100) {
+        // var bg2_y = parseInt($('.c-bg--parallax2').css('background-position-y'), 10);
+        // console.log('bg2_y:' + bg2_y);
+        // var new_y = parseInt(bg2_y - scrolled * weight2);
+        // console.log('new_y:' + new_y);
+        $('.c-bg--parallax1').css('background-position', 'left top -'+ scrolled * weight1 + 'px');
+        $('.c-bg--parallax2').css('background-position-y', 216 - scrolled * weight2 + 'px');
+        // $('.c-bg--parallax2').css('background-position-y', bg2_y - scrolled * weight2 + 'px');
+        // }
+    });
 } );
