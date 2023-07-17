@@ -188,38 +188,40 @@ h5 {
 }
 
 .c-bg--parallax1 {
-  width: 96%;
+  width: 100%;
   margin: 0 auto;
   background-image: url(../images/background/bg1.png);
   background-repeat: repeat-y;
   background-position: left top;
-  background-size: contain;
+  background-size: 104%;
   position: relative;
   z-index: -3;
   transition-property: background-position;
   transition-duration: 1s;
 }
 
+@media screen and (min-width: 768px) {
+  .c-bg--parallax1 {
+    width: 96%;
+    background-size: contain;
+  }
+}
 .c-bg--parallax2 {
   width: 100%;
   background-image: url(../images/background/bg2.png);
   background-repeat: repeat-y;
   background-position: 52% 50px;
-  background-size: 86%;
+  background-size: 112%;
   position: relative;
   z-index: -2;
   transition-property: background-position;
-  transition-duration: 0.5s;
+  transition-duration: 0.8s;
 }
 
-@media screen and (min-width: 400px) {
-  .c-bg--parallax2 {
-    background-position: 52% 68px;
-  }
-}
 @media screen and (min-width: 768px) {
   .c-bg--parallax2 {
     background-position: 52% 100px;
+    background-size: 86%;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1176,12 +1178,12 @@ h5 {
   }
 }
 .p-404__contents {
-  margin-bottom: 192px;
+  padding-bottom: 192px;
 }
 
 @media screen and (min-width: 768px) {
   .p-404__contents {
-    margin-bottom: 292px;
+    padding-bottom: 292px;
   }
 }
 .p-404__contents h2 {

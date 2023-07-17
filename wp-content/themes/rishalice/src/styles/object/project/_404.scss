@@ -19,9 +19,9 @@
     }
 
     &__contents {
-        margin-bottom: 192px;
+        padding-bottom: 192px;
         @include g.mq( pc ) {
-            margin-bottom: 292px;
+            padding-bottom: 292px;
         }
         h2 {
             @include g.font-rem( g.$font-size--Lv9 );
