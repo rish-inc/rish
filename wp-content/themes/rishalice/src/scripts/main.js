@@ -36,21 +36,44 @@ jQuery( function( $ ) {
         $('#menu-header-menu').removeClass('is-long');
     });
 
-    // PCサイズ(※)以上のとき、100pxスクロールしたらGo to Topボタンを表示
-    // ※スクロールバーの幅を加味して(768-17)pxで指定
+    // Go to Topボタン / 背景パララックス処理
     var pagetop = $('.p-go-to-top');
     pagetop.hide();
     $(window).scroll(function () {
+        var scrolled = $(window).scrollTop();
+        var bg1 = $('.c-bg--parallax1');
+        var bg2 = $('.c-bg--parallax2');
+        var weight1 = 0.5;
+        var weight2 = 0.2;
         var windowSize = $(window).width();
-        if (windowSize >= 751) {
-            if ($(this).scrollTop() > 100) {
+        if (windowSize >= 751) { // スクロールバーの幅を加味して(768-17)pxで指定
+            // PCサイズ以上：Go to Topボタンの処理
+            if (scrolled > 100) { // 100pxスクロールしたらボタン表示
                 pagetop.fadeIn();
             } else {
                 pagetop.fadeOut();
                 $('.p-go-to-top__icon').removeClass('is-out');
             }
+
+            // PCサイズ以上：背景パララックスの処理
+            if (windowSize >= 1183) {
+                var initial = 216;
+            } else if (windowSize >= 1007) {
+                var initial = 140;
+            } else {
+                var initial = 100;
+            }
+            bg1.css('background-position', 'left top -'+ scrolled * weight1 + 'px');
+            bg2.css('background-position-y', initial - scrolled * weight2 + 'px');
+
+        } else {
+            // PCサイズ未満：パララックスのスピードを遅らせる
+            var initial = 50;
+            bg1.css('background-position', 'left top -'+ scrolled * weight1 * 0.5 + 'px');
+            bg2.css('background-position-y', initial - scrolled * weight2 * 0.2 + 'px');
         }
     });
+
     // Go to Topボタンのクリック処理
     pagetop.click(function () {
         $('html, body').animate({
@@ -83,4 +106,25 @@ jQuery( function( $ ) {
             }
         });
     });
+
+    // 背景パララックス（試作）
+    // $(window).scroll(function () {
+    //     var scrolled = $(window).scrollTop();
+    //     var weight1 = 0.5;
+    //     var weight2 = 0.2;
+    //     $('.c-bg--parallax1').css('background-position', 'left top -'+ scrolled * weight1 + 'px');
+    //     $('.c-bg--parallax2').css('background-position-y', 216 - scrolled * weight2 + 'px');
+    // });
+
+    // 背景パララックス（ボツ）
+    // $(window).scroll(function () {
+    //     var scrolled = $(window).scrollTop();
+    //     var weight1 = 0.5;
+    //     var weight2 = 0.2;
+    //     if (scrolled > 100) {
+    //         var bg2_y = parseInt($('.c-bg--parallax2').css('background-position-y'), 10);
+    //         $('.c-bg--parallax1').css('background-position', 'left top -'+ scrolled * weight1 + 'px');
+    //         $('.c-bg--parallax2').css('background-position-y', bg2_y - scrolled * weight2 + 'px');
+    //     }
+    // });
 } );
