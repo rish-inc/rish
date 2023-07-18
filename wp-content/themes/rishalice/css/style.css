@@ -2251,6 +2251,69 @@ body.is-fade-in {
     background-image: url(../images/header-footer/key1.png);
   }
 }
+.p-graphic {
+  padding: 0 0 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-graphic {
+    padding: 0 0 100px;
+  }
+}
+.p-graphic__head {
+  margin-bottom: 69px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-graphic__head {
+    margin-bottom: 80px;
+  }
+}
+.p-graphic__head .c-font--big {
+  color: #1D1D1D;
+  line-height: 1.5;
+}
+
+.p-graphic__head.c-decoration--wing-line--under::after {
+  bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .p-graphic__head.c-decoration--wing-line--under::after {
+    bottom: -6px;
+  }
+}
+.p-graphic__contents {
+  width: auto;
+  margin: -20px auto 0;
+  padding: 0 0 100px;
+}
+
+@media screen and (min-width: 1000px) {
+  .p-graphic__contents {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 641px) {
+  .p-graphic__contents .c-img-description__title {
+    font-size: 0.75rem;
+  }
+}
+.p-graphic__contents .c-img-description__link {
+  font-size: 0.625rem;
+}
+
+.p-graphic .p-form {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-graphic .p-form {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
 .p-header--achievement, .p-header--print {
   height: auto;
   position: relative;
