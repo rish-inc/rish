@@ -106,25 +106,4 @@ jQuery( function( $ ) {
             }
         });
     });
-
-    // 背景パララックス（試作）
-    // $(window).scroll(function () {
-    //     var scrolled = $(window).scrollTop();
-    //     var weight1 = 0.5;
-    //     var weight2 = 0.2;
-    //     $('.c-bg--parallax1').css('background-position', 'left top -'+ scrolled * weight1 + 'px');
-    //     $('.c-bg--parallax2').css('background-position-y', 216 - scrolled * weight2 + 'px');
-    // });
-
-    // 背景パララックス（ボツ）
-    // $(window).scroll(function () {
-    //     var scrolled = $(window).scrollTop();
-    //     var weight1 = 0.5;
-    //     var weight2 = 0.2;
-    //     if (scrolled > 100) {
-    //         var bg2_y = parseInt($('.c-bg--parallax2').css('background-position-y'), 10);
-    //         $('.c-bg--parallax1').css('background-position', 'left top -'+ scrolled * weight1 + 'px');
-    //         $('.c-bg--parallax2').css('background-position-y', bg2_y - scrolled * weight2 + 'px');
-    //     }
-    // });
 } );

@@ -112,14 +112,14 @@
 							<!-- </a> -->
 						</li>
 						<li class="p-top-article--service__list__item c-frame-circle u-mt--n-20 u-mt--pc--n-60">
-							<!-- <a href="#" class=""> -->
+							<a href="<?php echo esc_url( home_url( 'graphic' ) ); ?>" class="">
 							<div class="p-top-article--service__list__item__wrap">
 								<div class="p-top-article--service__list__item__inner u-mw--55 u-mw--pc--95">
 									<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_graphic-design.png' ) ); ?>" alt="グラフィックデザイン">
 								</div>
 								<p>グラフィック<br class="u-br--sp">デザイン</p>
 							</div>
-							<!-- </a> -->
+							</a>
 						</li>
 						<li class="p-top-article--service__list__item c-frame-circle u-mt--20 u-mt--pc--n-106">
 							<!-- <a href="#" class=""> -->

@@ -1,0 +1,50 @@
+@use "../../foundation/global" as g;
+
+.p-graphic {
+	padding: 0 0 50px;
+	@include g.mq( pc ) {
+		padding: 0 0 100px;
+	}
+    
+    &__head {
+        margin-bottom: 69px;
+        @include g.mq( pc ) {
+            margin-bottom: 80px;
+        }
+        .c-font--big {
+            color: g.$fontcolor--base;
+            line-height: 1.5;
+        }
+        &.c-decoration--wing-line--under::after {
+            bottom: 0;
+            @include g.mq( pc ) {
+                bottom: -6px;
+            }
+        }
+    }
+
+	&__contents {
+		width: auto;
+		margin: -20px auto 0;
+		padding: 0 0 100px;
+		@include g.mq( wide ) {
+			max-width: 1280px;
+		}
+		.c-img-description__title {
+			@media (min-width: 641px) {
+				@include g.font-rem( g.$font-size--Lv1 );
+			}
+		}
+		.c-img-description__link {
+			@include g.font-rem( 10 );
+		}
+	}
+	.p-form {
+		padding-right: 20px;
+		padding-left: 20px;
+		@include g.mq( pc ) {
+			padding-right: 0;
+			padding-left: 0;
+		}
+	}
+}
