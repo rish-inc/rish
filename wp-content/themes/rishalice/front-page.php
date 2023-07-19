@@ -102,14 +102,14 @@
 							</a>
 						</li>
 						<li class="p-top-article--service__list__item c-frame-circle u-mt--47">
-							<!-- <a href="#" class=""> -->
+							<a href="<?php echo esc_url( home_url( 'photos' ) ); ?>" class="">
 							<div class="p-top-article--service__list__item__wrap">
 								<div class="p-top-article--service__list__item__inner u-mw--45 u-mw--pc--79">
 									<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_photo.png' ) ); ?>" alt="写真撮影">
 								</div>
 								<p>写真撮影</p>
 							</div>
-							<!-- </a> -->
+							</a>
 						</li>
 						<li class="p-top-article--service__list__item c-frame-circle u-mt--n-20 u-mt--pc--n-60">
 							<a href="<?php echo esc_url( home_url( 'graphic' ) ); ?>" class="">
