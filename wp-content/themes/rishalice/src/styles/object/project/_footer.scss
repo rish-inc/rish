@@ -121,7 +121,8 @@
                 line-height: 2;
                 color: g.$fontcolor--white;
                 @include g.mq( pc ) {
-                    @include g.font-rem( g.$font-size--Lv5 );
+                    @include g.font-rem( g.$font-size--Lv2 );
+					line-height: 3;
                 }
             }
         }

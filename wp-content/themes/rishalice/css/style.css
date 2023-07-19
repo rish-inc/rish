@@ -1995,7 +1995,8 @@ body.is-fade-in {
 
 @media screen and (min-width: 768px) {
   .p-footer__logoCopy__copy small {
-    font-size: 1.25rem;
+    font-size: 0.875rem;
+    line-height: 3;
   }
 }
 .p-footer__img--rabbit {
