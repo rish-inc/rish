@@ -1,9 +1,22 @@
+/*
+ * Lottie
+ */
+// (function () {
+// 	const anim = lottie.loadAnimation({
+// 		container: document.getElementById( 'js-wave' ),
+// 		renderer: 'svg',
+// 		loop: true,
+// 		autoplay: true,
+// 		path: './footer_wave.json'
+// 	});
+// }());
+
 jQuery( function( $ ) {
-    const pageload = require( './pageload.js' );
-    const effect = require( './effect.js' );
-    const slide = require( './infiniteslidev2.js' );
+	const pageload    = require( './pageload.js' );
+    const effect      = require( './effect.js' );
+    const slide       = require( './infiniteslidev2.js' );
     const modaalminjs = require( './modaal/js/modaal.min.js' );
-    const config = require( './config.js' );
+	const config      = require( './config.js' );
 
 	// ハンバーガーボタンのクリック処理
     $('.p-header__button').click(function () {
