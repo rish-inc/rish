@@ -25,7 +25,7 @@
 						<img src="<?php echo esc_url( get_theme_file_uri( '/images/header-footer/alice.png' ) ); ?>" alt="アリス" class="p-footer__img--alice">
 					</div>
 				</nav>
-				<div id="js-wave" class="p-footer__bg bodymovin" data-bm-path="<?php echo esc_url( get_theme_file_uri( '/js/footer_wave.json' ) ); ?>" data-bm-renderer="svg"></div>
+				<div id="js-wave" class="p-footer__bg bodymovin" data-bm-path="<?php echo esc_url( get_theme_file_uri( '/js/footer_wave.json' ) ); ?>" data-bm-renderer="svg" aria-hidden="true"></div>
 			</footer>
 			<?php wp_footer(); ?>
 		</div>
