@@ -106,6 +106,22 @@ h5 {
   font-weight: normal;
 }
 
+/* Category 07 is for any utility classes that are not assigned to a specific component. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  word-break: normal;
+}
+
 .c-bg-arrow--body {
   background-image: url(../images/site-production/flow-arrow-body_sp.png);
   background-repeat: repeat-y;
@@ -188,16 +204,19 @@ h5 {
 }
 
 .c-bg--parallax1 {
-  width: 100%;
   margin: 0 auto;
   background-image: url(../images/background/bg1.png);
   background-repeat: repeat-y;
   background-position: left top;
   background-size: 104%;
-  position: relative;
-  z-index: -3;
   transition-property: background-position;
   transition-duration: 1s;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: -1;
 }
 
 @media screen and (min-width: 768px) {
@@ -207,15 +226,18 @@ h5 {
   }
 }
 .c-bg--parallax2 {
-  width: 100%;
   background-image: url(../images/background/bg2.png);
   background-repeat: repeat-y;
   background-position: 52% 50px;
   background-size: 112%;
-  position: relative;
-  z-index: -2;
   transition-property: background-position;
   transition-duration: 0.8s;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: -1;
 }
 
 @media screen and (min-width: 768px) {
@@ -1418,11 +1440,16 @@ h5 {
 }
 
 .p-bg {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: -1;
+  display: block;
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
-  position: relative;
-  z-index: 0;
 }
 
 .p-blog-archive__head {
