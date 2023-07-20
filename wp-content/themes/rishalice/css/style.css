@@ -1846,6 +1846,7 @@ body.is-fade-in {
   background-repeat: repeat-y;
   background-position: center;
   position: relative;
+  overflow-x: hidden;
 }
 
 .p-footer .c-frame--ornament--type-b::before, .p-footer .c-frame--ornament--type-b::after {
