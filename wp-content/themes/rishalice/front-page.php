@@ -6,6 +6,10 @@
 		</div>
 		<div class="c-inner">
 			<article class="c-content">
+				<div class="p-top-article--works__head c-decoration--wing-line--under">
+					<span class="c-decoration--english">Concept</span>
+					<h2 class="c-font--big">弊社のコンセプト</h2>
+				</div>
 				<section class="p-top-article--about">
 					<h2 class="p-top-article--about__head">
 						<span class="p-top-article--about__head__text c-font--regular">
@@ -68,7 +72,7 @@
 								get_template_part( 'components/template/top-works-webdesign', '', $args );
 							?>
 							<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/tableware.png' ) ); ?>" alt="テーブルウェア" class="p-top-article--works__img">
-							<div class="p-top-article--works__bg"></div>
+							<div class="p-top-article--works__bg" aria-hidden="true"></div>
 						</section>
 					</div>
 					<div class="p-top-article--works__printgraphics">
@@ -85,7 +89,7 @@
 
 				<a href="<?php echo esc_url( home_url( 'site-production' ) ); ?>" class="p-btn c-button--noise-line">サイト制作について</a>
 
-				<article class="p-top-article--service c-bg--diamond">
+				<section class="p-top-article--service c-bg--diamond">
 					<div class="p-top-article--service__head c-decoration--wing-line--under">
 						<span class="c-decoration--english">Service</span>
 						<h2 class="c-font--big">サービス</h2>
@@ -172,10 +176,10 @@
 							<!-- </a> -->
 						</li>
 					</ul>
-					<div class="p-top-article--service__bg"></div>
-				</article>
+					<div class="p-top-article--service__bg" aria-hidden="true"></div>
+				</section>
 
-				<article class="p-top-article--blog">
+				<section class="p-top-article--blog">
 					<div class="p-top-article--blog__head c-decoration--wing-line--under">
 						<span class="c-decoration--english">Blog</span>
 						<h2 class="c-font--big">ブログ</h2>
@@ -239,9 +243,9 @@
 							<?php wp_reset_postdata(); ?> <!-- 投稿データをリセットする -->
 						<?php endif; ?>
 					</ul>
-				</article>
+				</section>
 
-				<article class="p-top-article--about-us c-bg--diamond">
+				<section class="p-top-article--about-us c-bg--diamond">
 					<div class="p-top-article--about-us__head c-decoration--wing-line--under">
 						<span class="c-decoration--english">About us</span>
 						<h2 class="c-font--big">会社情報</h2>
@@ -257,9 +261,9 @@
 						</div>
 					</div>
 					<a href="<?php echo esc_url( home_url( 'about' ) ); ?>" class="p-btn c-button--noise-line">会社情報はこちら</a>
-					<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/Tea-set.png' ) ); ?>" alt="ティーセット" class="p-top-article--about-us__img">
+					<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/Tea-set.png' ) ); ?>" alt="ティーセット" class="p-top-article--about-us__img" aria-hidden="true">
 					<div class="p-top-article--about-us__bg"></div>
-				</article>
+				</section>
 
 				<?php get_template_part( 'components/template/contact' ); ?>
 			</article>

@@ -21,40 +21,38 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<?php wp_body_open(); ?>
-		<div class="p-bg c-bg--stripe">
-			<div class="c-bg--parallax1">
-				<div class="c-bg--parallax2">
-					<header class="l-header p-header">
-						<button class="p-header__button">
-							<span>メニュー展開ボタン</span>
-						</button>
-						<nav class="p-header__menu">
-							<?php
-								wp_nav_menu( array (
-									'theme_location' => 'header-menu',
-									'container'		 => false
-								) );
-							?>
-							<?php
-								wp_nav_menu( array (
-									'theme_location' => 'header-left-menu',
-									'container'		 => false
-								) );
-							?>
-							<h1 class="p-header__menu__logo">
-								<a href="<?php echo esc_url(home_url('/')); ?>">
-									<?php if ( is_home() || is_front_page() ) : //フロントページのみspanあり ?>
-										<span><img src="<?php echo esc_url( get_theme_file_uri( '/images/header-footer/logo_header.svg' ) ); ?>" alt="ロゴ画像"></span>
-									<?php else : ?>
-										<img src="<?php echo esc_url( get_theme_file_uri( '/images/header-footer/logo_header.svg' ) ); ?>" alt="ロゴ画像">
-									<?php endif; ?>
-								</a>
-							</h1>
-							<?php
-								wp_nav_menu( array (
-									'theme_location' => 'header-right-menu',
-									'container'		 => false
-								) );
-							?>
-						</nav>
-					</header>
+		<h1 class="screen-reader-text">株式会社Rish</h1>
+		<header class="l-header p-header">
+			<button class="p-header__button">
+				<span>メニュー展開ボタン</span>
+			</button>
+			<nav class="p-header__menu">
+				<?php
+					wp_nav_menu( array (
+						'theme_location' => 'header-menu',
+						'container'		 => false
+					) );
+				?>
+				<?php
+					wp_nav_menu( array (
+						'theme_location' => 'header-left-menu',
+						'container'		 => false
+					) );
+				?>
+				<h1 class="p-header__menu__logo">
+					<a href="<?php echo esc_url(home_url('/')); ?>">
+						<?php if ( is_home() || is_front_page() ) : //フロントページのみspanあり ?>
+							<span><img src="<?php echo esc_url( get_theme_file_uri( '/images/header-footer/logo_header.svg' ) ); ?>" alt="Rish Inc.ロゴ画像"></span><span class="screen-reader-text">Rish Inc</span>
+						<?php else : ?>
+							<img src="<?php echo esc_url( get_theme_file_uri( '/images/header-footer/logo_header.svg' ) ); ?>" alt="Rish Inc.ロゴ画像"><span class="screen-reader-text">Rish Inc</span>
+						<?php endif; ?>
+					</a>
+				</h1>
+				<?php
+					wp_nav_menu( array (
+						'theme_location' => 'header-right-menu',
+						'container'		 => false
+					) );
+				?>
+			</nav>
+		</header>

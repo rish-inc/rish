@@ -2,12 +2,19 @@
 @use "../../foundation/variables";
 
 .p-bg {
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: -1;
+	display: block;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: repeat;
-	position: relative;
+	// position: relative;
 	// z-index: -4;  //coni
-	z-index: 0;  //coni
+	// z-index: 0;  //coni
 
 	// ↓↓ パララックス作成前のコード
 	// &::before {
