@@ -2,11 +2,9 @@
 <html <?php language_attributes(); ?>>
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title><?php bloginfo( 'name' ); ?></title>
 		<?php wp_head(); ?>
-		<!-- 管理画面にログイン中はアドミンバーを上に固定し、コンテンツを下げる -->
 		<?php if( is_user_logged_in() ): ?>
 			<style type="text/css">
 				.p-header__button {
@@ -22,6 +20,7 @@
 		<?php endif; ?>
 	</head>
 	<body <?php body_class(); ?>>
+		<?php wp_body_open(); ?>
 		<div class="p-bg c-bg--stripe">
 			<div class="c-bg--parallax1">
 				<div class="c-bg--parallax2">
@@ -59,4 +58,3 @@
 							?>
 						</nav>
 					</header>
-					<?php wp_body_open(); ?>

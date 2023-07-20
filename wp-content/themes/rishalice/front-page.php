@@ -2,11 +2,11 @@
 	<main class="l-main p-top-article">
 		<div class="p-top-article--mv">
 			<p class="p-top-article--mv__text">「何をすればいいのか…」を<br class="u-br--sp">成功に導くデザインオフィス</p>
-			<span></span>
+			<span class="p-top-article--mv__border" aria-hidden="true"></span>
 		</div>
-		<article class="c-inner">
-			<div class="c-content">
-				<article class="p-top-article--about">
+		<div class="c-inner">
+			<article class="c-content">
+				<section class="p-top-article--about">
 					<h2 class="p-top-article--about__head">
 						<span class="p-top-article--about__head__text c-font--regular">
 							大阪市中央区で個人・中小企業様を中心に</span><br>
@@ -16,9 +16,9 @@
 						<p class="p-top-article--about__explanation__words u-mb--30">Web サイト（一般的に言われるホームページ）を立ち上げたがうまく集客できない・売上が伸びないといった悩みは<br>見に来る人にとって必要なコンテンツが必要な場所に用意されていないことが原因です。</p>
 						<p class="p-top-article--about__explanation__words">トップページにこだわることも大切ですがユーザーはサイトにアクセスする時必ずトップページを経由するわけではありません。<br>「どこに何を用意するべきか」<br>それを共に考えながら Web サイトを制作・運用サポートを行うのが弊社の得意とする分野です。</p>
 					</div>
-				</article>
-				<article class="p-top-article--advantage">
-					<section class="p-top-article--advantage__parallel">
+				</section>
+				<section class="p-top-article--advantage">
+					<div class="p-top-article--advantage__parallel">
 						<figure class="c-drop-shadow-bg--right">
 							<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/solvable--alice-rabbit.jpg' ) ); ?>" alt="アリスとウサギ">
 						</figure>
@@ -40,8 +40,8 @@
 								<li class="c-dot--small c-font--middle">特定のキーワードを検索上位に表示したい</li>
 							</ul>
 						</div>
-					</section>
-					<section class="p-top-article--advantage__forte">
+					</div>
+					<div class="p-top-article--advantage__forte">
 						<h3 class="p-top-article--advantage__forte__head">Rish の強み</h3>
 						<p class="c-font--general">弊社は代表がこれまで営業を行わずに個人事業主として Web サイト制作を生業にしてきました。</p>
 						<p class="c-font--general">これが成り立っていたのは個人で運営していた[ブログ](https://wp.yat-net.com/)や<br>[ツイッター](https://twitter.com/yat8823jp)などの SNS を活用した Web マーケティングにあります。</p>
@@ -51,11 +51,11 @@
 						<p class="c-font--general">しかし Web のことはまだまだ専門的な知識が必要なことが多く、日常の業務があるなかで Web サイト運用も行うのは非常に難しく納品した後もしばらく放置してしまうことも少なくありません。</p>
 						<p class="c-font--general">Web 担当者を雇用するには人件費をまだかけられない方もいらっしゃいます。</p>
 						<p class="c-font--general">弊社ではその運用をアウトソーシングという形でお受けし、事業者様がなるべく事業に専念してもらえるのが強みです。</p>
-					</section>
+					</div>
 					<a href="<?php echo esc_url( home_url( 'contact' ) ); ?>" class="p-btn c-button--noise-line">お問い合わせはこちらから</a>
-				</article>
+				</section>
 
-				<article class="p-top-article--works">
+				<section class="p-top-article--works">
 					<div class="p-top-article--works__bg-wrap c-bg--diamond">
 						<div class="p-top-article--works__head c-decoration--wing-line--under">
 							<span class="c-decoration--english">Works</span>
@@ -71,15 +71,15 @@
 							<div class="p-top-article--works__bg"></div>
 						</section>
 					</div>
-					<section class="p-top-article--works__printgraphics">
+					<div class="p-top-article--works__printgraphics">
 						<h3 class="p-top-article--works__printgraphics__head">Print&Graphic</h3>
 						<?php
 							$args = [ 'template_name' => 'print' ];
 							get_template_part( 'components/template/top-works-print', '', $args );
 						?>
-					</section>
+					</div>
 					<a href="<?php echo esc_url( home_url( 'works' ) ); ?>" class="p-btn c-button--noise-line">制作実績一覧へ</a>
-				</article>
+				</section>
 
 				<?php get_template_part( 'components/template/price' ); ?>
 
@@ -262,7 +262,7 @@
 				</article>
 
 				<?php get_template_part( 'components/template/contact' ); ?>
-			</div>
-		</article>
+			</article>
+		</div>
 	</main>
 <?php get_footer(); ?>
