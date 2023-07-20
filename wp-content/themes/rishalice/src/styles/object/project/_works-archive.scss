@@ -385,11 +385,6 @@
 				display: flex;
 				flex-wrap: wrap;
 			}
-			@include g.mq( pc ) {
-				// 親要素をはみ出して画面幅いっぱいに広げる
-				margin: 40px calc(50% - 50vw) 0;
-				width: 100vw;
-			}
 			li {
 				margin-bottom: 20px;
 				@media (min-width: 641px) {
