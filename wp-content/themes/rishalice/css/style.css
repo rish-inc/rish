@@ -265,7 +265,7 @@ h5 {
 
 .c-button--noise-line:hover {
   box-shadow: none;
-  transform: translate(6px, 5px);
+  transform: translate(0, 5px);
 }
 
 .c-color {
