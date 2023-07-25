@@ -5489,7 +5489,8 @@ body.is-fade-in {
     margin-bottom: 12px;
   }
 }
-.p-top-article--service__list__item a {
+.p-top-article--service__list__item a,
+.p-top-article--service__list__item span {
   position: absolute;
   width: 100%;
   height: 100%;
