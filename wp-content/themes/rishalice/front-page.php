@@ -126,24 +126,24 @@
 							</a>
 						</li>
 						<li class="p-top-article--service__list__item u-mt--20 u-mt--pc--n-106">
-							<a href="<?php echo esc_url( home_url( '#' ) ); ?>" class="c-frame-circle">
+							<span class="c-frame-circle">
 								<div class="p-top-article--service__list__item__wrap">
 									<div class="p-top-article--service__list__item__inner u-mw--55 u-mw--pc--93">
 										<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_support.png' ) ); ?>" alt="WordPress運用サポート">
 									</div>
 									<p>WordPress<br>運用サポート</p>
 								</div>
-							</a>
+							</span>
 						</li>
 						<li class="p-top-article--service__list__item u-mt--n-20">
-							<a href="<?php echo esc_url( home_url( '#' ) ); ?>" class="c-frame-circle">
+							<span class="c-frame-circle">
 								<div class="p-top-article--service__list__item__wrap">
 									<div class="p-top-article--service__list__item__inner u-mw--40 u-mw--pc--66">
 										<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_SEO.png' ) ); ?>" alt="SEO">
 									</div>
 									<p>SEO</p>
 								</div>
-							</a>
+							</span>
 						</li>
 						<li class="p-top-article--service__list__item u-mt--20 u-mt--pc--n-106">
 							<a href="<?php echo esc_url( home_url( 'marketing' ) ); ?>" class="c-frame-circle">
@@ -156,24 +156,24 @@
 							</a>
 						</li>
 						<li class="p-top-article--service__list__item u-mt--n-20 u-mt--pc--n-100 u-mr--pc--47">
-							<a href="<?php echo esc_url( home_url( '#' ) ); ?>" class="c-frame-circle">
+							<span class="c-frame-circle">
 								<div class="p-top-article--service__list__item__wrap">
 									<div class="p-top-article--service__list__item__inner u-mw--32 u-mw--pc--56">
 										<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_illustration.png' ) ); ?>" alt="イラスト制作">
 									</div>
 									<p>イラスト制作</p>
 								</div>
-							</a>
+							</span>
 						</li>
 						<li class="p-top-article--service__list__item u-mt--20 u-mt--pc--n-100 u-ml--pc--47">
-							<a href="<?php echo esc_url( home_url( '#' ) ); ?>" class="c-frame-circle">
+							<span class="c-frame-circle">
 								<div class="p-top-article--service__list__item__wrap">
 									<div class="p-top-article--service__list__item__inner u-mw--30 u-mw--pc--50">
 										<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_comic.png' ) ); ?>" alt="漫画コンテンツ制作">
 									</div>
 									<p>漫画コンテンツ<br class="u-br--sp">制作</p>
 								</div>
-							</a>
+							</span>
 						</li>
 					</ul>
 					<div class="p-top-article--service__bg" aria-hidden="true"></div>
