@@ -501,6 +501,17 @@
 				}
 			}
 			&__item {
+				width: 167px;
+				height: 182px;
+				@include g.mq( pc ) {
+					width: 291px;
+					height: 318px;
+				}
+				&:hover {
+					.c-frame-circle {
+						transform: rotateY(360deg);
+					}
+				}
 				&:nth-child(5) {
 					@media (min-width: 558px) and (max-width: 767px) {
 						margin-top: 47px;

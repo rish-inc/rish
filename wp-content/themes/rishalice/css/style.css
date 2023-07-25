@@ -619,17 +619,13 @@ h5 {
   background-image: url(../images/top/round-shadow_sp.png);
   background-repeat: no-repeat;
   position: relative;
-  width: 167px;
-  height: 182px;
+  transition: 0.5s;
+  transform: rotateY(0deg);
 }
 
 @media screen and (min-width: 768px) {
   .c-frame-circle {
     background-image: url(../images/top/round-shadow_pc.png);
-    right: 0;
-    bottom: -14px;
-    width: 291px;
-    height: 318px;
   }
 }
 .c-frame-circle::after {
@@ -642,6 +638,7 @@ h5 {
   bottom: -18px;
   background: #A39B7C;
   filter: blur(30px);
+  pointer-events: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -5322,6 +5319,21 @@ body.is-fade-in {
     margin: 0 10px;
   }
 }
+.p-top-article--service__list__item {
+  width: 167px;
+  height: 182px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-top-article--service__list__item {
+    width: 291px;
+    height: 318px;
+  }
+}
+.p-top-article--service__list__item:hover .c-frame-circle {
+  transform: rotateY(360deg);
+}
+
 @media (min-width: 558px) and (max-width: 767px) {
   .p-top-article--service__list__item:nth-child(5) {
     margin-top: 47px;
