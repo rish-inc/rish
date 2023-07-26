@@ -508,7 +508,7 @@
 					height: 318px;
 				}
 				&:hover {
-					.c-frame-circle {
+					.c-frame-circle:not(span) {
 						transform: rotateY(360deg);
 					}
 				}

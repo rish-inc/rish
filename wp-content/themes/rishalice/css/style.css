@@ -5330,7 +5330,7 @@ body.is-fade-in {
     height: 318px;
   }
 }
-.p-top-article--service__list__item:hover .c-frame-circle {
+.p-top-article--service__list__item:hover .c-frame-circle:not(span) {
   transform: rotateY(360deg);
 }
 
