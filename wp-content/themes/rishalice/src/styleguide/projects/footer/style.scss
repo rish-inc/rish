@@ -17,8 +17,8 @@
     }
     &__menu {
         width: 100%;
-        position: relative;
         .menu {
+			position: relative;
             @include g.font-rem( g.$font-size--Lv3 );
             margin: 78px -24px 298px;
             @include g.mq( wide ) {
