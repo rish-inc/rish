@@ -2468,7 +2468,7 @@ body.is-fade-in {
   right: 20px;
   width: 46px;
   height: 20px;
-  z-index: 3;
+  z-index: 4;
   background-color: transparent;
   border: none;
   cursor: pointer;
