@@ -126,24 +126,24 @@
 							</a>
 						</li>
 						<li class="p-top-article--service__list__item u-mt--20 u-mt--pc--n-106">
-							<span class="c-frame-circle">
+							<a href="<?php echo esc_url( home_url( 'wordpress' ) ); ?>" class="c-frame-circle">
 								<div class="p-top-article--service__list__item__wrap">
 									<div class="p-top-article--service__list__item__inner u-mw--55 u-mw--pc--93">
 										<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_support.png' ) ); ?>" alt="WordPress運用サポート">
 									</div>
 									<p>WordPress<br>運用サポート</p>
 								</div>
-							</span>
+							</a>
 						</li>
 						<li class="p-top-article--service__list__item u-mt--n-20">
-							<span class="c-frame-circle">
+							<a href="<?php echo esc_url( home_url( 'seo' ) ); ?>" class="c-frame-circle">
 								<div class="p-top-article--service__list__item__wrap">
 									<div class="p-top-article--service__list__item__inner u-mw--40 u-mw--pc--66">
 										<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/icon_SEO.png' ) ); ?>" alt="SEO">
 									</div>
 									<p>SEO</p>
 								</div>
-							</span>
+							</a>
 						</li>
 						<li class="p-top-article--service__list__item u-mt--20 u-mt--pc--n-106">
 							<a href="<?php echo esc_url( home_url( 'marketing' ) ); ?>" class="c-frame-circle">

@@ -3221,6 +3221,296 @@ body.is-fade-in {
     height: 70px;
   }
 }
+.p-page__head {
+  margin-bottom: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-page__head {
+    margin-bottom: 108px;
+  }
+}
+.p-page__head .c-font--big {
+  color: #1D1D1D;
+  line-height: 1.5;
+}
+
+.p-page__head.c-decoration--wing-line--under::after {
+  bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .p-page__head.c-decoration--wing-line--under::after {
+    bottom: -6px;
+  }
+}
+.p-page__contents a {
+  color: #1D1D1D;
+  text-decoration: underline;
+}
+
+.p-page__contents a:hover {
+  opacity: 0.7;
+}
+
+.p-page__contents__thumbnail__img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 47px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-page__contents__thumbnail__img {
+    margin-bottom: 40px;
+  }
+}
+.p-page__contents__content {
+  margin-bottom: 180px;
+  font-size: 1rem;
+  line-height: 2.5;
+}
+
+@media screen and (min-width: 768px) {
+  .p-page__contents__content {
+    margin-bottom: 338px;
+  }
+}
+.p-page__contents__content h1 {
+  font-size: 2.25rem;
+  line-height: 1.5;
+  background-color: #E1F5F2;
+  padding: 24px 22px 16px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-page__contents__content h1 {
+    padding: 21px 29px 12px;
+    margin-bottom: 40px;
+  }
+}
+.p-page__contents__content h2 {
+  font-size: 2rem;
+  line-height: 1.5;
+  background-color: #E1F5F2;
+  border-left: 12px solid #4C9D91;
+  padding: 20px 15px 15px 20px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-page__contents__content h2 {
+    padding: 22px 14px 16px 28px;
+    margin-bottom: 40px;
+  }
+}
+.p-page__contents__content h3 {
+  font-size: 1.75rem;
+  line-height: 1.6;
+  background-color: #E1F5F2;
+  outline: 2px dotted #4C9D91;
+  outline-offset: -9px;
+  padding: 19px 14px 18px 12px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-page__contents__content h3 {
+    padding: 14px 14px 7px 12px;
+    margin-bottom: 40px;
+  }
+}
+.p-page__contents__content h4 {
+  font-size: 1.625rem;
+  line-height: 1.8;
+  border-top: 2px solid #4C9D91;
+  border-bottom: 2px solid #4C9D91;
+  padding: 10px 15px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-page__contents__content h4 {
+    padding: 12px 14px 4px 12px;
+    margin-bottom: 40px;
+  }
+}
+.p-page__contents__content h5 {
+  font-size: 1.375rem;
+  line-height: 1.8;
+  border-bottom: 3px solid #9EC5BF;
+  position: relative;
+  width: 100%;
+  padding-bottom: 2px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-page__contents__content h5 {
+    padding-bottom: 0;
+    margin-bottom: 40px;
+  }
+}
+.p-page__contents__content h5::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 24%;
+  height: inherit;
+  border-bottom: 3px solid #4C9D91;
+}
+
+@media screen and (min-width: 768px) {
+  .p-page__contents__content h5::before {
+    width: 7.5%;
+  }
+}
+.p-page__contents__content h6 {
+  font-size: 1.125rem;
+  line-height: 2.2;
+  font-weight: normal;
+  border-bottom: 1px solid #4C9D91;
+  position: relative;
+  padding: 15px 15px 2px;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-page__contents__content h6 {
+    margin-bottom: 40px;
+  }
+}
+.p-page__contents__content h6::before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #4C9D91;
+  width: 100%;
+  left: 0;
+  bottom: -4px;
+}
+
+.p-page__contents__content p {
+  margin-bottom: 42px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-page__contents__content p {
+    margin-bottom: 26px;
+  }
+}
+.p-page__contents__content img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-page__contents__content img {
+    margin-bottom: 40px;
+  }
+}
+.p-page__contents__content ol, .p-page__contents__content ul {
+  margin: 0 0 50px;
+  padding-left: 0;
+}
+
+.p-page__contents__content ol ol, .p-page__contents__content ol ul, .p-page__contents__content ul ol, .p-page__contents__content ul ul {
+  padding-left: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .p-page__contents__content ol, .p-page__contents__content ul {
+    margin-bottom: 26px;
+  }
+}
+.p-page__contents__content ol li {
+  list-style: decimal inside;
+}
+
+.p-page__contents__content ul li {
+  list-style: disc inside;
+}
+
+.p-page__contents__content blockquote {
+  background-color: #C5DEDA;
+  padding: 114px 22px 30px 26px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-page__contents__content blockquote {
+    padding: 114px 60px 48px;
+    margin-bottom: 40px;
+  }
+}
+.p-page__contents__content blockquote p {
+  margin-bottom: 32px;
+}
+
+.p-page__contents__content blockquote p::before {
+  font-size: 13.8125rem;
+  line-height: 1;
+  content: "“";
+  position: absolute;
+  width: 55px;
+  height: 44px;
+  left: 0;
+  top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-page__contents__content blockquote p {
+    margin-bottom: 24px;
+  }
+}
+.p-page__contents__content blockquote cite {
+  display: block;
+  width: 82%;
+  margin: 0 0 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .p-page__contents__content blockquote cite {
+    width: 100%;
+    text-align: right;
+    padding-right: 10px;
+  }
+}
+.p-page__contents__content table {
+  margin-bottom: 50px;
+  background-color: #FFF;
+}
+
+@media screen and (min-width: 768px) {
+  .p-page__contents__content table {
+    margin-bottom: 40px;
+  }
+}
+.p-page__contents__content table td {
+  border: 1px solid #1B1B1B;
+  height: 50px;
+}
+
+.p-page__contents__content table td:nth-child(1) {
+  width: 26%;
+}
+
+.p-page__contents__content .wp-block-buttons {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .p-page__contents__content .wp-block-buttons {
+    margin-bottom: 40px;
+  }
+}
+.p-page__contents__content .wp-block-button__link {
+  background-color: #5EA79C;
+  font-size: 1.125rem;
+}
+
 .p-pagination {
   font-size: 1rem;
   line-height: 2;
