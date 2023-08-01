@@ -54,9 +54,9 @@
 					<?php endwhile; ?>
 				</ul>
 			<?php else : ?>
-				<div class="p-form__sentence__text">
-					<p>投稿はまだありません</p>
-				</div>
+					<div class="p-form__sentence__text">
+						<p>投稿はまだありません</p>
+					</div>
 			<?php endif; ?>
 			<div class="p-blog-archive__pagination p-pagination">
                 <?php if ( function_exists( 'wp_pagenavi' ) ) { wp_pagenavi(); } ?>
