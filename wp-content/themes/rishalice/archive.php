@@ -5,10 +5,9 @@
 				<span class="c-decoration--english">Blog</span>
 				<h1 class="c-font--big">ブログ</h1>
 			</div>
-			<ul class="p-blog-archive__list p-card--blog">
-                <?php
-                    if( have_posts() ) :
-                        while( have_posts() ) : the_post(); ?>
+			<?php if( have_posts() ) : ?>
+				<ul class="p-blog-archive__list p-card--blog">
+                    <?php while( have_posts() ) : the_post(); ?>
                         <li class="p-blog-archive__list__item p-card--blog__list">
                             <a class="p-card--blog__link" href="<?php the_permalink(); ?>">
                                 <figure class="p-card--blog__thumbnail">
@@ -44,7 +43,7 @@
                                         echo '<i class="c-mark--tag-icon"></i>';
                                         echo '<ul class="p-card--blog__tags">';
                                         foreach ( $posttags as $tag ) {
-                                            echo '<li><a href="' . get_tag_link( $tag->term_id ) . '">' . $tag->name . '</a></li>'; 
+                                            echo '<li><a href="' . get_tag_link( $tag->term_id ) . '">' . $tag->name . '</a></li>';
                                         }
                                         echo '</ul>';
                                         echo '</div>';
@@ -52,9 +51,13 @@
                                 ?>
                             </figcaption>
                         </li>
-                    <?php endwhile; ?>
-                <?php endif; ?>
-			</ul>
+					<?php endwhile; ?>
+				</ul>
+			<?php else : ?>
+				<div class="p-form__sentence__text">
+					<p>投稿はまだありません</p>
+				</div>
+			<?php endif; ?>
 			<div class="p-blog-archive__pagination p-pagination">
                 <?php if ( function_exists( 'wp_pagenavi' ) ) { wp_pagenavi(); } ?>
             </div>
