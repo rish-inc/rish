@@ -168,6 +168,9 @@
                     list-style: disc inside;
                 }
             }
+			li {
+				margin-left: 20px;
+			}
             blockquote {
                 background-color: g.$bgcolor--light-green2;
                 padding: 114px 22px 30px 26px;
