@@ -8,7 +8,7 @@
 			<?php if( have_posts() ) : ?>
 				<ul class="p-blog-archive__list p-card--blog">
 					<?php while( have_posts() ) : the_post(); ?>
-                        <li class="p-blog-archive__list__item p-card--blog__list">
+						<li class="p-blog-archive__list__item p-card--blog__list">
                             <a class="p-card--blog__link" href="<?php the_permalink(); ?>">
                                 <figure class="p-card--blog__thumbnail">
                                     <?php
