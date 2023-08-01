@@ -17,12 +17,13 @@ add_action( 'after_setup_theme', 'custom_theme_support' );
 function rishaliceScript() {
     wp_enqueue_style( 'googlefonts', "//fonts.googleapis.com/css2?family=Meie+Script&family=Vollkorn:ital,wght@0,400;0,600;1,400;1,600&display=swap", array(), null );
 	wp_enqueue_style( 'rishalice_css', get_theme_file_uri( '/css/style.css' ), array(), '1.0.0' );
-    if( is_page( 'works' ) ) {
+    if( is_page( 'works' ) || is_page( 'photos' ) ) {
         wp_enqueue_style( 'modaal_css', get_theme_file_uri( '/src/scripts/modaal/css/modaal.min.css' ), array(), '0.4.4' );
     }
-	wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-3.6.3.min.js', '', '', true );
+	wp_enqueue_script( 'lottie', '//unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js', array(), '1.0.0');
+	wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-3.6.3.min.js', '', '' );
 	wp_enqueue_script( 'rishalice_js', get_theme_file_uri( '/js/bundle.js' ), array(), '1.0.0');
-    if( is_front_page() || is_page( 'works' ) ) {
+    if( is_front_page() || is_page( 'works' ) || is_page( 'graphic' ) ) {
 		wp_enqueue_script( 'masonry', get_theme_file_uri( '/js/masonry.min.js' ), array(), '4.2.2', true );
 		wp_enqueue_script( 'masonry-config', get_theme_file_uri( '/js/masonry-config.js' ), array( 'masonry' ), '4.2.2', true );
 	}
@@ -73,3 +74,28 @@ function mobile_posts_per_page( $query ) {
 	}
 }
 add_action( 'pre_get_posts', 'mobile_posts_per_page' );
+
+define( 'COMMON_PFIX', get_template_directory_uri() );
+
+function imgdescription() {
+	if ( isset( SCF::get( 'partner-group' )[0]['partner-name'] ) ) : ?>
+		<dl class="c-img-description__partner">
+			<dt class="c-img-description__partner__title">パートナー：</dt>
+			<?php
+				$partner_groups = SCF::get( 'partner-group' );
+				foreach ( $partner_groups as $groups ) :
+					if ( $groups['partner-url'] ) : ?>
+						<dd class="c-img-description__partner__link"><a href="<?php echo esc_url( $groups['partner-url'] ); ?>" target="_blank"><?php echo esc_html( $groups['partner-name'] ); ?></a><?php if( $groups != end( $partner_groups ) ) : ?>, <?php endif; ?></dd>
+					<?php else : ?>
+						<dd class="c-img-description__partner__link">
+							<?php if ( isset( $groups ) ) : ?>
+								<?php echo esc_html( $groups['partner-name'] ); ?>
+								<?php if ( $groups != end( $partner_groups ) ) : ?>, <?php endif; ?>
+							<?php endif; ?>
+						</dd>
+					<?php endif; ?>
+				<?php endforeach; ?>
+			</dd>
+		</dl>
+	<?php endif;
+}

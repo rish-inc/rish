@@ -46,4 +46,46 @@
 		background-position: center center;
 		background-size: contain;
 	}
+	&--parallax1 {
+		margin: 0 auto;
+		background-image: url( ../images/background/bg1.png );
+		background-repeat: repeat-y;
+		background-position: left top;
+		background-size: 104%;
+		transition-property: background-position;
+		transition-duration: 1s;
+		width: 100vw;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		position: fixed;
+		z-index: -3;
+			@include g.mq( pc ) {
+			background-size: cover;
+		}
+	}
+	&--parallax2 {
+		background-image: url( ../images/background/bg2.png );
+		background-repeat: repeat-y;
+		background-position: 52% 50px;
+		background-size: 112%;
+		transition-property: background-position;
+		transition-duration: .8s;
+		width: 100vw;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		position: fixed;
+		z-index: -3;
+			@include g.mq( pc ) {
+			background-position: 52% 100px;
+			background-size: 86%;
+		}
+		@include g.mq( wide-1 ) {
+			background-position: 52% 140px;
+		}
+		@include g.mq( full ) {
+			background-position: 52% 216px;
+		}
+	}
 }

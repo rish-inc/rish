@@ -4,14 +4,16 @@
 	background-image: url( ../images/top/round-shadow_sp.png );
 	background-repeat: no-repeat;
 	position: relative;
-	width: 167px;
-	height: 182px;
+	// width: 167px;
+	// height: 182px;
+	transition: .5s ;
+	transform: rotateY(0deg);
 	@include g.mq( pc ) {
 		background-image: url( ../images/top/round-shadow_pc.png );
-		right: 0;
-		bottom: -14px;
-		width: 291px;
-		height: 318px;
+		// right: 0;
+		// bottom: -14px;
+		// width: 291px;
+		// height: 318px;
 	}
 	&::after {
 		content: "";
@@ -23,6 +25,7 @@
 		bottom: -18px;
 		background: #A39B7C;
 		filter: blur( 30px );
+		pointer-events: none;  // 影をhoverしたとき回転しないように無効化
 		@include g.mq( pc ) {
 			width: 150px;
 			height: 42px;

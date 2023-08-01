@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 	<main class="l-main">
-		<article class="c-inner c-content">
+		<div class="c-inner c-content">
 			<article class="p-site-production--about">
 				<section class="p-site-production--about--intro">
 					<figure class="p-site-production--about--intro__figure">
@@ -74,7 +74,7 @@
 					</dl>
 				</section>
 			</article>
-			
+
 			<article class="p-site-production--production-flow">
 				<div class="p-site-production--production-flow__head c-decoration--wing-line--under">
 					<span class="c-decoration--english">Production flow</span>
@@ -182,6 +182,7 @@
 			</article>
 
 			<?php get_template_part( 'components/template/contact' ); ?>
-		</article>
+</div>
 	</main>
 <?php get_footer(); ?>
+
