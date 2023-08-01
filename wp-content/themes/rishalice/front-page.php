@@ -48,7 +48,7 @@
 					<div class="p-top-article--advantage__forte">
 						<h3 class="p-top-article--advantage__forte__head">Rish の強み</h3>
 						<p class="c-font--general">弊社は代表がこれまで営業を行わずに個人事業主として Web サイト制作を生業にしてきました。</p>
-						<p class="c-font--general">これが成り立っていたのは個人で運営していた[ブログ](https://wp.yat-net.com/)や<br>[ツイッター](https://twitter.com/yat8823jp)などの SNS を活用した Web マーケティングにあります。</p>
+						<p class="c-font--general">これが成り立っていたのは個人で運営していた<a href="https://wp.yat-net.com/" target="_blank">ブログや<br><a href="https://twitter.com/yat8823jp" target="_blank">X（ツイッター）</a>などの SNS を活用した Web マーケティングにあります。</p>
 						<p class="c-font--general">現在は法人に切り替え、サイト運用やクリエイティブが行える社員や様々な分野のパートナーと共同しながら大手の Web サイト構築から個人の Web サイト制作まで幅広く対応が可能となりました。</p>
 						<p class="c-font--general">弊社の強みとしては納品してから始まる事業者様の運用サポートにあります。</p>
 						<p class="c-font--general">Web サイトを代行で作成してもそこからの運用は事業者様ご自身が集客していかなければなりません。</p>
@@ -76,7 +76,7 @@
 						</section>
 					</div>
 					<div class="p-top-article--works__printgraphics">
-						<h3 class="p-top-article--works__printgraphics__head">Print&Graphic</h3>
+						<h3 class="p-top-article--works__printgraphics__head">Print&amp;Graphic</h3>
 						<?php
 							$args = [ 'template_name' => 'print' ];
 							get_template_part( 'components/template/top-works-print', '', $args );
