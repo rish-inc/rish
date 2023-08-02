@@ -30,6 +30,35 @@ function rishaliceScript() {
 }
 add_action( 'wp_enqueue_scripts', 'rishaliceScript' );
 
+function rishalice_theme_add_editor_styles() {
+	add_editor_style( 'css/editor-style.css' );
+}
+add_action( 'admin_init', 'rishalice_theme_add_editor_styles' );
+
+function rishalice_add_block_editor_style() {
+	wp_enqueue_style( 'rishalice-block-editor-style', get_stylesheet_directory_uri() . '/css/editor-style.css', array( 'wp-edit-blocks' ), '1.0.0' );
+}
+add_action( 'enqueue_block_editor_assets', 'rishalice_add_block_editor_style' );
+
+/*
+ * Add block style
+ * heading whats style
+ */
+
+ add_action( 'enqueue_block_editor_assets', function () {
+	wp_enqueue_script (
+		'rishalice-blocks-heading-type',
+		get_theme_file_uri( 'src/scripts/block/editor.js' ),
+		array (
+			'wp-blocks',
+			'wp-element',
+			'wp-rich-text',
+		)
+	);
+} );
+
+
+
 // 抜粋文のpタグ除去
 remove_filter('the_excerpt','wpautop');
 
