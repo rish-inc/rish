@@ -1,0 +1,108 @@
+@use "../../foundation/global" as g;
+
+h1 {
+	@include g.font-rem( g.$font-size--Lv13 );
+	line-height: 1.5;
+}
+h2 {
+	@include g.font-rem( g.$font-size--Lv11 );
+	line-height: 1.5;
+}
+h3 {
+	@include g.font-rem( g.$font-size--Lv9 );
+	line-height: 1.6;
+}
+h4 {
+	@include g.font-rem( g.$font-size--Lv8 );
+	line-height: 1.8;
+}
+h5 {
+	@include g.font-rem( g.$font-size--Lv6 );
+	line-height: 1.8;
+}
+h6 {
+	@include g.font-rem( g.$font-size--Lv4 );
+	line-height: 2.2;
+}
+
+.is-style-type1 {
+	background-color: g.$bgcolor--light-green;
+	padding: 24px 22px 16px;
+	margin-bottom: 50px;
+	@include g.mq( pc ) {
+		padding: 21px 29px 12px;
+		margin-bottom: 40px;
+	}
+}
+.is-style-type2 {
+	background-color: g.$bgcolor--light-green;
+	border-left: 12px solid g.$border-color--green;
+	padding: 20px 15px 15px 20px;
+	margin-bottom: 50px;
+	@include g.mq( pc ) {
+		padding: 22px 14px 16px 28px;
+		margin-bottom: 40px;
+	}
+}
+.is-style-type3 {
+	background-color: g.$bgcolor--light-green;
+	outline: 2px dotted g.$border-color--green;
+	outline-offset: -9px;
+	padding: 19px 14px 18px 12px;
+	margin-bottom: 50px;
+	@include g.mq( pc ) {
+		padding: 14px 14px 7px 12px;
+		margin-bottom: 40px;
+	}
+}
+.is-style-type4 {
+	border-top: 2px solid g.$border-color--green;
+	border-bottom: 2px solid g.$border-color--green;
+	padding: 10px 15px;
+	margin-bottom: 50px;
+	@include g.mq( pc ) {
+		padding: 12px 14px 4px 12px;
+		margin-bottom: 40px;
+	}
+}
+.is-style-type5 {
+	border-bottom: 3px solid g.$border-color--light-green;
+	position: relative;
+	width: 100%;
+	padding-bottom: 2px;
+	margin-bottom: 50px;
+	@include g.mq( pc ) {
+		padding-bottom: 0;
+		margin-bottom: 40px;
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -2px;
+		width: 24%;
+		height: inherit;
+		border-bottom: 3px solid g.$border-color--green;
+		@include g.mq( pc ) {
+			width: 7.5%;
+		}
+	}
+}
+.is-style-type6 {
+	font-weight: normal;
+	border-bottom: 1px solid g.$border-color--green;
+	position: relative;
+	padding: 15px 15px 2px;
+	margin-bottom: 50px;
+	@include g.mq( pc ) {
+		margin-bottom: 40px;
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		border-bottom: 1px solid g.$border-color--green;
+		width: 100%;
+		left: 0;
+		bottom: -4px;
+	}
+}
