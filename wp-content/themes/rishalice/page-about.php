@@ -16,7 +16,7 @@
 					<p class="p-about--philosophy__text">これをシンプルに表現した言葉が 「あなたらしく」 であり、会社のキャッチフレーズとしています。</p>
 				</div>
 			</section>
-			
+
 			<div class="p-about--profile">
 				<dl class="p-about--profile__list">
 					<dt class="p-about--profile__list__title">会社名<span>-Company name-</span></dt>
@@ -29,10 +29,10 @@
 					<div class="p-about--profile__list__wrapper">
 						<dd class="p-about--profile__list__text">
 							<dl>
-								<dt>本社</dt>
-								<dd>〒540-0025 大阪府大阪市中央区徳井町2−2−10 アークマインB201</dd>
-								<dd class="u-mb--40 u-mb--pc--24">2-2-10 Tokui-cho, Chuo-ku, Osaka-shi, Osaka Arkmine B201 540-0025</dd>
-								<dt>事業所</dt>
+								<dt>営業所</dt>
+								<dd>〒581-0031 大阪府八尾市志紀町</dd>
+								<dd class="u-mb--40 u-mb--pc--24">Shiki-cho, Yao-shi, Osaka 581-0031</dd>
+								<dt>登記地</dt>
 								<dd>〒581-0091 大阪府八尾市南植松町4丁目114</dd>
 								<dd>4-114 Minami Uematsucho, Yao City, Osaka 581-0091</dd>
 							</dl>
@@ -100,7 +100,7 @@
 					</div>
 				</dl>
 			</div>
-			
+
 			<?php get_template_part( 'components/template/contact' ); ?>
 		</article>
 	</main>

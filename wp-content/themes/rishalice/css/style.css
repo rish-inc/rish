@@ -69,10 +69,13 @@ select {
   html:focus-within {
     scroll-behavior: auto;
   }
+
   *,
-  *::before,
-  *::after {
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
@@ -597,6 +600,7 @@ h5 {
     background-image: url(../images/frame/dent/left-top_pc.png), url(../images/frame/dent/right-top_pc.png), url(../images/frame/dent/left-bottom_pc.png), url(../images/frame/dent/right-bottom_pc.png);
     padding: 60px 50px;
   }
+
   .c-frame--dent::before {
     content: "";
     height: 100%;
@@ -606,6 +610,7 @@ h5 {
     left: 40px;
     background-image: url(../images/frame/dent/top_pc.png), url(../images/frame/dent/bottom_pc.png);
   }
+
   .c-frame--dent::after {
     content: "";
     width: 100%;
@@ -701,7 +706,9 @@ h5 {
 }
 @media screen and (min-width: 768px) {
   .c-grid--3card {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -714,6 +721,7 @@ h5 {
   .c-hover--gmenu {
     position: relative;
   }
+
   .c-hover--gmenu::after {
     content: "";
     transition: 0.3s;
@@ -1732,7 +1740,7 @@ h5 {
 
 @media screen and (min-width: 768px) {
   .p-form__inner .wpcf7-form .wpcf7-form-control-wrap .wpcf7-text,
-  .p-form__inner .wpcf7-form .wpcf7-form-control-wrap .wpcf7-textarea {
+.p-form__inner .wpcf7-form .wpcf7-form-control-wrap .wpcf7-textarea {
     max-width: 750px;
   }
 }
@@ -1873,11 +1881,34 @@ h5 {
 }
 
 .p-go-to-top__icon.is-hover::after {
+  -webkit-animation: image_anime1 forwards 0.7s ease normal;
   animation: image_anime1 forwards 0.7s ease normal;
 }
 
 .p-go-to-top__icon.is-out::after {
+  -webkit-animation: image_anime2 forwards 0.7s ease normal;
   animation: image_anime2 forwards 0.7s ease normal;
+}
+
+@-webkit-keyframes image_anime1 {
+  0% {
+    background-image: url(../images/header-footer/key1.png);
+  }
+  20% {
+    background-image: url(../images/header-footer/key2.png);
+  }
+  40% {
+    background-image: url(../images/header-footer/key3.png);
+  }
+  60% {
+    background-image: url(../images/header-footer/key4.png);
+  }
+  80% {
+    background-image: url(../images/header-footer/key5.png);
+  }
+  100% {
+    background-image: url(../images/header-footer/key6.png);
+  }
 }
 
 @keyframes image_anime1 {
@@ -1898,6 +1929,26 @@ h5 {
   }
   100% {
     background-image: url(../images/header-footer/key6.png);
+  }
+}
+@-webkit-keyframes image_anime2 {
+  0% {
+    background-image: url(../images/header-footer/key6.png);
+  }
+  20% {
+    background-image: url(../images/header-footer/key5.png);
+  }
+  40% {
+    background-image: url(../images/header-footer/key4.png);
+  }
+  60% {
+    background-image: url(../images/header-footer/key3.png);
+  }
+  80% {
+    background-image: url(../images/header-footer/key2.png);
+  }
+  100% {
+    background-image: url(../images/header-footer/key1.png);
   }
 }
 @keyframes image_anime2 {
@@ -1994,12 +2045,14 @@ h5 {
 }
 
 .p-header__menu {
+  display: -ms-grid;
   display: grid;
   padding-top: 13px;
 }
 
 @media screen and (min-width: 1200px) {
   .p-header__menu {
+    -ms-grid-columns: 1fr 310px 1fr;
     grid-template-columns: 1fr 310px 1fr;
     padding-top: 30px;
   }
@@ -2342,6 +2395,7 @@ h5 {
   .home .p-header #menu-header-left-menu {
     position: relative;
   }
+
   .home .p-header #menu-header-left-menu::after {
     content: "";
     display: block;
@@ -2362,6 +2416,7 @@ h5 {
   .home .p-header #menu-header-right-menu {
     position: relative;
   }
+
   .home .p-header #menu-header-right-menu::after {
     content: "";
     display: block;
@@ -2495,6 +2550,7 @@ h5 {
   .p-marketing--problem__caption__list .c-dot--small {
     padding-left: 12px;
   }
+
   .p-marketing--problem__caption__list .c-dot--small::before {
     top: 16px;
   }
@@ -2572,7 +2628,7 @@ h5 {
 
 @media screen and (min-width: 768px) {
   .p-pagination .wp-pagenavi .current,
-  .p-pagination .wp-pagenavi a.page {
+.p-pagination .wp-pagenavi a.page {
     display: inline-block;
     margin: 0 10px;
     padding: 0 10px;
@@ -2677,8 +2733,11 @@ h5 {
 @media screen and (min-width: 768px) {
   .p-price__list {
     margin-bottom: 170px;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 30px 60px;
     height: 100%;
@@ -3495,7 +3554,7 @@ h5 {
   .p-top-article--mv {
     margin: 0 auto 120px;
     max-width: 86%;
-    background-image: url(../images/top/curtain-left-pc.png), url(../images/top/curtain-right-pc.png), url(../images/top/mainvisual-pc_2x.jpg);
+    background-image: url(../images/top/curtain-left-pc.png), url(../images/top/curtain-right-pc.png), url(../images/top/mainvisual-pc_2x.webp);
     background-position: left top, right top, center center;
     min-height: 785.23px;
   }
@@ -3842,7 +3901,9 @@ h5 {
 }
 @media screen and (min-width: 768px) {
   .p-top-article--blog__list {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
   }
