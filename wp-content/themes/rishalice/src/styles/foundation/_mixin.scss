@@ -21,9 +21,9 @@ $breakpoints: (
 	}
 }
 
-@mixin mq( $breakpoint: reduce ) {
+@mixin mqr( $breakpoint: reduce ) {
 	@media (prefers-reduced-motion: reduce) {
-		@content
+		@content;
 	}
 }
 

@@ -46,7 +46,7 @@ add_action( 'enqueue_block_editor_assets', 'rishalice_add_block_editor_style' );
  * heading whats style
  */
 
- add_action( 'enqueue_block_editor_assets', function () {
+add_action( 'enqueue_block_editor_assets', function () {
 	wp_enqueue_script (
 		'rishalice-blocks-heading-type',
 		get_theme_file_uri( 'src/scripts/block/editor.js' ),
