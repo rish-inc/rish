@@ -535,9 +535,14 @@
 					}
 					&:nth-child(#{$i}) {
 						animation: fuwafuwa#{$i} 2s ease-in-out $DELAY infinite alternate;
-						// 擬似要素（影）はさらに遅らせる
+						@include g.mq( reduce ) {
+							animation: none;
+						}
 						&::after {
 							animation: fuwafuwa#{$i} 2s ease-in-out $DELAY2 infinite alternate;
+							@include g.mq( reduce ) {
+								animation: none;
+							}
 						}
 					}
 				}
@@ -545,7 +550,12 @@
 					position: absolute;
 					top: 50%;
 					left: 50%;
-					transform: translate( -50%, -30% )
+					transform: translate( -50%, -30% );
+					@include g.mq( reduce ) {
+						top: 150px;
+						left: 145px;
+						// transform: translate( 0, 0 );
+					}
 				}
 				&__inner {
 					height: auto;

@@ -21,6 +21,12 @@ $breakpoints: (
 	}
 }
 
+@mixin mq( $breakpoint: reduce ) {
+	@media (prefers-reduced-motion: reduce) {
+		@content
+	}
+}
+
 @mixin hovanime( $color: default, $scale: 1.05 ) {
 	overflow: hidden;
 	img {
