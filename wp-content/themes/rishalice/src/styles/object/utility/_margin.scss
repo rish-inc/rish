@@ -1,67 +1,61 @@
+@use "sass:math";
 @use "../../foundation/global" as g;
-@use "../../foundation/variables";
 
+// 使用例
+// "u-mb--50" → "margin-bottom: 50px"
+@for $i from 1 through 100 {
+	.u-mb--#{$i} {
+		margin-bottom: ( $i ) + px;
+	}
+}
 
-.u-mb {
-	&--14 {
-		margin-bottom: 14px;
+// "u-mb--pc--70" → "margin-bottom: 70px"
+@for $i from 0 through 500 {
+	.u-mb--pc--#{$i} {
+		@include g.mq( wide ) {
+			margin-bottom: ( $i ) + px;
+		}
 	}
-	&--30 {
-		margin-bottom: 30px;
-	}
-	&--32{
-		margin-bottom: 32px;
-	}
-	&--36 {
-		margin-bottom: 36px;
-	}
-	&--40 {
-		margin-bottom: 40px;
-	}
-	&--62 {
-		margin-bottom: 62px;
-	}
-	&--66 {
-		margin-bottom: 66px;
-	}
-	&--94 {
-		margin-bottom: 94px;
-	}
+}
 
-	// PC用
-	&--pc--0 {
-		@include g.mq( pc ) {
-			margin-bottom: 0;
+// "u-mt--50" → "margin-top: 50px"
+@for $i from 1 through 100 {
+	.u-mt--#{$i} {
+		margin-top: ( $i ) + px;
+	}
+}
+
+// "u-mr--pc--50" → "margin-right: 50px"
+@for $i from 1 through 100 {
+	.u-mr--pc--#{$i} {
+		@include g.mq( wide ) {
+			margin-right: ( $i ) + px;
 		}
 	}
-	&--pc--24 {
-		@include g.mq( pc ) {
-			margin-bottom: 24px;
+}
+
+// "u-ml--pc--50" → "margin-left: 50px"
+@for $i from 1 through 100 {
+	.u-ml--pc--#{$i} {
+		@include g.mq( wide ) {
+			margin-left: ( $i ) + px;
 		}
 	}
-	&--pc--32 {
-		@include g.mq( pc ) {
-			margin-bottom: 32px;
-		}
+}
+
+// ネガティブマージン
+// "u-mt--n-60" → "margin-top: -60px"
+@for $i from 1 through 100 {
+	.u-mt--n-#{$i} {
+		margin-top: - ( $i ) + px;
 	}
-	&--pc--36 {
-		@include g.mq( pc ) {
-			margin-bottom: 36px;
-		}
-	}
-	&--pc--57 {
-		@include g.mq( pc ) {
-			margin-bottom: 57px;
-		}
-	}
-	&--pc--62 {
-		@include g.mq( pc ) {
-			margin-bottom: 62px;
-		}
-	}
-	&--pc--308 {
-		@include g.mq( pc ) {
-			margin-bottom: 308px;
+}
+
+// "u-mt--pc--n-60" → "margin-top: -60px"
+@for $i from 1 through 150 {
+	.u-mt--pc--n-#{$i} {
+		@include g.mq( wide ) {
+			margin-top: - ( $i ) + px;
 		}
 	}
 }

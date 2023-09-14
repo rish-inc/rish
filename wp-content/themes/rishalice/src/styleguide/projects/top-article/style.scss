@@ -2,21 +2,104 @@
 @use "../../foundation/variables";
 
 .p-top-article {
-	&--about {
+	&--mv {
+		position: relative;
+		margin-bottom: 32px;
+		width: 100%;
+		min-height: 419.82px;
+		background-image: url( ../images/top/curtain-left-sp.png ),url(  ../images/top/curtain-right-sp.png ),url( ../images/top/mainvisual-sp_2x.jpg );
+		background-size: auto, auto, cover;
+		background-position: left top 10px, right top 10px, center center;
+		background-repeat: no-repeat;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
 		@include g.mq( pc ) {
+			margin: 0 auto 120px;
+			max-width: 86%;
+			background-image: url( ../images/top/curtain-left-pc.png ),url(  ../images/top/curtain-right-pc.png ),url( ../images/top/mainvisual-pc_2x.jpg );
+			background-position: left top, right top, center center;
+			min-height: 785.23px;
 		}
+		@media (min-width: 1800px) {
+			width: 78%;
+		}
+		// メインビジュアル上下の黒帯（sp～tbのみ）
+		&::before {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 10px;
+			background-color : #000000;
+			position: absolute;
+			left: 0;
+			top: 0;
+			@include g.mq( pc ) {
+				display: none;
+			}
+		}
+		&::after {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 10px;
+			background-color : #000000;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			@include g.mq( pc ) {
+				display: none;
+			}
+		}
+		&__text {
+			@include g.font-rem( g.$font-size--Lv6 );
+			line-height: 1.5;
+			color: g.$fontcolor--white;
+			text-shadow: 0px 1px 3px #000000;
+			margin-bottom: 24px;
+			@include g.mq( pc ) {
+				@include g.font-rem( g.$font-size--Lv13 );
+				margin-bottom: 56px;
+			}
+			.u-br--sp {
+				display: block;
+				@include g.mq( full ) {
+					display: none;
+				}
+			}
+		}
+		// メインビジュアル下の飾り線
+		span {
+			&::after {
+				content: "";
+				display: block;
+				width: 100%;
+				height: 2px;
+				background-color : g.$bgcolor--turquoise-green;
+				position: absolute;
+				left: 0;
+				bottom: -9px;
+			}
+		}
+	}
+	&--about {
 		&__head {
 			color: g.$fontcolor--white;
 			text-align: center;
-			@include g.mq( pc ) {
+			.u-br--sp {
+				display: block;
+				@include g.mq( full ) {
+					display: none;
+				}
 			}
 			&__text {
 				display: inline-block;
 				background: linear-gradient( transparent 10%, g.$bgcolor--turquoise-green 0% );
 				width: 100%;
-				line-height: 2;
+				line-height: 1.7;
 				@include g.mq( pc ) {
-					background: linear-gradient( transparent 0%, g.$bgcolor--turquoise-green 0% );
+					line-height: 2.125;
+					background: linear-gradient( transparent 5%, g.$bgcolor--turquoise-green 0% );
 					display: inline;
 					padding: 5px 20px;
 				}
@@ -34,26 +117,35 @@
 		}
 
 		&__explanation {
-			line-height: 2;
+			line-height: 1.7;
 			padding: 120px 0;
 			@include g.mq( pc ) {
-				text-align: center;
-				// width: 95%;
+				width: 95%;
 				margin: 0 auto;
-				padding: 60px 60px 160px;
+			}
+			@include g.mq( wide-2 ) {
+				width: 100%;
+				text-align: center;
+				margin: 0 auto;
+				padding: 60px 60px 70px;
+			}
+			@include g.mq( full ) {
+				padding-bottom: 130px;
+			}
+			@media (min-width: 1400px) {
+				padding-bottom: 185px;
 			}
 			&::before {
 				top: 60px;
-				@include g.mq( pc ) {
-					top: 20%;
+				@include g.mq( wide-2 ) {
 					left: 20px;
 				}
 			}
 			&::after {
 				bottom: 60px;
-				@include g.mq( pc ) {
-					bottom: 0;
-					top: -20%;
+				@include g.mq( wide-2 ) {
+					bottom: auto;
+					top: 60px;
 					right: 20px;
 				}
 			}
@@ -62,34 +154,56 @@
 
 	&--advantage {
 		&__parallel {
-			margin-bottom: 100px;
+			margin-bottom: 90px;
 			@include g.mq( pc ) {
+				width: 95%;
+				margin: 0 auto 90px
+			}
+			@media (min-width: 1100px) {
+				width: 100%;
+			}
+			@include g.mq( full ) {
 				display: flex;
+				margin-bottom: 74px;
 			}
 			.c-drop-shadow-bg--right {
 				width: 64vw;
-				margin-left: 9.06666667vw;
+				max-width: 568px;
+				margin-left: 10vw;
+				@media (min-width: 500px) {
+					margin-left: 13vw;
+				}
 				@include g.mq( pc ) {
+					margin-left: 15vw;
+				}
+				@media (min-width: 900px) {
+					margin-left: 17vw;
+				}
+				@include g.mq( wide ) {
+					margin-left: 19vw;
+				}
+				@include g.mq( full ) {
 					order: 2;
+					width: 40%;
+					margin-left: 0;
 				}
-				&::before,
-				&::after {
-					width: 73%;
-					padding-top: 70%;
+				@media (min-width: 1400px) {
+					width: 45%;
+					margin-right: -210px;
 				}
-				&::before {
-					right: -20px;
-					bottom: -20px;
-				}
-				&::after {
-					right: -40px;
-					bottom: -45px;
+				@media (min-width: 1510px) {
+					width: 50%;
 				}
 			}
 			&__text {
 				margin-top: 60px;
 				@include g.mq( pc ) {
+					margin-top: 64px;
+				}
+				@include g.mq( full ) {
 					order: 1;
+					width: 63%;
+					margin-top: 26px;
 				}
 				&__head {
 					.c-mark--rabbit-trumpet {
@@ -98,84 +212,86 @@
 					@include g.font-rem( g.$font-size--Lv7 );
 				}
 				&__list {
+					@include g.mq( full ) {
+						line-height: 1.75;
+						padding-top: 14px;
+						padding-bottom: 91px;  // 背景のスペードを大きくするための余白
+					}
 					.c-font--middle {
 						line-height: 2;
 						position: relative;
-						margin-bottom: 40px;
+						margin-bottom: 30px;
 						padding-left: 18px;
 						&::before {
-							top: 16px;
-							left: 4px;
+							top: 12px;
+							left: 6px;
 						}
 						&:last-of-type {
+							margin-bottom: 0;
+						}
+						@include g.mq( pc ) {
+							line-height: 1.75;
 							margin-bottom: 0;
 						}
 					}
 				}
 				.c-bg--spade {
-					background-position: center 35%;
+					background-position: center 42%;
+					margin: 0;
 				}
 			}
 		}
 
 		&__forte {
-			margin-bottom: 100px;
+			margin-bottom: 90px;
 			@include g.mq( pc ) {
 				width: 95%;
-				margin: 0 auto 150px auto;
+				margin: 0 auto 164px;
+				line-height: 2;
 			}
-			@include g.mq( wide ) {
-				width: 100%
+			@media (min-width: 1100px) {
+				width: 100%;
 			}
 			&__head {
 				@include g.font-rem( g.$font-size--Lv7 );
-				margin-bottom: 40px;
+				margin-bottom: 32px;
 			}
 			.c-font--general {
 				line-height: 2;
-				@include g.mq( pc ) {
-					line-height: 2.5;
-				}
+				word-break: break-all;
 			}
+		}
+
+		&__btn {
+			margin-bottom: 196px;
 		}
 	}
 
-	// &--price {
-	// 	// padding: 0 20px;
-	// 	@include g.mq( pc ) {
-	// 		// max-width: 1080px;
-	// 		// margin: 0 auto;
-	// 	}
-	// 	&__head {
-	// 		margin-bottom: 50px;
-	// 		@include g.mq( pc ) {
-	// 			margin-bottom: 70px;
-	// 		}
-	// 	}
-	// 	&__list {
-	// 		margin-bottom: 60px;
-	// 		@include g.mq( pc ) {
-	// 			margin-bottom: 150px;
-	// 			display: grid;
-	// 			grid-template-columns: 1fr 1fr;
-	// 			grid-template-rows: 1fr 1fr;
-	// 			gap: 30px 60px;
-	// 			height: 100%;
-	// 		}
-	// 		&__item {
-	// 			@include g.mq( pc ) {
-	// 				display: flex;
-	// 				align-items: stretch;
-	// 			}
-	// 		}
-	// 	}
-	// }
+	&--works {
+		margin-bottom: 100px;
+	}
+
+	// 「サイト制作について」ボタン
+	.p-btn {
+		margin-bottom: 200px;
+	}
+
+	&--service {
+		margin-bottom: 58px;
+		&__head {
+			margin-bottom: 42px;
+		}
+	}
 
 	&--blog {
-		padding: 60px 0 195px 0;
+		padding: 60px 0 179px 0;
 		@include g.mq( pc ) {
 			max-width: 1080px;
 			margin: 0 auto;
+			padding-bottom: 263px;
+		}
+		a {
+			cursor: pointer;
 		}
 		&__head {
 			margin-bottom: 75px;
@@ -189,10 +305,139 @@
 				grid-template-columns: 1fr 1fr 1fr;
 				gap: 30px;
 			}
-			&__item {
-				margin-bottom: 30px;
+			.p-card {
+				margin-bottom: 22px;
 				@include g.mq( pc ) {
-					max-width: 341px;
+					max-width: 340px; // (1080px - 30px - 30px) ÷ 3
+				}
+			}
+		}
+	}
+
+	&--about-us {
+		padding-top: 35px;
+		margin-bottom: 112px;
+		background-color: g.$bgcolor--light-green;
+		border-top: 30px solid g.$bgcolor--light-green2;
+		border-bottom: 30px solid g.$bgcolor--light-green2;
+		// vw指定は縦スクロールバーの幅分はみ出すため、bodyに[overflow-x: hidden;]を指定
+		margin-right: calc(50% - 50vw); // 親要素を無視して画面幅いっぱいに広げる
+		margin-left: calc(50% - 50vw);
+		padding-right: calc(50vw - 50%); // 子要素は親要素の幅を維持
+		padding-left: calc(50vw - 50%);
+		position: relative;
+		@include g.mq( full ) {
+			margin-bottom: 169px;
+			background: none;
+			border-top: none;
+			border-bottom: 1px solid transparent;
+			margin-right: 0;
+			margin-left: 0;
+			padding-right: 0;
+			padding-left: 0;
+		}
+		&__head {
+			margin-bottom: 66px;
+			@include g.mq( pc ) {
+				margin-bottom: 36px;
+			}
+		}
+		&__wrap {
+			background-color: g.$bgcolor--white;
+			padding: 7px;
+			margin-bottom: 110px;
+			@include g.mq( pc ) {
+				max-width: 94%;
+				margin: 0 auto 95px;
+			}
+		}
+		&__inner {
+			margin: 0 auto;
+			padding-top: 91px;
+			padding-bottom: 91px;
+			background-color: g.$bgcolor--white;
+			@include g.mq( pc ) {
+				width: 100%;
+				padding-top: 60px;
+				padding-bottom: 76px;
+			}
+		}
+		&__list {
+			margin: 0 auto;
+			@include g.mq( pc ) {
+				width: 100%
+			}
+			&__item {
+				@include g.font-rem( g.$font-size--Lv2 );
+				line-height: 2;
+				@include g.mq( pc ) {
+					@include g.font-rem( g.$font-size--Lv4 );
+					width: 61.73%;
+					margin: 0 auto;
+				}
+			}
+		}
+		.p-btn {
+			margin-bottom: 154px;
+		}
+		&__img {
+			width: 158.45px;
+			position: absolute;
+			bottom: -45px;
+			left: 50%;
+			transform: translateX(-50%);
+			@include g.mq( full ) {
+				width: 239.89px;
+				bottom: -118px;
+				left: auto;
+				right: 0;
+				transform: translateX(-6%);
+			}
+			@media (min-width: 1300px) {
+				transform: translateX(16%);
+			}
+			@media (min-width: 1400px) {
+				transform: translateX(32%);
+			}
+			@media (min-width: 1500px) {
+				transform: translateX(52%);
+			}
+		}
+		&__bg {
+			display: none;
+			@include g.mq( full ) {
+				display: block;
+				opacity: 0;
+				transition: all .9s 0s ease-in;
+				position: absolute;
+				top: -26%;
+				left: -200%;
+				width: 180%;
+				height: 180%;
+				z-index: -1;
+				background-image: url( ../images/top/bg_about-us_2x.png );
+				background-size: contain;
+				background-position: top left;
+				background-repeat: no-repeat;
+				margin-left: calc(50% - 50vw); // 親要素を無視して画面幅いっぱいに広げる
+				padding-right: calc(50vw - 50%); // 子要素は親要素の幅を維持
+				padding-left: calc(50vw - 50%);
+			}
+		}
+		&.show {
+			.p-top-article--about-us__bg {
+				@include g.mq( full ) {
+					opacity: 1;
+					left: -70%;
+				}
+				@media (min-width: 1300px) {
+					left: -61%;
+				}
+				@media (min-width: 1400px) {
+					left: -52%;
+				}
+				@media (min-width: 1500px) {
+					left: -42%;
 				}
 			}
 		}

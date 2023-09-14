@@ -1,0 +1,143 @@
+@use "../../foundation/global" as g;
+
+.p-page {
+    &__head {
+        margin-bottom: 64px;
+        @include g.mq( pc ) {
+            margin-bottom: 108px;
+        }
+        .c-font--big {
+            color: g.$fontcolor--base;
+            line-height: 1.5;
+        }
+        &.c-decoration--wing-line--under::after {
+            bottom: 0;
+            @include g.mq( pc ) {
+                bottom: -6px;
+            }
+        }
+    }
+
+    &__contents {
+        a {
+			color: g.$fontcolor--base;
+            text-decoration: underline;
+            &:hover {
+                opacity: 0.7;
+            }
+		}
+        &__thumbnail__img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 47px;
+            @include g.mq( pc ) {
+                margin-bottom: 40px;
+            }
+        }
+        &__content {
+            margin-bottom: 180px;
+            @include g.font-rem( g.$font-size--Lv3 );
+            line-height: 2.5;
+            @include g.mq( pc ) {
+                margin-bottom: 338px;
+            }
+            p {
+                margin-bottom: 42px;
+                @include g.mq( pc ) {
+                    margin-bottom: 26px;
+                }
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 50px;
+                @include g.mq( pc ) {
+                    margin-bottom: 40px;
+                }
+            }
+            ol,ul {
+                margin: 0 0 50px;
+                padding-left: 0;
+                ol,ul {
+                    padding-left: 4rem;
+                }
+                @include g.mq( pc ) {
+                    margin-bottom: 26px;
+                }
+            }
+            ol {
+                li {
+                    list-style: decimal inside;
+                }
+            }
+            ul {
+                li {
+                    list-style: disc inside;
+                }
+            }
+			li {
+				margin-left: 20px;
+			}
+            blockquote {
+                background-color: g.$bgcolor--light-green2;
+                padding: 114px 22px 30px 26px;
+                position: relative;
+                margin-bottom: 50px;
+                @include g.mq( pc ) {
+                    padding: 114px 60px 48px;
+                    margin-bottom: 40px;
+                }
+                p {
+                    margin-bottom: 32px;
+                    &::before {
+                        @include g.font-rem( 221 );
+                        line-height: 1;
+                        content: "“";
+                        position: absolute;
+                        width: 55px;
+                        height: 44px;
+                        left: 0;
+                        top: 20px;
+                    }
+                    @include g.mq( pc ) {
+                        margin-bottom: 24px;
+                    }
+                }
+                cite {
+                    display: block;
+                    width: 82%;
+                    margin: 0 0 0 auto;
+                    @include g.mq( pc ) {
+                        width: 100%;
+                        text-align: right;
+                        padding-right: 10px;
+                    }
+                }
+            }
+            table {
+                margin-bottom: 50px;
+                background-color: g.$bgcolor--white;
+                @include g.mq( pc ) {
+                    margin-bottom: 40px;
+                }
+                td {
+                    border: 1px solid #1B1B1B;
+                    height: 50px;
+                    &:nth-child(1) {
+                        width: 26%;
+                    }
+                }
+            }
+            .wp-block-buttons {
+                margin-bottom: 50px;
+                @include g.mq( pc ) {
+                    margin-bottom: 40px;
+                }
+            }
+            .wp-block-button__link {
+                background-color: g.$fontcolor--green;
+                @include g.font-rem( g.$font-size--Lv4 );
+            }
+        }
+    }
+}

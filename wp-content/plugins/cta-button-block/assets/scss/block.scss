@@ -1,0 +1,66 @@
+@use "./mixin" as m;
+
+.editor-styles-wrapper .is-style-cta--inquiry,
+.is-style-cta--inquiry {
+	width: 100%;
+	display: block;
+}
+
+.editor-styles-wrapper .is-style-cta--inquiry .wp-block-button__link,
+.is-style-cta--inquiry .wp-block-button__link {
+	width: 80.66%;
+	min-height: 50px;
+	padding: 20px 30px;
+	font-size: 1.0rem;
+	font-weight: bold;
+	color: #fff;
+	position: relative;
+	display: block;
+	white-space: nowrap;
+	margin: 60px auto 60px auto;
+	background: #EE7036;
+	text-decoration: none;
+	@include m.mq( tb ) {
+		max-width: 516px;
+		min-height: 100px;
+		padding: 40px 60px;
+		border-radius: 55px;
+		font-size: 2.0vw;
+		white-space: normal;
+	}
+	@include m.mq( pc ) {
+		font-size: 1.8rem;
+		max-width: inherit;
+	}
+	&::before {
+		content     : "";
+		width       : 6px;
+		height      : 6px;
+		display     : block;
+		border-top  : solid 1px;
+		border-right: solid 1px;
+		transform   : rotate(45deg);
+		position    : absolute;
+		top         : 0;
+		bottom      : 0;
+		right       : 16px;
+		margin      : auto;
+		@include m.mq( tb ) {
+			width       : 10px;
+			border-top  : solid 2px;
+			border-right: solid 2px;
+			height      : 10px;
+			right       : 30px;
+		}
+	}
+	&[target="_blank"] {
+		&::after {
+			content     : "";
+			width       : 10px;
+			height      : 10px;
+			display     : inline-block;
+			margin      : auto auto auto 10px;
+			background: url( ../images/link.svg ) 100%/100%;
+		}
+	}
+}

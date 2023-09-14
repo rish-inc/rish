@@ -14,7 +14,7 @@
         right: 20px;
         width: 46px;
         height: 20px;
-        z-index: 3;
+        z-index: 4;
         background-color: transparent;
         border: none;
         cursor: pointer;
@@ -123,6 +123,8 @@
         }
         .menu {
             margin: 0;
+			position: relative;
+			z-index: 2;
             @include g.mq( full ) {
                 display: flex;
                 align-items: flex-end;
@@ -258,7 +260,7 @@
                             opacity: 0;
                             visibility: hidden;
                             // 閉じるアニメーション
-                            transition: 
+                            transition:
                                 border-bottom .3s ease-out,
                                 height        .3s ease-out,
                                 opacity       .1s linear,
@@ -281,7 +283,7 @@
                                 opacity: 1;
                                 visibility: visible;
                                 // 開くアニメーション
-                                transition: 
+                                transition:
                                     border-bottom .3s ease-out,
                                     height        .3s ease-out,
                                     opacity       .1s linear .1s,
@@ -324,7 +326,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            z-index: 2;
+            z-index: 3;
             order: 2;
             padding: 60px 20px 62px;
             background-color: g.$bgcolor--white;

@@ -4,7 +4,7 @@ body {
 	font-family: '丸明オールドStdN', '砧 丸明オールド StdN';
 	@include g.font-rem( g.$font-size--Lv3 );
 	color: g.$fontcolor--base;
-	min-width: 375px;
+	min-width: 320px;
 	overflow-x: hidden;  // 横スクロールバーは非表示
 }
 
@@ -26,4 +26,20 @@ h3,
 h4,
 h5 {
 	font-weight: normal;
+}
+
+/* Category 07 is for any utility classes that are not assigned to a specific component. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+	word-break: normal;
 }

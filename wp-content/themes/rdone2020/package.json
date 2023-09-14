@@ -9,7 +9,8 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^4.3.7"
+    "vite": "^4.3.7",
+    "vite-plugin-webfont-dl": "^3.7.6"
   },
   "dependencies": {
     "autoprefixer": "^10.4.14",

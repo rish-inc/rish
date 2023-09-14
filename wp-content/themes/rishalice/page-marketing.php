@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 	<main class="l-main">
-		<article class="c-inner c-content">
+		<div class="c-inner c-content">
 			<section class="p-marketing--intro">
 				<figure class="p-marketing--intro__figure">
 					<img src="<?php echo esc_url( get_theme_file_uri( '/images/marketing/01.png' ) );?>" alt="タイトル画像">
@@ -65,6 +65,6 @@
 				<p class=" p-marketing--solution__text u-mb--94 u-mb--pc--308">自社サイト運用のサポートを依頼したいしたい方はもちろん・話を聞いてみたいと思われた方でも是非お気軽に下記お問合せフォームからお問い合わせください。</p>
 			</section>
 			<?php get_template_part( 'components/template/contact' ); ?>
-		</article>
+</div>
 	</main>
 <?php get_footer(); ?>

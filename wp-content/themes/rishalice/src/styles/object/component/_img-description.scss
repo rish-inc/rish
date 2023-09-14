@@ -1,0 +1,81 @@
+@use '../../foundation/global' as g;
+
+// coni 現行より
+.c-img-description {
+	dt {
+		// font-size: 1.4rem;
+		@include g.font-rem( g.$font-size--Lv3 );
+		// @media (min-width: 641px) {
+		// }
+		// @include g.mq( pc ) {
+		// 	font-size: 1.6rem;
+		// }
+	}
+	dd {
+		// font-size: 1.4rem;
+		@include g.font-rem( g.$font-size--Lv2 );
+		// @media (min-width: 641px) {
+		// }
+		// @include g.mq( pc ) {
+		// 	font-size: 1.4rem;
+		// }
+	}
+	&__link {
+		margin-left: 10px;
+		@media (min-width: 641px) {
+			margin-left: 0;
+		}
+	}
+	&__link,
+	&__title {
+		@include g.font-rem( 10 );
+		a {
+			&:link, &:visited {
+				color: #8c8c8c;
+				text-decoration: underline;
+			}
+			&:hover, &:active {
+				color: #c1c1c1;
+			}
+		}
+	}
+	&__partner {
+		width: 100%;
+		margin-top: 10px;
+		&::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		@media (min-width: 641px) {
+			display: flex;
+		}
+		@include g.mq( pc ) {
+		}
+		&__title {
+			// font-size: 1.4rem;
+			@include g.font-rem( g.$font-size--Lv2 );
+			@media (min-width: 641px) {
+			}
+			@include g.mq( pc ) {
+			}
+
+		}
+		&__link {
+			// font-size: 1.4rem;
+			@include g.font-rem( g.$font-size--Lv2 );
+			margin-right: 10px;
+			float: left;
+			&:nth-of-type( 1 ) {
+				margin-left: 10px;
+				@media (min-width: 641px) {
+					margin-left: 0;
+				}
+			}
+			@media (min-width: 641px) {
+			}
+			@include g.mq( pc ) {
+			}
+		}
+	}
+}

@@ -46,7 +46,8 @@
 			background-position: left bottom, right bottom;
 			background-repeat: no-repeat, no-repeat;
 			position: absolute;
-			bottom: 0;
+			// bottom: 0;  //coni
+			top: 0;  //coni
 			height: 12px;
 			width: 100%;
 		}
@@ -59,7 +60,8 @@
 			right: 0;
 			left: 0;
 			margin: auto;
-			bottom: 6px;
+			// bottom: 6px;  //coni
+			top: 0;  //coni
 		}
 	}
 }

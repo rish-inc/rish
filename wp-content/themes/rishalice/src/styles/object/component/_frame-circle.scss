@@ -1,0 +1,36 @@
+@use "../../foundation/global" as g;
+
+.c-frame-circle {
+	background-image: url( ../images/top/round-shadow_sp.png );
+	background-repeat: no-repeat;
+	position: relative;
+	// width: 167px;
+	// height: 182px;
+	transition: .5s ;
+	transform: rotateY(0deg);
+	@include g.mq( pc ) {
+		background-image: url( ../images/top/round-shadow_pc.png );
+		// right: 0;
+		// bottom: -14px;
+		// width: 291px;
+		// height: 318px;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		width: 86px;
+		height: 24px;
+		right: 8%;
+		bottom: -18px;
+		background: #A39B7C;
+		filter: blur( 30px );
+		pointer-events: none;  // 影をhoverしたとき回転しないように無効化
+		@include g.mq( pc ) {
+			width: 150px;
+			height: 42px;
+			bottom: -35px;
+			filter: blur( 45px );
+		}
+	}
+}

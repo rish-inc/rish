@@ -2045,20 +2045,22 @@ body.is-open {
   }
 }
 .p-top-masonry__list__item {
-  width: 40%;
+  width: 50%;
   margin-bottom: 20px;
+  padding: 20px;
 }
 @media (min-width: 641px) {
   .p-top-masonry__list__item {
-    width: 25%;
+    width: 33%;
     margin: unset;
     margin-bottom: 40px;
+    padding: 30px;
   }
 }
 @media (min-width: 961px) {
   .p-top-masonry__list__item {
     width: 20%;
-    padding: 30px;
+    padding: 40px;
   }
 }
 .p-top-photo {
@@ -2302,9 +2304,12 @@ body.is-open {
     padding: 10px 50px 100px;
   }
 }
+.p-top-section--print .c-inner {
+  width: auto;
+}
 @media (min-width: 961px) {
   .p-top-section--print .c-inner {
-    width: 1280px;
+    max-width: 1280px;
   }
 }
 .p-top-section--print .headline {

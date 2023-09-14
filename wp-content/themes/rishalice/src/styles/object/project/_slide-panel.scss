@@ -1,0 +1,29 @@
+@use '../../foundation/global' as g;
+
+// coni 現行より
+.p-slide-panel {
+	margin: 245px 0 0 0;
+	padding: 0;
+	@media (min-width: 641px) {
+		margin-top: 0;
+	}
+	.infiniteslide_wrap {
+		margin: 0;
+		padding: 0;
+	}
+	&__slide {
+		margin: 0;
+		padding: 0;
+		li {
+			@include g.hovanime( mono, 1.2 );
+			a {
+				margin: 0;
+				padding: 0;
+				img {
+					height: 140px;
+					// object-fit: cover;
+				}
+			}
+		}
+	}
+}

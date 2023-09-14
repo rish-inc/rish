@@ -13,8 +13,28 @@
 
 	&--diamond{
 		background: url( ../images/background/diamond_sp.png );
+		background-color: g.$bgcolor--light-green;
+		border-top: 32px solid g.$bgcolor--light-green2;
+		border-bottom: 32px solid g.$bgcolor--light-green2;
+		// vw指定は縦スクロールバーの幅分はみ出すため、bodyに[overflow-x: hidden;]を指定
+		margin-right: calc(50% - 50vw); // 親要素を無視して画面幅いっぱいに広げる
+		margin-left: calc(50% - 50vw);
+		padding-right: calc(50vw - 50%); // 子要素は親要素の幅を維持
+		padding-left: calc(50vw - 50%);
+		position: relative;
+		// z-index: 0; // ブログのキャプションリンクが押せなくなるのでコメントアウト
 		@include g.mq( pc ) {
 			background: url( ../images/background/diamond_pc.png );
+			background-color: g.$bgcolor--light-green;
+		}
+		@include g.mq( full ) {
+			background: none;
+			border-top: none;
+			border-bottom: 1px solid transparent; // 下の余白を確保するため、noneにはしない
+			margin-right: 0;
+			margin-left: 0;
+			padding-right: 0;
+			padding-left: 0;
 		}
 	}
 	&--white{
@@ -25,5 +45,47 @@
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: contain;
+	}
+	&--parallax1 {
+		margin: 0 auto;
+		background-image: url( ../images/background/bg1.png );
+		background-repeat: repeat-y;
+		background-position: left top;
+		background-size: 104%;
+		transition-property: background-position;
+		transition-duration: 1s;
+		width: 100vw;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		position: fixed;
+		z-index: -3;
+			@include g.mq( pc ) {
+			background-size: cover;
+		}
+	}
+	&--parallax2 {
+		background-image: url( ../images/background/bg2.png );
+		background-repeat: repeat-y;
+		background-position: 52% 50px;
+		background-size: 112%;
+		transition-property: background-position;
+		transition-duration: .8s;
+		width: 100vw;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		position: fixed;
+		z-index: -3;
+			@include g.mq( pc ) {
+			background-position: 52% 100px;
+			background-size: 86%;
+		}
+		@include g.mq( wide-1 ) {
+			background-position: 52% 140px;
+		}
+		@include g.mq( full ) {
+			background-position: 52% 216px;
+		}
 	}
 }

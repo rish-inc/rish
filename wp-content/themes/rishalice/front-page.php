@@ -1,12 +1,16 @@
 <?php get_header(); ?>
-	<main class="l-main">
+	<main class="l-main p-top-article">
 		<div class="p-top-article--mv">
 			<p class="p-top-article--mv__text">「何をすればいいのか…」を<br class="u-br--sp">成功に導くデザインオフィス</p>
-			<span></span>
+			<span class="p-top-article--mv__border" aria-hidden="true"></span>
 		</div>
-		<article class="c-inner">
-			<div class="c-content">
-				<article class="p-top-article--about">
+		<div class="c-inner">
+			<article class="c-content">
+				<div class="p-top-article--works__head c-decoration--wing-line--under">
+					<span class="c-decoration--english">Concept</span>
+					<h2 class="c-font--big">弊社のコンセプト</h2>
+				</div>
+				<section class="p-top-article--about">
 					<h2 class="p-top-article--about__head">
 						<span class="p-top-article--about__head__text c-font--regular">
 							大阪府八尾市志紀町で個人・中小企業様を中心に</span><br>
@@ -16,9 +20,9 @@
 						<p class="p-top-article--about__explanation__words u-mb--30">Web サイト（一般的に言われるホームページ）を立ち上げたがうまく集客できない・売上が伸びないといった悩みは<br>見に来る人にとって必要なコンテンツが必要な場所に用意されていないことが原因です。</p>
 						<p class="p-top-article--about__explanation__words">トップページにこだわることも大切ですがユーザーはサイトにアクセスする時必ずトップページを経由するわけではありません。<br>「どこに何を用意するべきか」<br>それを共に考えながら Web サイトを制作・運用サポートを行うのが弊社の得意とする分野です。</p>
 					</div>
-				</article>
-				<article class="p-top-article--advantage">
-					<section class="p-top-article--advantage__parallel">
+				</section>
+				<section class="p-top-article--advantage">
+					<div class="p-top-article--advantage__parallel">
 						<figure class="c-drop-shadow-bg--right">
 							<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/solvable--alice-rabbit.jpg' ) ); ?>" alt="アリスとウサギ">
 						</figure>
@@ -40,27 +44,46 @@
 								<li class="c-dot--small c-font--middle">特定のキーワードを検索上位に表示したい</li>
 							</ul>
 						</div>
-					</section>
-					<section class="p-top-article--advantage__forte">
+					</div>
+					<div class="p-top-article--advantage__forte">
 						<h3 class="p-top-article--advantage__forte__head">Rish の強み</h3>
 						<p class="c-font--general">弊社は代表がこれまで営業を行わずに個人事業主として Web サイト制作を生業にしてきました。</p>
-						<p class="c-font--general">これが成り立っていたのは個人で運営していた[ブログ](https://wp.yat-net.com/)や<br>[ツイッター](https://twitter.com/yat8823jp)などの SNS を活用した Web マーケティングにあります。</p>
+						<p class="c-font--general">これが成り立っていたのは個人で運営していた<a href="https://wp.yat-net.com/" target="_blank">ブログや<br><a href="https://twitter.com/yat8823jp" target="_blank">X（ツイッター）</a>などの SNS を活用した Web マーケティングにあります。</p>
 						<p class="c-font--general">現在は法人に切り替え、サイト運用やクリエイティブが行える社員や様々な分野のパートナーと共同しながら大手の Web サイト構築から個人の Web サイト制作まで幅広く対応が可能となりました。</p>
 						<p class="c-font--general">弊社の強みとしては納品してから始まる事業者様の運用サポートにあります。</p>
 						<p class="c-font--general">Web サイトを代行で作成してもそこからの運用は事業者様ご自身が集客していかなければなりません。</p>
 						<p class="c-font--general">しかし Web のことはまだまだ専門的な知識が必要なことが多く、日常の業務があるなかで Web サイト運用も行うのは非常に難しく納品した後もしばらく放置してしまうことも少なくありません。</p>
 						<p class="c-font--general">Web 担当者を雇用するには人件費をまだかけられない方もいらっしゃいます。</p>
 						<p class="c-font--general">弊社ではその運用をアウトソーシングという形でお受けし、事業者様がなるべく事業に専念してもらえるのが強みです。</p>
-					</section>
-					<a href="<?php echo esc_url( home_url( 'contact' ) ); ?>" class="p-top-article--advantage__btn p-btn c-button--noise-line">お問い合わせはこちらから</a>
-				</article>
-
-				<article class="p-top-article--works">
-					<div class="c-decoration--wing-line--under">
-						<span class="c-decoration--english">Works</span>
-						<h2 class="c-font--big">制作実績</h2>
 					</div>
-				</article>
+					<a href="<?php echo esc_url( home_url( 'contact' ) ); ?>" class="p-btn c-button--noise-line">お問い合わせはこちらから</a>
+				</section>
+
+				<section class="p-top-article--works">
+					<div class="p-top-article--works__bg-wrap c-bg--diamond">
+						<div class="p-top-article--works__head c-decoration--wing-line--under">
+							<span class="c-decoration--english">Works</span>
+							<h2 class="c-font--big">制作実績</h2>
+						</div>
+						<section class="p-top-article--works__webdesign">
+							<h3 class="p-top-article--works__webdesign__head">Web design</h3>
+							<?php
+								$args = [ 'template_name' => 'webdesign' ];
+								get_template_part( 'components/template/top-works-webdesign', '', $args );
+							?>
+							<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/tableware.png' ) ); ?>" alt="テーブルウェア" class="p-top-article--works__img">
+							<div class="p-top-article--works__bg" aria-hidden="true"></div>
+						</section>
+					</div>
+					<div class="p-top-article--works__printgraphics">
+						<h3 class="p-top-article--works__printgraphics__head">Print&amp;Graphic</h3>
+						<?php
+							$args = [ 'template_name' => 'print' ];
+							get_template_part( 'components/template/top-works-print', '', $args );
+						?>
+					</div>
+					<a href="<?php echo esc_url( home_url( 'works' ) ); ?>" class="p-btn c-button--noise-line">制作実績一覧へ</a>
+				</section>
 
 				<?php get_template_part( 'components/template/price' ); ?>
 
@@ -156,7 +179,7 @@
 					<div class="p-top-article--service__bg" aria-hidden="true"></div>
 				</section>
 
-				<article class="p-top-article--blog">
+				<section class="p-top-article--blog">
 					<div class="p-top-article--blog__head c-decoration--wing-line--under">
 						<span class="c-decoration--english">Blog</span>
 						<h2 class="c-font--big">ブログ</h2>
@@ -176,7 +199,7 @@
 							while( $query -> have_posts() ):
 								$query -> the_post();
 						?> <!--投稿がある分だけ繰り返す-->
-						<li class="p-top-article--blog__list__item p-card">
+						<li class="p-card">
 							<a class="p-card__link" href="<?php the_permalink(); ?>">
 								<figure class="p-card__link__caption">
 									<div class="p-card__link__caption__wrap">
@@ -220,16 +243,15 @@
 							<?php wp_reset_postdata(); ?> <!-- 投稿データをリセットする -->
 						<?php endif; ?>
 					</ul>
-				</article>
+				</section>
 
-				<article class="p-top-article--about-us c-bg--diamond">
+				<section class="p-top-article--about-us c-bg--diamond">
 					<div class="p-top-article--about-us__head c-decoration--wing-line--under">
 						<span class="c-decoration--english">About us</span>
 						<h2 class="c-font--big">会社情報</h2>
 					</div>
 					<div class="p-top-article--about-us__wrap">
 						<div class="p-top-article--about-us__inner c-frame--ornament--type-a">
-							<!-- <ul class="p-top-article--about-us__list c-frame--ornament--type-a"> -->
 							<ul class="p-top-article--about-us__list">
 								<li class="p-top-article--about-us__list__item">Rish inc.</li>
 								<li class="p-top-article--about-us__list__item">株式会社 リッシュ</li>
@@ -238,13 +260,13 @@
 							</ul>
 						</div>
 					</div>
-					<a href="<?php echo esc_url( home_url( 'about' ) ); ?>" class="p-top-article--about-us__btn p-btn c-button--noise-line">会社情報はこちら</a>
-					<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/Tea-set.png' ) ); ?>" alt="ティーセット" class="p-top-article--about-us__img">
+					<a href="<?php echo esc_url( home_url( 'about' ) ); ?>" class="p-btn c-button--noise-line">会社情報はこちら</a>
+					<img src="<?php echo esc_url( get_theme_file_uri( '/images/top/Tea-set.png' ) ); ?>" alt="ティーセット" class="p-top-article--about-us__img" aria-hidden="true">
 					<div class="p-top-article--about-us__bg"></div>
-				</article>
+				</section>
 
 				<?php get_template_part( 'components/template/contact' ); ?>
-			</div>
-		</article>
+			</article>
+		</div>
 	</main>
 <?php get_footer(); ?>
