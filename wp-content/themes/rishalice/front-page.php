@@ -13,7 +13,7 @@
 				<section class="p-top-article--about">
 					<h2 class="p-top-article--about__head">
 						<span class="p-top-article--about__head__text c-font--regular">
-							大阪市中央区で個人・中小企業様を中心に</span><br>
+							大阪府八尾市志紀町で個人・中小企業様を中心に</span><br>
 						<span class="p-top-article--about__head__text c-font--regular">Web サイト（ホームページ）などを</span><br class="u-br--sp"><span class="p-top-article--about__head__text c-font--regular">制作している株式会社 Rish です</span>
 					</h2>
 					<div class="p-top-article--about__explanation c-font--middle c-frame--brackets">
@@ -256,7 +256,7 @@
 								<li class="p-top-article--about-us__list__item">Rish inc.</li>
 								<li class="p-top-article--about-us__list__item">株式会社 リッシュ</li>
 								<li class="p-top-article--about-us__list__item">Address - Business office</li>
-								<li class="p-top-article--about-us__list__item">〒540-0025 大阪府大阪市中央区徳井町2−2−10 アークマインB201</li>
+								<li class="p-top-article--about-us__list__item">〒581-0031 大阪府八尾市志紀町</li>
 							</ul>
 						</div>
 					</div>

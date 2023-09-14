@@ -12,7 +12,8 @@ $breakpoints: (
 	'wide': 'screen and ( min-width: 1000px )',
 	'wide-1': 'screen and ( min-width: 1024px )',
 	'wide-2': 'screen and ( min-width: 1031px )',
-	'full': 'screen and ( min-width: 1200px )'
+	'full': 'screen and ( min-width: 1200px )',
+	'reduce': 'prefers-reduced-motion'
 );
 
 @mixin mq( $breakpoint: tb ) {
@@ -20,6 +21,12 @@ $breakpoints: (
 		@content;
 	}
 }
+
+// @mixin mqr( $breakpoint: reduce ) {
+// 	@media (prefers-reduced-motion: reduce) {
+// 		@content;
+// 	}
+// }
 
 @mixin hovanime( $color: default, $scale: 1.05 ) {
 	overflow: hidden;
