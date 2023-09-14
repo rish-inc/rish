@@ -5742,7 +5742,7 @@ body.is-fade-in {
   animation: fuwafuwa1 2s ease-in-out 0.5s infinite alternate;
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media prefers-reduced-motion {
   .p-top-article--service__list__item:nth-child(1) {
     -webkit-animation: none;
     animation: none;
@@ -5753,7 +5753,7 @@ body.is-fade-in {
   animation: fuwafuwa1 2s ease-in-out 1.5s infinite alternate;
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media prefers-reduced-motion {
   .p-top-article--service__list__item:nth-child(1)::after {
     -webkit-animation: none;
     animation: none;
@@ -5780,7 +5780,7 @@ body.is-fade-in {
   animation: fuwafuwa2 2s ease-in-out 1s infinite alternate;
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media prefers-reduced-motion {
   .p-top-article--service__list__item:nth-child(2) {
     -webkit-animation: none;
     animation: none;
@@ -5791,7 +5791,7 @@ body.is-fade-in {
   animation: fuwafuwa2 2s ease-in-out 3s infinite alternate;
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media prefers-reduced-motion {
   .p-top-article--service__list__item:nth-child(2)::after {
     -webkit-animation: none;
     animation: none;
@@ -5818,7 +5818,7 @@ body.is-fade-in {
   animation: fuwafuwa3 2s ease-in-out 1.5s infinite alternate;
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media prefers-reduced-motion {
   .p-top-article--service__list__item:nth-child(3) {
     -webkit-animation: none;
     animation: none;
@@ -5829,7 +5829,7 @@ body.is-fade-in {
   animation: fuwafuwa3 2s ease-in-out 4.5s infinite alternate;
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media prefers-reduced-motion {
   .p-top-article--service__list__item:nth-child(3)::after {
     -webkit-animation: none;
     animation: none;
@@ -5856,7 +5856,7 @@ body.is-fade-in {
   animation: fuwafuwa4 2s ease-in-out 2s infinite alternate;
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media prefers-reduced-motion {
   .p-top-article--service__list__item:nth-child(4) {
     -webkit-animation: none;
     animation: none;
@@ -5867,7 +5867,7 @@ body.is-fade-in {
   animation: fuwafuwa4 2s ease-in-out 6s infinite alternate;
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media prefers-reduced-motion {
   .p-top-article--service__list__item:nth-child(4)::after {
     -webkit-animation: none;
     animation: none;
@@ -5894,7 +5894,7 @@ body.is-fade-in {
   animation: fuwafuwa5 2s ease-in-out 2.5s infinite alternate;
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media prefers-reduced-motion {
   .p-top-article--service__list__item:nth-child(5) {
     -webkit-animation: none;
     animation: none;
@@ -5905,7 +5905,7 @@ body.is-fade-in {
   animation: fuwafuwa5 2s ease-in-out 7.5s infinite alternate;
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media prefers-reduced-motion {
   .p-top-article--service__list__item:nth-child(5)::after {
     -webkit-animation: none;
     animation: none;
@@ -5932,7 +5932,7 @@ body.is-fade-in {
   animation: fuwafuwa6 2s ease-in-out 3s infinite alternate;
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media prefers-reduced-motion {
   .p-top-article--service__list__item:nth-child(6) {
     -webkit-animation: none;
     animation: none;
@@ -5943,7 +5943,7 @@ body.is-fade-in {
   animation: fuwafuwa6 2s ease-in-out 9s infinite alternate;
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media prefers-reduced-motion {
   .p-top-article--service__list__item:nth-child(6)::after {
     -webkit-animation: none;
     animation: none;
@@ -5970,7 +5970,7 @@ body.is-fade-in {
   animation: fuwafuwa7 2s ease-in-out 3.5s infinite alternate;
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media prefers-reduced-motion {
   .p-top-article--service__list__item:nth-child(7) {
     -webkit-animation: none;
     animation: none;
@@ -5981,7 +5981,7 @@ body.is-fade-in {
   animation: fuwafuwa7 2s ease-in-out 10.5s infinite alternate;
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media prefers-reduced-motion {
   .p-top-article--service__list__item:nth-child(7)::after {
     -webkit-animation: none;
     animation: none;
@@ -6008,7 +6008,7 @@ body.is-fade-in {
   animation: fuwafuwa8 2s ease-in-out 4s infinite alternate;
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media prefers-reduced-motion {
   .p-top-article--service__list__item:nth-child(8) {
     -webkit-animation: none;
     animation: none;
@@ -6019,7 +6019,7 @@ body.is-fade-in {
   animation: fuwafuwa8 2s ease-in-out 12s infinite alternate;
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media prefers-reduced-motion {
   .p-top-article--service__list__item:nth-child(8)::after {
     -webkit-animation: none;
     animation: none;
@@ -6032,7 +6032,7 @@ body.is-fade-in {
   transform: translate(-50%, -30%);
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media prefers-reduced-motion {
   .p-top-article--service__list__item__wrap {
     top: 150px;
     left: 145px;

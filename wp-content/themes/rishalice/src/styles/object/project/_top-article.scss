@@ -535,12 +535,12 @@
 					}
 					&:nth-child(#{$i}) {
 						animation: fuwafuwa#{$i} 2s ease-in-out $DELAY infinite alternate;
-						@include g.mqr( reduce ) {
+						@include g.mq( reduce ) {
 							animation: none;
 						}
 						&::after {
 							animation: fuwafuwa#{$i} 2s ease-in-out $DELAY2 infinite alternate;
-							@include g.mqr( reduce ) {
+							@include g.mq( reduce ) {
 								animation: none;
 							}
 						}
@@ -551,7 +551,7 @@
 					top: 50%;
 					left: 50%;
 					transform: translate( -50%, -30% );
-					@include g.mqr( reduce ) {
+					@include g.mq( reduce ) {
 						top: 150px;
 						left: 145px;
 						// transform: translate( 0, 0 );
