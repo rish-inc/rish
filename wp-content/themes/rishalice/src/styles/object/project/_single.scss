@@ -73,6 +73,7 @@
 			}
 		}
         &__tags {
+
             margin-bottom: 20px;
             display: flex;
             @include g.font-rem( g.$font-size--Lv3 );
@@ -87,17 +88,21 @@
         &__thumbnail__img {
             max-width: 100%;
             height: auto;
+			margin-top: 47px;;
             margin-bottom: 47px;
             @include g.mq( pc ) {
+				margin-top: 40px;
                 margin-bottom: 40px;
             }
         }
         &__content {
+			margin-top: 47px;
             margin-bottom: 180px;
             @include g.font-rem( g.$font-size--Lv4 );
             line-height: 1.8;
             @include g.mq( pc ) {
-                margin-bottom: 338px;
+				margin-top: 40px;
+                margin-bottom: 168px;
             }
             h1 {
                 @include g.font-rem( g.$font-size--Lv13 );
@@ -291,7 +296,7 @@
                 text-align: center;  // アイコン中央寄せ
                 margin-top: 55px;
                 @include g.mq( pc ) {
-                    margin-top: 150px;
+                    margin-top: 80px;
                 }
             }
         }
