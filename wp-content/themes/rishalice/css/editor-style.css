@@ -4161,15 +4161,18 @@ body.is-fade-in {
 .p-single__contents__thumbnail__img {
   max-width: 100%;
   height: auto;
+  margin-top: 47px;
   margin-bottom: 47px;
 }
 
 @media screen and (min-width: 768px) {
   .p-single__contents__thumbnail__img {
+    margin-top: 40px;
     margin-bottom: 40px;
   }
 }
 .p-single__contents__content {
+  margin-top: 47px;
   margin-bottom: 180px;
   font-size: 1.125rem;
   line-height: 1.8;
@@ -4177,7 +4180,8 @@ body.is-fade-in {
 
 @media screen and (min-width: 768px) {
   .p-single__contents__content {
-    margin-bottom: 338px;
+    margin-top: 40px;
+    margin-bottom: 168px;
   }
 }
 .p-single__contents__content h1 {
@@ -4423,7 +4427,7 @@ body.is-fade-in {
 
 @media screen and (min-width: 768px) {
   .p-single__contents__content .addtoany_share_save_container {
-    margin-top: 150px;
+    margin-top: 80px;
   }
 }
 .p-single__tags {
