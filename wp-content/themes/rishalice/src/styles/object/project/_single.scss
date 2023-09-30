@@ -1,6 +1,11 @@
 @use "../../foundation/global" as g;
 
 .p-single {
+	&.c-content {
+		@include g.mq( pc ) {
+			max-width: 800px;
+		}
+	}
     &__head {
         margin-bottom: 64px;
         @include g.mq( pc ) {
@@ -89,8 +94,8 @@
         }
         &__content {
             margin-bottom: 180px;
-            @include g.font-rem( g.$font-size--Lv3 );
-            line-height: 2.5;
+            @include g.font-rem( g.$font-size--Lv4 );
+            line-height: 1.8;
             @include g.mq( pc ) {
                 margin-bottom: 338px;
             }
@@ -188,9 +193,9 @@
                 }
             }
             p {
-                margin-bottom: 42px;
+                margin-bottom: 32px;
                 @include g.mq( pc ) {
-                    margin-bottom: 26px;
+                    margin-bottom: 32px;
                 }
             }
             img {
