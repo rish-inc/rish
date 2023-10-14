@@ -6001,6 +6001,10 @@ body.is-fade-in {
   .p-top-article--service__list__item__wrap {
     top: 150px;
     left: 145px;
+    transform: translate(0, 0);
+    top: inherit;
+    left: inherit;
+    transform: translate(inherit);
   }
 }
 .p-top-article--service__list__item__inner {
@@ -6015,11 +6019,18 @@ body.is-fade-in {
 }
 .p-top-article--service__list__item a,
 .p-top-article--service__list__item span {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 167px;
+  height: 182px;
+  display: block;
 }
 
+@media screen and (min-width: 768px) {
+  .p-top-article--service__list__item a,
+.p-top-article--service__list__item span {
+    width: 291px;
+    height: 318px;
+  }
+}
 .p-top-article--service__list__item p {
   font-size: 0.75rem;
   line-height: 1.5;
