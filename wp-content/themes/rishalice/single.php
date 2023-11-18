@@ -1,9 +1,18 @@
+<?php
+	if ( get_post_type() == 'post' ) {
+		$cat_title_main = 'Blog';
+		$cat_title_sub  = 'ブログ';
+	} else {
+		$cat_title_main = 'Works';
+		$cat_title_sub  = '制作実績';
+	}
+?>
 <?php get_header(); ?>
 	<main class="l-main">
 		<article class="p-single c-inner c-content">
 			<div class="p-single__head c-decoration--wing-line--under">
-				<span class="c-decoration--english">Blog</span>
-				<h1 class="c-font--big">ブログ</h1>
+				<span class="c-decoration--english"><?php echo $cat_title_main; ?></span>
+				<h1 class="c-font--big"><?php echo $cat_title_sub; ?></h1>
 			</div>
 			<?php
 				if( have_posts() ) :
@@ -30,7 +39,7 @@
 									echo '<i class="c-mark--tag-icon"></i>';
 									echo '<ul class="p-single__tags">';
 									foreach ( $posttags as $tag ) {
-										echo '<li><a href="' . get_tag_link( $tag->term_id ) . '">' . $tag->name . '</a></li>'; 
+										echo '<li><a href="' . get_tag_link( $tag->term_id ) . '">' . $tag->name . '</a></li>';
 									}
 									echo '</ul>';
 									echo '</div>';

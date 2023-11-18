@@ -10,7 +10,7 @@ Template Post Type: webdesign, print
 			<div class="p-single-works__head c-decoration--wing-line--under">
 				<!-- 遷移元URLによって見出しを変更 -->
 				<?php $url = $_SERVER['HTTP_REFERER']; ?>
-				<?php if(strstr($url,'graphic')): ?>
+				<?php if( strstr( $url, 'graphic' ) ): ?>
 					<span class="c-decoration--english">Graphic Design</span>
 					<h1 class="c-font--big">グラフィックデザイン</h1>
 				<?php else: ?>
