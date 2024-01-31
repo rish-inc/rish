@@ -1,10 +1,3 @@
-<?php
-/*
-Template Name: 制作実績詳細
-Template Post Type: webdesign, print
-*/
-?>
-<?php get_header(); ?>
 	<main class="l-main">
 		<article class="p-single-works">
 			<div class="p-single-works__head c-decoration--wing-line--under">
@@ -32,4 +25,3 @@ Template Post Type: webdesign, print
 			<?php get_template_part( 'components/template/contact' ); ?>
 		</article>
 	</main>
-<?php get_footer(); ?>

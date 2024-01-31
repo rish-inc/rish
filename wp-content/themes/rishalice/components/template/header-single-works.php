@@ -24,19 +24,21 @@
 						}
 						$tags = get_the_terms( $post -> ID, 'type_tag');
 						if ( $tags ) :
-							$type_tags = 'Works: [ ';
-							if ( ! isset( $terms ) ) {
-								// if ( ! is_array( $terms ) ) {
-									foreach( $tags as $tag ) {
-										if ( $tag === end( $tags ) ) {
-											$type_tags .= $tag -> name;
-										} else {
-											$type_tags .= $tag -> name . ', ';
+							if ( isset( $type_tags ) ) :
+								$type_tags = 'Works: [ ';
+								if ( ! isset( $terms ) ) {
+									// if ( ! is_array( $terms ) ) {
+										foreach( $tags as $tag ) {
+											if ( $tag === end( $tags ) ) {
+												$type_tags .= $tag -> name;
+											} else {
+												$type_tags .= $tag -> name . ', ';
+											}
 										}
-									}
-								// }
-							}
-							$type_tags .= ' ]';
+									// }
+								}
+								$type_tags .= ' ]';
+							endif;
 						endif; ?>
 					<?php endif; ?>
 					<h2><?php echo esc_html( $title ); ?></h2>
@@ -44,7 +46,7 @@
 						<a href="<?php echo $url ?>" target="_blank" class="p-header--achievement__url"><?php echo $url ?></a>
 					<?php endif; ?>
 					<?php if ( isset( $tags ) ) : ?>
-						<p class="p-header--achievement__tag"><?php echo esc_html( $type_tags ); ?></p>
+						<p class="p-header--achievement__tag"><?php if ( isset( $type_tags ) ) { echo esc_html( $type_tags ); } ?></p>
 					<?php elseif ( is_single() ) : ?>
 						<p class="p-header--achievement__tag"><?php the_category( '', 'multiple' ); ?></p>
 					<?php endif; ?>
