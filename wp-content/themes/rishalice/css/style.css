@@ -82,7 +82,7 @@ select {
  * 文字サイズ
  */
 body {
-  font-family: "丸明オールドStdN", "砧 丸明オールド StdN";
+  font-family: "丸明オールド StdN R", "MaruminOld StdN R", "砧 丸明オールド StdN";
   font-size: 1rem;
   color: #1D1D1D;
   min-width: 320px;
