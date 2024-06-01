@@ -29,12 +29,9 @@
 					<div class="p-about--profile__list__wrapper">
 						<dd class="p-about--profile__list__text">
 							<dl>
-								<dt>営業所</dt>
-								<dd>〒581-0031 大阪府八尾市志紀町</dd>
-								<dd class="u-mb--40 u-mb--pc--24">Shiki-cho, Yao-shi, Osaka 581-0031</dd>
-								<dt>登記地</dt>
-								<dd>〒581-0091 大阪府八尾市南植松町4丁目114</dd>
-								<dd>4-114 Minami Uematsucho, Yao City, Osaka 581-0091</dd>
+								<dt>所在地</dt>
+								<dd>〒581-0031 大阪府八尾市</dd>
+								<dd class="u-mb--40 u-mb--pc--24">Yao-shi, Osaka 581-0031</dd>
 							</dl>
 						</dd>
 					</div>
@@ -80,23 +77,10 @@
 						<dd class="p-about--profile__list__text u-mb--14 u-mb--pc--0">株式会社 TAM, 株式会社 RaiseTech, 株式会社 Studio Cologne</dd>
 						<dd class="p-about--profile__list__text">TAM Co., Ltd., Raise Tech Co., Ltd., Studio Cologne</dd>
 					</div>
-
 					<dt class="p-about--profile__list__title c-line--ornament">税理士<span>-Advisory tax accountant-</span></dt>
 					<div class="p-about--profile__list__wrapper">
 						<dd class="p-about--profile__list__text"><a href="https://vs-group.jp/tax/" target="_blank">ベンチャーサポート税理士法人</a></dd>
 						<dd class="p-about--profile__list__text"><a href="https://vs-group.jp/tax/" target="_blank">Venture Support Tax Corporation</a></dd>
-					</div>
-
-					<dt class="p-about--profile__list__title c-line--ornament">弁護士<span>-Legal advisor-</span></dt>
-					<div class="p-about--profile__list__wrapper">
-						<dd class="p-about--profile__list__text"><a href="https://vs-group.jp/lawyer/" target="_blank">弁護士法人ベンチャーサポート法律事務所</a></dd>
-						<dd class="p-about--profile__list__text"><a href="https://vs-group.jp/lawyer/" target="_blank">Venture Support Law Office</a></dd>
-					</div>
-
-					<dt class="p-about--profile__list__title c-line--ornament">資格<span>-Qualification-</span></dt>
-					<div class="p-about--profile__list__wrapper">
-						<dd class="p-about--profile__list__text u-mb--14 u-mb--pc--0">IT導入支援事業者2023年</dd>
-						<dd class="p-about--profile__list__text">IT Installation Support Provider 2023</dd>
 					</div>
 				</dl>
 			</div>

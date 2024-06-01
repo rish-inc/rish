@@ -13,7 +13,7 @@
 				<section class="p-top-article--about">
 					<h2 class="p-top-article--about__head">
 						<span class="p-top-article--about__head__text c-font--regular">
-							大阪府八尾市志紀町で個人・中小企業様を中心に</span><br>
+							大阪府八尾市で個人・中小企業様を中心に</span><br>
 						<span class="p-top-article--about__head__text c-font--regular">Web サイト（ホームページ）などを</span><br class="u-br--sp"><span class="p-top-article--about__head__text c-font--regular">制作している株式会社 Rish です</span>
 					</h2>
 					<div class="p-top-article--about__explanation c-font--middle c-frame--brackets">
