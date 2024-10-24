@@ -61,7 +61,7 @@ Template Name: 制作実績一覧
                             Photography
                         </h2>
                         <dl class="description">
-                            <dt class="ttl">Canon EOS 5D mark IV</dt>
+                            <dt class="ttl">Canon EOS R5</dt>
                             <dd class="data">
                                 <p>
                                     I am taking pictures of portraits, buildings, cityscapes etc.<br>
