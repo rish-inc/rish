@@ -47,11 +47,12 @@
         <li class="p-price__list__item">
             <div class="p-card--price c-frame--dent">
                 <dl class="p-card--price__inner c-bg--white">
-                    <dt class="p-card--price__inner__plan-other c-hedding-bg--square-twodent">
-                        <span class="p-card--price__inner__plan__big">04.コンテンツマーケティング</span>
+					<dt class="p-card--price__inner__plan c-hedding-bg--square-twodent">
+						<span class="p-card--price__inner__plan__big">04.コンテンツマーケティング</span>
+						<span class="p-card--price__inner__plan__small c-font--tiny">（サイト運用・SEO・コンサルティング）</span>
                     </dt>
-                    <dd class="p-card--price__inner__number c-font--price">150<span class="c-font--price-complement">万円</span>〜</dd>
-                    <dd class="p-card--price__inner__text c-font--normal">集客の動線を設計し、サイトの構築を行うプランです。お客様の叶えたいビジネスに沿った構造と集客・運用を含めて制作いたします。</dd>
+                    <dd class="p-card--price__inner__number c-font--price">10<span class="c-font--price-complement">万円（月額）</span>〜</dd>
+                    <dd class="p-card--price__inner__text c-font--normal">サイト運用の代行や集客・SEOのコンサルティングなど、作ったサイトをより効果的な運用ができるようお手伝いさせていただきます。</dd>
                 </dl>
             </div>
         </li>

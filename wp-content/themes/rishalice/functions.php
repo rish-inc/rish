@@ -130,3 +130,11 @@ function imgdescription() {
 		</dl>
 	<?php endif;
 }
+
+/*
+ * CORS
+ */
+function cors_http_header(){
+	header( "Access-Control-Allow-Origin: https://'https://webfont.fontplus.jp/" );
+}
+add_action('send_headers', 'cors_http_header');

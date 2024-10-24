@@ -24,18 +24,16 @@
 						}
 						$tags = get_the_terms( $post -> ID, 'type_tag');
 						if ( $tags ) :
-							if ( isset( $type_tags ) ) :
+							if ( ! isset( $type_tags ) ) :
 								$type_tags = 'Works: [ ';
 								if ( ! isset( $terms ) ) {
-									// if ( ! is_array( $terms ) ) {
-										foreach( $tags as $tag ) {
-											if ( $tag === end( $tags ) ) {
-												$type_tags .= $tag -> name;
-											} else {
-												$type_tags .= $tag -> name . ', ';
-											}
+									foreach( $tags as $tag ) {
+										if ( $tag === end( $tags ) ) {
+											$type_tags .= $tag -> name;
+										} else {
+											$type_tags .= $tag -> name . ', ';
 										}
-									// }
+									}
 								}
 								$type_tags .= ' ]';
 							endif;

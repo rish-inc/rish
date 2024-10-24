@@ -56,8 +56,8 @@
 
 					<dt class="p-about--profile__list__title c-line--ornament">事業内容<span>-Business-</span></dt>
 					<div class="p-about--profile__list__wrapper">
-						<dd class="p-about--profile__list__text u-mb--14">ウェブデザイン, ウェブ開発, コンテンツマーケティング,写真・動画撮影, 写真・動画編集, コンサルティング,電子商取引, ファッション・アパレルの物販</dd>
-						<dd class="p-about--profile__list__text">E-commerce, Fashion and apparel product sales, Web design, Web Developent, Photo/video shooting, Photo/video edting, Consulting</dd>
+						<dd class="p-about--profile__list__text u-mb--14">ウェブデザイン, ウェブ開発, コンテンツマーケティング,写真・動画撮影, 写真・動画編集, コンサルティング,電子商取引, ファッション・アパレルの物販, メディア運用</dd>
+						<dd class="p-about--profile__list__text">E-commerce, Fashion and apparel product sales, Web design, Web Developent, Photo/video shooting, Photo/video edting, Consulting, Media Management</dd>
 					</div>
 
 					<dt class="p-about--profile__list__title c-line--ornament">古物商許可番号<span>-Curio dealer-</span></dt>
@@ -74,8 +74,8 @@
 
 					<dt class="p-about--profile__list__title c-line--ornament">主要取引先<span>-Main client-</span></dt>
 					<div class="p-about--profile__list__wrapper">
-						<dd class="p-about--profile__list__text u-mb--14 u-mb--pc--0">株式会社 TAM, 株式会社 RaiseTech, 株式会社 Studio Cologne</dd>
-						<dd class="p-about--profile__list__text">TAM Co., Ltd., Raise Tech Co., Ltd., Studio Cologne</dd>
+						<dd class="p-about--profile__list__text u-mb--14 u-mb--pc--0">株式会社 TAM, 株式会社 RaiseTech, 株式会社 Studio Cologne, 株式会社フロンティアワークス, エックスサーバー株式会社</dd>
+						<dd class="p-about--profile__list__text">TAM Co., Ltd., Raise Tech Co., Ltd., Studio Cologne, Frontier Works Inc., Server Co.</dd>
 					</div>
 					<dt class="p-about--profile__list__title c-line--ornament">税理士<span>-Advisory tax accountant-</span></dt>
 					<div class="p-about--profile__list__wrapper">
